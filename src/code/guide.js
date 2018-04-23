@@ -31,11 +31,11 @@ introduce.demo = `
 
 install.cdn = `
 <!-- import Vue.js -->
-<script src="//vuejs.org/js/vue.min.js"></script>
+<script src="http://res.wisedu.com/bower_components/vue2/vue.min.js"></script>
 <!-- import stylesheet -->
-<link rel="stylesheet" href="//unpkg.com/iview/dist/styles/iview.css">
+<link rel="stylesheet" href="http://res.wisedu.com/fe_components/iview2/styles/iview.css">
 <!-- import iView -->
-<script src="//unpkg.com/iview/dist/iview.min.js"></script>
+<script src="http://res.wisedu.com/fe_components/iview2/iview.min.js"></script>
 `;
 
 install.demo = `
@@ -44,9 +44,9 @@ install.demo = `
 <head>
     <meta charset="utf-8">
     <title>iview example</title>
-    <link rel="stylesheet" type="text/css" href="http://unpkg.com/iview/dist/styles/iview.css">
-    <script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
-    <script type="text/javascript" src="http://unpkg.com/iview/dist/iview.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://res.wisedu.com/fe_components/iview2/styles/iview.css">
+    <script type="text/javascript" src="http://res.wisedu.com/bower_components/vue2/vue.min.js"></script>
+    <script type="text/javascript" src="http://res.wisedu.com/fe_components/iview2/iview.min.js"></script>
 </head>
 <body>
 <div id="app">
@@ -71,7 +71,7 @@ install.demo = `
 `;
 
 install.install = `
-$ npm install iview --save
+$ npm install bh-iview --save
 `;
 
 install.import = `
@@ -205,9 +205,9 @@ Vue.locale('zh-CN', zh);
 `;
 
 i18n.cdn = `
-<script src="//unpkg.com/vue"></script>
-<script src="//unpkg.com/iview/dist/iview.min.js"></script>
-<script src="//unpkg.com/iview/dist/locale/en-US.js"></script>
+<script src="http://res.wisedu.com/bower_components/vue2/vue.min.js"></script>
+<script src="http://res.wisedu.com/fe_components/iview2/iview.min.js"></script>
+<script src="http://res.wisedu.com/fe_components/iview2/locale/en-US.js"></script>
 
 <script>
     iview.lang('en-US');
@@ -215,10 +215,10 @@ i18n.cdn = `
 `;
 
 i18n.cdnvuei18n = `
-<script src="//unpkg.com/vue"></script>
-<script src="//unpkg.com/iview/dist/iview.min.js"></script>
-<script src="//unpkg.com/iview/dist/locale/en-US.js"></script>
-<script src="//unpkg.com/iview/dist/locale/zh-CN.js"></script>
+<script src="http://res.wisedu.com/bower_components/vue2/vue.min.js"></script>
+<script src="http://res.wisedu.com/fe_components/iview2/iview.min.js"></script>
+<script src="http://res.wisedu.com/fe_components/iview2/locale/en-US.js"></script>
+<script src="http://res.wisedu.com/fe_components/iview2/locale/zh-CN.js"></script>
 
 <script>
     // you need to add Polyfill if your browser doesn't support ES2015

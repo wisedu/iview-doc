@@ -9,12 +9,12 @@ import Locales from './locale';
 import App from './components/app.vue';
 import Routers from './router';
 import Util from './libs/util';
-import iView from 'iview';
-import zhLocale from 'iview/dist/locale/zh-CN';
-import enLocale from 'iview/dist/locale/en-US';
+import iView from 'bh-iview';
+import zhLocale from 'bh-iview/dist/locale/zh-CN';
+import enLocale from 'bh-iview/dist/locale/en-US';
 import Env from './config/env';
 import bus from './components/bus';
-import 'iview/dist/styles/iview.css';
+import 'bh-iview/dist/styles/iview.css';
 // import './styles/theme-christmas/index.less';
 
 import ad from './components/ad.vue';

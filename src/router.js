@@ -7,50 +7,51 @@ const routers = [
         meta: {
             title: ''
         },
+        redirect:'/docs/guide/install',
         component: (resolve) => require(['./views/index.vue'], resolve)
     },
-    {
-        path: '/vue-book',
-        meta: {
-            title: '《Vue.js 实战》预购'
-        },
-        component: (resolve) => require(['./views/vue-book.vue'], resolve)
-    },
-    {
-        path: '/vue-book/check',
-        meta: {
-            title: '《Vue.js 实战》预购查询'
-        },
-        component: (resolve) => require(['./views/vue-book-check.vue'], resolve)
-    },
-    {
-        path: '/new-issue',
-        meta: {
-            title: 'iView Issue Helper'
-        },
-        component: (resolve) => require(['./views/new-issue.vue'], resolve)
-    },
-    {
-        path: '/cli',
-        meta: {
-            title: 'iView Cli 可视化脚手架'
-        },
-        component: (resolve) => require(['./views/cli.vue'], resolve)
-    },
-    {
-        path: '/cli-en',
-        meta: {
-            title: 'iView Cli'
-        },
-        component: (resolve) => require(['./views/cli-en.vue'], resolve)
-    },
-    {
-        path: '/live',
-        meta: {
-            title: '讲堂'
-        },
-        component: (resolve) => require(['./views/live.vue'], resolve)
-    },
+    // {
+    //     path: '/vue-book',
+    //     meta: {
+    //         title: '《Vue.js 实战》预购'
+    //     },
+    //     component: (resolve) => require(['./views/vue-book.vue'], resolve)
+    // },
+    // {
+    //     path: '/vue-book/check',
+    //     meta: {
+    //         title: '《Vue.js 实战》预购查询'
+    //     },
+    //     component: (resolve) => require(['./views/vue-book-check.vue'], resolve)
+    // },
+    // {
+    //     path: '/new-issue',
+    //     meta: {
+    //         title: 'iView Issue Helper'
+    //     },
+    //     component: (resolve) => require(['./views/new-issue.vue'], resolve)
+    // },
+    // {
+    //     path: '/cli',
+    //     meta: {
+    //         title: 'iView Cli 可视化脚手架'
+    //     },
+    //     component: (resolve) => require(['./views/cli.vue'], resolve)
+    // },
+    // {
+    //     path: '/cli-en',
+    //     meta: {
+    //         title: 'iView Cli'
+    //     },
+    //     component: (resolve) => require(['./views/cli-en.vue'], resolve)
+    // },
+    // {
+    //     path: '/live',
+    //     meta: {
+    //         title: '讲堂'
+    //     },
+    //     component: (resolve) => require(['./views/live.vue'], resolve)
+    // },
     {
         path: '/overview',
         meta: {

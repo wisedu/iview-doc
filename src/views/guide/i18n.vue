@@ -13,7 +13,7 @@
             <p>兼容 vue-i18n@5.x</p>
             <i-code lang="js" bg>{{ code.i18n.vuei18n5 }}</i-code>
             <Alert show-icon style="margin-top: 16px">使用 vue-i18n 时，也可以按需引入 iView 组件，用法与上面的示例类似。</Alert>
-            <Anchor title="通过 CDN 使用" h2></Anchor>
+            <Anchor title="通过 RES 使用" h2></Anchor>
             <i-code lang="html" bg>{{ code.i18n.cdn }}</i-code>
             <p>结合 vue-i18n 使用</p>
             <i-code lang="html" bg>{{ code.i18n.cdnvuei18n }}</i-code>

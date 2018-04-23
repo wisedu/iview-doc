@@ -2,7 +2,7 @@
     <i-article>
         <article>
             <h1>安装</h1>
-            <Anchor title="CDN 引入" h2></Anchor>
+            <Anchor title="RES 引入" h2></Anchor>
             <p>通过 <a href="https://unpkg.com/iview/" target="_blank">unpkg.com/iview</a> 可以看到 iView 最新版本的资源，也可以切换版本选择需要的资源，在页面上引入 js 和 css 文件即可开始使用：</p>
             <i-code lang="html" bg>{{ code.install.cdn }}</i-code>
             <Anchor title="示例" h3></Anchor>

@@ -129,6 +129,29 @@ code.render = `
 </script>
 `;
 
+code.renderTag = `
+<template>
+    <Tabs value="name1">
+        <TabPane name="name1">标签一的内容
+            <span slot="label">
+                标签1
+                <Badge :count="3"></Badge>
+            </span>
+        </TabPane>
+        <TabPane label="标签二" name="name2">标签二的内容</TabPane>
+        <TabPane label="标签三" name="name3">标签三的内容</TabPane>
+    </Tabs>
+</template>
+<script>
+    export default {
+        data () {
+            return {
+            }
+        }
+    }
+</script>
+`;
+
 code.extra = `
 <template>
     <Tabs type="card">

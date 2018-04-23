@@ -164,7 +164,7 @@
                     </div>
                     <i-code lang="html" slot="code">{{ code.filter }}</i-code>
                 </Demo>
-                <Demo title="自定义列模板" vertical hide-code>
+                <Demo title="render函数自定义列模板" vertical hide-code>
                     <div slot="demo">
                         <Table border :columns="columns7" :data="data6"></Table>
                     </div>
@@ -174,6 +174,20 @@
                         <p><study-render></study-render></p>
                     </div>
                     <i-code lang="html" slot="code">{{ code.render }}</i-code>
+                </Demo>
+                <Demo title="标签自定义列模板" vertical hide-code>
+                    <div slot="demo">
+                        <Table border :columns="columns12" :data="data6">
+                            <div slot="action" slot-scope="scope">
+                                <Button type="primary" size="small" @click="show(scope.index)">View</Button>
+                                <Button type="error" size="small" @click="remove(scope.index)">Delete</Button>
+                            </div>
+                        </Table>
+                    </div>
+                    <div slot="desc">
+                        <p>通过标签定义（render函数的优先级高于标签），标签需要有属性<code>slot="action" slot-scope="scope"</code>，slot的值为列的key，scope为上下文，值为<code>{key,colums,index}</code></p>
+                    </div>
+                    <i-code lang="html" slot="code">{{ code.renderTag }}</i-code>
                 </Demo>
                 <Demo title="可展开" vertical hide-code>
                     <div slot="demo">
@@ -1183,6 +1197,36 @@
                                 }, 'Delete')
                             ]);
                         }
+                    }
+                ],
+                columns12: [
+                    {
+                        title: 'Name',
+                        key: 'name',
+                        render: (h, params) => {
+                            return h('div', [
+                                h('Icon', {
+                                    props: {
+                                        type: 'person'
+                                    }
+                                }),
+                                h('strong', params.row.name)
+                            ]);
+                        }
+                    },
+                    {
+                        title: 'Age',
+                        key: 'age'
+                    },
+                    {
+                        title: 'Address',
+                        key: 'address'
+                    },
+                    {
+                        title: 'Action',
+                        key: 'action',
+                        width: 150,
+                        align: 'center'
                     }
                 ],
                 columns8: [

@@ -120,7 +120,7 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.closable }}</i-code>
             </Demo>
-            <Demo title="自定义标签页">
+            <Demo title="render函数自定义标签页">
                 <div slot="demo">
                     <Tabs value="name1">
                         <TabPane :label="label" name="name1">标签一的内容</TabPane>
@@ -133,6 +133,24 @@
                     <p><study-render></study-render></p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.render }}</i-code>
+            </Demo>
+            <Demo title="标签自定义标签页">
+                <div slot="demo">
+                    <Tabs value="name1">
+                        <TabPane name="name1">标签一的内容
+                            <span slot="label">
+                                标签1
+                                <Badge :count="3"></Badge>
+                            </span>
+                        </TabPane>
+                        <TabPane label="标签二" name="name2">标签二的内容</TabPane>
+                        <TabPane label="标签三" name="name3">标签三的内容</TabPane>
+                    </Tabs>
+                </div>
+                <div slot="desc">
+                    <p>通过标签定义，使用slot属性<code>slot="label"</code></p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.renderTag }}</i-code>
             </Demo>
             <Demo title="附加内容">
                 <div slot="demo">

@@ -4,10 +4,10 @@
 <template>
     <div>
         <div class="wrapper">
-            <div class="wrapper-header">
+            <!-- <div class="wrapper-header">
                 <nav-menu :active-key="activeKey" @on-change="handleNavMenuChange"></nav-menu>
-            </div>
-            <div class="wrapper-container">
+            </div> -->
+            <div class="wrapper-container" style="margin:0">
                 <Row>
                     <i-col span="4" class="wrapper-navigate">
                         <Navigate :type="activeKey"></Navigate>
@@ -52,7 +52,7 @@
                                 <!--<a href="https://segmentfault.com/ls/1650000011074057" target="_blank" @click="handleAsideAd('aside-iview-live')" class="wrapper-aside">-->
                                     <!--<img src="../images/aside-iview-live.png">-->
                                 <!--</a>-->
-                                <a v-if="ad_index === 1" href="https://cn.udacity.com/course/intro-to-python-nanodegree-foundation--nd000-cn-python/?utm_source=iviewui&utm_medium=banner&utm_campaign=python" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">
+                                <!-- <a v-if="ad_index === 1" href="https://cn.udacity.com/course/intro-to-python-nanodegree-foundation--nd000-cn-python/?utm_source=iviewui&utm_medium=banner&utm_campaign=python" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">
                                     <img src="../images/aside-udacity-4.jpg">
                                 </a>
                                 <a v-if="ad_index === 2" href="https://cn.udacity.com/fend/?utm_source=iviewui&utm_medium=banner&utm_campaign=fend" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">
@@ -60,7 +60,7 @@
                                 </a>
                                 <a href="https://www.mysubmail.com/sms?from=iview" target="_blank" @click="handleAsideAd('aside-submail')" class="wrapper-aside wrapper-aside-no-padding">
                                     <img src="../images/aside-submail3.jpg">
-                                </a>
+                                </a> -->
                                 <!--<div class="wrapper-aside" @click="handleAsideAd('aside-qqgroup', true)">-->
                                     <!--<img src="../images/aside-qqgroup.png">-->
                                 <!--</div>-->
@@ -70,7 +70,8 @@
                 </Row>
             </div>
         </div>
-        <div class="footer">
+
+        <!-- <div class="footer">
             <div class="footer-main">
                 <Row>
                     <i-col span="5">
@@ -152,15 +153,15 @@
                                     <img src="../images/logo-td.png">
                                 </a>
                             </div>
-                            <!--<div class="footer-version">-->
+                            <div class="footer-version">-->
                                 <!--<p>{{ $t('index.current_version') }}</p>-->
                                 <!--<p>Vue.js 2.5.13, iView 2.9.0</p>-->
-                            <!--</div>-->
+                            <!--</div>
                         </div>
                     </i-col>
                 </Row>
             </div>
-        </div>
+        </div> -->
         <!--<Modal v-model="donate" v-if="lang === 'zh-CN'" title="支持 iView 的开发" @on-ok="handleModalClose" @on-cancel="handleModalClose" class-name="vertical-center-modal">-->
             <!--<div class="ivu-article">-->
                 <!--<p>iView 是采用 MIT 许可的开源项目，您可以在个人或企业项目中免费使用。不过，如果您觉得 iView 对您的项目带来了帮助，提高开发效率，可以用捐助来表示您的谢意：)</p>-->
@@ -171,7 +172,7 @@
                 <!--</div>-->
             <!--</div>-->
         <!--</Modal>-->
-        <Modal v-model="donate" title="与 iView 合作，有效触达技术人群" @on-ok="handleModalClose" @on-cancel="handleModalClose" width="600" class-name="vertical-center-modal">
+        <!-- <Modal v-model="donate" title="与 iView 合作，有效触达技术人群" @on-ok="handleModalClose" @on-cancel="handleModalClose" width="600" class-name="vertical-center-modal">
             <div class="ivu-article">
                 <p>如果您有品牌推广、活动推广、招聘推广、社区合作的需求，欢迎联系我们。</p>
                 <p>联系邮箱 <a href="mailto:admin@aresn.com">admin@aresn.com</a> 咨询。</p>
@@ -196,7 +197,7 @@
                     </Carousel>
                 </div>
             </div>
-        </Modal>
+        </Modal> -->
         <!--<Modal v-model="donate" v-if="lang !== 'zh-CN'" title="Donate iView project" @on-ok="handleModalClose" @on-cancel="handleModalClose" class-name="vertical-center-modal">-->
             <!--<div class="ivu-article">-->
                 <!--<p>iView is an open source project with MIT licenses that you can use for free in your personal or business projects. However, if you feel that iView has helped your project to improve development efficiency, you can use donations to express your gratitude: )</p>-->
@@ -206,7 +207,7 @@
                 <!--</div>-->
             <!--</div>-->
         <!--</Modal>-->
-        <Modal v-model="ask" title="免费加入 iView 官方QQ群参与讨论" class-name="vertical-center-modal">
+        <!-- <Modal v-model="ask" title="免费加入 iView 官方QQ群参与讨论" class-name="vertical-center-modal">
             <div class="ivu-article">
                 <p>免费加入官方QQ讨论群，交流 iView 技术问题。</p>
                 <p>群号：<strong>71434987</strong></p>
@@ -218,7 +219,7 @@
                     <Alert show-icon>仅限开发者加入，请勿讨论与技术无关的问题，比如发招聘信息等。</Alert>
                 </p>
             </div>
-        </Modal>
+        </Modal> -->
         <!-- todo 提问 -->
         <!--<div class="ask-question" @click="ask = true" v-if="lang === 'zh-CN'">-->
             <!--<Icon type="ios-people" size="20"></Icon>-->
