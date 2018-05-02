@@ -7,7 +7,7 @@ let theme = {};
 let loader = {};
 
 introduce.install = `
-$ npm install iview --save
+$ npm install bh-iview --save
 `;
 
 introduce.script= `
@@ -79,8 +79,8 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from 'components/app.vue';
 import Routers from './router.js';
-import iView from 'iview';
-import 'iview/dist/styles/iview.css';
+import iView from 'bh-iview';
+import 'bh-iview/dist/styles/iview.css';
 
 Vue.use(VueRouter);
 Vue.use(iView);
@@ -99,7 +99,7 @@ new Vue({
 `;
 
 install.need = `
-import { Button, Table } from 'iview';
+import { Button, Table } from 'bh-iview';
 Vue.component('Button', Button);
 Vue.component('Table', Table);
 `;
@@ -119,7 +119,7 @@ npm install babel-plugin-import --save-dev
 // .babelrc
 {
   "plugins": [["import", {
-    "libraryName": "iview",
+    "libraryName": "bh-iview",
     "libraryDirectory": "src/components"
   }]]
 }
@@ -145,7 +145,7 @@ Incorrect usage:
 
 i18n.demo = `
 import Vue from 'vue';
-import iView from 'iview';
+import iView from 'bh-iview';
 import locale from 'iview/dist/locale/en-US';
 
 Vue.use(iView, { locale });
@@ -154,8 +154,8 @@ Vue.use(iView, { locale });
 i18n.demand = `
 import Vue from 'vue';
 // importing iView on demand
-import { locale, Page } from 'iview';
-import lang from 'iview/dist/locale/en-US';
+import { locale, Page } from 'bh-iview';
+import lang from 'bh-iview/dist/locale/en-US';
 
 // configure language
 locale(lang);
@@ -166,10 +166,10 @@ Vue.component('Page', Page);
 
 i18n.vuei18n6 = `
 import Vue from 'vue';
-import iView from 'iview';
+import iView from 'bh-iview';
 import VueI18n from 'vue-i18n';
-import en from 'iview/dist/locale/en-US';
-import zh from 'iview/dist/locale/zh-CN';
+import en from 'bh-iview/dist/locale/en-US';
+import zh from 'bh-iview/dist/locale/zh-CN';
 
 Vue.use(VueI18n);
 Vue.use(iView);
@@ -191,10 +191,10 @@ new Vue({ i18n }).$mount('#app');
 
 i18n.vuei18n5 = `
 import Vue from 'vue';
-import iView from 'iview';
+import iView from 'bh-iview';
 import VueI18n from 'vue-i18n';
-import en from 'iview/dist/locale/en-US';
-import zh from 'iview/dist/locale/zh-CN';
+import en from 'bh-iview/dist/locale/en-US';
+import zh from 'bh-iview/dist/locale/zh-CN';
 
 Vue.use(VueI18n);
 Vue.use(iView);
@@ -250,7 +250,7 @@ theme.less = `
 
 theme.lessImport = `
 import Vue from 'vue';
-import iView from 'iview';
+import iView from 'bh-iview';
 import '../my-theme/index.less';
 
 Vue.use(iView);
@@ -271,7 +271,7 @@ iview-theme build -o dist/
 
 theme.import = `
 import Vue from 'vue';
-import iView from 'iview';
+import iView from 'bh-iview';
 import '../my-theme/dist/iview.css';
 
 Vue.use(iView);
