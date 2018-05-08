@@ -49,12 +49,12 @@
                                 <!--<a v-if="ad_index === 3" href="https://cn.udacity.com/fend/?utm_source=iviewui&utm_medium=banner&utm_campaign=fend" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">-->
                                     <!--<img src="../images/aside-udacity-3.jpg">-->
                                 <!--</a>-->
-                                <a v-if="ad_index === 1" href="https://cn.udacity.com/course/wechat-mini-program--nd666-cn-1/?utm_source=iviewui&utm_medium=banner&utm_campaign=wmpnd" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">
-                                    <img src="../images/aside-udacity-6.jpg">
-                                </a>
-                                <a v-if="ad_index === 2" href="https://cn.udacity.com/fend/?utm_source=iviewui&utm_medium=banner&utm_campaign=fend" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">
-                                    <img src="../images/aside-udacity-5.jpg">
-                                </a>
+                                <!--<a v-if="ad_index === 1" href="https://cn.udacity.com/course/wechat-mini-program&#45;&#45;nd666-cn-1/?utm_source=iviewui&utm_medium=banner&utm_campaign=wmpnd" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">-->
+                                    <!--<img src="../images/aside-udacity-6.jpg">-->
+                                <!--</a>-->
+                                <!--<a v-if="ad_index === 2" href="https://cn.udacity.com/fend/?utm_source=iviewui&utm_medium=banner&utm_campaign=fend" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">-->
+                                    <!--<img src="../images/aside-udacity-5.jpg">-->
+                                <!--</a>-->
                                 <a href="https://segmentfault.com/ls/1650000011074057" target="_blank" @click="handleAsideAd('aside-iview-live')" class="wrapper-aside">
                                     <img src="../images/aside-iview-live.png">
                                 </a>
