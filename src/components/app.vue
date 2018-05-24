@@ -49,12 +49,18 @@
     import bus from './bus';
 
     export default {
+        provide () {
+            return {
+                app: this
+            }
+        },
         data () {
             return {
                 liveVisible: false,
                 iViewVisible: false,
                 lang: this.$lang,
-                fee: true
+                fee: true,
+                ad_index: 1  // 随机广告索引，更好地显示一类广告
             }
         },
         computed: {
@@ -63,6 +69,9 @@
             }
         },
         mounted () {
+            // 随机广告索引
+            this.ad_index = Math.floor(Math.random () * 6 + 1);
+
             this.lang = this.$lang;
             if (window.localStorage.getItem('liveModalTime')) {
                 const time = parseInt(window.localStorage.getItem('liveModalTime'));

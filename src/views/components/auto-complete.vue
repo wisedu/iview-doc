@@ -211,6 +211,16 @@
                             <td>搜索补全项的时候调用</td>
                             <td>query</td>
                         </tr>
+                        <tr>
+                            <td>on-focus</td>
+                            <td>聚焦时触发</td>
+                            <td>event</td>
+                        </tr>
+                        <tr>
+                            <td>on-blur</td>
+                            <td>失焦时触发</td>
+                            <td>event</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>

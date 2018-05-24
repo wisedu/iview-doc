@@ -55,6 +55,24 @@
                                 <!--<a v-if="ad_index === 2" href="https://cn.udacity.com/fend/?utm_source=iviewui&utm_medium=banner&utm_campaign=fend" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">-->
                                     <!--<img src="../images/aside-udacity-5.jpg">-->
                                 <!--</a>-->
+                                <a v-if="ad_index === 1" href="http://t.cn/R3dhfIj" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">
+                                    <img src="../images/aside-u-1.png">
+                                </a>
+                                <a v-if="ad_index === 2" href="http://t.cn/R3dhfIj" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">
+                                    <img src="../images/aside-u-2.png">
+                                </a>
+                                <a v-if="ad_index === 3" href="http://t.cn/R3dhfIj" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">
+                                    <img src="../images/aside-u-3.png">
+                                </a>
+                                <a v-if="ad_index === 4" href="http://t.cn/R3dhfIj" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">
+                                    <img src="../images/aside-u-4.png">
+                                </a>
+                                <a v-if="ad_index === 5" href="http://t.cn/R3dhfIj" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">
+                                    <img src="../images/aside-u-5.png">
+                                </a>
+                                <a v-if="ad_index === 6" href="https://cn.udacity.com/fend/?utm_source=iviewui&utm_medium=banner&utm_campaign=fend" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">
+                                    <img src="../images/aside-udacity-5.jpg">
+                                </a>
                                 <a href="https://segmentfault.com/ls/1650000011074057" target="_blank" @click="handleAsideAd('aside-iview-live')" class="wrapper-aside">
                                     <img src="../images/aside-iview-live.png">
                                 </a>
@@ -233,6 +251,7 @@
     import bus from './bus';
 
     export default {
+        inject: ['app'],
         components: {
             Navigate,
             navMenu
@@ -246,7 +265,7 @@
                 activeKey: '',
                 lang: this.$lang,
                 adCarousel: 0,
-                ad_index: 1  // 随机广告索引，更好地显示一类广告
+                ad_index: this.app.ad_index
             }
         },
         methods: {
@@ -307,10 +326,6 @@
             this.lang = this.$lang;
         },
         mounted () {
-            // 随机广告索引
-            this.ad_index = Math.floor(Math.random () * 2 + 1);
-
-
             this.updateActiveNav();
 
             const examples = this.$slots.default[0].elm.querySelectorAll('.example');

@@ -25,6 +25,40 @@
         <article class="doc-update">
             <Timeline pending>
                 <Timeline-item>
+                    <Anchor title="2.14.0 KAMI" h2></Anchor>
+                    <p>
+                        <code>2018-05-24</code>
+                    </p>
+                    <ul>
+                        <li>Refactor the Select component, fully supports keyboard accessibility and fixes several issues. <issue id="3157"></issue> <issue id="1647"></issue> <issue id="3574"></issue></li>
+                        <li>DatePicker supports keyboard accessibility. <issue id="3643"></issue> <issue id="1647"></issue></li>
+                        <li>ColorPicker supports keyboard accessibility. <issue id="3662"></issue> <issue id="1647"></issue></li>
+                        <li>Tabs supports keyboard accessibility. <issue id="3642"></issue> <issue id="1647"></issue></li>
+                        <li>TabPane changed <code>display: none</code> to <code>visibility: hidden</code>. <issue id="3652"></issue></li>
+                        <li>ColorPicker add new property <code>disabled</code>. <issue id="3662"></issue></li>
+                        <li>Select add new events <code>@on-clear</code> and <code>@on-open-change</code>. <issue id="3579"></issue></li>
+                        <li>Rate add new property <code>clearable</code>. <issue id="3487"></issue></li>
+                        <li>ColorPicker add new event <code>@on-open-change</code>. <issue id="3540"></issue></li>
+                        <li>AutoComplete add new event <code>@on-focus</code> and <code>@on-blur</code>. <issue id="3565"></issue></li>
+                        <li>Icon add new event <code>@click</code>. <issue id="3621"></issue></li>
+                        <li>Menu In accordion mode, when the parent menu is closed, its submenus are closed too. <issue id="3617"></issue></li>
+                        <li>Optimize the popper.js configuration.</li>
+                        <li>Fixed the bug that Slider can't drag sometimes. <issue id="3468"></issue></li>
+                        <li>Fixed nested Row gutter bug. <issue id="3596"></issue></li>
+                        <li>Fixed DatePicker style bug when <code>type="datetimerange"</code> and open show-week-numbers. <issue id="3629"></issue></li>
+                        <li>Fixed DatePicker bug that uses v-model in multiple mode. <issue id="3675"></issue></li>
+                        <li>Fixed RadioGroup bug that cannot use value directly. <issue id="3498"></issue></li>
+                        <li>Fixed bug that RadioGroup doesn't center content sometimes. <issue id="3586"></issue></li>
+                        <li>Fixed bug that $Spin calls the .hide() method directly. <issue id="3535"></issue></li>
+                        <li>Fixed bug that AutoComplete event <code>@on-change</code> called only once. <issue id="3486"></issue></li>
+                        <li>Fixed bug that AutoComplete can not scroll when the content is too long. <issue id="3590"></issue></li>
+                        <li>Fixed Notice bug that class name is wrong. <issue id="3551"></issue></li>
+                        <li>Fixed bug of Menu that @on-open-change event return wrong value. <issue id="3575"></issue></li>
+                        <li>Fixed bug of InputNumber when set precision property and clear value. <issue id="3676"></issue></li>
+                        <li>Add Czech. <mention id="ajkl2533"></mention></li>
+                    </ul>
+                </Timeline-item>
+                <Timeline-item>
                     <Anchor title="2.13.1" h2></Anchor>
                     <p>
                         <code>2018-04-23</code>

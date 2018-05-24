@@ -324,6 +324,16 @@
                             <td>搜索词改变时触发</td>
                             <td>query</td>
                         </tr>
+                        <tr>
+                            <td>on-clear</td>
+                            <td>点击清空按钮时触发</td>
+                            <td>无</td>
+                        </tr>
+                        <tr>
+                            <td>on-open-change</td>
+                            <td>下拉框展开或收起时触发</td>
+                            <td>true / false</td>
+                        </tr>
                     </tbody>
                 </table>
                 <Anchor title="Select methods" h3></Anchor>

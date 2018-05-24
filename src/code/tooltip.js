@@ -139,7 +139,7 @@ code.options = `
             gpuAcceleration: false,
         },
         preventOverflow :{
-            boundariesElement: 'viewport'
+            boundariesElement: 'window'
         }
     }
 }

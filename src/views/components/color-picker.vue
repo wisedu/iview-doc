@@ -99,6 +99,12 @@
                             <td>-</td>
                         </tr>
                         <tr>
+                            <td>disabled</td>
+                            <td>是否禁用</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
                             <td>alpha</td>
                             <td>是否支持透明度选择</td>
                             <td>Boolean</td>
@@ -155,6 +161,11 @@
                             <td>on-active-change</td>
                             <td>面板中当前显示的颜色发生改变时触发</td>
                             <td>当前显示的颜色值</td>
+                        </tr>
+                        <tr>
+                            <td>on-open-change</td>
+                            <td>下拉框展开或收起时触发</td>
+                            <td>true / false</td>
                         </tr>
                     </tbody>
                 </table>
