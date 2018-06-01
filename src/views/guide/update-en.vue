@@ -25,6 +25,26 @@
         <article class="doc-update">
             <Timeline pending>
                 <Timeline-item>
+                    <Anchor title="2.14.1" h2></Anchor>
+                    <p>
+                        <code>2018-06-01</code>
+                    </p>
+                    <ul>
+                        <li>Fixed bug that not available under SSR mode in the 2.14.0 version. <issue id="3740"></issue></li>
+                        <li>Fixed bug that Select can not bind the number 0 in the 2.14.0 version. <issue id="3696"></issue></li>
+                        <li>Fixed bug that Select will show undefined sometimes in the 2.14.0 version. <issue id="3705"></issue></li>
+                        <li>Fixed bug that Select will trigger @on-change event at initialization in the 2.14.0 version. <issue id="3725"></issue></li>
+                        <li>Fixed bug that Select show incorrect label in the 2.14.0 version. <issue id="3728"></issue> <issue id="3742"></issue></li>
+                        <li>Fixed bug that Select can not show correct options when clear selected item under filterable and clearable mode in the 2.14.0 version. <issue id="3746"></issue></li>
+                        <li>Fixed bug that Select can not use under transfer mode in the 2.14.0 version. <issue id="3695"></issue></li>
+                        <li>Fixed bug that Select can not use in mobile phone in the 2.14.0 version. <issue id="3741"></issue></li>
+                        <li>Fixed bug that Select can not bind an Object in the 2.14.0 version. <issue id="3737"></issue></li>
+                        <li>Fixed bug that AutoComplete can not hide drop panel sometimes in the 2.14.0 version. <issue id="3709"></issue></li>
+                        <li>Fixed bug that form components in Tabs will be focused automatically, unless open the property <code>capture-focus</code>. <issue id="3732"></issue></li>
+                        <li>Fixed bug that transverse Menu's Submenu show incorrect position. <issue id="3733"></issue></li>
+                    </ul>
+                </Timeline-item>
+                <Timeline-item>
                     <Anchor title="2.14.0 KAMI" h2></Anchor>
                     <p>
                         <code>2018-05-24</code>

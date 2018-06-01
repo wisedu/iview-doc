@@ -229,6 +229,12 @@
                             <td>Boolean</td>
                             <td>true</td>
                         </tr>
+                        <tr>
+                            <td>capture-focus</td>
+                            <td>Tabs 内的表单类组件是否自动获得焦点</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
                     </tbody>
                 </table>
                 <Anchor title="Tabs events" h3></Anchor>

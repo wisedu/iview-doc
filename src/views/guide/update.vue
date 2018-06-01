@@ -25,6 +25,26 @@
         <article class="doc-update">
             <Timeline pending>
                 <Timeline-item>
+                    <Anchor title="2.14.1" h2></Anchor>
+                    <p>
+                        <code>2018-06-01</code>
+                    </p>
+                    <ul>
+                        <li>修复 2.14.0 版本中，在 SSR 中无法使用的 bug。<issue id="3740"></issue></li>
+                        <li>修复 2.14.0 版本中，Select 无法绑定数字 0 的 bug。<issue id="3696"></issue></li>
+                        <li>修复 2.14.0 版本中，Select 有时会显示 undefined 的 bug。<issue id="3705"></issue></li>
+                        <li>修复 2.14.0 版本中，Select 初次渲染会触发 @on-change 事件的 bug。<issue id="3725"></issue></li>
+                        <li>修复 2.14.0 版本中，Select 显示 label 不正确的 bug。<issue id="3728"></issue> <issue id="3742"></issue></li>
+                        <li>修复 2.14.0 版本中，Select 在 filterable 且 clearable 模式下，清空列表未还原的 bug。<issue id="3746"></issue></li>
+                        <li>修复 2.14.0 版本中，Select 在开启 transfer 时无法使用的 bug。<issue id="3695"></issue></li>
+                        <li>修复 2.14.0 版本中，Select 无法在移动设备使用的 bug。<issue id="3741"></issue></li>
+                        <li>修复 2.14.0 版本中，Select 无法绑定值为对象的 bug。<issue id="3737"></issue></li>
+                        <li>修复 2.14.0 版本中，AutoComplete 有时无法正常收起的 bug。<issue id="3709"></issue></li>
+                        <li>修复 2.14.0 版本中，Tabs 内的表单控件不会自动获得焦点，除非开启属性 <code>capture-focus</code>。<issue id="3732"></issue></li>
+                        <li>修复 2.14.0 版本中，横向 Menu 有时展开子菜单错位的 bug。<issue id="3733"></issue></li>
+                    </ul>
+                </Timeline-item>
+                <Timeline-item>
                     <Anchor title="2.14.0 KAMI" h2></Anchor>
                     <p>
                         <code>2018-05-24</code>
