@@ -22,7 +22,7 @@
             <Row :gutter="32">
                 <i-col span="10">
                     <p>DMap is a data visualization platform that focuses on location-related big data. TalkingData's data assets and even the big data industry's data are mostly location-giving data. DMap takes geographical analysis of location data as the core, takes into account traditional data visualization methods such as chart analysis, and builds data reports based on this. The ability of large-screen applications can meet the data analysis and visualization requirements of data analysts and data scientists, and can improve the development efficiency of similar applications in the form of JS-SDK in the near future.</p>
-                    <p><a href="http://dmap.talkingdata.com/" target="_blank">Immediate access</a></p>
+                    <p><a href="http://dmap.talkingdata.com/?from=iview" target="_blank">Immediate access</a></p>
                 </i-col>
                 <i-col span="14">
                     <Carousel dots="outside">

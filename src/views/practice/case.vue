@@ -22,7 +22,7 @@
             <Row :gutter="32">
                 <i-col span="10">
                     <p>DMap 是一个专注于位置相关大数据的数据可视化平台。TalkingData 的数据资产乃至大数据行业的数据大部分都是给予位置的数据，DMap 以给予位置的大数据的地理分析为核心，兼顾图表分析等传统数据可视化手段，并在此基础上构建数据报告、大屏应用的能力，可以满足数据分析师和数据科学家的数据分析及可视化需求，并能够在不久的将来以 JS-SDK 的形式提高相似应用的开发效率。</p>
-                    <p><a href="http://dmap.talkingdata.com/" target="_blank">立即访问</a></p>
+                    <p><a href="http://dmap.talkingdata.com/?from=iview" target="_blank">立即访问</a></p>
                 </i-col>
                 <i-col span="14">
                     <Carousel dots="outside">
