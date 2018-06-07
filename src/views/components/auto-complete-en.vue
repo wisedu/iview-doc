@@ -211,6 +211,16 @@
                         <td>Called when searching items.</td>
                         <td>query</td>
                     </tr>
+                    <tr>
+                        <td>on-focus</td>
+                        <td>Called when focus.</td>
+                        <td>event</td>
+                    </tr>
+                    <tr>
+                        <td>on-blur</td>
+                        <td>Called when blur.</td>
+                        <td>event</td>
+                    </tr>
                     </tbody>
                 </table>
             </div>

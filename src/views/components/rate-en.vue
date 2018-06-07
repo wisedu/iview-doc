@@ -97,6 +97,12 @@
                             <td>Boolean</td>
                             <td>false</td>
                         </tr>
+                        <tr>
+                            <td>clearable</td>
+                            <td>Whether to cancel the selection.</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
                     </tbody>
                 </table>
                 <Anchor title="Rate events" h3></Anchor>

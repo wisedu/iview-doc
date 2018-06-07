@@ -228,6 +228,12 @@
                             <td>Boolean</td>
                             <td>true</td>
                         </tr>
+                        <tr>
+                            <td>capture-focus</td>
+                            <td>Whether form components in Tabs automatically get focus.</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
                     </tbody>
                 </table>
                 <Anchor title="Tabs events" h3></Anchor>

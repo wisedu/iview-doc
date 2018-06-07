@@ -25,6 +25,76 @@
         <article class="doc-update">
             <Timeline pending>
                 <Timeline-item>
+                    <Anchor title="2.14.1" h2></Anchor>
+                    <p>
+                        <code>2018-06-01</code>
+                    </p>
+                    <ul>
+                        <li>修复 2.14.0 版本中，在 SSR 中无法使用的 bug。<issue id="3740"></issue></li>
+                        <li>修复 2.14.0 版本中，Select 无法绑定数字 0 的 bug。<issue id="3696"></issue></li>
+                        <li>修复 2.14.0 版本中，Select 有时会显示 undefined 的 bug。<issue id="3705"></issue></li>
+                        <li>修复 2.14.0 版本中，Select 初次渲染会触发 @on-change 事件的 bug。<issue id="3725"></issue></li>
+                        <li>修复 2.14.0 版本中，Select 显示 label 不正确的 bug。<issue id="3728"></issue> <issue id="3742"></issue></li>
+                        <li>修复 2.14.0 版本中，Select 在 filterable 且 clearable 模式下，清空列表未还原的 bug。<issue id="3746"></issue></li>
+                        <li>修复 2.14.0 版本中，Select 在开启 transfer 时无法使用的 bug。<issue id="3695"></issue></li>
+                        <li>修复 2.14.0 版本中，Select 无法在移动设备使用的 bug。<issue id="3741"></issue></li>
+                        <li>修复 2.14.0 版本中，Select 无法绑定值为对象的 bug。<issue id="3737"></issue></li>
+                        <li>修复 2.14.0 版本中，AutoComplete 有时无法正常收起的 bug。<issue id="3709"></issue></li>
+                        <li>修复 2.14.0 版本中，Tabs 内的表单控件不会自动获得焦点，除非开启属性 <code>capture-focus</code>。<issue id="3732"></issue></li>
+                        <li>修复 2.14.0 版本中，横向 Menu 有时展开子菜单错位的 bug。<issue id="3733"></issue></li>
+                    </ul>
+                </Timeline-item>
+                <Timeline-item>
+                    <Anchor title="2.14.0 KAMI" h2></Anchor>
+                    <p>
+                        <code>2018-05-24</code>
+                    </p>
+                    <ul>
+                        <li>重构 Select 组件，完全支持键盘可访问性，并修复若干问题。<issue id="3157"></issue> <issue id="1647"></issue> <issue id="3574"></issue></li>
+                        <li>DatePicker 组件增强键盘的可访问性。<issue id="3643"></issue> <issue id="1647"></issue></li>
+                        <li>ColorPicker 组件增强键盘的可访问性。<issue id="3662"></issue> <issue id="1647"></issue></li>
+                        <li>Tabs 组件增强键盘的可访问性。<issue id="3642"></issue> <issue id="1647"></issue></li>
+                        <li>TabPane 将 <code>display: none</code> 改为了 <code>visibility: hidden</code>。<issue id="3652"></issue></li>
+                        <li>ColorPicker 新增属性 <code>disabled</code>。<issue id="3662"></issue></li>
+                        <li>Select 新增事件 <code>@on-clear</code> 和 <code>@on-open-change</code>。<issue id="3579"></issue></li>
+                        <li>Rate 新增属性 <code>clearable</code>。<issue id="3487"></issue></li>
+                        <li>ColorPicker 新增事件 <code>@on-open-change</code>。<issue id="3540"></issue></li>
+                        <li>AutoComplete 新增事件 <code>@on-focus</code> 和 <code>@on-blur</code>。<issue id="3565"></issue></li>
+                        <li>Icon 新增事件 <code>@click</code>。<issue id="3621"></issue></li>
+                        <li>Menu 在手风琴模式下，关闭父菜单，其子菜单也会关闭。<issue id="3617"></issue></li>
+                        <li>优化 popper.js 的配置。</li>
+                        <li>修复 Slider 有时无法拖拽的 bug。<issue id="3468"></issue></li>
+                        <li>修复 Grid 嵌套多层 Row 时，gutter 受父级影响的问题。<issue id="3596"></issue></li>
+                        <li>修复 DatePicker 在 <code>type="datetimerange"</code> 且开启 show-week-numbers 时，错位的 bug。<issue id="3629"></issue></li>
+                        <li>修复 DatePicker 在 multiple 模式下，使用 v-model 报错的 bug。<issue id="3675"></issue></li>
+                        <li>修复 RadioGroup 无法直接使用 value 的 bug。<issue id="3498"></issue></li>
+                        <li>修复 RadioGroup 有时内容不居中的问题。<issue id="3586"></issue></li>
+                        <li>修复 $Spin 直接调用 .hide() 方法，有时报错的 bug。<issue id="3535"></issue></li>
+                        <li>修复 AutoComplete 事件 <code>@on-change</code> 只触发一次的 bug。<issue id="3486"></issue></li>
+                        <li>修复 AutoComplete 内容溢出，点击横向滚动条时，关闭弹层的 bug。<issue id="3590"></issue></li>
+                        <li>修复 Notice 类名错误的 bug。<issue id="3551"></issue></li>
+                        <li>修复 Menu 事件 @on-open-change 返回值不正确的 bug。<issue id="3575"></issue></li>
+                        <li>修复 InputNumber 设置 precision 时，清空数据报错的 bug。<issue id="3676"></issue></li>
+                        <li>新增捷克语。<mention id="ajkl2533"></mention></li>
+                    </ul>
+                </Timeline-item>
+                <Timeline-item>
+                    <Anchor title="2.13.1" h2></Anchor>
+                    <p>
+                        <code>2018-04-23</code>
+                    </p>
+                    <ul>
+                        <li>Tag 新增属性 <code>fade</code>。</li>
+                        <li>InputNumber 新增属性 <code>placeholder</code>。<issue id="3424"></issue></li>
+                        <li>InputNumber 的事件 <code>on-focus</code> 增加返回值 event。<issue id="3395"></issue></li>
+                        <li>DatePicker 的事件 <code>on-change</code> 增加返回值 type。<issue id="3353"></issue></li>
+                        <li>优化 popper.js 的配置及 dropdown 的展开动画。<issue id="3354"></issue></li>
+                        <li>修复 Table 在动态调整页面宽度，有时滚动条显示错误的 bug。<issue id="3358"></issue></li>
+                        <li>修复 Poptip / Tooltip 动态修改内容后，位置计算不准确的 bug。<issue id="3412"></issue></li>
+                        <li>修复在 Form 内使用 Carousel 时，点击按钮会跳转的问题。<issue id="3426"></issue></li>
+                    </ul>
+                </Timeline-item>
+                <Timeline-item>
                     <Anchor title="2.13.0 King of Opera" h2></Anchor>
                     <p>
                         <code>2018-04-11</code>

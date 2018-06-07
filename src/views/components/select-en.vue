@@ -325,6 +325,16 @@
                             <td>Emitted when query word is changed.</td>
                             <td>query</td>
                         </tr>
+                        <tr>
+                            <td>on-clear</td>
+                            <td>Emitted when click clear button.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>on-open-change</td>
+                            <td>Emitted when dropdown show or hide.</td>
+                            <td>true / false</td>
+                        </tr>
                     </tbody>
                 </table>
                 <Anchor title="Select methods" h3></Anchor>

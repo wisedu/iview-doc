@@ -99,6 +99,12 @@
                             <td>-</td>
                         </tr>
                         <tr>
+                            <td>disabled</td>
+                            <td>Set picker to disable.</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
                             <td>alpha</td>
                             <td>Whether to display the alpha slider.</td>
                             <td>Boolean</td>
@@ -155,6 +161,11 @@
                             <td>on-active-change</td>
                             <td>Triggers when the current active color changes.</td>
                             <td>active color value</td>
+                        </tr>
+                        <tr>
+                            <td>on-open-change</td>
+                            <td>Emitted when dropdown show or hide.</td>
+                            <td>true / false</td>
                         </tr>
                     </tbody>
                 </table>

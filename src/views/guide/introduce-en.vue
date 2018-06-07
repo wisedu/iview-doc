@@ -14,8 +14,10 @@
             <ul>
                 <li><a href="http://www.talkingdata.com/" target="_blank">TalkingData</a></li>
                 <li><a href="http://www.alibaba.com/" target="_blank">Alibaba</a></li>
+                <li><a href="https://www.tencent.com/" target="_blank">Tencent</a></li>
                 <li><a href="http://www.jd.com/" target="_blank">JD</a></li>
                 <li><a href="http://www.didichuxing.com/" target="_blank">DiDi</a></li>
+                <li><a href="http://www.meituan.com/" target="_blank">MeiTuan</a></li>
                 <li><a href="http://www.sina.com.cn/" target="_blank">Sina</a></li>
                 <li><a href="https://www.lenovo.com.cn/" target="_blank">Lenovo</a></li>
             </ul>
