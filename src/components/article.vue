@@ -189,11 +189,11 @@
                 <!--</div>-->
             <!--</div>-->
         <!--</Modal>-->
-        <Modal v-model="donate" title="与 iView 合作，有效触达技术人群" @on-ok="handleModalClose" @on-cancel="handleModalClose" width="600" class-name="vertical-center-modal">
+        <Modal v-model="donate" title="成为 iView 赞助商" @on-ok="handleModalClose" @on-cancel="handleModalClose" width="600" class-name="vertical-center-modal">
             <div class="ivu-article">
                 <p>如果您有品牌推广、活动推广、招聘推广、社区合作的需求，欢迎联系我们。</p>
                 <p>联系邮箱 <a href="mailto:admin@aresn.com">admin@aresn.com</a> 咨询。</p>
-                <p>广告位如下图所示：</p>
+                <p>位置如下图所示：</p>
                 <div>
                     <Carousel v-if="donate" v-model="adCarousel" autoplay :autoplay-speed="5000" dots="outside">
                         <CarouselItem>

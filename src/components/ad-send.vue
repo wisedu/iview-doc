@@ -30,12 +30,12 @@
 
         &:before{
             display: inline-block;
-            content: '广告';
+            content: '赞助商';
             cursor: pointer;
         }
         &:hover{
             &:before{
-                content: '投放广告';
+                content: '成为赞助商';
             }
         }
     }
