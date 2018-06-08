@@ -25,6 +25,22 @@
         <article class="doc-update">
             <Timeline pending>
                 <Timeline-item>
+                    <Anchor title="2.14.2" h2></Anchor>
+                    <p>
+                        <code>2018-06-08</code>
+                    </p>
+                    <ul>
+                        <li>Fixed bug that Select can't display the selected item when the Option is set asynchronously. <issue id="3722"></issue></li>
+                        <li>Fixed bug that Select can't display the selected item when set the value asynchronously. <issue id="3795"></issue></li>
+                        <li>Fixed bug that Select can't display the label and throw errors in filterable and remote mode. <issue id="3817"></issue></li>
+                        <li>Fixed bug that Select show incorrect dropdown list when set the value asynchronously in filterable mode. <issue id="3836"></issue></li>
+                        <li>Fixed bug that DatePicker throw errors in confirm mode. <issue id="3769"></issue></li>
+                        <li>Fixed bug that DatePicker show incorrect right panel in range type sometimes. <issue id="3773"></issue></li>
+                        <li>Fixed bug about Menu in accordion mode sometimes. <issue id="3803"></issue></li>
+                        <li>Optimize the logic for Modal mask clicks. <issue id="3792"></issue></li>
+                    </ul>
+                </Timeline-item>
+                <Timeline-item>
                     <Anchor title="2.14.1" h2></Anchor>
                     <p>
                         <code>2018-06-01</code>

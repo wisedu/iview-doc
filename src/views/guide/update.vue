@@ -25,6 +25,22 @@
         <article class="doc-update">
             <Timeline pending>
                 <Timeline-item>
+                    <Anchor title="2.14.2" h2></Anchor>
+                    <p>
+                        <code>2018-06-08</code>
+                    </p>
+                    <ul>
+                        <li>修复 Select 在异步设置 Option 时，无法显示选中项的 bug。<issue id="3722"></issue></li>
+                        <li>修复 Select 在异步赋值时，无法显示选中项的 bug。<issue id="3795"></issue></li>
+                        <li>修复 Select 在 filterable 且 remote 模式下，设置 label 不显示及报错的 bug。<issue id="3817"></issue></li>
+                        <li>修复 Select 在 filterable 模式下，异步赋值，下拉列表不正确的 bug。<issue id="3836"></issue></li>
+                        <li>修复 DatePicker 在 confirm 模式下报错的 bug。<issue id="3769"></issue></li>
+                        <li>修复 DatePicker 在 range 模式下，有时右侧面板日期不正确的 bug。<issue id="3773"></issue></li>
+                        <li>修复 Menu 在 accordion 模式下，有时出错的 bug。<issue id="3803"></issue></li>
+                        <li>优化 Modal 遮罩层点击的逻辑。<issue id="3792"></issue></li>
+                    </ul>
+                </Timeline-item>
+                <Timeline-item>
                     <Anchor title="2.14.1" h2></Anchor>
                     <p>
                         <code>2018-06-01</code>
