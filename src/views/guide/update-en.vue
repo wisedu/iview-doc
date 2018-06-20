@@ -25,6 +25,15 @@
         <article class="doc-update">
             <Timeline pending>
                 <Timeline-item>
+                    <Anchor title="2.14.3" h2></Anchor>
+                    <p>
+                        <code>2018-06-20</code>
+                    </p>
+                    <ul>
+                        <li>Fixed bug that Select cannot select directly when entering numbers sometimes. <issue id="3872"></issue></li>
+                    </ul>
+                </Timeline-item>
+                <Timeline-item>
                     <Anchor title="2.14.2" h2></Anchor>
                     <p>
                         <code>2018-06-08</code>
