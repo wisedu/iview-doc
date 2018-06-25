@@ -177,7 +177,7 @@ const list = {
                     title: 'Transfer 穿梭框',
                     path: '/components/transfer',
                     img: 'transfer.png',
-                    icon: 'ios-pause-outline'
+                    icon: 'ios-swap'
                 },
                 {
                     title: 'InputNumber 数字输入框',
@@ -387,7 +387,7 @@ const list = {
                     title: 'Spin 加载中',
                     path: '/components/spin',
                     img: 'spin.png',
-                    icon: 'ios-refresh'
+                    icon: 'ios-loading'
                 },
                 {
                     title: 'Scroll 无限滚动',
