@@ -38,18 +38,18 @@
         <pre :class="{bg: bg}"><code :class="language" ref="code"><slot></slot></code></pre>
         <span class="open-fiddle" v-if="title !== 'Code'" @click="openFiddle">
             <Tooltip :content="$t('index.code_jsfiddle')" placement="top" transfer>
-                <Icon type="code" size="18" />
+                <Icon type="md-code" size="18" />
             </Tooltip>
         </span>
         <span class="scale" @click="scale">
             <Tooltip :content="$t('index.code_fullscreen')" placement="top" transfer>
-                <Icon type="qr-scanner" size="18"></Icon>
+                <Icon type="md-qr-scanner" size="18"></Icon>
             </Tooltip>
         </span>
         <span class="copy" @click="clip">
             <Tooltip :content="$t('index.code_copy')" placement="top" transfer>
-                <Icon type="clipboard" size="18" v-show="!copied"></Icon>
-                <Icon type="checkmark" size="18" v-show="copied" style="color:#5cb85c"></Icon>
+                <Icon type="md-copy" size="18" v-show="!copied"></Icon>
+                <Icon type="md-checkmark" size="18" v-show="copied" style="color:#5cb85c"></Icon>
             </Tooltip>
         </span>
         <Modal class-name="code-scale-modal" :title="title" width="65" v-model="openScale">

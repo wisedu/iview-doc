@@ -93,7 +93,7 @@
                 <Row>
                     <i-col span="5">
                         <h4>
-                            <Icon type="social-github"></Icon>
+                            <Icon type="logo-github"></Icon>
                             GitHub
                         </h4>
                         <ul>
@@ -116,7 +116,7 @@
                     </i-col>
                     <i-col span="5">
                         <h4>
-                            <Icon type="link"></Icon>
+                            <Icon type="ios-link"></Icon>
                             {{ $t('index.links') }}
                         </h4>
                         <ul>
@@ -142,7 +142,7 @@
                     </i-col>
                     <i-col span="5" offset="2">
                         <h4>
-                            <Icon type="chatbubbles"></Icon>
+                            <Icon type="ios-chatbubbles"></Icon>
                             {{ $t('index.community') }}
                         </h4>
                         <ul>

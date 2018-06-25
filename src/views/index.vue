@@ -28,7 +28,7 @@
                         <router-link :to="'/overview' + suffix">{{ $t('index.overview') }}</router-link>
                         <router-link :to="'/cli' + suffix">{{ $t('index.cli') }}</router-link>
                         <a href="https://github.com/iview/iview" target="_blank">
-                            <Icon type="social-github"></Icon>
+                            <Icon type="logo-github"></Icon>
                             GitHub
                         </a>
                     </div>
