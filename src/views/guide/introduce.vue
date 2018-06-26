@@ -15,7 +15,9 @@
             <ul>
                 <li><a href="http://www.talkingdata.com/" target="_blank">TalkingData</a></li>
                 <li><a href="http://www.alibaba.com/" target="_blank">阿里巴巴</a></li>
+                <li><a href="https://www.baidu.com/" target="_blank">百度</a></li>
                 <li><a href="https://www.tencent.com/" target="_blank">腾讯</a></li>
+                <li><a href="https://www.toutiao.com/" target="_blank">今日头条</a></li>
                 <li><a href="http://www.jd.com/" target="_blank">京东</a></li>
                 <li><a href="http://www.didichuxing.com/" target="_blank">滴滴出行</a></li>
                 <li><a href="http://www.meituan.com/" target="_blank">美团</a></li>
