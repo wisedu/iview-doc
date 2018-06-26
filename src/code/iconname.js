@@ -2193,7 +2193,7 @@ export default[
     },
     {
         "name": "ios-notifications-outline",
-        "tag": "notifications,push"
+        "tag": "notifications,push,outline"
     },
     {
         "name": "md-notifications",
@@ -2210,14 +2210,6 @@ export default[
     {
         "name": "md-notifications-off",
         "tag": "notifications,off,push"
-    },
-    {
-        "name": "ios-notifications-outline",
-        "tag": "notifications,outline,push"
-    },
-    {
-        "name": "ios-notifications-outline",
-        "tag": "notifications,outline,push"
     },
     {
         "name": "md-notifications-outline",

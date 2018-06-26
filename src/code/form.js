@@ -10,7 +10,7 @@ code.inline = `
         </FormItem>
         <FormItem prop="password">
             <Input type="password" v-model="formInline.password" placeholder="Password">
-                <Icon type="ios-locked-outline" slot="prepend"></Icon>
+                <Icon type="ios-lock-outline" slot="prepend"></Icon>
             </Input>
         </FormItem>
         <FormItem>
@@ -425,7 +425,7 @@ code.dynamic = `
         <FormItem>
             <Row>
                 <Col span="12">
-                    <Button type="dashed" long @click="handleAdd" icon="plus-round">Add item</Button>
+                    <Button type="dashed" long @click="handleAdd" icon="md-add">Add item</Button>
                 </Col>
             </Row>
         </FormItem>

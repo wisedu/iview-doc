@@ -37,7 +37,7 @@ code.custom = `
     <Button @click="modal2 = true">Custom header and footer</Button>
     <Modal v-model="modal2" width="360">
         <p slot="header" style="color:#f60;text-align:center">
-            <Icon type="information-circled"></Icon>
+            <Icon type="ios-information-circle"></Icon>
             <span>Delete confirmation</span>
         </p>
         <div style="text-align:center">

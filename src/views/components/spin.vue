@@ -93,7 +93,7 @@
                         </Col>
                         <Col class="demo-spin-col" span="8">
                             <Spin fix>
-                                <Icon type="load-c" size=18 class="demo-spin-icon-load"></Icon>
+                                <Icon type="ios-loading" size=18 class="demo-spin-icon-load"></Icon>
                                 <div>Loading</div>
                             </Spin>
                         </Col>
@@ -230,7 +230,7 @@
                             h('Icon', {
                                 'class': 'demo-spin-icon-load',
                                 props: {
-                                    type: 'load-c',
+                                    type: 'ios-loading',
                                     size: 18
                                 }
                             }),

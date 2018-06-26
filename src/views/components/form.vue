@@ -25,7 +25,7 @@
                         </FormItem>
                         <FormItem prop="password">
                             <Input type="password" v-model="formInline.password" placeholder="Password">
-                                <Icon type="ios-locked-outline" slot="prepend"></Icon>
+                                <Icon type="ios-lock-outline" slot="prepend"></Icon>
                             </Input>
                         </FormItem>
                         <FormItem>
@@ -197,7 +197,7 @@
                     </Form>
                 </div>
                 <div slot="desc">
-                    <p>Form 组件基于 <a href="https://github.com/yiminghe/async-validator" target="_blank"><Icon type="social-github"></Icon> async-validator</a> 实现的数据验证，给 Form 设置属性 <code>rules</code>，同时给需要验证的 FormItem 设置属性 <code>prop</code> 指向对应字段即可。</p>
+                    <p>Form 组件基于 <a href="https://github.com/yiminghe/async-validator" target="_blank"><Icon type="logo-github"></Icon> async-validator</a> 实现的数据验证，给 Form 设置属性 <code>rules</code>，同时给需要验证的 FormItem 设置属性 <code>prop</code> 指向对应字段即可。</p>
                     <p>完整的验证规则请参照开源项目 async-validator。</p>
                     <p>验证方法也支持 Promise。</p>
                 </div>
@@ -248,7 +248,7 @@
                         <FormItem>
                             <Row>
                                 <Col span="12">
-                                <Button type="dashed" long @click="handleAdd" icon="plus-round">Add item</Button>
+                                <Button type="dashed" long @click="handleAdd" icon="md-add">Add item</Button>
                                 </Col>
                             </Row>
                         </FormItem>

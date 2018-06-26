@@ -77,7 +77,7 @@ code.dot = `
 <template>
     <Timeline>
         <TimelineItem color="green">
-            <Icon type="trophy" slot="dot"></Icon>
+            <Icon type="ios-trophy" slot="dot"></Icon>
             <span>发布里程碑版本</span>
         </TimelineItem>
         <TimelineItem>发布1.0版本</TimelineItem>

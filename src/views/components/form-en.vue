@@ -25,7 +25,7 @@
                         </FormItem>
                         <FormItem prop="password">
                             <Input type="password" v-model="formInline.password" placeholder="Password">
-                                <Icon type="ios-locked-outline" slot="prepend"></Icon>
+                                <Icon type="ios-lock-outline" slot="prepend"></Icon>
                             </Input>
                         </FormItem>
                         <FormItem>
@@ -197,7 +197,7 @@
                     </Form>
                 </div>
                 <div slot="desc">
-                    <p>The validation module of Form is based on <a href="https://github.com/yiminghe/async-validator" target="_blank"><Icon type="social-github"></Icon> async-validator</a>. Set <code>rules</code> to Form and set <code>prop</code> prop to FormItem that needs to be validated.</p>
+                    <p>The validation module of Form is based on <a href="https://github.com/yiminghe/async-validator" target="_blank"><Icon type="logo-github"></Icon> async-validator</a>. Set <code>rules</code> to Form and set <code>prop</code> prop to FormItem that needs to be validated.</p>
                     <p>For complete validation rules, please visit async-validator project site.</p>
                     <p>Validate method support Promise.</p>
                 </div>
@@ -248,7 +248,7 @@
                         <FormItem>
                             <Row>
                                 <Col span="12">
-                                <Button type="dashed" long @click="handleAdd" icon="plus-round">Add item</Button>
+                                <Button type="dashed" long @click="handleAdd" icon="md-add">Add item</Button>
                                 </Col>
                             </Row>
                         </FormItem>

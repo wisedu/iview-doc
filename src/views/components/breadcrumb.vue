@@ -31,10 +31,10 @@
                             <Icon type="ios-home-outline"></Icon> Home
                         </BreadcrumbItem>
                         <BreadcrumbItem to="/components/breadcrumb">
-                            <Icon type="social-buffer-outline"></Icon> Components
+                            <Icon type="logo-buffer"></Icon> Components
                         </BreadcrumbItem>
                         <BreadcrumbItem>
-                            <Icon type="pound"></Icon> Breadcrumb
+                            <Icon type="ios-cafe"></Icon> Breadcrumb
                         </BreadcrumbItem>
                     </Breadcrumb>
                 </div>

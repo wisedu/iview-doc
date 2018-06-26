@@ -36,9 +36,9 @@
             <Demo title="With icon" vertical>
                 <div slot="demo">
                     <Steps :current="1">
-                        <Step title="注册" icon="person-add"></Step>
-                        <Step title="上传头像" icon="camera"></Step>
-                        <Step title="验证邮箱" icon="email"></Step>
+                        <Step title="注册" icon="ios-person-add"></Step>
+                        <Step title="上传头像" icon="ios-camera"></Step>
+                        <Step title="验证邮箱" icon="ios-mail"></Step>
                     </Steps>
                 </div>
                 <div slot="desc">

@@ -100,7 +100,7 @@ code.loading = `
         <span v-if="!loading">Click me!</span>
         <span v-else>Loading...</span>
     </Button>
-    <Button type="primary" :loading="loading2" icon="checkmark-round" @click="toLoading2">
+    <Button type="primary" :loading="loading2" icon="md-checkmark" @click="toLoading2">
         <span v-if="!loading2">Click me!</span>
         <span v-else>Loading...</span>
     </Button>
@@ -148,17 +148,17 @@ code.group = `
     <br><br>
     <ButtonGroup>
         <Button type="primary">
-            <Icon type="chevron-left"></Icon>
+            <Icon type="ios-arrow-back"></Icon>
             Backward
         </Button>
         <Button type="primary">
             Forward
-            <Icon type="chevron-right"></Icon>
+            <Icon type="ios-arrow-forward"></Icon>
         </Button>
     </ButtonGroup>
     <ButtonGroup>
-        <Button type="primary" icon="ios-skipbackward"></Button>
-        <Button type="primary" icon="ios-skipforward"></Button>
+        <Button type="primary" icon="ios-skip-backward"></Button>
+        <Button type="primary" icon="ios-skip-forward"></Button>
     </ButtonGroup>
     <ButtonGroup>
         <Button type="ghost" icon="ios-color-wand-outline"></Button>
@@ -171,17 +171,17 @@ code.group = `
     <br><br>
     <ButtonGroup shape="circle">
         <Button type="primary">
-            <Icon type="chevron-left"></Icon>
+            <Icon type="ios-arrow-back"></Icon>
             Backward
         </Button>
         <Button type="primary">
             Forward
-            <Icon type="chevron-right"></Icon>
+            <Icon type="ios-arrow-forward"></Icon>
         </Button>
     </ButtonGroup>
     <ButtonGroup shape="circle">
-        <Button type="primary" icon="ios-skipbackward"></Button>
-        <Button type="primary" icon="ios-skipforward"></Button>
+        <Button type="primary" icon="ios-skip-backward"></Button>
+        <Button type="primary" icon="ios-skip-forward"></Button>
     </ButtonGroup>
     <ButtonGroup shape="circle">
         <Button type="ghost" icon="ios-color-wand-outline"></Button>
@@ -228,10 +228,10 @@ code.group = `
 code.vertical = `
 <template>
     <ButtonGroup vertical>
-        <Button type="ghost" icon="social-facebook"></Button>
-        <Button type="ghost" icon="social-twitter"></Button>
-        <Button type="ghost" icon="social-googleplus"></Button>
-        <Button type="ghost" icon="social-tumblr"></Button>
+        <Button type="ghost" icon="logo-facebook"></Button>
+        <Button type="ghost" icon="logo-twitter"></Button>
+        <Button type="ghost" icon="logo-googleplus"></Button>
+        <Button type="ghost" icon="logo-tumblr"></Button>
     </ButtonGroup>
 </template>
 <script>

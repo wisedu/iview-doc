@@ -11,7 +11,7 @@
         <article>
             <h1>Font</h1>
             <Anchor title="Overview" h2></Anchor>
-            <p>iView's stylesheet has already standardized the typography for achieving the most appealing display effects regardless of the OS and browers. The fonts of the <Icon type="social-apple"></Icon> macOS（iOS）are used whenever they're available, the fallback ones are also provided.</p>
+            <p>iView's stylesheet has already standardized the typography for achieving the most appealing display effects regardless of the OS and browers. The fonts of the <Icon type="apple-apple"></Icon> macOS（iOS）are used whenever they're available, the fallback ones are also provided.</p>
             <Anchor title="Typography Preview" h3></Anchor>
             <ul>
                 <li>Chinese Characters</li>

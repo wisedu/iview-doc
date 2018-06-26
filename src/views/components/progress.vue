@@ -38,8 +38,8 @@
                 <div slot="demo">
                     <Progress :percent="percent"></Progress>
                     <ButtonGroup size="large">
-                        <Button icon="ios-plus-empty" @click="add"></Button>
-                        <Button icon="ios-minus-empty" @click="minus"></Button>
+                        <Button icon="ios-add" @click="add"></Button>
+                        <Button icon="ios-remove" @click="minus"></Button>
                     </ButtonGroup>
                 </div>
                 <div slot="desc">

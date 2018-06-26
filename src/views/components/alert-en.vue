@@ -73,7 +73,7 @@
                     </Alert>
                     <Alert show-icon>
                         Custom icon
-                        <Icon type="ios-lightbulb-outline" slot="icon"></Icon>
+                        <Icon type="ios-bulb-outline" slot="icon"></Icon>
                         <template slot="desc">Custom icon copywriting. Custom icon copywriting. Custom icon copywriting. </template>
                     </Alert>
                 </div>

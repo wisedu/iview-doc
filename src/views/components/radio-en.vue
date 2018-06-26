@@ -1,6 +1,6 @@
 <style scoped>
     .ivu-icon{
-        font-size: 14px;
+        /*font-size: 14px;*/
     }
 </style>
 <template>
@@ -24,15 +24,15 @@
                 <div slot="demo">
                     <RadioGroup v-model="phone">
                         <Radio label="apple">
-                            <Icon type="social-apple"></Icon>
+                            <Icon type="logo-apple"></Icon>
                             <span>Apple</span>
                         </Radio>
                         <Radio label="android">
-                            <Icon type="social-android"></Icon>
+                            <Icon type="logo-android"></Icon>
                             <span>Android</span>
                         </Radio>
                         <Radio label="windows">
-                            <Icon type="social-windows"></Icon>
+                            <Icon type="logo-windows"></Icon>
                             <span>Windows</span>
                         </Radio>
                     </RadioGroup>

@@ -45,7 +45,7 @@
         <article>
             <h1>Icon</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
-            <p>iView uses open source icon set <a href="http://ionicons.com/" target="_blank"><Icon type="ionic"></Icon> ionicons</a></p>
+            <p>iView uses open source icon set <a href="http://ionicons.com/" target="_blank"><Icon type="ios-ionic"></Icon> ionicons</a></p>
             <Anchor title="How to Use" h2></Anchor>
             <p>Use <code>&lt;Icon /></code> component, Set corresponding <code>type</code> prop of the icon. Sample code:</p>
             <i-code lang="html" bg>{{ code.demo }}</i-code>
