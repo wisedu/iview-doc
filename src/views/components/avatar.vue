@@ -51,7 +51,7 @@
             <Demo title="带徽标的头像">
                 <div slot="demo">
                     <div class="demo-avatar-badge">
-                        <Badge count="1">
+                        <Badge :count="1">
                             <Avatar shape="square" icon="person" />
                         </Badge>
                         <Badge dot>

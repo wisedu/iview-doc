@@ -43,7 +43,7 @@ code.type = `
 code.badge = `
 <template>
     <div class="demo-avatar-badge">
-        <Badge count="1">
+        <Badge :count="1">
             <Avatar shape="square" icon="ios-person" />
         </Badge>
         <Badge dot>

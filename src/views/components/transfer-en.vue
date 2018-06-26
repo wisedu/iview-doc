@@ -60,7 +60,7 @@
                         filterable
                         @on-change="handleChange3">
                         <div :style="{float: 'right', margin: '5px'}">
-                            <Button type="ghost" size="small" @click="reloadMockData">Refresh</Button>
+                            <Button size="small" @click="reloadMockData">Refresh</Button>
                         </div>
                     </Transfer>
                 </div>

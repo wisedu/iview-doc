@@ -860,7 +860,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Button type="ghost" size="large" @click="handleBefore">查看 1.x 版本的日志</Button>
+                    <Button size="large" @click="handleBefore">查看 1.x 版本的日志</Button>
                 </Timeline-item>
             </Timeline>
         </article>

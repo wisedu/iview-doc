@@ -139,7 +139,7 @@
         },
         methods: {
             clip (type) {
-                const icon = `<Icon type="${type.name}"></Icon>`;
+                const icon = `<Icon type="${type.name}" />`;
 
                 const clipboard = new Clipboard('.icons', {
                     text () {

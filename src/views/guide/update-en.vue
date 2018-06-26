@@ -568,7 +568,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Button type="ghost" size="large" @click="handleBefore">View 1.x Change Log</Button>
+                    <Button size="large" @click="handleBefore">View 1.x Change Log</Button>
                 </Timeline-item>
             </Timeline>
         </article>

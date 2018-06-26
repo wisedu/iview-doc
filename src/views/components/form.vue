@@ -90,7 +90,7 @@
                         </FormItem>
                         <FormItem>
                             <Button type="primary">Submit</Button>
-                            <Button type="ghost" style="margin-left: 8px">Cancel</Button>
+                            <Button style="margin-left: 8px">Cancel</Button>
                         </FormItem>
                     </Form>
                 </div>
@@ -192,7 +192,7 @@
                         </FormItem>
                         <FormItem>
                             <Button type="primary" @click="handleSubmit('formValidate')">Submit</Button>
-                            <Button type="ghost" @click="handleReset('formValidate')" style="margin-left: 8px">Reset</Button>
+                            <Button @click="handleReset('formValidate')" style="margin-left: 8px">Reset</Button>
                         </FormItem>
                     </Form>
                 </div>
@@ -217,7 +217,7 @@
                         </FormItem>
                         <FormItem>
                             <Button type="primary" @click="handleSubmit('formCustom')">Submit</Button>
-                            <Button type="ghost" @click="handleReset('formCustom')" style="margin-left: 8px">Reset</Button>
+                            <Button @click="handleReset('formCustom')" style="margin-left: 8px">Reset</Button>
                         </FormItem>
                     </Form>
                 </div>
@@ -241,7 +241,7 @@
                                 <Input type="text" v-model="item.value" placeholder="Enter something..."></Input>
                                 </Col>
                                 <Col span="4" offset="1">
-                                <Button type="ghost" @click="handleRemove(index)">Delete</Button>
+                                <Button @click="handleRemove(index)">Delete</Button>
                                 </Col>
                             </Row>
                         </FormItem>
@@ -254,7 +254,7 @@
                         </FormItem>
                         <FormItem>
                             <Button type="primary" @click="handleSubmit('formDynamic')">Submit</Button>
-                            <Button type="ghost" @click="handleReset('formDynamic')" style="margin-left: 8px">Reset</Button>
+                            <Button @click="handleReset('formDynamic')" style="margin-left: 8px">Reset</Button>
                         </FormItem>
                     </Form>
                 </div>

@@ -18,14 +18,14 @@
                         <div class="cli-download">
                             <Row :gutter="16">
                                 <Col span="12">
-                                    <Button type="ghost" size="large" long icon="logo-apple" @click="handleClick('mac')">下载 Mac 版</Button>
+                                    <Button size="large" long icon="logo-apple" @click="handleClick('mac')">下载 Mac 版</Button>
                                 </Col>
                                 <Col span="12">
                                     <Poptip trigger="hover" title="选择版本">
-                                        <Button type="ghost" size="large" long icon="logo-windows">下载 Windows 版</Button>
+                                        <Button size="large" long icon="logo-windows">下载 Windows 版</Button>
                                         <div slot="content">
-                                            <Button type="ghost" icon="logo-windows" @click="handleClick('windows', 64)">64 位</Button>
-                                            <Button type="ghost" icon="logo-windows" @click="handleClick('windows', 32)">32 位</Button>
+                                            <Button icon="logo-windows" @click="handleClick('windows', 64)">64 位</Button>
+                                            <Button icon="logo-windows" @click="handleClick('windows', 32)">32 位</Button>
                                         </div>
                                     </Poptip>
                                 </Col>
@@ -33,15 +33,15 @@
                             <Row :gutter="16" style="margin-top: 16px;">
                                 <Col span="12">
                                     <Poptip trigger="hover" title="选择版本">
-                                        <Button type="ghost" size="large" long icon="logo-tux">下载 Linux 版</Button>
+                                        <Button size="large" long icon="logo-tux">下载 Linux 版</Button>
                                         <div slot="content">
-                                            <Button type="ghost" icon="logo-tux" @click="handleClick('linux', 64)">64 位</Button>
-                                            <Button type="ghost" icon="logo-tux" @click="handleClick('linux', 32)">32 位</Button>
+                                            <Button icon="logo-tux" @click="handleClick('linux', 64)">64 位</Button>
+                                            <Button icon="logo-tux" @click="handleClick('linux', 32)">32 位</Button>
                                         </div>
                                     </Poptip>
                                 </Col>
                                 <Col span="12">
-                                    <Button type="ghost" size="large" long icon="logo-github" @click="handleClick('github')">GitHub</Button>
+                                    <Button size="large" long icon="logo-github" @click="handleClick('github')">GitHub</Button>
                                 </Col>
                             </Row>
                         </div>

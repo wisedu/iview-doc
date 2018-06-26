@@ -115,7 +115,7 @@
             <Demo title="Nest Complex Content">
                 <div slot="demo">
                     <Poptip placement="right" width="400">
-                        <Button type="ghost">Click</Button>
+                        <Button>Click</Button>
                         <div class="api" slot="content">
                             <table>
                                 <thead>

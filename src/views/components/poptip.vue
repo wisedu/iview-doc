@@ -115,7 +115,7 @@
             <Demo title="嵌套复杂内容">
                 <div slot="demo">
                     <Poptip placement="right" width="400">
-                        <Button type="ghost">click 激活</Button>
+                        <Button>click 激活</Button>
                         <div class="api" slot="content">
                             <table>
                                 <thead>

@@ -123,7 +123,7 @@ code.visible = `
 code.slot = `
 <template>
     <Poptip placement="right" width="400">
-        <Button type="ghost">Click</Button>
+        <Button>Click</Button>
         <div class="api" slot="content">
             <table>
                 <thead>

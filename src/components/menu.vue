@@ -72,9 +72,9 @@
                     <!--<Option value="1">1.x</Option>-->
                 <!--</Select>-->
                 <ButtonGroup>
-                    <Button type="ghost" size="small" icon="logo-github" @click="handleGoToGitHub"></Button>
-                    <Button type="ghost" size="small" icon="logo-twitter" @click="handleGoToTwitter"></Button>
-                    <Button type="ghost" size="small" @click="handleChangeLang" >
+                    <Button size="small" icon="logo-github" @click="handleGoToGitHub"></Button>
+                    <Button size="small" icon="logo-twitter" @click="handleGoToTwitter"></Button>
+                    <Button size="small" @click="handleChangeLang" >
                         <template v-if="lang === 'zh-CN'">EN</template>
                         <template v-else>中文</template>
                     </Button>

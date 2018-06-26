@@ -47,7 +47,7 @@
             <Demo title="点击上传">
                 <div slot="demo">
                     <Upload action="//jsonplaceholder.typicode.com/posts/">
-                        <Button type="ghost" icon="ios-cloud-upload-outline">Upload files</Button>
+                        <Button icon="ios-cloud-upload-outline">Upload files</Button>
                     </Upload>
                 </div>
                 <div slot="desc">
@@ -60,7 +60,7 @@
                     <Upload
                         multiple
                         action="//jsonplaceholder.typicode.com/posts/">
-                        <Button type="ghost" icon="ios-cloud-upload-outline">Upload files</Button>
+                        <Button icon="ios-cloud-upload-outline">Upload files</Button>
                     </Upload>
                 </div>
                 <div slot="desc">
@@ -73,7 +73,7 @@
                     <Upload
                         :before-upload="handleUpload"
                         action="//jsonplaceholder.typicode.com/posts/">
-                        <Button type="ghost" icon="ios-cloud-upload-outline">Select the file to upload</Button>
+                        <Button icon="ios-cloud-upload-outline">Select the file to upload</Button>
                     </Upload>
                     <div v-if="file !== null">Upload file: {{ file.name }} <Button type="text" @click="upload" :loading="loadingStatus">{{ loadingStatus ? 'Uploading' : 'Click to upload' }}</Button></div>
                 </div>
