@@ -74,7 +74,7 @@
             <Demo title="配合外部组件使用">
                 <div slot="demo">
                     <Circle :percent="percent" :stroke-color="color">
-                        <Icon v-if="percent == 100" type="ios-checkmark-empty" size="60" style="color:#5cb85c"></Icon>
+                        <Icon v-if="percent == 100" type="ios-checkmark" size="60" style="color:#5cb85c"></Icon>
                         <span v-else style="font-size:24px">{{ percent }}%</span>
                     </Circle>
                     <ButtonGroup size="large">
