@@ -2,13 +2,13 @@
     <i-article>
         <article>
             <h1>Notice</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>Show global notice at the right top of the page. Often used in such scenarios: </p>
             <ul>
                 <li>The content of the notice includes description info.</li>
                 <li>Active push by system.</li>
             </ul>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
                     <Button type="primary" @click="open(false)">Open notice</Button>
@@ -60,8 +60,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Notice instance" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Notice instance" h3></inAnchor>
                 <p>Use the component by directly calling methods below:</p>
                 <ul>
                     <li>
@@ -177,14 +177,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/notice';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

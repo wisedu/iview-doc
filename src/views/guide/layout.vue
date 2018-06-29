@@ -109,10 +109,10 @@
 <template>
     <i-article>
         <article>
-            <Anchor title="Layout 布局" h1></Anchor>
+            <inAnchor title="Layout 布局" h1></inAnchor>
                 <p>协助进行页面级整体布局。</p>
-            <Anchor title="设计规则" h2></Anchor>
-            <Anchor title="尺寸" h3></Anchor>
+            <inAnchor title="设计规则" h2></inAnchor>
+            <inAnchor title="尺寸" h3></inAnchor>
             <p>一级导航项偏左靠近 logo 放置，辅助菜单偏右放置。</p>
             <ul>
                 <li>顶部导航（大部分系统）：一级导航高度 <code>64px</code>，二级导航 <code>48px</code>。</li>
@@ -120,14 +120,14 @@
                 <li>顶部导航高度的范围计算公式为：<code>48+8n</code>。</li>
                 <li>侧边导航宽度的范围计算公式：<code>200+8n</code>。</li>
             </ul>
-            <Anchor title="交互" h3></Anchor>
+            <inAnchor title="交互" h3></inAnchor>
             <ul>
                 <li>一级导航和末级的导航需要在可视化的层面被强调出来；</li>
                 <li>当前项应该在呈现上优先级最高；</li>
                 <li>当导航收起的时候，当前项的样式自动赋予给它的上一个层级；</li>
                 <li>左侧导航栏的收放交互同时支持手风琴和全展开的样式，根据业务的要求进行适当的选择。</li>
             </ul>
-            <Anchor title="视觉" h3></Anchor>
+            <inAnchor title="视觉" h3></inAnchor>
             <p>导航样式上需要根据信息层级合理的选择样式：</p>
             <ul>
                 <li>
@@ -147,7 +147,7 @@
                     <p><code>12px</code>、<code>14px</code> 是导航的标准字号，14 号字体用在一、二级导航中。字号可以考虑导航项的等级做相应选择。</p>
                 </li>
             </ul>
-            <Anchor title="组件概述" h2></Anchor>
+            <inAnchor title="组件概述" h2></inAnchor>
             <ul>
                 <li><code>Layout</code>：布局容器，其下可嵌套 <code>Header</code><code>Sider</code><code>Content</code><code>Footer</code>或 <code>Layout</code> 本身，可以放在任何父容器中。</li>
                 <li><code>Header</code>：顶部布局，自带默认样式，其下可嵌套任何元素，只能放在 <code>Layout</code> 中。</li>
@@ -156,7 +156,7 @@
                 <li><code>Footer</code>：底部布局，自带默认样式，其下可嵌套任何元素，只能放在 <code>Layout</code> 中。</li>
             </ul>
             <Alert show-icon style="margin-top: 16px">注意：采用 flex 布局实现，请注意<a href="https://caniuse.com/#search=flex" target="_blank" title="can i use">浏览器兼容性</a>问题。</Alert>
-            <Anchor title="代码示例" h2></Anchor>
+            <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="基本结构" vertical hide-code>
                 <div slot="demo">
                     <div class="layout-con">
@@ -522,8 +522,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Sider props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Sider props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -584,7 +584,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Sider events" h3></Anchor>
+                <inAnchor title="Sider events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -601,7 +601,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Sider slot" h3></Anchor>
+                <inAnchor title="Sider slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -616,7 +616,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Sider methods" h3></Anchor>
+                <inAnchor title="Sider methods" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -632,7 +632,7 @@
                     </tbody>
                 </table>
             </div>
-            <Anchor title="breakpoint width" h3></Anchor>
+            <inAnchor title="breakpoint width" h3></inAnchor>
             <i-code lang="js" slot="code" :style="{background: '#f2f4f5', height: '170px'}">
         {
             xs: '480px',
@@ -650,14 +650,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/layout';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

@@ -2,10 +2,10 @@
     <i-article>
         <article>
             <h1>Switch 开关</h1>
-            <Anchor title="概述" h2></Anchor>
+            <inAnchor title="概述" h2></inAnchor>
             <p>在两种状态间切换时用到的开关选择器。</p>
             <Alert show-icon style="margin-top: 16px" type="warning">注意：没有使用 <router-link to="/docs/guide/iview-loader">iview-loader</router-link> 时，必须使用 <code>i-switch</code> 标签。</Alert>
-            <Anchor title="代码示例" h2></Anchor>
+            <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="基本">
                 <div slot="demo">
                     <Switch v-model="switch1" @on-change="change"></Switch>
@@ -65,8 +65,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Switch props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Switch props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -109,7 +109,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Switch events" h3></Anchor>
+                <inAnchor title="Switch events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -126,7 +126,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Switch slot" h3></Anchor>
+                <inAnchor title="Switch slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -154,14 +154,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/switch';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

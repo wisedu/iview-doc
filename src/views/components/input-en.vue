@@ -2,10 +2,10 @@
     <i-article>
         <article>
             <h1>Input</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>Basic form component. It supports input and textarea, and expands some functions on native DOM components. It can combine with native component.</p>
             <Alert show-icon style="margin-top: 16px">Attention: <code>i-input</code> is needed if not under template/render mode.</Alert>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
                     <Input v-model="value" placeholder="Enter something..." style="width: 300px"></Input>
@@ -141,8 +141,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Input props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Input props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -257,7 +257,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Input events" h3></Anchor>
+                <inAnchor title="Input events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -309,7 +309,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Input slot" h3></Anchor>
+                <inAnchor title="Input slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -328,7 +328,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Input methods" h3></Anchor>
+                <inAnchor title="Input methods" h3></inAnchor>
                 <table>
                     <thead>
                     <tr>
@@ -354,14 +354,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/input';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

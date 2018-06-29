@@ -40,10 +40,10 @@
     <i-article>
         <article>
             <h1>Upload 上传</h1>
-            <Anchor title="概述" h2></Anchor>
+            <inAnchor title="概述" h2></inAnchor>
             <p>文件选择上传和拖拽上传控件。</p>
             <Alert show-icon style="margin-top: 16px">暂不支持 IE9 浏览器。</Alert>
-            <Anchor title="代码示例" h2></Anchor>
+            <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="点击上传">
                 <div slot="demo">
                     <Upload action="//jsonplaceholder.typicode.com/posts/">
@@ -155,8 +155,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Upload props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Upload props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -305,7 +305,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Upload methods" h3></Anchor>
+                <inAnchor title="Upload methods" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -322,7 +322,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Upload slot" h3></Anchor>
+                <inAnchor title="Upload slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -350,14 +350,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/upload';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

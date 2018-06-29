@@ -948,6 +948,20 @@ const routers = [
         component: (resolve) => require(['./views/components/time-en.vue'], resolve)
     },
     {
+        path: '/components/anchor',
+        meta: {
+            title: 'Anchor 锚点'
+        },
+        component: (resolve) => require(['./views/components/anchor.vue'], resolve)
+    },
+    {
+        path: '/components/anchor-en',
+        meta: {
+            title: 'Anchor'
+        },
+        component: (resolve) => require(['./views/components/anchor-en.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }

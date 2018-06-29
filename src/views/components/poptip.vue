@@ -18,10 +18,10 @@
     <i-article>
         <article>
             <h1>Poptip 气泡提示</h1>
-            <Anchor title="概述" h2></Anchor>
+            <inAnchor title="概述" h2></inAnchor>
             <p>Poptip 与 Tooltip 类似，具有很多相同配置，不同点是 Poptip 以卡片的形式承载了更多的内容，比如链接、表格、按钮等。</p>
             <p>Poptip 还 confirm 确认框，与 Modal 不同的是，它会出现在就近元素，相对轻量。</p>
-            <Anchor title="代码示例" h2></Anchor>
+            <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="基础用法">
                 <div slot="demo">
                     <Poptip trigger="hover" title="提示标题" content="提示内容">
@@ -179,8 +179,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Poptip props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Poptip props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -261,7 +261,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Poptip events" h3></Anchor>
+                <inAnchor title="Poptip events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -293,7 +293,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Poptip slot" h3></Anchor>
+                <inAnchor title="Poptip slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -325,14 +325,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/poptip';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

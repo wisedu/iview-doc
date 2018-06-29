@@ -44,16 +44,16 @@
     <i-article>
         <article>
             <h1>Icon 图标</h1>
-            <Anchor title="概述" h2></Anchor>
+            <inAnchor title="概述" h2></inAnchor>
             <p>iView 的图标使用开源项目<a href="http://ionicons.com/" target="_blank"><Icon type="ios-ionic"></Icon> ionicons</a></p>
-            <Anchor title="如何使用" h2></Anchor>
+            <inAnchor title="如何使用" h2></inAnchor>
             <p>使用<code>&lt;Icon /></code>组件，指定图标对应的<code>type</code>属性，示例代码：</p>
             <i-code lang="html" bg>{{ code.demo }}</i-code>
             <p>渲染后为：</p>
             <i-code lang="html" bg>{{ code.render }}</i-code>
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Icon props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Icon props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -85,7 +85,7 @@
                     </tbody>
                 </table>
             </div>
-            <Anchor title="示例" h2></Anchor>
+            <inAnchor title="示例" h2></inAnchor>
             <div class="icon-search">
                 <input
                     type="text"
@@ -111,7 +111,7 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/icon';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
     import Icons from '../../code/iconname';
     import Clipboard from 'clipboard';
 
@@ -122,7 +122,7 @@
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

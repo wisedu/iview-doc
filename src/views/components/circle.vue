@@ -36,14 +36,14 @@
     <i-article>
         <article>
             <h1>Circle 进度环</h1>
-            <Anchor title="概述" h2></Anchor>
+            <inAnchor title="概述" h2></inAnchor>
             <p>图表类组件。一般有两种用途：</p>
             <ul>
                 <li>显示某项任务进度的百分比；</li>
                 <li>统计某些指标的占比。</li>
             </ul>
             <Alert show-icon style="margin-top: 16px" type="warning">注意：没有使用 <router-link to="/docs/guide/iview-loader">iview-loader</router-link> 时，必须使用 <code>i-circle</code> 标签。</Alert>
-            <Anchor title="代码示例" h2></Anchor>
+            <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="基础用法">
                 <div slot="demo">
                     <Row>
@@ -115,8 +115,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Circle props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Circle props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -171,7 +171,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Circle slot" h3></Anchor>
+                <inAnchor title="Circle slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -195,14 +195,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/circle';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

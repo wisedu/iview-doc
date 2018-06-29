@@ -2,9 +2,9 @@
     <i-article>
         <article>
             <h1>Message</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>A lightweight feedback message appearing at the top of the screen, fading automatically. Has many different options for different situations.</p>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Normal Prompt">
                 <div slot="demo">
                     <Button type="primary" @click="info">Display info prompt</Button>
@@ -65,8 +65,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Message instance" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Message instance" h3></inAnchor>
                 <p>This component can be used with the following static methods:</p>
                 <ul>
                     <li>
@@ -173,14 +173,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/message';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

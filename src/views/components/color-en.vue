@@ -18,9 +18,9 @@
     <i-article>
         <article>
             <h1>Color</h1>
-            <Anchor title="Overview" h2></Anchor>
+            <inAnchor title="Overview" h2></inAnchor>
             <p>iView recommends to use the colors of the palette below as the rule for design and development for ensuring the visual consistence among the pages and components.</p>
-            <Anchor title="Primary Colors" h3></Anchor>
+            <inAnchor title="Primary Colors" h3></inAnchor>
             <p>iView use the safe blue colors as the primary colors, among which the <strong>Light Primary</strong> is usually used for <i>hover</i> state while the <strong>Dark Primary</strong> for <i>active</i>.</p>
             <Row :gutter="16">
                 <i-col span="8">
@@ -43,7 +43,7 @@
                 </i-col>
             </Row>
             <br>
-            <Anchor title="Secondary Colors" h3></Anchor>
+            <inAnchor title="Secondary Colors" h3></inAnchor>
             <p>The secondary colors are typical ones, which usually used for messages, e.g., success, warning and fail.</p>
             <Row :gutter="16">
                 <i-col span="6">
@@ -72,7 +72,7 @@
                 </i-col>
             </Row>
             <br>
-            <Anchor title="Neutral Colors" h3></Anchor>
+            <inAnchor title="Neutral Colors" h3></inAnchor>
             <p>Neutral colors are usually used for text, background, border, shadow, etc, showing the hierachical structure of the page.</p>
             <Row :gutter="16">
                 <i-col span="6">
@@ -128,14 +128,14 @@
     import iArticle from '../../components/article.vue';
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

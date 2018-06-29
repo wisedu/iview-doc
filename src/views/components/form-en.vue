@@ -2,7 +2,7 @@
     <i-article>
         <article>
             <h1>Form</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>Forms with abilities of data collecting, validating, and submitting, which includes checkbox, radio, dropdown etc.</p>
             <Alert show-icon style="margin-top: 16px">Attention: <code>i-form</code> is needed if not under template/render mode.</Alert>
             <Alert show-icon>
@@ -14,7 +14,7 @@
                     <p>To prevent this behavior, you can add <code>@submit.native.prevent</code> on <code>&lt;Form&gt;</code>.</p>
                 </template>
             </Alert>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Inline Form">
                 <div slot="demo">
                     <Form ref="formInline" :model="formInline" :rules="ruleInline" inline>
@@ -269,8 +269,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Form props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Form props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -325,7 +325,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Form methods" h3></Anchor>
+                <inAnchor title="Form methods" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -352,7 +352,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="FormItem props" h3></Anchor>
+                <inAnchor title="FormItem props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -413,7 +413,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="FormItem slot" h3></Anchor>
+                <inAnchor title="FormItem slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -441,14 +441,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/form';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             const validatePass = (rule, value, callback) => {

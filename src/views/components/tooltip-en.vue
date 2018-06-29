@@ -18,11 +18,11 @@
     <i-article>
         <article>
             <h1>Tooltip</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>A simple text popup tip.</p>
             <p>The tip shows while mouse enter, and hides while mouse leave. The Tooltip doesn't support complex text and operation.</p>
             <p>It can provide an explanation of button/text/operation that can cover the usage of the default system <code>title</code>.</p>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
                     <Tooltip content="Here is the prompt text">
@@ -130,8 +130,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Tooltip props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Tooltip props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -188,7 +188,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Tooltip events" h3></Anchor>
+                <inAnchor title="Tooltip events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -210,7 +210,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Tooltip slot" h3></Anchor>
+                <inAnchor title="Tooltip slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -238,14 +238,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/tooltip';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

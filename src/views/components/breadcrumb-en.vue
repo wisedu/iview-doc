@@ -8,9 +8,9 @@
     <i-article>
         <article>
             <h1>Breadcrumb</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>Show the hierarchical structure of the website, inform the user of current location, and provide a navigation to upper nodes.</p>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
                     <Breadcrumb>
@@ -65,8 +65,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Breadcrumb props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Breadcrumb props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -85,7 +85,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="BreadcrumbItem props" h3></Anchor>
+                <inAnchor title="BreadcrumbItem props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -125,14 +125,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/breadcrumb';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

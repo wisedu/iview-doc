@@ -29,11 +29,11 @@
         <i-article>
             <article>
                 <h1>Table 表格</h1>
-                <Anchor title="概述" h2></Anchor>
+                <inAnchor title="概述" h2></inAnchor>
                 <p>主要用于展示大量结构化数据。</p>
                 <p>支持排序、筛选、分页、自定义操作、导出 csv 等复杂功能。</p>
                 <Alert show-icon style="margin-top: 16px">注意：非 template/render 模式下，需使用 <code>i-table</code>。</Alert>
-                <Anchor title="代码示例" h2></Anchor>
+                <inAnchor title="代码示例" h2></inAnchor>
                 <Demo title="基础用法" vertical hide-code>
                     <div slot="demo">
                         <Table :columns="columns1" :data="data1"></Table>
@@ -240,7 +240,7 @@
                     </div>
                     <i-code lang="html" slot="code">{{ code.csv }}</i-code>
                 </Demo>
-                <Anchor title="高级示例" h2></Anchor>
+                <inAnchor title="高级示例" h2></inAnchor>
                 <p>以上示例已经基本涵盖了表格组件的所有功能，我们根据实际业务场景，增加了一些较为复杂的示例，可以结合来看，更深入了解表格组件的使用。</p>
                 <Button type="primary" size="large" @click="table1 = true">带有分页的复杂表格</Button>
                 <Button type="primary" size="large" @click="table2 = true">多列指标筛选的表格</Button>
@@ -249,8 +249,8 @@
                 <ad></ad>
 
                 <div class="api">
-                    <Anchor title="API" h2></Anchor>
-                    <Anchor title="Table props" h3></Anchor>
+                    <inAnchor title="API" h2></inAnchor>
+                    <inAnchor title="Table props" h3></inAnchor>
                     <table>
                         <thead>
                         <tr>
@@ -359,7 +359,7 @@
                         </tr>
                         </tbody>
                     </table>
-                    <Anchor title="Table events" h3></Anchor>
+                    <inAnchor title="Table events" h3></inAnchor>
                     <table>
                         <thead>
                         <tr>
@@ -465,7 +465,7 @@
                         </tr>
                         </tbody>
                     </table>
-                    <Anchor title="Table slot" h3></Anchor>
+                    <inAnchor title="Table slot" h3></inAnchor>
                     <table>
                         <thead>
                         <tr>
@@ -488,7 +488,7 @@
                         </tr>
                         </tbody>
                     </table>
-                    <Anchor title="Table methods" h3></Anchor>
+                    <inAnchor title="Table methods" h3></inAnchor>
                     <table>
                         <thead>
                         <tr>
@@ -554,7 +554,7 @@
                         </tr>
                         </tbody>
                     </table>
-                    <Anchor title="column" h3></Anchor>
+                    <inAnchor title="column" h3></inAnchor>
                     <p>列描述数据对象，是 columns 中的一项</p>
                     <table>
                         <thead>
@@ -775,7 +775,7 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/table';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     import expandRow from './table-expand.vue';
     import studyRender from '../../components/study.vue';
@@ -785,7 +785,7 @@
             iArticle,
             iCode,
             Demo,
-            Anchor,
+            inAnchor,
             expandRow,
             studyRender
         },

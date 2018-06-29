@@ -11,9 +11,9 @@
     <i-article>
         <article>
             <h1>Avatar</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>Avatars can be used to represent people or object, which supports image, iView-Icon, or letter.</p>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic">
                 <div slot="demo">
                     <div class="demo-avatar">
@@ -80,8 +80,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Avatar props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Avatar props" h3></inAnchor>
                 <table>
                     <thead>
                     <tr>
@@ -127,7 +127,7 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/avatar';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     const UserList = ['U', 'Lucy', 'Tom', 'Edward'];
     const ColorList = ['#f56a00', '#7265e6', '#ffbf00', '#00a2ae'];
@@ -137,7 +137,7 @@
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

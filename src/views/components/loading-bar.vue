@@ -2,15 +2,15 @@
     <i-article>
         <article>
             <h1>LoadingBar 加载进度条</h1>
-            <Anchor title="概述" h2></Anchor>
+            <inAnchor title="概述" h2></inAnchor>
             <p>全局创建一个显示页面加载、异步请求、文件上传等的加载进度条。</p>
-            <Anchor title="说明" h2></Anchor>
+            <inAnchor title="说明" h2></inAnchor>
             <p>LoadingBar 只会在全局创建一个，因此在任何位置调用的方法都会控制这同一个组件。主要使用场景是路由切换和Ajax，因为这两者都不能拿到精确的进度，LoadingBar 会模拟进度，当然也可以通过<code>update()</code>方法来传入一个精确的进度，比如在文件上传时会很有用，具体见API。</p>
-            <Anchor title="在路由中使用" h4></Anchor>
+            <inAnchor title="在路由中使用" h4></inAnchor>
             <i-code bg>{{ code.router }}</i-code>
-            <Anchor title="在异步请求中使用" h4></Anchor>
+            <inAnchor title="在异步请求中使用" h4></inAnchor>
             <i-code bg lang="html">{{ code.ajax }}</i-code>
-            <Anchor title="代码示例" h2></Anchor>
+            <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="基本用法">
                 <div slot="demo">
                     <Button @click="start">Start</Button>
@@ -26,8 +26,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="LoadingBar instance" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="LoadingBar instance" h3></inAnchor>
                 <p>通过直接调用以下方法来使用组件：</p>
                 <ul>
                     <li>
@@ -126,14 +126,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/loading-bar';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

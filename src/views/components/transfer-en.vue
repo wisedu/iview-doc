@@ -2,9 +2,9 @@
     <i-article>
         <article>
             <h1>Transfer</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>Two-Column Transfer select dialog. It's mainly used to transfer items from one side to the other.</p>
-            <Anchor title="Explanation" h2></Anchor>
+            <inAnchor title="Explanation" h2></inAnchor>
             <p>Transfer has 4 core APIs:</p>
             <ul>
                 <li>
@@ -22,7 +22,7 @@
                 <p>Demo:</p>
                 <i-code bg>{{ code.demo }}</i-code>
             </ul>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
                     <Transfer
@@ -86,8 +86,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Transfer props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Transfer props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -166,7 +166,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Transfer events" h3></Anchor>
+                <inAnchor title="Transfer events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -188,7 +188,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Transfer slot" h3></Anchor>
+                <inAnchor title="Transfer slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -212,14 +212,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/transfer';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

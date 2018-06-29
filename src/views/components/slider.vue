@@ -8,9 +8,9 @@
     <i-article>
         <article>
             <h1>Slider 滑块</h1>
-            <Anchor title="概述" h2></Anchor>
+            <inAnchor title="概述" h2></inAnchor>
             <p>滑动输入器，用于在数值区间/自定义区间内进行选择，支持连续或离散值。</p>
-            <Anchor title="代码示例" h2></Anchor>
+            <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="基础用法">
                 <div slot="demo">
                     <Slider v-model="value1"></Slider>
@@ -67,8 +67,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Slider props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Slider props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -147,7 +147,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Slider events" h3></Anchor>
+                <inAnchor title="Slider events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -178,14 +178,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/slider';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

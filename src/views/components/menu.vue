@@ -2,10 +2,10 @@
     <i-article>
         <article>
             <h1>Menu 导航菜单</h1>
-            <Anchor title="概述" h2></Anchor>
+            <inAnchor title="概述" h2></inAnchor>
             <p>为页面和功能提供导航的菜单列表，常用于网站顶部和左侧。</p>
             <Alert show-icon style="margin-top: 16px">注意：非 template/render 模式下，需使用 <code>i-menu</code>。</Alert>
-            <Anchor title="代码示例" h2></Anchor>
+            <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="顶部导航" vertical hide-code>
                 <div slot="demo">
                     <Menu mode="horizontal" :theme="theme1" active-name="1">
@@ -266,8 +266,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Menu props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Menu props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -316,7 +316,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Menu events" h3></Anchor>
+                <inAnchor title="Menu events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -338,7 +338,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Menu methods" h3></Anchor>
+                <inAnchor title="Menu methods" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -360,7 +360,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="MenuItem props" h3></Anchor>
+                <inAnchor title="MenuItem props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -379,7 +379,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Submenu props" h3></Anchor>
+                <inAnchor title="Submenu props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -398,7 +398,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Submenu slot" h3></Anchor>
+                <inAnchor title="Submenu slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -417,7 +417,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="MenuGroup props" h3></Anchor>
+                <inAnchor title="MenuGroup props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -445,14 +445,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/menu';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

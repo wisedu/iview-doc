@@ -108,10 +108,10 @@
 <template>
     <i-article>
         <article>
-            <Anchor title="Layout" h1></Anchor>
+            <inAnchor title="Layout" h1></inAnchor>
                 <p>Handling the overall layout of a page.</p>
-            <Anchor title="Specification" h2></Anchor>
-            <Anchor title="Size" h3></Anchor>
+            <inAnchor title="Specification" h2></inAnchor>
+            <inAnchor title="Size" h3></inAnchor>
             <p>The first level navigation is inclined left near a logo, and the secondary menu is inclined right.</p>
             <ul>
                 <li>Top Navigation (almost systems): the height of the first level navigation <code>64px</code>, the second level navigation <code>48px</code>.</li>
@@ -119,14 +119,14 @@
                 <li>Calculation formula of a top navigation: <code>48+8n</code>。</li>
                 <li>Calculation formula of an aside navigation: <code>200+8n</code>。</li>
             </ul>
-            <Anchor title="Interaction rules" h3></Anchor>
+            <inAnchor title="Interaction rules" h3></inAnchor>
             <ul>
                 <li>The first level navigation and the last level navigation should be distincted by visualization;</li>
                 <li>The current item should have the highest priority of visualization;</li>
                 <li>When the current navigation item is collapsed, the stlye of the current navigation item will be applied to its parent level;</li>
                 <li>The left side navigation bar has support for both the accordion and expanding styles, you can choose the one that fits your case best.</li>
             </ul>
-            <Anchor title="Visualization rules" h3></Anchor>
+            <inAnchor title="Visualization rules" h3></inAnchor>
             <p>Style of a navigation should conform to the its level.</p>
             <ul>
                 <li>
@@ -146,7 +146,7 @@
                     <p><code>12px</code>、<code>14px</code>is a standard font size of navigations，14px is used for the first and the second level of the navigation. You can choose a approprigate font size in terms of the level of your navigation.</p>
                 </li>
             </ul>
-            <Anchor title="Component Overview" h2></Anchor>
+            <inAnchor title="Component Overview" h2></inAnchor>
             <ul>
                 <li><code>Layout</code>: The layout wrapper, in which <code>Header</code><code>Sider</code><code>Content</code><code>Footer</code>or <code>Layout</code>  itself can be nested, and can be placed in any parent container.</li>
                 <li><code>Header</code>: The top layout with default style, in which any element can be nested, and must be placed in <code>Layout</code> .</li>
@@ -155,7 +155,7 @@
                 <li><code>Footer</code>: The bottom layout with default style, in which any element can be nested, and must be placed in <code>Layout</code>.</li>
             </ul>
             <Alert show-icon style="margin-top: 16px">Based on flex layout, please pay attention to the <a href="https://caniuse.com/#search=flex" target="_blank" title="can i use">compatibility</a>.</Alert>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic Structure" vertical hide-code>
                 <div slot="demo">
                     <div class="layout-con">
@@ -523,8 +523,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Sider props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Sider props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -585,7 +585,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Sider events" h3></Anchor>
+                <inAnchor title="Sider events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -602,7 +602,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Sider slot" h3></Anchor>
+                <inAnchor title="Sider slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -617,7 +617,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Sider methods" h3></Anchor>
+                <inAnchor title="Sider methods" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -633,7 +633,7 @@
                     </tbody>
                 </table>
             </div>
-            <Anchor title="breakpoint width" h3></Anchor>
+            <inAnchor title="breakpoint width" h3></inAnchor>
             <i-code lang="js" slot="code" :style="{background: '#f2f4f5', height: '170px'}">
         {
             xs: '480px',
@@ -651,14 +651,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/layout';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

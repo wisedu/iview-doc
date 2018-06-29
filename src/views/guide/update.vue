@@ -25,7 +25,7 @@
         <article class="doc-update">
             <Timeline pending>
                 <Timeline-item>
-                    <Anchor title="2.14.3" h2></Anchor>
+                    <inAnchor title="2.14.3" h2></inAnchor>
                     <p>
                         <code>2018-06-20</code>
                     </p>
@@ -34,7 +34,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.14.2" h2></Anchor>
+                    <inAnchor title="2.14.2" h2></inAnchor>
                     <p>
                         <code>2018-06-08</code>
                     </p>
@@ -50,7 +50,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.14.1" h2></Anchor>
+                    <inAnchor title="2.14.1" h2></inAnchor>
                     <p>
                         <code>2018-06-01</code>
                     </p>
@@ -70,7 +70,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.14.0 KAMI" h2></Anchor>
+                    <inAnchor title="2.14.0 KAMI" h2></inAnchor>
                     <p>
                         <code>2018-05-24</code>
                     </p>
@@ -104,7 +104,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.13.1" h2></Anchor>
+                    <inAnchor title="2.13.1" h2></inAnchor>
                     <p>
                         <code>2018-04-23</code>
                     </p>
@@ -120,7 +120,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.13.0 King of Opera" h2></Anchor>
+                    <inAnchor title="2.13.0 King of Opera" h2></inAnchor>
                     <p>
                         <code>2018-04-11</code>
                     </p>
@@ -137,7 +137,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.12.0 Human Resource Machine" h2></Anchor>
+                    <inAnchor title="2.12.0 Human Resource Machine" h2></inAnchor>
                     <p>
                         <code>2018-04-04</code>
                     </p>
@@ -169,9 +169,9 @@
                 </Timeline-item>
                 <Timeline-item>
                     <Icon type="planet" size="18" slot="dot"></Icon>
-                    <Anchor title="2.11.0 Alto's Odyssey" h2>
+                    <inAnchor title="2.11.0 Alto's Odyssey" h2>
                         <span class="doc-update-important">悼念史蒂芬·霍金</span>
-                    </Anchor>
+                    </inAnchor>
                     <p>
                         <code>2018-03-14</code>
                     </p>
@@ -189,7 +189,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.10.1" h2></Anchor>
+                    <inAnchor title="2.10.1" h2></inAnchor>
                     <p>
                         <code>2018-03-09</code>
                     </p>
@@ -198,7 +198,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.10.0 Reigns" h2></Anchor>
+                    <inAnchor title="2.10.0 Reigns" h2></inAnchor>
                     <p>
                         <code>2018-03-09</code>
                     </p>
@@ -231,7 +231,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.9.2" h2></Anchor>
+                    <inAnchor title="2.9.2" h2></inAnchor>
                     <p>
                         <code>2018-02-02</code>
                     </p>
@@ -240,7 +240,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.9.1" h2></Anchor>
+                    <inAnchor title="2.9.1" h2></inAnchor>
                     <p>
                         <code>2018-01-30</code>
                     </p>
@@ -250,7 +250,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.9.0 Agent A" h2></Anchor>
+                    <inAnchor title="2.9.0 Agent A" h2></inAnchor>
                     <p>
                         <code>2018-01-24</code>
                     </p>
@@ -281,9 +281,9 @@
                 </Timeline-item>
                 <Timeline-item>
                     <Icon type="ios-snowy" class="ivu-load-loop doc-update-loop" style="font-size: 32px;color: rgb(220,50,51)" slot="dot"></Icon>
-                    <Anchor title="2.8.0 Oceanhorn" h2>
+                    <inAnchor title="2.8.0 Oceanhorn" h2>
                         <span class="doc-update-important">Merry Christmas</span>
-                    </Anchor>
+                    </inAnchor>
                     <p>
                         <code>2017-12-25</code>
                     </p>
@@ -299,7 +299,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.7.4" h2></Anchor>
+                    <inAnchor title="2.7.4" h2></inAnchor>
                     <p>
                         <code>2017-12-01</code>
                     </p>
@@ -311,7 +311,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.7.3" h2></Anchor>
+                    <inAnchor title="2.7.3" h2></inAnchor>
                     <p>
                         <code>2017-11-16</code>
                     </p>
@@ -322,7 +322,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.7.2" h2></Anchor>
+                    <inAnchor title="2.7.2" h2></inAnchor>
                     <p>
                         <code>2017-11-14</code>
                     </p>
@@ -331,7 +331,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.7.1" h2></Anchor>
+                    <inAnchor title="2.7.1" h2></inAnchor>
                     <p>
                         <code>2017-11-14</code>
                     </p>
@@ -340,7 +340,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.7.0 Lara Croft GO" h2></Anchor>
+                    <inAnchor title="2.7.0 Lara Croft GO" h2></inAnchor>
                     <p>
                         <code>2017-11-13</code>
                     </p>
@@ -367,7 +367,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.6.0 FRAMED" h2></Anchor>
+                    <inAnchor title="2.6.0 FRAMED" h2></inAnchor>
                     <p>
                         <code>2017-10-26</code>
                     </p>
@@ -389,7 +389,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.5.1" h2></Anchor>
+                    <inAnchor title="2.5.1" h2></inAnchor>
                     <p>
                         <code>2017-10-18</code>
                     </p>
@@ -398,7 +398,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.5.0 Old Man’s Journey" h2></Anchor>
+                    <inAnchor title="2.5.0 Old Man’s Journey" h2></inAnchor>
                     <p>
                         <code>2017-10-17</code>
                     </p>
@@ -418,7 +418,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.4.0 Monument" h2></Anchor>
+                    <inAnchor title="2.4.0 Monument" h2></inAnchor>
                     <p>
                         <code>2017-09-25</code>
                     </p>
@@ -444,7 +444,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.3.1 & 2.3.2" h2></Anchor>
+                    <inAnchor title="2.3.1 & 2.3.2" h2></inAnchor>
                     <p>
                         <code>2017-09-10</code>
                     </p>
@@ -455,7 +455,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.3.0 Lumino City" h2></Anchor>
+                    <inAnchor title="2.3.0 Lumino City" h2></inAnchor>
                     <p>
                         <code>2017-09-05</code>
                     </p>
@@ -483,7 +483,7 @@
                 </Timeline-item>
                 <Timeline-item color="red">
                     <Icon type="ios-heart" size="18" slot="dot"></Icon>
-                    <Anchor title="2.2.0 Shadowmatic" h2></Anchor>
+                    <inAnchor title="2.2.0 Shadowmatic" h2></inAnchor>
                     <p>
                         <code>2017-08-28</code>
                     </p>
@@ -502,7 +502,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.1.0 Alto's Adventure" h2></Anchor>
+                    <inAnchor title="2.1.0 Alto's Adventure" h2></inAnchor>
                     <p>
                         <code>2017-08-14</code>
                     </p>
@@ -527,7 +527,7 @@
                 </Timeline-item>
                 <Timeline-item color="green">
                     <Icon type="trophy" size="18" slot="dot"></Icon>
-                    <Anchor title="2.0.0 Leo's Fortune" h2></Anchor>
+                    <inAnchor title="2.0.0 Leo's Fortune" h2></inAnchor>
                     <p>
                         <code>2017-07-28</code>
                     </p>
@@ -554,7 +554,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.0.0-rc.19" h2></Anchor>
+                    <inAnchor title="2.0.0-rc.19" h2></inAnchor>
                     <p>
                         <code>2017-07-17</code>
                     </p>
@@ -568,7 +568,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.0.0-rc.18" h2></Anchor>
+                    <inAnchor title="2.0.0-rc.18" h2></inAnchor>
                     <p>
                         <code>2017-07-03</code>
                     </p>
@@ -590,7 +590,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.0.0-rc.17" h2></Anchor>
+                    <inAnchor title="2.0.0-rc.17" h2></inAnchor>
                     <p>
                         <code>2017-06-14</code>
                     </p>
@@ -607,7 +607,7 @@
                 </Timeline-item>
                 <Timeline-item>
                     <Icon type="social-apple-outline" size="18" slot="dot"></Icon>
-                    <Anchor title="2.0.0-rc.16" h2></Anchor>
+                    <inAnchor title="2.0.0-rc.16" h2></inAnchor>
                     <p>
                         <code>2017-06-05</code>
                     </p>
@@ -625,7 +625,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.0.0-rc.15" h2></Anchor>
+                    <inAnchor title="2.0.0-rc.15" h2></inAnchor>
                     <p>
                         <code>2017-05-31</code>
                     </p>
@@ -641,7 +641,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.0.0-rc.14" h2></Anchor>
+                    <inAnchor title="2.0.0-rc.14" h2></inAnchor>
                     <p>
                         <code>2017-05-22</code>
                     </p>
@@ -657,9 +657,9 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.0.0-rc.13" h2>
+                    <inAnchor title="2.0.0-rc.13" h2>
                         <span class="doc-update-important">重要更新</span>
-                    </Anchor>
+                    </inAnchor>
                     <p>
                         <code>2017-05-12</code>
                     </p>
@@ -674,7 +674,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.0.0-rc.12" h2></Anchor>
+                    <inAnchor title="2.0.0-rc.12" h2></inAnchor>
                     <p>
                         <code>2017-04-28</code>
                     </p>
@@ -694,7 +694,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.0.0-rc.11" h2></Anchor>
+                    <inAnchor title="2.0.0-rc.11" h2></inAnchor>
                     <p>
                         <code>2017-04-22</code>
                     </p>
@@ -711,7 +711,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.0.0-rc.10" h2></Anchor>
+                    <inAnchor title="2.0.0-rc.10" h2></inAnchor>
                     <p>
                         <code>2017-04-10</code>
                     </p>
@@ -729,7 +729,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.0.0-rc.9" h2></Anchor>
+                    <inAnchor title="2.0.0-rc.9" h2></inAnchor>
                     <p>
                         <code>2017-04-01</code>
                     </p>
@@ -753,7 +753,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.0.0-rc.8" h2></Anchor>
+                    <inAnchor title="2.0.0-rc.8" h2></inAnchor>
                     <p>
                         <code>2017-03-29</code>
                     </p>
@@ -764,7 +764,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.0.0-rc.7" h2></Anchor>
+                    <inAnchor title="2.0.0-rc.7" h2></inAnchor>
                     <p>
                         <code>2017-03-27</code>
                     </p>
@@ -777,7 +777,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.0.0-rc.6" h2></Anchor>
+                    <inAnchor title="2.0.0-rc.6" h2></inAnchor>
                     <p>
                         <code>2017-03-22</code>
                     </p>
@@ -792,7 +792,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.0.0-rc.5" h2></Anchor>
+                    <inAnchor title="2.0.0-rc.5" h2></inAnchor>
                     <p>
                         <code>2017-03-15</code>
                     </p>
@@ -807,7 +807,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.0.0-rc.4" h2></Anchor>
+                    <inAnchor title="2.0.0-rc.4" h2></inAnchor>
                     <p>
                         <code>2017-03-14</code>
                     </p>
@@ -819,7 +819,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Anchor title="2.0.0-rc.3" h2></Anchor>
+                    <inAnchor title="2.0.0-rc.3" h2></inAnchor>
                     <p>
                         <code>2017-03-13</code>
                     </p>
@@ -830,7 +830,7 @@
                 </Timeline-item>
                 <Timeline-item color="green">
                     <Icon type="trophy" size="18" slot="dot"></Icon>
-                    <Anchor title="2.0.0-rc.2" h2></Anchor>
+                    <inAnchor title="2.0.0-rc.2" h2></inAnchor>
                     <p>
                         <code>2017-03-10</code>
                     </p>
@@ -870,7 +870,7 @@
     import iArticle from '../../components/article.vue';
     import iCode from 'iCode';
     import Code from '../../code/guide';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
     import issue from '../../components/issue.vue';
     import mention from '../../components/mention.vue';
 
@@ -880,7 +880,7 @@
         components: {
             iArticle,
             iCode,
-            Anchor,
+            inAnchor,
             issue,
             mention
         },

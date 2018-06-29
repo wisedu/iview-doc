@@ -2,10 +2,10 @@
     <i-article>
         <article>
             <h1>Progress</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>Show current progres status of the opreation or task. For example, uploading file.</p>
             <Alert show-icon style="margin-top: 16px">Attention：Use <code>i-progress</code> if not under template/render mode.</Alert>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
                     <Progress :percent="25"></Progress>
@@ -64,8 +64,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Progress props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Progress props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -108,7 +108,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Progress slot" h3></Anchor>
+                <inAnchor title="Progress slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -132,14 +132,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/progress';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

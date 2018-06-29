@@ -44,16 +44,16 @@
     <i-article>
         <article>
             <h1>Icon</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>iView uses open source icon set <a href="http://ionicons.com/" target="_blank"><Icon type="ios-ionic"></Icon> ionicons</a></p>
-            <Anchor title="How to Use" h2></Anchor>
+            <inAnchor title="How to Use" h2></inAnchor>
             <p>Use <code>&lt;Icon /></code> component, Set corresponding <code>type</code> prop of the icon. Sample code:</p>
             <i-code lang="html" bg>{{ code.demo }}</i-code>
             <p>After rending:</p>
             <i-code lang="html" bg>{{ code.render }}</i-code>
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Icon props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Icon props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -85,7 +85,7 @@
                     </tbody>
                 </table>
             </div>
-            <Anchor title="Icon Preview" h2></Anchor>
+            <inAnchor title="Icon Preview" h2></inAnchor>
             <div class="icon-search">
                 <input
                     type="text"
@@ -111,7 +111,7 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/icon';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
     import Icons from '../../code/iconname';
     import Clipboard from 'clipboard';
 
@@ -122,7 +122,7 @@
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

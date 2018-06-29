@@ -13,11 +13,11 @@
     <i-article>
         <article>
             <h1>Modal</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>Modal dialog. It's shown in the floating layer. It's used to guide user do certain operations.</p>
             <p><code>Modal</code> provides two usages: normal component using & encapsulated instance calling.</p>
-            <Anchor title="Examples" h2></Anchor>
-            <Anchor title="Normal Component Usage" h3></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
+            <inAnchor title="Normal Component Usage" h3></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
                     <Button type="primary" @click="modal1 = true">Display dialog box</Button>
@@ -153,7 +153,7 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.position }}</i-code>
             </Demo>
-            <Anchor title="Instantiation Usage" h3></Anchor>
+            <inAnchor title="Instantiation Usage" h3></inAnchor>
             <p>Besides normal component usages mentioned above, iView has encapsulated some instance methods elaborately to create one-off light Modal.</p>
             <p>The instance create a Modal globally by creating a Vue component implicitly. It will be destroyed after disappeared. So you can only operate one insatnce at the same time.</p>
             <Demo title="Basic Usage">
@@ -198,8 +198,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Modal props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Modal props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -290,7 +290,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Modal events" h3></Anchor>
+                <inAnchor title="Modal events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -317,7 +317,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Modal slot" h3></Anchor>
+                <inAnchor title="Modal slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -344,7 +344,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Modal instance" h3></Anchor>
+                <inAnchor title="Modal instance" h3></inAnchor>
                 <p>Use insatnce by directly calling methods below:</p>
                 <ul>
                     <li>
@@ -457,7 +457,7 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/modal';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
     import studyRender from '../../components/study.vue';
 
     export default {
@@ -465,7 +465,7 @@
             iArticle,
             iCode,
             Demo,
-            Anchor,
+            inAnchor,
             studyRender
         },
         data () {

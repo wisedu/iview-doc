@@ -10,18 +10,18 @@
     <i-article>
         <article>
             <h1>Font</h1>
-            <Anchor title="Overview" h2></Anchor>
+            <inAnchor title="Overview" h2></inAnchor>
             <p>iView's stylesheet has already standardized the typography for achieving the most appealing display effects regardless of the OS and browers. The fonts of the <Icon type="apple-apple"></Icon> macOS（iOS）are used whenever they're available, the fallback ones are also provided.</p>
-            <Anchor title="Typography Preview" h3></Anchor>
+            <inAnchor title="Typography Preview" h3></inAnchor>
             <ul>
                 <li>Chinese Characters</li>
                 <img class="demo-font-img" src="../../images/font-zh.png">
                 <li>English Characters</li>
                 <img class="demo-font-img" src="../../images/font-en.png">
             </ul>
-            <Anchor title="Code" h3></Anchor>
+            <inAnchor title="Code" h3></inAnchor>
             <i-code lang="css" bg>font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;</i-code>
-            <Anchor title="Usage Rules" h3></Anchor>
+            <inAnchor title="Usage Rules" h3></inAnchor>
             <Row class="api" :gutter="16">
                 <i-col span="12">
                     <table>
@@ -159,14 +159,14 @@
     import iArticle from '../../components/article.vue';
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

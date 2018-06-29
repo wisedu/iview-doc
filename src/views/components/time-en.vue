@@ -2,9 +2,9 @@
     <i-article>
         <article>
             <h1>Time</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>It is often used to represent the time description of a few minutes ago, a few hours ago, etc. relative to the present time.</p>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
                     <Time :time="time1" />
@@ -54,8 +54,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Time props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Time props" h3></inAnchor>
                 <table>
                     <thead>
                     <tr>
@@ -101,14 +101,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/time';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

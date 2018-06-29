@@ -29,11 +29,11 @@
         <i-article>
             <article>
                 <h1>Table</h1>
-                <Anchor title="Brief Introduction" h2></Anchor>
+                <inAnchor title="Brief Introduction" h2></inAnchor>
                 <p>Table is used to display a mass of structured data.</p>
                 <p>It supports sorting, filtering, paging, custom operation, exporting to csv and many other complex functions.</p>
                 <Alert show-icon style="margin-top: 16px">Attention：Use <code>i-table</code> if not under template/render mode.</Alert>
-                <Anchor title="Examples" h2></Anchor>
+                <inAnchor title="Examples" h2></inAnchor>
                 <Demo title="Basic Usage" vertical hide-code>
                     <div slot="demo">
                         <Table :columns="columns1" :data="data1"></Table>
@@ -237,7 +237,7 @@
                     </div>
                     <i-code lang="html" slot="code">{{ code.csv }}</i-code>
                 </Demo>
-                <Anchor title="Advanced Examples" h2></Anchor>
+                <inAnchor title="Advanced Examples" h2></inAnchor>
                 <p>Examples above basically cover all the functions of Table. We provides some complex examples on the basis of real business scenarios:</p>
                 <Button type="primary" size="large" @click="table1 = true">Complex Table with Paging</Button>
                 <Button type="primary" size="large" @click="table2 = true">Table with Multi-cols Filter</Button>
@@ -246,8 +246,8 @@
                 <ad></ad>
 
                 <div class="api">
-                    <Anchor title="API" h2></Anchor>
-                    <Anchor title="Table props" h3></Anchor>
+                    <inAnchor title="API" h2></inAnchor>
+                    <inAnchor title="Table props" h3></inAnchor>
                     <table>
                         <thead>
                         <tr>
@@ -356,7 +356,7 @@
                         </tr>
                         </tbody>
                     </table>
-                    <Anchor title="Table events" h3></Anchor>
+                    <inAnchor title="Table events" h3></inAnchor>
                     <table>
                         <thead>
                         <tr>
@@ -462,7 +462,7 @@
                         </tr>
                         </tbody>
                     </table>
-                    <Anchor title="Table slot" h3></Anchor>
+                    <inAnchor title="Table slot" h3></inAnchor>
                     <table>
                         <thead>
                         <tr>
@@ -485,7 +485,7 @@
                         </tr>
                         </tbody>
                     </table>
-                    <Anchor title="Table methods" h3></Anchor>
+                    <inAnchor title="Table methods" h3></inAnchor>
                     <table>
                         <thead>
                         <tr>
@@ -551,7 +551,7 @@
                         </tr>
                         </tbody>
                     </table>
-                    <Anchor title="column" h3></Anchor>
+                    <inAnchor title="column" h3></inAnchor>
                     <p>One of the item in columns. It describes the column data.</p>
                     <table>
                         <thead>
@@ -771,7 +771,7 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/table';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     import expandRow from './table-expand.vue';
     import studyRender from '../../components/study.vue';
@@ -781,7 +781,7 @@
             iArticle,
             iCode,
             Demo,
-            Anchor,
+            inAnchor,
             expandRow,
             studyRender
         },

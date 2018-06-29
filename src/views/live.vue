@@ -65,13 +65,13 @@
 </template>
 <script>
     import iArticle from '../components/article.vue';
-    import Anchor from '../components/anchor.vue';
+    import inAnchor from '../components/anchor.vue';
     import Config from '../config/config';
 
     export default {
         components: {
             iArticle,
-            Anchor
+            inAnchor
         },
         data () {
             return {

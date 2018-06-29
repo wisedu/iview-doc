@@ -2,9 +2,9 @@
     <i-article>
         <article>
             <h1>ColorPicker</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>For color selection, support for multiple color formats and color presets.</p>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic">
                 <div slot="demo">
                     <Row>
@@ -80,8 +80,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="ColorPicker props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="ColorPicker props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -142,7 +142,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="ColorPicker events" h3></Anchor>
+                <inAnchor title="ColorPicker events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -178,14 +178,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/color-picker';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

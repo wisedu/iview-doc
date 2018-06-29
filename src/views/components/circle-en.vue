@@ -36,14 +36,14 @@
     <i-article>
         <article>
             <h1>Circle</h1>
-            <Anchor title="Overview" h2></Anchor>
+            <inAnchor title="Overview" h2></inAnchor>
             <p>Circular progress bar. When to use:</p>
             <ul>
                 <li>To display the current progress of an operation flow.</li>
                 <li>To display the percentage of some indexes.</li>
             </ul>
             <Alert show-icon style="margin-top: 16px" type="warning">Warning: If you don't use <router-link to="/docs/guide/iview-loader-en">iview-loader</router-link>, you have to use <code>i-circle</code> tag.</Alert>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
                     <Row>
@@ -115,8 +115,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Circle props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Circle props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -171,7 +171,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Circle slot" h3></Anchor>
+                <inAnchor title="Circle slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -195,14 +195,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/circle';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

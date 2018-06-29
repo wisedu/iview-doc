@@ -2,9 +2,9 @@
     <i-article>
         <article>
             <h1>参与贡献</h1>
-            <Anchor title="开发规范" h2></Anchor>
+            <inAnchor title="开发规范" h2></inAnchor>
             <p>贡献组件代码前请务必先与作者联系 <a href="mailto:admin@aresn.com">admin@aresn.com</a>，确定好开发内容和 API，以免产生不必要或重复的工作。</p>
-            <Anchor title="使用之前" h3></Anchor>
+            <inAnchor title="使用之前" h3></inAnchor>
             <ul>
                 <li>使用最新ES2015语法，具体如下：</li>
                 <ul>
@@ -16,7 +16,7 @@
                 <li>通用工具集可以在<code>src/utils/assist</code>内扩展</li>
                 <li>在<code>examples/routers</code>内测试组件</li>
             </ul>
-            <Anchor title="组件" h3></Anchor>
+            <inAnchor title="组件" h3></inAnchor>
             <p>命名</p>
             <ul>
                 <li>尽量简单、表意。</li>
@@ -34,7 +34,7 @@
                 <li>如果<code>validator</code>验证为几个值中的一个，则使用<code>src/utils/assist</code>内的<code>oneOf</code>函数验证</li>
                 <li>如果有尺寸的参数<code>size</code>，只能使用<code>small</code><code>large</code>，默认是适中，则不用写</li>
             </ul>
-            <Anchor title="事件" h3></Anchor>
+            <inAnchor title="事件" h3></inAnchor>
             <p>命名</p>
             <ul>
                 <li>使用<code>on-</code>为前缀，比如<code>on-change</code></li>
@@ -44,7 +44,7 @@
                 <li><code>$dispatch</code>和<code>$broadcast</code> 替代方案在 <code>src/mixins/emitter.js</code> 内</li>
                 <li>嵌套组件之间通信，可以使用<code>$parent</code>和<code>$children</code>，在 <code>src/utils/assist.js</code> 内提供了 <code>findComponentUpward</code>、<code>findComponentDownward</code>、<code>findComponentsDownward</code> 三个方法来向上或向下查找元素，建议组件可以嵌套其它组件时，查询 parent 或 children 使用这三个方法。参考 Radio、Checkbox、Menu 组件的实现。</li>
             </ul>
-            <Anchor title="其它" h3></Anchor>
+            <inAnchor title="其它" h3></inAnchor>
             <ul>
                 <li>css前缀使用<code>ivu-</code></li>
             </ul>
@@ -55,13 +55,13 @@
     import iArticle from '../../components/article.vue';
     import iCode from 'iCode';
     import Code from '../../code/guide';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
-            Anchor
+            inAnchor
         },
         data () {
             return {
