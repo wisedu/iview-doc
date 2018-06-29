@@ -962,6 +962,20 @@ const routers = [
         component: (resolve) => require(['./views/components/anchor-en.vue'], resolve)
     },
     {
+        path: '/components/cell',
+        meta: {
+            title: 'Cell 单元格'
+        },
+        component: (resolve) => require(['./views/components/cell.vue'], resolve)
+    },
+    {
+        path: '/components/cell-en',
+        meta: {
+            title: 'Cell'
+        },
+        component: (resolve) => require(['./views/components/cell-en.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }

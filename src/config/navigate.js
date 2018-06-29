@@ -131,6 +131,12 @@ const list = {
                     img: 'divider.png',
                     icon: 'ios-remove'
                 },
+                {
+                    title: 'Cell 单元格',
+                    path: '/components/cell',
+                    img: 'cell.png',
+                    icon: 'ios-list-box-outline'
+                },
             ]
         },
         {
