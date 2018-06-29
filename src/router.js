@@ -934,6 +934,20 @@ const routers = [
         component: (resolve) => require(['./views/components/scroll-en.vue'], resolve)
     },
     {
+        path: '/components/time',
+        meta: {
+            title: 'Time 相对时间'
+        },
+        component: (resolve) => require(['./views/components/time.vue'], resolve)
+    },
+    {
+        path: '/components/time-en',
+        meta: {
+            title: 'Time'
+        },
+        component: (resolve) => require(['./views/components/time-en.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
