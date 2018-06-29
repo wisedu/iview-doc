@@ -2980,14 +2980,6 @@ export default[
         "tag": "square"
     },
     {
-        "name": "ios-square-outline",
-        "tag": "square,outline"
-    },
-    {
-        "name": "ios-square-outline",
-        "tag": "square,outline"
-    },
-    {
         "name": "md-square-outline",
         "tag": "square,outline"
     },
@@ -3010,14 +3002,6 @@ export default[
     {
         "name": "md-star-half",
         "tag": "favorite,half,rate,star"
-    },
-    {
-        "name": "ios-star-outline",
-        "tag": "star,outline"
-    },
-    {
-        "name": "ios-star-outline",
-        "tag": "star,outline"
     },
     {
         "name": "md-star-outline",
