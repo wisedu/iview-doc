@@ -25,7 +25,7 @@
                     <p><a href="http://dmap.talkingdata.com/?from=iview" target="_blank">立即访问</a></p>
                 </i-col>
                 <i-col span="14">
-                    <Carousel dots="outside">
+                    <Carousel dots="outside" loop>
                         <Carousel-item>
                             <div class="demo-case-img">
                                 <img src="../../images/case-4-1.jpg">
@@ -51,7 +51,7 @@
                     <p><a href="https://cloud.tencent.com/product/ss/details" target="_blank">立即访问</a></p>
                 </i-col>
                 <i-col span="14">
-                    <Carousel dots="outside">
+                    <Carousel dots="outside" loop>
                         <Carousel-item>
                             <div class="demo-case-img">
                                 <img src="../../images/case-6-1.jpg">
@@ -77,7 +77,7 @@
                     <p><a href="https://www.talkingdata.com/products.jsp?languagetype=zh_cn" target="_blank">立即访问</a></p>
                 </i-col>
                 <i-col span="14">
-                    <Carousel dots="outside">
+                    <Carousel dots="outside" loop>
                         <Carousel-item>
                             <div class="demo-case-img">
                                 <img src="../../images/case-1-1.png">
@@ -119,7 +119,7 @@
                     <p><a href="https://www.talkingdata.com/product-MarketingCloud.jsp?languagetype=zh_cn" target="_blank">立即访问</a></p>
                 </i-col>
                 <i-col span="14">
-                    <Carousel dots="outside">
+                    <Carousel dots="outside" loop>
                         <Carousel-item>
                             <div class="demo-case-img">
                                 <img src="../../images/case-2-1.png">
