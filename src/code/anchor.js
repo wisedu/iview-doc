@@ -2,9 +2,15 @@ let code = {};
 
 code.base = `
 <template>
-    <Affix>
-        <span class="demo-affix">Fixed at the top</span>
-    </Affix>
+    <Anchor show-ink-in-fixed>
+        <AnchorLink href="#basic_usage" title="Basic Usage" />
+        <AnchorLink href="#static_position" title="Static Position" />
+        <AnchorLink href="#API" title="API">
+            <AnchorLink href="#Anchor_props" title="Anchor props" />
+            <AnchorLink href="#Anchor_events" title="Anchor events" />
+            <AnchorLink href="#AnchorLink_props" title="AnchorLink props" />
+        </AnchorLink>
+    </Anchor>
 </template>
 <script>
     export default {
@@ -13,45 +19,21 @@ code.base = `
 </script>
 `;
 
-code.top = `
+code.affix = `
 <template>
-    <Affix :offset-top="50">
-        <span class="demo-affix">Fixed at the top 50px from the top</span>
-    </Affix>
+    <Anchor :affix="false" show-ink-in-fixed>
+        <AnchorLink href="#basic_usage" title="Basic Usage" />
+        <AnchorLink href="#static_position" title="Static Position" />
+        <AnchorLink href="#API" title="API">
+            <AnchorLink href="#Anchor_props" title="Anchor props" />
+            <AnchorLink href="#Anchor_events" title="Anchor events" />
+            <AnchorLink href="#AnchorLink_props" title="AnchorLink props" />
+        </AnchorLink>
+    </Anchor>
 </template>
 <script>
     export default {
         
-    }
-</script>
-`;
-
-code.bottom = `
-<template>
-    <Affix :offset-bottom="20">
-        <span class="demo-affix">Fix at the bottom 20px</span>
-    </Affix>
-</template>
-<script>
-    export default {
-        
-    }
-</script>
-`;
-
-code.change = `
-<template>
-    <Affix :offset-top="100" @on-change="change">
-        <span class="demo-affix">Fix the position at the top of 100px at the top</span>
-    </Affix>
-</template>
-<script>
-    export default {
-        methods: {
-            change (status) {
-                this.$Message.info(\`Status: \${status}\`);
-            }
-        }
     }
 </script>
 `;

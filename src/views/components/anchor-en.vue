@@ -1,112 +1,153 @@
-<style scoped>
-    article{
-        min-height: 1500px;
-    }
-    .demo-affix{
-        display: inline-block;
-        color: #fff;
-        padding: 10px 30px;
-        text-align: center;
-        background: rgba(0, 153, 229, .9);
+<style>
+    .demo-anchor .ivu-affix{
+        z-index: 1000;
     }
 </style>
 <template>
     <i-article>
         <article>
-            <h1>Affix 图钉</h1>
-            <inAnchor title="概述" h2></inAnchor>
-            <p>使用图钉，可以将内容固定在屏幕上，并且不随页面的滚动而滚动。常用于侧边菜单等。</p>
-            <inAnchor title="代码示例" h2></inAnchor>
-            <Demo title="基础用法">
-                <div slot="demo">
-                    <Affix>
-                        <span class="demo-affix">固定在最顶部</span>
-                    </Affix>
-                </div>
-                <div slot="desc">
-                    <p>简单使用，当元素不可见时，直接固定在最顶端。</p>
-                </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
-            </Demo>
-            <Demo title="偏移">
-                <div slot="demo">
-                    <Affix :offset-top="50">
-                        <span class="demo-affix">固定在距离顶部 50px 的位置</span>
-                    </Affix>
-                </div>
-                <div slot="desc">
-                    <p>当滚动到一定距离时再固定。</p>
-                </div>
-                <i-code lang="html" slot="code">{{ code.top }}</i-code>
-            </Demo>
-            <Demo title="固定在底部">
-                <div slot="demo">
-                    <Affix :offset-bottom="20">
-                        <span class="demo-affix">固定在距离底部 20px 的位置</span>
-                    </Affix>
-                </div>
-                <div slot="desc">
-                    <p>在屏幕下方固定，可以通过缩小浏览器窗口高度来查看效果。</p>
-                    <p>注意，<code>offset-top</code>和<code>offset-bottom</code>只可以设置一个，如果都设置，会使用<code>offset-top</code>。</p>
-                </div>
-                <i-code lang="html" slot="code">{{ code.bottom }}</i-code>
-            </Demo>
-            <Demo title="固定状态改变时的回调">
-                <div slot="demo">
-                    <Affix :offset-top="100" @on-change="change">
-                        <span class="demo-affix">固定在距离顶部 100px 的位置</span>
-                    </Affix>
-                </div>
-                <div slot="desc">
-                    <p>当固定状态发生改变时，会触发事件。</p>
-                </div>
-                <i-code lang="html" slot="code">{{ code.change }}</i-code>
-            </Demo>
+            <h1>Anchor</h1>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
+            <p>Used to jump to a specific location on the page.</p>
+            <inAnchor title="Examples" h2></inAnchor>
+            <div id="basic_usage">
+                <Demo title="Basic Usage">
+                    <div slot="demo">
+                        <Anchor show-ink-in-fixed class="demo-anchor">
+                            <AnchorLink href="#basic_usage" title="Basic Usage" />
+                            <AnchorLink href="#static_position" title="Static Position" />
+                            <AnchorLink href="#API" title="API">
+                                <AnchorLink href="#Anchor_props" title="Anchor props" />
+                                <AnchorLink href="#Anchor_events" title="Anchor events" />
+                                <AnchorLink href="#AnchorLink_props" title="AnchorLink props" />
+                            </AnchorLink>
+                        </Anchor>
+                    </div>
+                    <div slot="desc">
+                        <p>The simplest usage.</p>
+                    </div>
+                    <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                </Demo>
+            </div>
+
+            <div id="static_position">
+                <Demo title="Static Position">
+                    <div slot="demo">
+                        <Anchor :affix="false">
+                            <AnchorLink href="#basic_usage" title="Basic Usage" />
+                            <AnchorLink href="#static_position" title="Static Position" />
+                            <AnchorLink href="#API" title="API">
+                                <AnchorLink href="#Anchor_props" title="Anchor props" />
+                                <AnchorLink href="#Anchor_events" title="Anchor events" />
+                                <AnchorLink href="#AnchorLink_props" title="AnchorLink props" />
+                            </AnchorLink>
+                        </Anchor>
+                    </div>
+                    <div slot="desc">
+                        <p>Do not change state when page is scrolling.</p>
+                    </div>
+                    <i-code lang="html" slot="code">{{ code.affix }}</i-code>
+                </Demo>
+            </div>
 
             <ad></ad>
 
             <div class="api">
                 <inAnchor title="API" h2></inAnchor>
-                <inAnchor title="Affix props" h3></inAnchor>
+                <inAnchor title="Anchor props" h3></inAnchor>
                 <table>
                     <thead>
-                        <tr>
-                            <th>属性</th>
-                            <th>说明</th>
-                            <th>类型</th>
-                            <th>默认值</th>
-                        </tr>
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                    </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>offset-top</td>
-                            <td>距离窗口顶部达到指定偏移量后触发</td>
-                            <td>Number</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>offset-bottom</td>
-                            <td>距离窗口底部达到指定偏移量后触发</td>
-                            <td>Number</td>
-                            <td>-</td>
-                        </tr>
+                    <tr>
+                        <td>affix</td>
+                        <td>Fixed mode of Anchor</td>
+                        <td>Boolean</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>offset-top</td>
+                        <td>Pixels to offset from top when calculating position of scroll.</td>
+                        <td>Number</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>offset-bottom</td>
+                        <td>Pixels to offset from bottom when calculating position of scroll.</td>
+                        <td>Number</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>bounds</td>
+                        <td>ounding distance of anchor area, unit: px.</td>
+                        <td>Number</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>container</td>
+                        <td>Scrolling container.</td>
+                        <td>String | HTMLElement</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>show-ink-in-fixed</td>
+                        <td>Whether show ink-balls in Fixed mode.</td>
+                        <td>Boolean</td>
+                        <td>false</td>
+                    </tr>
                     </tbody>
                 </table>
-                <inAnchor title="Affix events" h3></inAnchor>
+                <inAnchor title="Anchor events" h3></inAnchor>
                 <table>
                     <thead>
-                        <tr>
-                            <th>事件名</th>
-                            <th>说明</th>
-                            <th>返回值</th>
-                        </tr>
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Description</th>
+                        <th>Return Value</th>
+                    </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>on-change</td>
-                            <td>在固定状态发生改变时触发</td>
-                            <td>true | false</td>
-                        </tr>
+                    <tr>
+                        <td>on-select</td>
+                        <td>Click on the anchor point to trigger back link.</td>
+                        <td>href</td>
+                    </tr>
+                    <tr>
+                        <td>on-change</td>
+                        <td>Triggered when the link changes, returning new link and old link.</td>
+                        <td>newHref, oldHref</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <inAnchor title="AnchorLink props" h3></inAnchor>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>href</td>
+                        <td>target of hyperlink</td>
+                        <td>String</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>title</td>
+                        <td>content of hyperlink</td>
+                        <td>String</td>
+                        <td>-</td>
+                    </tr>
                     </tbody>
                 </table>
             </div>
@@ -117,7 +158,7 @@
     import iArticle from '../../components/article.vue';
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
-    import Code from '../../code/affix';
+    import Code from '../../code/anchor';
     import inAnchor from '../../components/anchor.vue';
 
     export default {
@@ -133,9 +174,7 @@
             }
         },
         methods: {
-            change (status) {
-                this.$Message.info(`当前状态：${status}`);
-            }
+
         }
     }
 </script>

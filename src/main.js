@@ -68,7 +68,7 @@ router.beforeEach((to, from, next) => {
 router.afterEach((to, from, next) => {
     iView.LoadingBar.finish();
     bus.loading = false;
-    // window.scrollTo(0, 0);
+    if (to.hash === '') window.scrollTo(0, 0);  // 避免 Anchor 的示例滚动
     if (_hmt) {
         _hmt.push(['_trackEvent', 'page', to.path]);
     }

@@ -1,57 +1,54 @@
-<style scoped>
-    article{
-        min-height: 1500px;
-    }
-    .demo-affix{
-        display: inline-block;
-        color: #fff;
-        padding: 10px 30px;
-        text-align: center;
-        background: rgba(0, 153, 229, .9);
+<style>
+    .demo-anchor .ivu-affix{
+        z-index: 1000;
     }
 </style>
 <template>
     <i-article>
         <article>
-            <h1>inAnchor 锚点</h1>
+            <h1>Anchor 锚点</h1>
             <inAnchor title="概述" h2></inAnchor>
             <p>用于跳转到页面指定位置。</p>
             <inAnchor title="代码示例" h2></inAnchor>
-            <Demo title="basic_usage">
-                <div slot="demo">
-                    <Anchor>
-                        <AnchorLink href="#basic_usage" title="基础用法" />
-                        <AnchorLink href="#static_position" title="静态位置" />
-                        <AnchorLink href="#API" title="API">
-                            <AnchorLink href="#Anchor_props" title="Anchor props" />
-                            <AnchorLink href="#Anchor_events" title="Anchor events" />
-                            <AnchorLink href="#AnchorLink_props" title="AnchorLink props" />
-                        </AnchorLink>
-                    </Anchor>
-                </div>
-                <div slot="desc">
-                    <p>简单使用，当元素不可见时，直接固定在最顶端。</p>
-                </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
-            </Demo>
+            <div id="basic_usage">
+                <Demo title="基础用法">
+                    <div slot="demo">
+                        <Anchor show-ink-in-fixed class="demo-anchor">
+                            <AnchorLink href="#basic_usage" title="基础用法" />
+                            <AnchorLink href="#static_position" title="静态位置" />
+                            <AnchorLink href="#API" title="API">
+                                <AnchorLink href="#Anchor_props" title="Anchor props" />
+                                <AnchorLink href="#Anchor_events" title="Anchor events" />
+                                <AnchorLink href="#AnchorLink_props" title="AnchorLink props" />
+                            </AnchorLink>
+                        </Anchor>
+                    </div>
+                    <div slot="desc">
+                        <p>最简单的用法。</p>
+                    </div>
+                    <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                </Demo>
+            </div>
 
-            <Demo title="static_position">
-                <div slot="demo">
-                    <Anchor :affix="false">
-                        <AnchorLink href="#基础用法" title="基础用法" />
-                        <AnchorLink href="#静态位置" title="静态位置" />
-                        <AnchorLink href="#API" title="API">
-                            <AnchorLink href="#Anchor_props" title="Anchor props" />
-                            <AnchorLink href="#Anchor_events" title="Anchor events" />
-                            <AnchorLink href="#AnchorLink_props" title="AnchorLink props" />
-                        </AnchorLink>
-                    </Anchor>
-                </div>
-                <div slot="desc">
-                    <p>简单使用，当元素不可见时，直接固定在最顶端。</p>
-                </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
-            </Demo>
+            <div id="static_position">
+                <Demo title="静态位置">
+                    <div slot="demo">
+                        <Anchor :affix="false">
+                            <AnchorLink href="#basic_usage" title="基础用法" />
+                            <AnchorLink href="#static_position" title="静态位置" />
+                            <AnchorLink href="#API" title="API">
+                                <AnchorLink href="#Anchor_props" title="Anchor props" />
+                                <AnchorLink href="#Anchor_events" title="Anchor events" />
+                                <AnchorLink href="#AnchorLink_props" title="AnchorLink props" />
+                            </AnchorLink>
+                        </Anchor>
+                    </div>
+                    <div slot="desc">
+                        <p>不浮动，状态不随页面滚动变化。</p>
+                    </div>
+                    <i-code lang="html" slot="code">{{ code.affix }}</i-code>
+                </Demo>
+            </div>
 
             <ad></ad>
 
