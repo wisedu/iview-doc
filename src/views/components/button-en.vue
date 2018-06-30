@@ -9,7 +9,6 @@
                 <div slot="demo">
                     <Button>Default</Button>
                     <Button type="primary">Primary</Button>
-                    <Button type="ghost">Ghost</Button>
                     <Button type="dashed">Dashed</Button>
                     <Button type="text">Text</Button>
                     <br><br>
@@ -19,10 +18,29 @@
                     <Button type="error">Error</Button>
                 </div>
                 <div slot="desc">
-                    <p>Types of buttons: default, primary, ghost, dashed, text and 4 buttons of different colors.</p>
-                    <p>Set the <code>type</code> to<code>primary</code>、<code>ghost</code>、<code>dashed</code>、<code>text</code>、<code>info</code>、<code>success</code>、<code>warning</code>、<code>error</code>to choose different buttons, by default the default type is used.</p>
+                    <p>Types of buttons: default, primary, dashed, text and 4 buttons of different colors.</p>
+                    <p>Set the <code>type</code> to<code>primary</code>, <code>ghost</code>, <code>dashed</code>, <code>text</code>, <code>info</code>, <code>success</code>, <code>warning</code>, <code>error</code>to choose different buttons, by default the default type is used.</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.type }}</i-code>
+            </Demo>
+            <Demo title="Ghost">
+                <div slot="demo">
+                    <div style="padding: 20px;background: rgb(190, 200, 200)">
+                        <Button type="default" ghost>Default</Button>
+                        <Button type="primary" ghost>Primary</Button>
+                        <Button type="dashed" ghost>Dashed</Button>
+                        <Button type="text" ghost>Text</Button>
+                        <br><br>
+                        <Button type="info" ghost>Info</Button>
+                        <Button type="success" ghost>Success</Button>
+                        <Button type="warning" ghost>Warning</Button>
+                        <Button type="error" ghost>Error</Button>
+                    </div>
+                </div>
+                <div slot="desc">
+                    <p><code>ghost</code> property will make button's background transparent, it is common used in colored background.</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.ghost }}</i-code>
             </Demo>
             <Demo title="Icons & Shapes">
                 <div slot="demo">
@@ -31,10 +49,10 @@
                     <Button type="primary" shape="circle" icon="ios-search">Search</Button>
                     <Button type="primary" shape="circle">Circle</Button>
                     <br><br>
-                    <Button type="ghost" shape="circle" icon="ios-search"></Button>
-                    <Button type="ghost" icon="ios-search">Search</Button>
-                    <Button type="ghost" shape="circle" icon="ios-search">Search</Button>
-                    <Button type="ghost" shape="circle">Circle</Button>
+                    <Button shape="circle" icon="ios-search"></Button>
+                    <Button icon="ios-search">Search</Button>
+                    <Button shape="circle" icon="ios-search">Search</Button>
+                    <Button shape="circle">Circle</Button>
                 </div>
                 <div slot="desc">
                     <p>Set the <code>icon</code> to insert an <code>Icon</code> to the <code>Button</code>, or use the <code>Icon</code> component inside the <code>Button</code> directly.</p>
@@ -45,13 +63,30 @@
             </Demo>
             <Demo title="Size">
                 <div slot="demo">
-                    <Button type="primary" size="large">Large</Button>
-                    <Button type="primary">Default</Button>
-                    <Button type="primary" size="small">Small</Button>
+                    <RadioGroup v-model="buttonSize" type="button">
+                        <Radio label="large">Large</Radio>
+                        <Radio label="default">Default</Radio>
+                        <Radio label="small">small</Radio>
+                    </RadioGroup>
                     <br><br>
-                    <Button type="primary" shape="circle" size="large">Large</Button>
-                    <Button type="primary" shape="circle">Default</Button>
-                    <Button type="primary" shape="circle" size="small">Small</Button>
+                    <Button :size="buttonSize" type="primary">Primary</Button>
+                    <Button :size="buttonSize" type="default">Default</Button>
+                    <Button :size="buttonSize" type="dashed">Dashed</Button>
+                    <Button :size="buttonSize" type="text">Text</Button>
+                    <br><br>
+                    <Button :size="buttonSize" icon="ios-download-outline" type="primary" shape="circle"></Button>
+                    <Button :size="buttonSize" icon="ios-download-outline" type="primary">Download</Button>
+                    <br><br>
+                    <ButtonGroup :size="buttonSize">
+                        <Button :size="buttonSize" type="primary">
+                            <Icon type="ios-arrow-back" />
+                            Backward
+                        </Button>
+                        <Button :size="buttonSize" type="primary">
+                            Forward
+                            <Icon type="ios-arrow-forward" />
+                        </Button>
+                    </ButtonGroup>
                 </div>
                 <div slot="desc">
                     <p>Sizes of buttons: large, default (medium) and small.</p>
@@ -79,9 +114,6 @@
                     <Button type="primary">Primary</Button>
                     <Button type="primary" disabled>Primary(Disabled)</Button>
                     <br><br>
-                    <Button type="ghost">Ghost</Button>
-                    <Button type="ghost" disabled>Ghost(Disabled)</Button>
-                    <br><br>
                     <Button type="dashed">Dashed</Button>
                     <Button type="dashed" disabled>Dashed(Disabled)</Button>
                     <br><br>
@@ -100,10 +132,12 @@
                         <span v-if="!loading">Click me!</span>
                         <span v-else>Loading...</span>
                     </Button>
-                    <Button type="primary" :loading="loading2" icon="md-checkmark" @click="toLoading2">
+                    <Button type="primary" :loading="loading2" icon="ios-power" @click="toLoading2">
                         <span v-if="!loading2">Click me!</span>
                         <span v-else>Loading...</span>
                     </Button>
+                    <Button loading shape="circle"></Button>
+                    <Button loading shape="circle" type="primary"></Button>
                 </div>
                 <div slot="desc">
                     <p>Set <code>loading</code> attribute to set the button to loading status, click the latter two buttons to see the loading effect in action.</p>
@@ -126,7 +160,7 @@
                     <ButtonGroup>
                         <Button type="primary">L</Button>
                         <Button>M</Button>
-                        <Button type="ghost">M</Button>
+                        <Button>M</Button>
                         <Button type="dashed">R</Button>
                     </ButtonGroup>
                     <br><br>
@@ -147,10 +181,10 @@
                         <Button type="primary" icon="ios-skip-forward"></Button>
                     </ButtonGroup>
                     <ButtonGroup>
-                        <Button type="ghost" icon="ios-color-wand-outline"></Button>
-                        <Button type="ghost" icon="ios-sunny-outline"></Button>
-                        <Button type="ghost" icon="ios-crop"></Button>
-                        <Button type="ghost" icon="ios-color-filter-outline"></Button>
+                        <Button icon="ios-color-wand-outline"></Button>
+                        <Button icon="ios-sunny-outline"></Button>
+                        <Button icon="ios-crop"></Button>
+                        <Button icon="ios-color-filter-outline"></Button>
                     </ButtonGroup>
                     <br><br>
                     <h4>Circle</h4>
@@ -170,38 +204,38 @@
                         <Button type="primary" icon="ios-skip-forward"></Button>
                     </ButtonGroup>
                     <ButtonGroup shape="circle">
-                        <Button type="ghost" icon="ios-color-wand-outline"></Button>
-                        <Button type="ghost" icon="ios-sunny-outline"></Button>
-                        <Button type="ghost" icon="ios-crop"></Button>
-                        <Button type="ghost" icon="ios-color-filter-outline"></Button>
+                        <Button icon="ios-color-wand-outline"></Button>
+                        <Button icon="ios-sunny-outline"></Button>
+                        <Button icon="ios-crop"></Button>
+                        <Button icon="ios-color-filter-outline"></Button>
                     </ButtonGroup>
                     <br><br>
                     <h4>Size</h4>
                     <br><br>
                     <ButtonGroup size="large">
-                        <Button type="ghost">Large</Button>
-                        <Button type="ghost">Large</Button>
+                        <Button>Large</Button>
+                        <Button>Large</Button>
                     </ButtonGroup>
                     <ButtonGroup>
-                        <Button type="ghost">Default</Button>
-                        <Button type="ghost">Default</Button>
+                        <Button>Default</Button>
+                        <Button>Default</Button>
                     </ButtonGroup>
                     <ButtonGroup size="small">
-                        <Button type="ghost">Small</Button>
-                        <Button type="ghost">Small</Button>
+                        <Button>Small</Button>
+                        <Button>Small</Button>
                     </ButtonGroup>
                     <br><br>
                     <ButtonGroup size="large" shape="circle">
-                        <Button type="ghost">Large</Button>
-                        <Button type="ghost">Large</Button>
+                        <Button>Large</Button>
+                        <Button>Large</Button>
                     </ButtonGroup>
                     <ButtonGroup shape="circle">
-                        <Button type="ghost">Default</Button>
-                        <Button type="ghost">Default</Button>
+                        <Button>Default</Button>
+                        <Button>Default</Button>
                     </ButtonGroup>
                     <ButtonGroup size="small" shape="circle">
-                        <Button type="ghost">Small</Button>
-                        <Button type="ghost">Small</Button>
+                        <Button>Small</Button>
+                        <Button>Small</Button>
                     </ButtonGroup>
                 </div>
                 <div slot="desc">
@@ -214,10 +248,10 @@
             <Demo title="Vertical ButtonGroup">
                 <div slot="demo">
                     <ButtonGroup vertical>
-                        <Button type="ghost" icon="logo-facebook"></Button>
-                        <Button type="ghost" icon="logo-twitter"></Button>
-                        <Button type="ghost" icon="logo-googleplus"></Button>
-                        <Button type="ghost" icon="logo-tumblr"></Button>
+                        <Button icon="logo-facebook"></Button>
+                        <Button icon="logo-twitter"></Button>
+                        <Button icon="logo-googleplus"></Button>
+                        <Button icon="logo-tumblr"></Button>
                     </ButtonGroup>
                 </div>
                 <div slot="desc">
@@ -243,15 +277,21 @@
                     <tbody>
                         <tr>
                             <td>type</td>
-                            <td>Button type, options include <code>primary</code>、<code>ghost</code>、<code>dashed</code>、<code>text</code>、<code>info</code>、<code>success</code>、<code>warning</code>、<code>error</code>, optional</td>
+                            <td>Button type, options include <code>default</code>, <code>primary</code>, <code>dashed</code>, <code>text</code>, <code>info</code>, <code>success</code>, <code>warning</code>, <code>error</code>, optional</td>
                             <td>String</td>
-                            <td>-</td>
+                            <td>default</td>
+                        </tr>
+                        <tr>
+                            <td>ghost</td>
+                            <td>Make background transparent and invert text and border colors.</td>
+                            <td>Boolean</td>
+                            <td>false</td>
                         </tr>
                         <tr>
                             <td>size</td>
                             <td>Button size，options include <code>large</code>, <code>small</code>, <code>default</code> optional</td>
                             <td>String</td>
-                            <td>-</td>
+                            <td>default</td>
                         </tr>
                         <tr>
                             <td>shape</td>
@@ -267,7 +307,7 @@
                         </tr>
                         <tr>
                             <td>html-type</td>
-                            <td>Set the <code>button</code> raw <code>type</code>，options include <code>button</code>、<code>submit</code>、<code>reset</code></td>
+                            <td>Set the <code>button</code> raw <code>type</code>，options include <code>button</code>, <code>submit</code>, <code>reset</code></td>
                             <td>String</td>
                             <td>button</td>
                         </tr>
@@ -289,6 +329,30 @@
                             <td>String</td>
                             <td>-</td>
                         </tr>
+                        <tr>
+                            <td>custom-icon</td>
+                            <td>Set the custom icons used in the button</td>
+                            <td>String</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>to</td>
+                            <td>Jumping links, support for vue-router objects.</td>
+                            <td>String | Object</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>replace</td>
+                            <td>Set true, the navigation will not leave a history record.</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>target</td>
+                            <td>Equivalent to the a target of the link.</td>
+                            <td>String</td>
+                            <td>_self</td>
+                        </tr>
                     </tbody>
                 </table>
                 <inAnchor title="ButtonGroup props" h3></inAnchor>
@@ -306,7 +370,7 @@
                             <td>size</td>
                             <td>ButtonGroup size, options include <code>large</code>, <code>small</code>, <code>default</code> optional</td>
                             <td>String</td>
-                            <td>-</td>
+                            <td>default</td>
                         </tr>
                         <tr>
                             <td>shape</td>
@@ -344,7 +408,8 @@
             return {
                 code: Code,
                 loading: false,
-                loading2: false
+                loading2: false,
+                buttonSize: 'large'
             }
         },
         methods: {
