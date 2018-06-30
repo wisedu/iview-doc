@@ -990,6 +990,20 @@ const routers = [
         component: (resolve) => require(['./views/components/split-en.vue'], resolve)
     },
     {
+        path: '/components/divider',
+        meta: {
+            title: 'Divider 分割线'
+        },
+        component: (resolve) => require(['./views/components/divider.vue'], resolve)
+    },
+    {
+        path: '/components/divider-en',
+        meta: {
+            title: 'Divider'
+        },
+        component: (resolve) => require(['./views/components/divider-en.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
