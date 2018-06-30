@@ -35,6 +35,11 @@ const list = {
             path: '/docs/guide/start'
         },
         {
+            title: '全局配置',
+            titleEn: 'Global Options',
+            path: '/docs/guide/global'
+        },
+        {
             title: '国际化',
             titleEn: 'Internationalization',
             path: '/docs/guide/i18n'

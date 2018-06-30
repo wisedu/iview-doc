@@ -178,6 +178,20 @@ const routers = [
         component: (resolve) => require(['./views/guide/start-en.vue'], resolve)
     },
     {
+        path: '/docs/guide/global',
+        meta: {
+            title: '全局配置'
+        },
+        component: (resolve) => require(['./views/guide/global.vue'], resolve)
+    },
+    {
+        path: '/docs/guide/global-en',
+        meta: {
+            title: 'Global Options'
+        },
+        component: (resolve) => require(['./views/guide/global-en.vue'], resolve)
+    },
+    {
         path: '/docs/guide/i18n',
         meta: {
             title: '国际化'

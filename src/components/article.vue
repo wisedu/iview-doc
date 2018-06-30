@@ -290,7 +290,9 @@
                     '/overview',
                     '/overview-en',
                     '/docs/guide/update',
-                    '/docs/guide/update-en'
+                    '/docs/guide/update-en',
+                    '/docs/guide/global',
+                    '/docs/guide/global-en',
                 ];
 
                 const route = this.$route.path;
