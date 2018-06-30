@@ -976,6 +976,20 @@ const routers = [
         component: (resolve) => require(['./views/components/cell-en.vue'], resolve)
     },
     {
+        path: '/components/split',
+        meta: {
+            title: 'Split 面板分割'
+        },
+        component: (resolve) => require(['./views/components/split.vue'], resolve)
+    },
+    {
+        path: '/components/split-en',
+        meta: {
+            title: 'Split'
+        },
+        component: (resolve) => require(['./views/components/split-en.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
