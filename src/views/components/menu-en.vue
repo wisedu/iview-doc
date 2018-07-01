@@ -377,6 +377,24 @@
                             <td>String | Number</td>
                             <td>-</td>
                         </tr>
+                        <tr>
+                            <td>to</td>
+                            <td>Jumping links, support for vue-router objects.</td>
+                            <td>String | Object</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>replace</td>
+                            <td>Set true, the navigation will not leave a history record.</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>target</td>
+                            <td>Equivalent to the a target of the link.</td>
+                            <td>String</td>
+                            <td>_self</td>
+                        </tr>
                     </tbody>
                 </table>
                 <inAnchor title="Submenu props" h3></inAnchor>
