@@ -264,14 +264,27 @@ code.vertical = `
 
 code.ghost = `
 <template>
-    <Button>Default</Button>
-    <Button type="primary">Primary</Button>
-    <Button type="dashed">Dashed</Button>
-    <Button type="text">Text</Button>
-    <Button type="info">Info</Button>
-    <Button type="success">Success</Button>
-    <Button type="warning">Warning</Button>
-    <Button type="error">Error</Button>
+    <Button type="default" ghost>Default</Button>
+    <Button type="primary" ghost>Primary</Button>
+    <Button type="dashed" ghost>Dashed</Button>
+    <Button type="text" ghost>Text</Button>
+    <Button type="info" ghost>Info</Button>
+    <Button type="success" ghost>Success</Button>
+    <Button type="warning" ghost>Warning</Button>
+    <Button type="error" ghost>Error</Button>
+</template>
+<script>
+    export default {
+        
+    }
+</script>
+`;
+
+code.link = `
+<template>
+    <Button to="/components/icon-en">Normal</Button>
+    <Button to="/components/icon-en" replace>No history</Button>
+    <Button to="//iviewui.com" target="_blank">New window</Button>
 </template>
 <script>
     export default {

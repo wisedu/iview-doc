@@ -260,6 +260,20 @@
                 <i-code lang="html" slot="code">{{ code.vertical }}</i-code>
             </Demo>
 
+            <Demo title="跳转">
+                <div slot="demo">
+                    <Button to="/components/icon">普通跳转</Button>
+                    <Button to="/components/icon" replace>不保存历史的跳转</Button>
+                    <Button to="//iviewui.com" target="_blank">新窗口打开</Button>
+                </div>
+                <div slot="desc">
+                    <p>通过设置 <code>to</code> 可以实现点击按钮直接跳转，支持传入 vue-router 对象。</p>
+                    <p>设置 <code>replace</code> 则不会保存历史记录。</p>
+                    <p>设置 <code>target</code>，会跟 a 标签一样的行为。</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.link }}</i-code>
+            </Demo>
+
             <ad></ad>
 
             <div class="api">

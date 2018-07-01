@@ -260,6 +260,20 @@
                 <i-code lang="html" slot="code">{{ code.vertical }}</i-code>
             </Demo>
 
+            <Demo title="Link Button">
+                <div slot="demo">
+                    <Button to="/components/icon-en">Normal</Button>
+                    <Button to="/components/icon-en" replace>No history</Button>
+                    <Button to="//iviewui.com" target="_blank">New window</Button>
+                </div>
+                <div slot="desc">
+                    <p>By setting <code>to</code>, you can click the button to jump directly and support the vue-router object.</p>
+                    <p>Setting <code>replace</code> will not save the history.</p>
+                    <p>Setting <code>target</code> will behave like a tag.</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.link }}</i-code>
+            </Demo>
+
             <ad></ad>
 
             <div class="api">
