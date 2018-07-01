@@ -98,13 +98,7 @@
                     <tbody>
                         <tr>
                             <td>to</td>
-                            <td>链接，不传则没有链接</td>
-                            <td>String | Object</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>href</td>
-                            <td>同 to，未来将废弃</td>
+                            <td>链接，不传则没有链接，支持 vue-router 对象</td>
                             <td>String | Object</td>
                             <td>-</td>
                         </tr>
@@ -113,6 +107,12 @@
                             <td>路由跳转时，开启 replace 将不会向 history 添加新记录</td>
                             <td>Boolean</td>
                             <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>target</td>
+                            <td>相当于 a 链接的 target 属性</td>
+                            <td>String</td>
+                            <td>_self</td>
                         </tr>
                     </tbody>
                 </table>

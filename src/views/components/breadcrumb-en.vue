@@ -103,16 +103,16 @@
                             <td>-</td>
                         </tr>
                         <tr>
-                            <td>href</td>
-                            <td>Same as to, and will be abandoned.</td>
-                            <td>String | Object</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
                             <td>replace</td>
                             <td>set <code>true</code>, the navigation will not leave a history record</td>
                             <td>Boolean</td>
                             <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>target</td>
+                            <td>Equivalent to the a target of the link.</td>
+                            <td>String</td>
+                            <td>_self</td>
                         </tr>
                     </tbody>
                 </table>
