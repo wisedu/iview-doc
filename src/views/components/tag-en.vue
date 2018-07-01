@@ -31,36 +31,46 @@
             </Demo>
             <Demo title="Colors">
                 <div slot="demo">
-                    <Tag closable color="blue">标签一</Tag>
-                    <Tag closable color="green">标签二</Tag>
-                    <Tag closable color="red">标签三</Tag>
-                    <Tag closable color="yellow">标签四</Tag>
+                    <Tag color="default">default</Tag>
+                    <Tag color="primary">primary</Tag>
+                    <Tag color="success">success</Tag>
+                    <Tag color="error">error</Tag>
+                    <Tag color="warning">warning</Tag>
+                    <Tag color="magenta">magenta</Tag>
+                    <Tag color="red">red</Tag>
+                    <Tag color="volcano">volcano</Tag>
+                    <Tag color="orange">orange</Tag>
+                    <Tag color="gold">gold</Tag>
+                    <Tag color="gold">不错</Tag>
+                    <Tag color="lime">lime</Tag>
+                    <Tag color="green">green</Tag>
+                    <Tag color="cyan">cyan</Tag>
+                    <Tag color="blue">blue</Tag>
+                    <Tag color="geekblue">geekblue</Tag>
+                    <Tag color="purple">purple</Tag>
+                    <Tag color="#FFA2D3">Custom Color</Tag>
                     <br><br>
-                    <Tag type="border" closable color="blue">标签一</Tag>
-                    <Tag type="border" closable color="green">标签二</Tag>
-                    <Tag type="border" closable color="red">标签三</Tag>
-                    <Tag type="border" closable color="yellow">标签四</Tag>
+                    <Tag type="border" closable color="primary">标签一</Tag>
+                    <Tag type="border" closable color="success">标签二</Tag>
+                    <Tag type="border" closable color="error">标签三</Tag>
+                    <Tag type="border" closable color="warning">标签四</Tag>
                     <br><br>
-                    <Tag type="dot" closable color="blue">标签一</Tag>
-                    <Tag type="dot" closable color="green">标签二</Tag>
-                    <Tag type="dot" closable color="red">标签三</Tag>
-                    <Tag type="dot" closable color="yellow">标签四</Tag>
-                    <br><br>
-                    <Tag closable color="#FFA2D3">标签一</Tag>
-                    <Tag type="border" closable color="#FFA2D3">标签一</Tag>
-                    <Tag type="dot" closable color="#FFA2D3">标签一</Tag>
+                    <Tag type="dot" closable color="primary">标签一</Tag>
+                    <Tag type="dot" closable color="success">标签二</Tag>
+                    <Tag type="dot" closable color="error">标签三</Tag>
+                    <Tag type="dot" closable color="warning">标签四</Tag>
                 </div>
                 <div slot="desc">
-                    <p>Four default color, you can also use custom color.</p>
+                    <p>A variety of preset colors, you can also use custom color.</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.color }}</i-code>
             </Demo>
             <Demo title="Checkable">
                 <div slot="demo">
-                    <Tag checkable color="blue">标签一</Tag>
-                    <Tag checkable color="green">标签二</Tag>
-                    <Tag checkable color="red">标签三</Tag>
-                    <Tag checkable color="yellow">标签四</Tag>
+                    <Tag checkable color="primary">标签一</Tag>
+                    <Tag checkable color="success">标签二</Tag>
+                    <Tag checkable color="error">标签三</Tag>
+                    <Tag checkable color="warning">标签四</Tag>
                 </div>
                 <div slot="desc">
                     <p>Set the property <code>checkable</code> to select the tag, and the property <code>checked</code> to control the current selection state.</p>
@@ -119,7 +129,7 @@
                         </tr>
                         <tr>
                             <td>color</td>
-                            <td>Tag color, default values for <code>blue</code>, <code>green</code>, <code>red</code>, <code>yellow</code>, <code>default</code>, you can set custom color.</td>
+                            <td>Tag color, default values for <code>default</code>, <code>primary</code>, <code>success</code>, <code>warning</code>, <code>error</code>, <code>blue</code>, <code>green</code>, <code>red</code>, <code>yellow</code>, <code>pink</code>, <code >magenta</code>, <code>volcano</code>, <code>orange</code>, <code>gold</code>, <code>lime</code>, <code>cyan</code >, <code>geekblue</code>, <code>purple</code>, you can also customize color values.</td>
                             <td>String</td>
                             <td>-</td>
                         </tr>
