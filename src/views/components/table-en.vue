@@ -112,7 +112,7 @@
                     <div slot="desc">
                         <p>Enable row selecting by setting <code>highlight-row</code> prop.</p>
                         <p>When a row is selected, <code>@on-current-change</code> is emitted. The event return two values: <code>currentRow</code>, <code>oldCurrentRow</code> (current selected row data, previous selected row data). You can customize operation by controlling the callback function.</p>
-                        <p>Add an object with <code>type: 'index'</code> in <code>columns</code> can apply a index column starts with 1.</p>
+                        <p>Add an object with <code>type: 'index'</code> in <code>columns</code> can apply a index column starts with 1. Use <code>indexMethod</code> can custom the index number.</p>
                         <p>Set <code>_highlight: true</code> key to data can make the item selected by default.</p>
                         <p>Call the <code>clearCurrentRow</code> method to clear the highlighted item.</p>
                     </div>
@@ -624,6 +624,12 @@
                             <td>false</td>
                         </tr>
                         <tr>
+                            <td>tooltip</td>
+                            <td>If this prop is set, line wrap will be disabled. The overflowing content will be displayed as ellipsis, and use Tooltip to show the full content.</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
                             <td>render</td>
                             <td>Custom column renderer. It uses Vue's render function. It accepts two arguments:  the first is h, the second is an object including <code>row</code>, <code>column</code> and <code>index</code> (current row's data, current column's data, current index). Details on the demo above.</td>
                             <td>Function</td>
@@ -633,6 +639,12 @@
                             <td>renderHeader</td>
                             <td>Custom column header renderer. It uses Vue's render function. It accepts two arguments: the first is h, the second is an object including <code>column</code> and <code>index</code> (current col's data &amp; current index).</td>
                             <td>Function</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>indexMethod</td>
+                            <td>Available when type is index, custom serial number.</td>
+                            <td>Function, parameter row is the current line content.</td>
                             <td>-</td>
                         </tr>
                         <tr>
