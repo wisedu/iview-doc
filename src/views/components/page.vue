@@ -7,7 +7,7 @@
             <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="基本">
                 <div slot="demo">
-                    <Page :total="100"></Page>
+                    <Page :total="100" />
                 </div>
                 <div slot="desc">
                     <p>基本的分页，页数过多时会自动折叠。</p>
@@ -16,7 +16,7 @@
             </Demo>
             <Demo title="每页数量">
                 <div slot="demo">
-                    <Page :total="100" show-sizer></Page>
+                    <Page :total="100" show-sizer />
                 </div>
                 <div slot="desc">
                     <p>可以切换每页显示的数量。</p>
@@ -25,7 +25,7 @@
             </Demo>
             <Demo title="电梯">
                 <div slot="demo">
-                    <Page :total="100" show-elevator></Page>
+                    <Page :total="100" show-elevator />
                 </div>
                 <div slot="desc">
                     <p>快速跳转到某一页。</p>
@@ -34,7 +34,7 @@
             </Demo>
             <Demo title="总数">
                 <div slot="demo">
-                    <Page :total="100" show-total></Page>
+                    <Page :total="100" show-total />
                 </div>
                 <div slot="desc">
                     <p>显示总共多少条数据，接受 slot 来自定义内容，默认显示<code v-pre>共{{ total }}条</code></p>
@@ -43,11 +43,11 @@
             </Demo>
             <Demo title="迷你型">
                 <div slot="demo">
-                    <Page :total="40" size="small"></Page>
+                    <Page :total="40" size="small" />
                     <br>
-                    <Page :total="40" size="small" show-elevator show-sizer></Page>
+                    <Page :total="40" size="small" show-elevator show-sizer />
                     <br>
-                    <Page :total="40" size="small" show-total></Page>
+                    <Page :total="40" size="small" show-total />
                 </div>
                 <div slot="desc">
                     <p>设置<code>size</code>为<code>small</code>使用迷你型，迷你型拥有普通的所有功能。</p>
@@ -56,12 +56,22 @@
             </Demo>
             <Demo title="简洁">
                 <div slot="demo">
-                    <Page :current="2" :total="50" simple></Page>
+                    <Page :current="2" :total="50" simple />
                 </div>
                 <div slot="desc">
                     <p>设置<code>simple</code>属性即可使用简洁版的分页，通过输入页码回车切换，或使用鼠标点击切换页码，或使用键盘的上下键来切换。简洁分页不能使用总数、电梯和切换数量。</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.simple }}</i-code>
+            </Demo>
+
+            <Demo title="上一页和下一页">
+                <div slot="demo">
+                    <Page :total="100" prev-text="Previous" next-text="Next" />
+                </div>
+                <div slot="desc">
+                    <p>使用属性 <code>prev-text</code> 和 <code>next-text</code>，替代图标显示为文字。</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.text }}</i-code>
             </Demo>
 
             <ad></ad>
@@ -156,6 +166,18 @@
                             <td>是否将弹层放置于 body 内，在 Tabs、带有 fixed 的 Table 列内使用时，建议添加此属性，它将不受父级样式影响，从而达到更好的效果</td>
                             <td>Boolean</td>
                             <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>prev-text</td>
+                            <td>替代图标显示的上一页文字</td>
+                            <td>String</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>next-text</td>
+                            <td>替代图标显示的下一页文字</td>
+                            <td>String</td>
+                            <td>-</td>
                         </tr>
                     </tbody>
                 </table>

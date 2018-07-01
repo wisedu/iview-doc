@@ -7,7 +7,7 @@
             <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
-                    <Page :total="100"></Page>
+                    <Page :total="100" />
                 </div>
                 <div slot="desc">
                     <p>Basic paging operation. It will be folded when there are too many pages.</p>
@@ -16,7 +16,7 @@
             </Demo>
             <Demo title="Pieces in Each Page">
                 <div slot="demo">
-                    <Page :total="100" show-sizer></Page>
+                    <Page :total="100" show-sizer />
                 </div>
                 <div slot="desc">
                     <p>You can set pieces amount shown in each page.</p>
@@ -25,7 +25,7 @@
             </Demo>
             <Demo title="Elevator">
                 <div slot="demo">
-                    <Page :total="100" show-elevator></Page>
+                    <Page :total="100" show-elevator />
                 </div>
                 <div slot="desc">
                     <p>Directly jump to certain page.</p>
@@ -34,7 +34,7 @@
             </Demo>
             <Demo title="Amount">
                 <div slot="demo">
-                    <Page :total="100" show-total></Page>
+                    <Page :total="100" show-total />
                 </div>
                 <div slot="desc">
                     <p>Describe how many pieces of data are shown. It accepts slot to customize content. Default: <code v-pre>Total {{ total }} items</code></p>
@@ -43,11 +43,11 @@
             </Demo>
             <Demo title="Mini Size">
                 <div slot="demo">
-                    <Page :total="40" size="small"></Page>
+                    <Page :total="40" size="small" />
                     <br>
-                    <Page :total="40" size="small" show-elevator show-sizer></Page>
+                    <Page :total="40" size="small" show-elevator show-sizer />
                     <br>
-                    <Page :total="40" size="small" show-total></Page>
+                    <Page :total="40" size="small" show-total />
                 </div>
                 <div slot="desc">
                     <p>Set <code>size</code> to <code>small</code> to use mini size. The functions of mini size are same to the normal size.</p>
@@ -56,12 +56,21 @@
             </Demo>
             <Demo title="Conciseness">
                 <div slot="demo">
-                    <Page :current="2" :total="50" simple></Page>
+                    <Page :current="2" :total="50" simple />
                 </div>
                 <div slot="desc">
                     <p>Set <code>simple</code> prop to use a more concise Page component. It changes page by entering page number then tapping Enter, or by clicking certain page number, or by tapping Up and Down keys. concise Page CANNOT use amount, elevator and you can't let user change piece amount shown in each page.</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.simple }}</i-code>
+            </Demo>
+            <Demo title="Prev And Next">
+                <div slot="demo">
+                    <Page :total="100" prev-text="Previous" next-text="Next" />
+                </div>
+                <div slot="desc">
+                    <p>Use the properties <code>prev-text</code> and <code>next-text</code> to replace the icons with text.</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.text }}</i-code>
             </Demo>
 
             <ad></ad>
@@ -156,6 +165,18 @@
                             <td>Whether to append the layer in body. When used in Tabs or a fixed Table column, suggests adding this property, it will not be affected by the parent style, resulting in better results.</td>
                             <td>Boolean</td>
                             <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>prev-text</td>
+                            <td>Text for the prev button.</td>
+                            <td>String</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>next-text</td>
+                            <td>Text for the next button.</td>
+                            <td>String</td>
+                            <td>-</td>
                         </tr>
                     </tbody>
                 </table>
