@@ -111,6 +111,17 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.custom }}</i-code>
             </Demo>
+            <Demo title="Dashboard">
+                <div slot="demo">
+                    <Circle :percent="80" dashboard>
+                        <span class="demo-circle-inner" style="font-size:24px">80%</span>
+                    </Circle>
+                </div>
+                <div slot="desc">
+                    <p>By setting the property <code>dashboard</code>, dashboard-style circle can be easily implemented.</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.dashboard }}</i-code>
+            </Demo>
 
             <ad></ad>
 
@@ -168,6 +179,12 @@
                             <td>Color of unfilled circle.</td>
                             <td>String</td>
                             <td>#eaeef2</td>
+                        </tr>
+                        <tr>
+                            <td>dashboard</td>
+                            <td>Whether to display as a dashboard.</td>
+                            <td>Boolean</td>
+                            <td>false</td>
                         </tr>
                     </tbody>
                 </table>
