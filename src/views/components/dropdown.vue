@@ -69,6 +69,16 @@
                             <DropdownItem>北京烤鸭</DropdownItem>
                         </DropdownMenu>
                     </Dropdown>
+                    <Dropdown trigger="contextMenu" style="margin-left: 20px">
+                        <a href="javascript:void(0)">
+                            右键触发
+                            <Icon type="ios-arrow-down"></Icon>
+                        </a>
+                        <DropdownMenu slot="list">
+                            <DropdownItem>返回</DropdownItem>
+                            <DropdownItem style="color: #ed3f14">删除</DropdownItem>
+                        </DropdownMenu>
+                    </Dropdown>
                     <Dropdown trigger="custom" :visible="visible" style="margin-left: 20px">
                         <a href="javascript:void(0)" @click="handleOpen">
                             custom 触发
@@ -183,7 +193,7 @@
                     <tbody>
                         <tr>
                             <td>trigger</td>
-                            <td>触发方式，可选值为 <code>hover</code>（悬停）<code>click</code>（点击）<code>custom</code>（自定义），使用 custom 时，需配合 visible 一起使用</td>
+                            <td>触发方式，可选值为 <code>hover</code>（悬停）<code>click</code>（点击）<code>contextMenu</code>（右键）<code>custom</code>（自定义），使用 custom 时，需配合 visible 一起使用</td>
                             <td>String</td>
                             <td>hover</td>
                         </tr>
