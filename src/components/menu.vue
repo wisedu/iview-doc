@@ -29,21 +29,21 @@
                 </i-select>
             </div>
             <div class="wrapper-header-nav-list">
-                <Menu-item name="guide">
+                <Menu-item name="guide" :to="handleGoToMenu('/docs/guide/introduce')">
                     <Icon type="ios-navigate"></Icon>
                     {{ $t('index.guide') }}
                 </Menu-item>
-                <Menu-item name="component">
+                <Menu-item name="component" :to="handleGoToMenu('/docs/guide/install')">
                     <Icon type="ios-keypad"></Icon>
                     {{ $t('index.component') }}
                 </Menu-item>
-                <Menu-item name="live" v-if="lang === 'zh-CN'">
+                <Menu-item name="live" v-if="lang === 'zh-CN'" :to="handleGoToMenu('/live')">
                     <Badge :dot="liveDot">
                         <Icon type="ios-videocam"></Icon>
                         {{ $t('index.live') }}
                     </Badge>
                 </Menu-item>
-                <Menu-item name="practice">
+                <Menu-item name="practice" :to="handleGoToMenu('/docs/practice/case')">
                     <Icon type="ios-analytics"></Icon>
                     {{ $t('index.practice') }}
                 </Menu-item>
@@ -52,11 +52,11 @@
                         <Icon type="ios-infinite"></Icon>
                         {{ $t('index.ecosystem') }}
                     </template>
-                    <Menu-item name="cli">
+                    <Menu-item name="cli" :to="handleGoToMenu('/cli')">
                         <!--<Icon type="settings"></Icon>-->
                         {{ $t('index.cli') }}
                     </Menu-item>
-                    <Menu-item name="iview-loader">
+                    <Menu-item name="iview-loader" :to="handleGoToMenu('/docs/guide/iview-loader')">
                         <!--<Icon type="settings"></Icon>-->
                         iView Loader
                     </Menu-item>
@@ -191,6 +191,13 @@
             handleGoToTwitter () {
                 _hmt.push(['_trackEvent', 'menu-go-twitter', 'click']);
                 window.open('https://twitter.com/iViewUI');
+            },
+            handleGoToMenu (name) {
+                if (this.lang === 'zh-CN') {
+                    return name;
+                } else {
+                    return name + '-en';
+                }
             }
         },
         created () {
