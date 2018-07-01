@@ -8,7 +8,7 @@
             <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="基础用法">
                 <div slot="demo">
-                    <Input v-model="value" placeholder="Enter something..." style="width: 300px"></Input>
+                    <Input v-model="value" placeholder="Enter something..." style="width: 300px" />
                 </div>
                 <div slot="desc">
                     <p>基本用法，可以使用 <code>v-model</code> 实现数据的双向绑定。</p>
@@ -20,13 +20,13 @@
                 <div slot="demo">
                     <Row :gutter="8">
                         <Col span="8">
-                            <Input v-model="value1" size="large" placeholder="large size"></Input>
+                            <Input v-model="value1" size="large" placeholder="large size" />
                         </Col>
                         <Col span="8">
-                            <Input v-model="value2" placeholder="default size"></Input>
+                            <Input v-model="value2" placeholder="default size" />
                         </Col>
                         <Col span="8">
-                            <Input v-model="value3" size="small" placeholder="small size"></Input>
+                            <Input v-model="value3" size="small" placeholder="small size" />
                         </Col>
                     </Row>
                 </div>
@@ -38,7 +38,7 @@
             </Demo>
             <Demo title="可清空">
                 <div slot="demo">
-                    <Input v-model="value14" placeholder="Enter something..." clearable style="width: 200px"></Input>
+                    <Input v-model="value14" placeholder="Enter something..." clearable style="width: 200px" />
                 </div>
                 <div slot="desc">
                     <p>开启属性 <code>clearable</code> 可显示清空按钮。</p>
@@ -47,7 +47,7 @@
             </Demo>
             <Demo title="带Icon的输入框">
                 <div slot="demo">
-                    <Input v-model="value4" icon="ios-clock-outline" placeholder="Enter something..." style="width: 200px"></Input>
+                    <Input v-model="value4" icon="ios-clock-outline" placeholder="Enter something..." style="width: 200px" />
                 </div>
                 <div slot="desc">
                     <p>通过 <code>icon</code> 属性可以在输入框右边加一个图标。</p>
@@ -55,14 +55,47 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.icon }}</i-code>
             </Demo>
+            <Demo title="前缀和后缀图标">
+                <div slot="demo">
+                    <div>
+                        属性方式：
+                        <Input prefix="ios-contact" placeholder="请输入姓名" style="width: auto" />
+                        <Input suffix="ios-search" placeholder="请输入内容" style="width: auto" />
+                    </div>
+                    <div style="margin-top: 6px">
+                        slot 方式：
+                        <Input placeholder="请输入姓名" style="width: auto">
+                            <Icon type="ios-contact" slot="prefix" />
+                        </Input>
+                        <Input placeholder="请输入内容" style="width: auto">
+                            <Icon type="ios-search" slot="suffix" />
+                        </Input>
+                    </div>
+                </div>
+                <div slot="desc">
+                    <p>除了设置 icon，也可以通过设置 <code>prefix</code> 和 <code>suffix</code> 及同名 slot 设置前缀及后缀图标。</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.prefix }}</i-code>
+            </Demo>
+            <Demo title="搜索框">
+                <div slot="demo">
+                    <Input search placeholder="Enter something..." />
+                    <Input search enter-button placeholder="Enter something..." style="margin-top: 6px" />
+                    <Input search enter-button="Search" placeholder="Enter something..." style="margin-top: 6px" />
+                </div>
+                <div slot="desc">
+                    <p>开启 <code>search</code> 属性，可以设置为搜索型输入框。</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.search }}</i-code>
+            </Demo>
             <Demo title="文本域">
                 <div slot="demo">
                     <Row :gutter="8">
                         <Col span="12">
-                            <Input v-model="value5" type="textarea" placeholder="Enter something..."></Input>
+                            <Input v-model="value5" type="textarea" placeholder="Enter something..." />
                         </Col>
                         <Col span="12">
-                            <Input v-model="value6" type="textarea" :rows="4" placeholder="Enter something..."></Input>
+                            <Input v-model="value6" type="textarea" :rows="4" placeholder="Enter something..." />
                         </Col>
                     </Row>
                 </div>
@@ -76,10 +109,10 @@
                 <div slot="demo">
                     <Row :gutter="8">
                         <Col span="12">
-                            <Input v-model="value7" type="textarea" :autosize="true" placeholder="Enter something..."></Input>
+                            <Input v-model="value7" type="textarea" :autosize="true" placeholder="Enter something..." />
                         </Col>
                         <Col span="12">
-                            <Input v-model="value8" type="textarea" :autosize="{minRows: 2,maxRows: 5}" placeholder="Enter something..."></Input>
+                            <Input v-model="value8" type="textarea" :autosize="{minRows: 2,maxRows: 5}" placeholder="Enter something..." />
                         </Col>
                     </Row>
                 </div>
@@ -93,10 +126,10 @@
                 <div slot="demo">
                     <Row :gutter="8">
                         <Col span="12">
-                            <Input v-model="value9" disabled placeholder="Enter something..."></Input>
+                            <Input v-model="value9" disabled placeholder="Enter something..." />
                         </Col>
                         <Col span="12">
-                            <Input v-model="value10" disabled type="textarea" placeholder="Enter something..."></Input>
+                            <Input v-model="value10" disabled type="textarea" placeholder="Enter something..." />
                         </Col>
                     </Row>
                 </div>
@@ -136,6 +169,19 @@
                     通过前置和后置的 slot 可以实现复合型的输入框。
                 </div>
                 <i-code lang="html" slot="code">{{ code.addon }}</i-code>
+            </Demo>
+
+            <Demo title="输入时格式化展示">
+                <div slot="demo">
+                    <Poptip trigger="focus">
+                        <Input v-model="value15" prefix="logo-usd" placeholder="Enter number" style="width: 120px" />
+                        <div slot="content">{{ formatNumber }}</div>
+                    </Poptip>
+                </div>
+                <div slot="desc">
+                    <p>结合 Poptip 组件，实现一个数值输入框，方便内容超长时的全量展现。</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.format }}</i-code>
             </Demo>
 
             <ad></ad>
@@ -206,6 +252,30 @@
                             <td>输入框尾部图标，仅在 text 类型下有效</td>
                             <td>String</td>
                             <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>prefix</td>
+                            <td>输入框头部图标</td>
+                            <td>String</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>suffix</td>
+                            <td>输入框尾部图标</td>
+                            <td>String</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>search</td>
+                            <td>是否显示为搜索型输入框</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>enter-button</td>
+                            <td>开启 search 时可用，是否有确认按钮，可设为按钮文字</td>
+                            <td>Boolean | String</td>
+                            <td>false</td>
                         </tr>
                         <tr>
                             <td>rows</td>
@@ -307,6 +377,11 @@
                             <td>原生的 keypress 事件</td>
                             <td>event</td>
                         </tr>
+                        <tr>
+                            <td>on-search</td>
+                            <td>开启 search 时可用，点击搜索或按下回车键时触发</td>
+                            <td>value</td>
+                        </tr>
                     </tbody>
                 </table>
                 <inAnchor title="Input slot" h3></inAnchor>
@@ -325,6 +400,14 @@
                         <tr>
                             <td>append</td>
                             <td>后置内容，仅在 text 类型下有效</td>
+                        </tr>
+                        <tr>
+                            <td>prefix</td>
+                            <td>输入框头部图标</td>
+                        </tr>
+                        <tr>
+                            <td>suffix</td>
+                            <td>输入框尾部图标</td>
                         </tr>
                     </tbody>
                 </table>
@@ -381,9 +464,20 @@
                 value12: '',
                 value13: '',
                 value14: 'Hello World',
+                value15: '',
                 select1: 'http',
                 select2: 'com',
                 select3: 'day'
+            }
+        },
+        computed: {
+            formatNumber () {
+                if (this.value15 === '') return 'Enter number';
+                function parseNumber(str) {
+                    const re = /(?=(?!\b)(\d{3})+$)/g;
+                    return str.replace(re, ',');
+                }
+                return parseNumber(this.value15);
             }
         },
         methods: {
