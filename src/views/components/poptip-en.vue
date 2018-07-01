@@ -151,6 +151,17 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.slot }}</i-code>
             </Demo>
+            <Demo title="Automatic Wrap">
+                <div slot="demo">
+                    <Poptip word-wrap width="200" content="Steven Paul Jobs was an American entrepreneur and business magnate. He was the chairman, chief executive officer, and a co-founder of Apple Inc.">
+                        <Button>Long Content</Button>
+                    </Poptip>
+                </div>
+                <div slot="desc">
+                    <p>Set the property <code>word-wrap</code>, when the max value is exceeded, the text will automatically wrap and be aligned.</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.width }}</i-code>
+            </Demo>
             <Demo title="Confirm Dialog">
                 <div slot="demo">
                     <Poptip
@@ -250,6 +261,18 @@
                             <td>Setting class-name for Poptip, it is useful when using transfer.</td>
                             <td>String</td>
                             <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>word-wrap</td>
+                            <td>When set to true, text beyond the specified width will wrap and align.</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>padding</td>
+                            <td>Custom the padding.</td>
+                            <td>String</td>
+                            <td>8px 16px</td>
                         </tr>
                         <tr>
                             <td>offset</td>

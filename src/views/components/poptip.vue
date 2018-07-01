@@ -151,6 +151,17 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.slot }}</i-code>
             </Demo>
+            <Demo title="自动换行">
+                <div slot="demo">
+                    <Poptip word-wrap width="200" content="史蒂夫·乔布斯（Steve Jobs），1955年2月24日生于美国加利福尼亚州旧金山，美国发明家、企业家、美国苹果公司联合创办人。">
+                        <Button>长文本</Button>
+                    </Poptip>
+                </div>
+                <div slot="desc">
+                    <p>设置属性 <code>word-wrap</code>，当超出宽度后，文本将自动换行，并两端对齐。</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.width }}</i-code>
+            </Demo>
             <Demo title="确认框">
                 <div slot="demo">
                     <Poptip
@@ -250,6 +261,18 @@
                             <td>给 Poptip 设置 class-name，在使用 transfer 时会很有用</td>
                             <td>String</td>
                             <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>word-wrap</td>
+                            <td>开启后，超出指定宽度文本将自动换行，并两端对齐</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>padding</td>
+                            <td>自定义间距值</td>
+                            <td>String</td>
+                            <td>8px 16px</td>
                         </tr>
                         <tr>
                             <td>offset</td>
