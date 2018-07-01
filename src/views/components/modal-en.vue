@@ -153,6 +153,38 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.position }}</i-code>
             </Demo>
+
+            <Demo title="Fullscreen">
+                <div slot="demo">
+                    <Button @click="modal11 = true">Open a fullscreen modal</Button>
+                    <Modal v-model="modal11" fullscreen title="Fullscreen Modal">
+                        <div>This is a fullscreen modal</div>
+                    </Modal>
+                </div>
+                <div slot="desc">
+                    <p>Setting the property <code>fullscreen</code> to display a full screen modal.</p>
+                    <p>Setting the property <code>footer-hide</code> hides the bottom content.</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.fullscreen }}</i-code>
+            </Demo>
+
+            <Demo title="Dragable">
+                <div slot="demo">
+                    <Button @click="modal12 = true">Open the first modal</Button>
+                    <Button @click="modal13 = true">Open the second modal</Button>
+                    <Modal v-model="modal12" dragable scrollable title="Modal 1">
+                        <div>This is the first modal</div>
+                    </Modal>
+                    <Modal v-model="modal13" dragable scrollable title="Modal 2">
+                        <div>This is the second modal</div>
+                    </Modal>
+                </div>
+                <div slot="desc">
+                    <p>Set the property <code>dragable</code>, the dialog can be dragged and moved.</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.dragable }}</i-code>
+            </Demo>
+
             <inAnchor title="Instantiation Usage" h3></inAnchor>
             <p>Besides normal component usages mentioned above, iView has encapsulated some instance methods elaborately to create one-off light Modal.</p>
             <p>The instance create a Modal globally by creating a Vue component implicitly. It will be destroyed after disappeared. So you can only operate one insatnce at the same time.</p>
@@ -247,6 +279,24 @@
                             <td>false</td>
                         </tr>
                         <tr>
+                            <td>fullscreen</td>
+                            <td>Whether full screen display.</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>dragable</td>
+                            <td>Can it drag and move.</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>mask</td>
+                            <td>Whether to display the mask layer, force to not display when dragable is enabled.</td>
+                            <td>Boolean</td>
+                            <td>true</td>
+                        </tr>
+                        <tr>
                             <td>ok-text</td>
                             <td>OK button's text.</td>
                             <td>String</td>
@@ -263,6 +313,12 @@
                             <td>The width of Modal. The width is responsive: It'll change to <code>auto</code> when the size of the screen is smaller than 768px. It will be displayed as a percentage when the value less than 100, otherwise it is a pixel.</td>
                             <td>Number | String</td>
                             <td>520</td>
+                        </tr>
+                        <tr>
+                            <td>footer-hide</td>
+                            <td>Hide the footer.</td>
+                            <td>Boolean</td>
+                            <td>false</td>
                         </tr>
                         <tr>
                             <td>styles</td>
@@ -483,6 +539,9 @@
                 modal8: false,
                 modal9: false,
                 modal10: false,
+                modal11: false,
+                modal12: false,
+                modal13: false,
                 value: ''
             }
         },

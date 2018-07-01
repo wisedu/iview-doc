@@ -153,6 +153,38 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.position }}</i-code>
             </Demo>
+
+            <Demo title="全屏">
+                <div slot="demo">
+                    <Button @click="modal11 = true">显示全屏对话框</Button>
+                    <Modal v-model="modal11" fullscreen title="全屏对话框">
+                        <div>这是一个全屏的对话框</div>
+                    </Modal>
+                </div>
+                <div slot="desc">
+                    <p>设置属性 <code>fullscreen</code> 可以全屏显示。</p>
+                    <p>设置属性 <code>footer-hide</code> 可以隐藏底部内容。</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.fullscreen }}</i-code>
+            </Demo>
+
+            <Demo title="拖拽移动">
+                <div slot="demo">
+                    <Button @click="modal12 = true">打开对话框1</Button>
+                    <Button @click="modal13 = true">打开对话框2</Button>
+                    <Modal v-model="modal12" dragable scrollable title="对话框 1">
+                        <div>第一个对话框</div>
+                    </Modal>
+                    <Modal v-model="modal13" dragable scrollable title="对话框 2">
+                        <div>第二个对话框</div>
+                    </Modal>
+                </div>
+                <div slot="desc">
+                    <p>设置属性 <code>dragable</code>，对话框可以进行拖拽移动。</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.dragable }}</i-code>
+            </Demo>
+
             <inAnchor title="实例化使用方法" h3></inAnchor>
             <p>除了上述通过标准组件的使用方法，iView 还精心封装了一些实例方法，用来创建一次性的轻量级对话框。</p>
             <p>实例以隐式创建 Vue 组件的方式在全局创建一个对话框，并在消失时移除，所以同时只能操作一个对话框。</p>
@@ -248,6 +280,24 @@
                             <td>false</td>
                         </tr>
                         <tr>
+                            <td>fullscreen</td>
+                            <td>是否全屏显示</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>dragable</td>
+                            <td>是否可以拖拽移动</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>mask</td>
+                            <td>是否显示遮罩层，开启 dragable 时，强制不显示</td>
+                            <td>Boolean</td>
+                            <td>true</td>
+                        </tr>
+                        <tr>
                             <td>ok-text</td>
                             <td>确定按钮文字</td>
                             <td>String</td>
@@ -264,6 +314,12 @@
                             <td>对话框宽度，对话框的宽度是响应式的，当屏幕尺寸小于 768px 时，宽度会变为自动<code>auto</code>。当其值不大于 100 时以百分比显示，大于 100 时为像素</td>
                             <td>Number | String</td>
                             <td>520</td>
+                        </tr>
+                        <tr>
+                            <td>footer-hide</td>
+                            <td>不显示底部</td>
+                            <td>Boolean</td>
+                            <td>false</td>
                         </tr>
                         <tr>
                             <td>styles</td>
@@ -484,6 +540,9 @@
                 modal8: false,
                 modal9: false,
                 modal10: false,
+                modal11: false,
+                modal12: false,
+                modal13: false,
                 value: ''
             }
         },

@@ -337,4 +337,45 @@ code.render = `
 </script>
 `;
 
+code.fullscreen = `
+<template>
+    <Button @click="modal11 = true">Open a fullscreen modal</Button>
+    <Modal v-model="modal11" fullscreen title="Fullscreen Modal">
+        <div>This is a fullscreen modal</div>
+    </Modal>
+</template>
+<script>
+    export default {
+        data () {
+            return {
+                modal11: false
+            }
+        }
+    }
+</script>
+`;
+
+code.dragable = `
+<template>
+    <Button @click="modal12 = true">Open the first modal</Button>
+    <Button @click="modal13 = true">Open the second modal</Button>
+    <Modal v-model="modal12" dragable scrollable title="Modal 1">
+        <div>This is the first modal</div>
+    </Modal>
+    <Modal v-model="modal13" dragable scrollable title="Modal 2">
+        <div>This is the second modal</div>
+    </Modal>
+</template>
+<script>
+    export default {
+        data () {
+            return {
+                modal12: false,
+                modal13: false
+            }
+        }
+    }
+</script>
+`;
+
 export default code;
