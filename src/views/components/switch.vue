@@ -8,7 +8,7 @@
             <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="基本">
                 <div slot="demo">
-                    <Switch v-model="switch1" @on-change="change"></Switch>
+                    <Switch v-model="switch1" @on-change="change" />
                 </div>
                 <div slot="desc">
                     <p>基本用法，状态切换时会触发事件。</p>
@@ -17,9 +17,9 @@
             </Demo>
             <Demo title="尺寸">
                 <div slot="demo">
-                    <Switch size="large"></Switch>
-                    <Switch></Switch>
-                    <Switch size="small"></Switch>
+                    <Switch size="large" />
+                    <Switch />
+                    <Switch size="small" />
                 </div>
                 <div slot="desc">
                     <p>设置<code>size</code>为 <code>large</code> 或 <code>small</code> 使用大号和小号的开关。</p>
@@ -53,13 +53,23 @@
             </Demo>
             <Demo title="不可用">
                 <div slot="demo">
-                    <Switch :disabled="disabled"></Switch>
+                    <Switch :disabled="disabled" />
                     <Button type="primary" @click="disabled = !disabled">Toggle Disabled</Button>
                 </div>
                 <div slot="desc">
                     <p>禁用开关。</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+            </Demo>
+            <Demo title="加载中">
+                <div slot="demo">
+                    <Switch loading :value="true" />
+                    <Switch loading :value="false" size="small" />
+                </div>
+                <div slot="desc">
+                    <p>标识开关操作仍在执行中。</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.loading }}</i-code>
             </Demo>
 
             <ad></ad>
@@ -105,6 +115,12 @@
                             <td>false-value</td>
                             <td>没有选中时的值，当使用类似 1 和 0 来判断是否选中时会很有用</td>
                             <td>String, Number, Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>loading</td>
+                            <td>加载中的开关</td>
+                            <td>Boolean</td>
                             <td>false</td>
                         </tr>
                     </tbody>

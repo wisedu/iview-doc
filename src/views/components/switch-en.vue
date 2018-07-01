@@ -12,7 +12,7 @@
             <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
-                    <Switch v-model="switch1" @on-change="change"></Switch>
+                    <Switch v-model="switch1" @on-change="change" />
                 </div>
                 <div slot="desc">
                     <p>The most basic usage.</p>
@@ -21,9 +21,9 @@
             </Demo>
             <Demo title="Size">
                 <div slot="demo">
-                    <Switch size="large"></Switch>
-                    <Switch></Switch>
-                    <Switch size="small"></Switch>
+                    <Switch size="large" />
+                    <Switch />
+                    <Switch size="small" />
                 </div>
                 <div slot="desc">
                     <p>Set the size to <code>large</code> or <code>small</code> to use large/small size of switch, by default the switch's size is medium.</p>
@@ -58,13 +58,24 @@
             </Demo>
             <Demo title="Disabled">
                 <div slot="demo">
-                    <Switch :disabled="disabled"></Switch>
+                    <Switch :disabled="disabled" />
                     <Button type="primary" @click="disabled = !disabled">Toggle Disabled</Button>
                 </div>
                 <div slot="desc">
                     <p>Disabled state of Switch.</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+            </Demo>
+
+            <Demo title="Loading">
+                <div slot="demo">
+                    <Switch loading :value="true" />
+                    <Switch loading :value="false" size="small" />
+                </div>
+                <div slot="desc">
+                    <p>Mark a pending state of switch.</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.loading }}</i-code>
             </Demo>
 
             <ad></ad>
@@ -110,6 +121,12 @@
                             <td>false-value</td>
                             <td>Value of the switch if it's not checked.</td>
                             <td>String, Number, Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>loading</td>
+                            <td>Loading state of switch.</td>
+                            <td>Boolean</td>
                             <td>false</td>
                         </tr>
                     </tbody>
