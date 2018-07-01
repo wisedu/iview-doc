@@ -894,7 +894,7 @@ const routers = [
     {
         path: '/components/avatar',
         meta: {
-            title: 'Avatar 头像'
+            title: '头像 Avatar'
         },
         component: (resolve) => require(['./views/components/avatar.vue'], resolve)
     },
@@ -908,7 +908,7 @@ const routers = [
     {
         path: '/components/color-picker',
         meta: {
-            title: 'ColorPicker 颜色选择器'
+            title: '颜色选择器 ColorPicker'
         },
         component: (resolve) => require(['./views/components/color-picker.vue'], resolve)
     },
@@ -922,7 +922,7 @@ const routers = [
     {
         path: '/components/auto-complete',
         meta: {
-            title: 'AutoComplete 自动完成'
+            title: '自动完成 AutoComplete'
         },
         component: (resolve) => require(['./views/components/auto-complete.vue'], resolve)
     },
@@ -936,7 +936,7 @@ const routers = [
     {
         path: '/components/scroll',
         meta: {
-            title: 'Scroll 无限滚动'
+            title: '无限滚动 Scroll'
         },
         component: (resolve) => require(['./views/components/scroll.vue'], resolve)
     },
@@ -950,7 +950,7 @@ const routers = [
     {
         path: '/components/time',
         meta: {
-            title: 'Time 相对时间'
+            title: '相对时间 Time'
         },
         component: (resolve) => require(['./views/components/time.vue'], resolve)
     },
@@ -964,7 +964,7 @@ const routers = [
     {
         path: '/components/anchor',
         meta: {
-            title: 'Anchor 锚点'
+            title: '锚点 Anchor'
         },
         component: (resolve) => require(['./views/components/anchor.vue'], resolve)
     },
@@ -978,7 +978,7 @@ const routers = [
     {
         path: '/components/cell',
         meta: {
-            title: 'Cell 单元格'
+            title: '单元格 Cell'
         },
         component: (resolve) => require(['./views/components/cell.vue'], resolve)
     },
@@ -992,7 +992,7 @@ const routers = [
     {
         path: '/components/split',
         meta: {
-            title: 'Split 面板分割'
+            title: '面板分割 Split'
         },
         component: (resolve) => require(['./views/components/split.vue'], resolve)
     },
@@ -1006,7 +1006,7 @@ const routers = [
     {
         path: '/components/divider',
         meta: {
-            title: 'Divider 分割线'
+            title: '分割线 Divider'
         },
         component: (resolve) => require(['./views/components/divider.vue'], resolve)
     },
