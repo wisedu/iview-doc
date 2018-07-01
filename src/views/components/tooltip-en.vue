@@ -126,6 +126,31 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.delay }}</i-code>
             </Demo>
+            <Demo title="Theme">
+                <div slot="demo">
+                    <Tooltip content="content of tooltip">
+                        <Button>Dark(default)</Button>
+                    </Tooltip>
+                    <Tooltip content="content of tooltip" theme="light">
+                        <Button>Light</Button>
+                    </Tooltip>
+                </div>
+                <div slot="desc">
+                    <p>Setting the property <code>theme</code> can display different colors.</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.theme }}</i-code>
+            </Demo>
+            <Demo title="Automatic Wrap">
+                <div slot="demo">
+                    <Tooltip max-width="200" content="Steven Paul Jobs was an American entrepreneur and business magnate. He was the chairman, chief executive officer, and a co-founder of Apple Inc.">
+                        <Button>Long Content</Button>
+                    </Tooltip>
+                </div>
+                <div slot="desc">
+                    <p>Set the property <code>max-width</code>, when the maximum value is exceeded, the text will automatically wrap and be aligned.</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.width }}</i-code>
+            </Demo>
 
             <ad></ad>
 
@@ -171,6 +196,18 @@
                             <td>Whether it is always visible.</td>
                             <td>Boolean</td>
                             <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>theme</td>
+                            <td>Theme, optional dark or light.</td>
+                            <td>String</td>
+                            <td>dark</td>
+                        </tr>
+                        <tr>
+                            <td>max-width</td>
+                            <td>Maximum width, after the maximum value is exceeded, the text will automatically wrap and be aligned.</td>
+                            <td>String | Number</td>
+                            <td>-</td>
                         </tr>
                         <tr>
                             <td>transfer</td>

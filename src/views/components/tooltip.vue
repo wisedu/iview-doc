@@ -124,6 +124,31 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.delay }}</i-code>
             </Demo>
+            <Demo title="主题">
+                <div slot="demo">
+                    <Tooltip content="content of tooltip">
+                        <Button>Dark(default)</Button>
+                    </Tooltip>
+                    <Tooltip content="content of tooltip" theme="light">
+                        <Button>Light</Button>
+                    </Tooltip>
+                </div>
+                <div slot="desc">
+                    <p>设置属性 <code>theme</code> 可以显示不同的颜色。</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.theme }}</i-code>
+            </Demo>
+            <Demo title="自动换行">
+                <div slot="demo">
+                    <Tooltip max-width="200" content="史蒂夫·乔布斯（Steve Jobs），1955年2月24日生于美国加利福尼亚州旧金山，美国发明家、企业家、美国苹果公司联合创办人。">
+                        <Button>长文本</Button>
+                    </Tooltip>
+                </div>
+                <div slot="desc">
+                    <p>设置属性 <code>max-width</code>，当超出最大值后，文本将自动换行，并两端对齐。</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.width }}</i-code>
+            </Demo>
 
             <ad></ad>
 
@@ -169,6 +194,18 @@
                             <td>是否总是可见</td>
                             <td>Boolean</td>
                             <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>theme</td>
+                            <td>主题，可选值为 dark 或 light</td>
+                            <td>String</td>
+                            <td>dark</td>
+                        </tr>
+                        <tr>
+                            <td>max-width</td>
+                            <td>最大宽度，超出最大值后，文本将自动换行，并两端对齐</td>
+                            <td>String | Number</td>
+                            <td>-</td>
                         </tr>
                         <tr>
                             <td>transfer</td>
