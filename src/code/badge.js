@@ -74,4 +74,79 @@ code.alone = `
 </script>
 `;
 
+code.text = `
+<template>
+    <Row>
+        <Col span="6">
+            <Badge text="new">
+                <a href="#" class="demo-badge"></a>
+            </Badge>
+        </Col>
+        <Col span="6">
+            <Badge text="hot">
+                <a href="#" class="demo-badge"></a>
+            </Badge>
+        </Col>
+    </Row>
+</template>
+<script>
+    export default {
+        
+    }
+</script>
+`;
+
+code.status = `
+<template>
+    <Badge status="success" />
+    <Badge status="error" />
+    <Badge status="default" />
+    <Badge status="processing" />
+    <Badge status="warning" />
+    <br />
+    <Badge status="success" text="Success" />
+    <br />
+    <Badge status="error" text="Error" />
+    <br />
+    <Badge status="default" text="Default" />
+    <br />
+    <Badge status="processing" text="Processing" />
+    <br />
+    <Badge status="warning" text="Warning" />
+</template>
+<script>
+    export default {
+        
+    }
+</script>
+`;
+
+code.type = `
+<template>
+    <Badge :count="5" type="primary">
+        <a href="#" class="demo-badge"></a>
+    </Badge>
+    <Badge :count="5" type="success">
+        <a href="#" class="demo-badge"></a>
+    </Badge>
+    <Badge :count="5" type="normal">
+        <a href="#" class="demo-badge"></a>
+    </Badge>
+    <Badge :count="5" type="info">
+        <a href="#" class="demo-badge"></a>
+    </Badge>
+    <Badge :count="5" type="error">
+        <a href="#" class="demo-badge"></a>
+    </Badge>
+    <Badge :count="5" type="warning">
+        <a href="#" class="demo-badge"></a>
+    </Badge>
+</template>
+<script>
+    export default {
+        
+    }
+</script>
+`;
+
 export default code;

@@ -85,6 +85,75 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.alone }}</i-code>
             </Demo>
+            <Demo title="自定义内容">
+                <div slot="demo">
+                    <Row>
+                        <Col span="6">
+                            <Badge text="new">
+                                <a href="#" class="demo-badge"></a>
+                            </Badge>
+                        </Col>
+                        <Col span="6">
+                            <Badge text="hot">
+                                <a href="#" class="demo-badge"></a>
+                            </Badge>
+                        </Col>
+                    </Row>
+                </div>
+                <div slot="desc">
+                    <p>设置 <code>text</code> 属性，可以自定义显示内容。</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.text }}</i-code>
+            </Demo>
+            <Demo title="状态点">
+                <div slot="demo">
+                    <Badge status="success" />
+                    <Badge status="error" />
+                    <Badge status="default" />
+                    <Badge status="processing" />
+                    <Badge status="warning" />
+                    <br />
+                    <Badge status="success" text="Success" />
+                    <br />
+                    <Badge status="error" text="Error" />
+                    <br />
+                    <Badge status="default" text="Default" />
+                    <br />
+                    <Badge status="processing" text="Processing" />
+                    <br />
+                    <Badge status="warning" text="Warning" />
+                </div>
+                <div slot="desc">
+                    <p>用于表示状态的小圆点。</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.status }}</i-code>
+            </Demo>
+            <Demo title="预设颜色">
+                <div slot="demo">
+                    <Badge :count="5" type="primary">
+                        <a href="#" class="demo-badge"></a>
+                    </Badge>
+                    <Badge :count="5" type="success">
+                        <a href="#" class="demo-badge"></a>
+                    </Badge>
+                    <Badge :count="5" type="normal">
+                        <a href="#" class="demo-badge"></a>
+                    </Badge>
+                    <Badge :count="5" type="info">
+                        <a href="#" class="demo-badge"></a>
+                    </Badge>
+                    <Badge :count="5" type="error">
+                        <a href="#" class="demo-badge"></a>
+                    </Badge>
+                    <Badge :count="5" type="warning">
+                        <a href="#" class="demo-badge"></a>
+                    </Badge>
+                </div>
+                <div slot="desc">
+                    <p>使用 <code>type</code> 属性，可以设置不同的颜色。</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.type }}</i-code>
+            </Demo>
 
             <ad></ad>
 
@@ -104,7 +173,7 @@
                         <tr>
                             <td>count</td>
                             <td>显示的数字，大于<code>overflowCount</code>时，显示<code>${overflowCount}+</code>，为 0 时隐藏</td>
-                            <td>Number | String</td>
+                            <td>Number</td>
                             <td>-</td>
                         </tr>
                         <tr>
@@ -123,6 +192,36 @@
                             <td>class-name</td>
                             <td>自定义的class名称，dot 模式下无效</td>
                             <td>String</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>type</td>
+                            <td>使用预设的颜色，可选值为 success、primary、normal、error、warning、info</td>
+                            <td>String</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>show-zero</td>
+                            <td>当数值为 0 时，是否展示 Badge</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>status</td>
+                            <td>设置 Badge 为状态点，可选值为 success、processing、default、error、warning</td>
+                            <td>String</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>text</td>
+                            <td>自定义内容，如果设置了 status，则为状态点的文本</td>
+                            <td>String</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>offset</td>
+                            <td>设置状态点的位置偏移，格式为 [x, y]</td>
+                            <td>Array</td>
                             <td>-</td>
                         </tr>
                     </tbody>
