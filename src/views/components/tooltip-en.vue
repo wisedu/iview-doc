@@ -210,6 +210,12 @@
                             <td>-</td>
                         </tr>
                         <tr>
+                            <td>offset</td>
+                            <td>Popover offset.</td>
+                            <td>Number</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
                             <td>transfer</td>
                             <td>Whether to append the layer in body. When used in Tabs or a fixed Table column, suggests adding this property, it will not be affected by the parent style, resulting in better results.</td>
                             <td>Boolean</td>

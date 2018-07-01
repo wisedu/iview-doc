@@ -252,6 +252,12 @@
                             <td>-</td>
                         </tr>
                         <tr>
+                            <td>offset</td>
+                            <td>出现位置的偏移量</td>
+                            <td>Number</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
                             <td>options</td>
                             <td>自定义 popper.js 的配置项，具体配置见 <a href="https://popper.js.org/popper-documentation.html" target="_blank">popper.js 文档</a></td>
                             <td>Object</td>

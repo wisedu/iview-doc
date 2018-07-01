@@ -252,6 +252,12 @@
                             <td>-</td>
                         </tr>
                         <tr>
+                            <td>offset</td>
+                            <td>Popover offset.</td>
+                            <td>Number</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
                             <td>options</td>
                             <td>Customize popper.js configuration items. For details, see <a href="https://popper.js.org/popper-documentation.html" target="_blank">popper.js document</a>.</td>
                             <td>Object</td>
