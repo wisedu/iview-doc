@@ -43,6 +43,26 @@
                 <!--<Button type="primary" size="large" style="width: 100px" @click="gotofee">查看直播</Button>-->
             <!--</div>-->
         <!--</Modal>-->
+        <Modal v-model="isSettingShow" :title="settingTitle" footer-hide>
+            <Form :model="settingData" :label-width="80">
+                <template v-if="$lang === 'zh-CN'">
+                    <FormItem label="代码块：">
+                        <RadioGroup v-model="settingData.code" @on-change="handleSettingChangeCode">
+                            <Radio label="1">左边示例，右边代码</Radio>
+                            <Radio label="2">只有示例，点击查看代码</Radio>
+                        </RadioGroup>
+                    </FormItem>
+                </template>
+                <template v-else>
+                    <FormItem label="Demo code:">
+                        <RadioGroup v-model="settingData.code" @on-change="handleSettingChangeCode">
+                            <Radio label="1">Left demo, right code</Radio>
+                            <Radio label="2">Only demo, click to see the code</Radio>
+                        </RadioGroup>
+                    </FormItem>
+                </template>
+            </Form>
+        </Modal>
     </div>
 </template>
 <script>
@@ -60,12 +80,23 @@
                 iViewVisible: false,
                 lang: this.$lang,
                 fee: true,
-                ad_index: 1  // 随机广告索引，更好地显示一类广告
+                ad_index: 1,  // 随机广告索引，更好地显示一类广告
+                isSettingShow: false,
+                settingData: {
+                    code: '1',  // 1, 2
+                },
             }
         },
         computed: {
             loading () {
                 return bus.loading;
+            },
+            settingTitle () {
+                if (this.$lang === 'zh-CN') {
+                    return '文档设置';
+                } else {
+                    return 'Doc Settings';
+                }
             }
         },
         mounted () {
@@ -145,7 +176,21 @@
             gotofee () {
                 _hmt.push(['_trackEvent', 'gotofee', 'click']);
                 window.open('https://live.bilibili.com/1353202');
+            },
+            handleOpenSetting () {
+                this.isSettingShow = true;
+            },
+            handleUpdateSettings () {
+                if (window.localStorage.getItem('settings-code')) {
+                    this.settingData.code = window.localStorage.getItem('settings-code');
+                }
+            },
+            handleSettingChangeCode (val) {
+                window.localStorage.setItem('settings-code', val);
             }
+        },
+        mounted () {
+            this.handleUpdateSettings();
         }
     }
 </script>

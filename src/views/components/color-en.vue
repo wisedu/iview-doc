@@ -47,9 +47,9 @@
             <p>The secondary colors are typical ones, which usually used for messages, e.g., success, warning and fail.</p>
             <Row :gutter="16">
                 <i-col span="6">
-                    <Card :bordered="false" style="background:#2d8cf0">
+                    <Card :bordered="false" style="background:#2db7f5">
                         <div class="demo-color-name">Info</div>
-                        <div class="demo-color-desc">#2d8cf0</div>
+                        <div class="demo-color-desc">#2db7f5</div>
                     </Card>
                 </i-col>
                 <i-col span="6">

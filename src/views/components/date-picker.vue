@@ -25,7 +25,6 @@
                     <div slot="desc">
                         <p>设置属性 <code>type</code> 为 <code>date</code> 或 <code>daterange</code> 分别显示<strong>选择单日</strong>和<strong>选择范围</strong>类型。</p>
                         <p>设置属性 <code>placement</code> 可以更改选择器出现的方向，与 Poptip 和 Tooltip 配置一致，支持 12 个方向，详见 API。</p>
-                        <blockquote><code>2.10.0</code> 版本开始支持从右往左选择。</blockquote>
                     </div>
                     <i-code lang="html" slot="code">{{ code.base }}</i-code>
                 </Demo>
@@ -65,7 +64,6 @@
                     </div>
                     <div slot="desc">
                         <p>开启属性 <code>multiple</code> 后，可以多选。</p>
-                        <blockquote><code>2.10.0</code> 版本开始支持。</blockquote>
                     </div>
                     <i-code lang="html" slot="code">{{ code.multiple }}</i-code>
                 </Demo>
@@ -101,7 +99,6 @@
                     </div>
                     <div slot="desc">
                         <p>设置属性 <code>start-date</code> 后，可以将默认显示的日期面板设置为指定日期。</p>
-                        <blockquote><code>2.10.0</code> 版本开始支持。</blockquote>
                     </div>
                     <i-code lang="html" slot="code">{{ code.start_date }}</i-code>
                 </Demo>

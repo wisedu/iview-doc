@@ -25,7 +25,6 @@
                     <div slot="desc">
                         <p>Set <code>type</code> prop to <code>date</code> or <code>daterange</code> to show <strong>Pick Single Date</strong> or <strong>Pick Range</strong> type.</p>
                         <p>Set <code>placement</code> prop to change the display direction of the DatePicker. Same as Poptip and Tooltip, <code>placement</code> supports 12 directions. Details on API doc below.</p>
-                        <blockquote>Support from right to left choice after <code>2.10.0</code>.</blockquote>
                     </div>
                     <i-code lang="html" slot="code">{{ code.base }}</i-code>
                 </Demo>
@@ -54,7 +53,6 @@
                     </div>
                     <div slot="desc">
                         <p>Open property <code>split-panels</code>, the left and right panels are not interconnected during the switching year and month.</p>
-                        <blockquote>Support after <code>2.10.0</code></blockquote>
                     </div>
                     <i-code lang="html" slot="code">{{ code.split_panels }}</i-code>
                 </Demo>
@@ -83,7 +81,6 @@
                     </div>
                     <div slot="desc">
                         <p>Open property <code>show-week-numbers</code>, can display the week numbers.</p>
-                        <blockquote>Support after <code>2.10.0</code></blockquote>
                     </div>
                     <i-code lang="html" slot="code">{{ code.weeks }}</i-code>
                 </Demo>

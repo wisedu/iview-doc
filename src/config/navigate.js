@@ -8,6 +8,11 @@ const list = {
             path: '/docs/guide/introduce'
         },
         {
+            title: '实践',
+            titleEn: 'Practice',
+            path: '/docs/practice/case'
+        },
+        {
             title: '设计原则',
             titleEn: 'Design Principles',
             path: '/docs/guide/design'

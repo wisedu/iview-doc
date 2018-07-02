@@ -47,9 +47,9 @@
             <p>辅助色是具有代表性的颜色，常用于信息提示，比如成功、警告和失败。</p>
             <Row :gutter="16">
                 <i-col span="6">
-                    <Card :bordered="false" style="background:#2d8cf0">
+                    <Card :bordered="false" style="background:#2db7f5">
                         <div class="demo-color-name">Info</div>
-                        <div class="demo-color-desc">#2d8cf0</div>
+                        <div class="demo-color-desc">#2db7f5</div>
                     </Card>
                 </i-col>
                 <i-col span="6">

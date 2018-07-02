@@ -43,10 +43,10 @@
                         {{ $t('index.live') }}
                     </Badge>
                 </Menu-item>
-                <Menu-item name="practice" :to="handleGoToMenu('/docs/practice/case')">
-                    <Icon type="ios-analytics"></Icon>
-                    {{ $t('index.practice') }}
-                </Menu-item>
+                <!--<Menu-item name="practice" :to="handleGoToMenu('/docs/practice/case')">-->
+                    <!--<Icon type="ios-analytics"></Icon>-->
+                    <!--{{ $t('index.practice') }}-->
+                <!--</Menu-item>-->
                 <Submenu name="ecosystem">
                     <template slot="title">
                         <Icon type="ios-infinite"></Icon>
@@ -72,10 +72,11 @@
                     <Option value="2">2.x</Option>
                     <Option value="1">1.x</Option>
                 </Select>
-                <ButtonGroup>
-                    <Button size="small" icon="logo-github" @click="handleGoToGitHub"></Button>
-                    <Button size="small" icon="logo-twitter" @click="handleGoToTwitter"></Button>
-                    <Button size="small" @click="handleChangeLang" >
+                <ButtonGroup size="small">
+                    <Button icon="logo-github" @click="handleGoToGitHub"></Button>
+                    <Button icon="logo-twitter" @click="handleGoToTwitter"></Button>
+                    <Button icon="ios-settings" @click="handleToggleSetting"></Button>
+                    <Button @click="handleChangeLang" >
                         <template v-if="lang === 'zh-CN'">EN</template>
                         <template v-else>中文</template>
                     </Button>
@@ -91,6 +92,7 @@
     import ApplicationMenu from './applications.vue';
 
     export default {
+        inject: ['app'],
         components: { ApplicationMenu },
         props: {
             activeKey: String
@@ -184,7 +186,7 @@
                 if (v == 1) {
                     window.location.href = 'http://v1.iviewui.com';
                 }
-                if (v == 1) {
+                if (v == 2) {
                     window.location.href = 'http://v2.iviewui.com';
                 }
             },
@@ -202,6 +204,9 @@
                 } else {
                     return name + '-en';
                 }
+            },
+            handleToggleSetting () {
+                this.app.handleOpenSetting();
             }
         },
         created () {
