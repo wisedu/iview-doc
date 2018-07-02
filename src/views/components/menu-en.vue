@@ -10,16 +10,16 @@
                 <div slot="demo">
                     <Menu mode="horizontal" :theme="theme1" active-name="1">
                         <MenuItem name="1">
-                            <Icon type="ios-paper"></Icon>
+                            <Icon type="ios-paper" />
                             内容管理
                         </MenuItem>
                         <MenuItem name="2">
-                            <Icon type="ios-people"></Icon>
+                            <Icon type="ios-people" />
                             用户管理
                         </MenuItem>
                         <Submenu name="3">
                             <template slot="title">
-                                <Icon type="stats-bars"></Icon>
+                                <Icon type="ios-stats" />
                                 统计分析
                             </template>
                             <MenuGroup title="使用">
@@ -33,7 +33,7 @@
                             </MenuGroup>
                         </Submenu>
                         <MenuItem name="4">
-                            <Icon type="settings"></Icon>
+                            <Icon type="ios-construct" />
                             综合设置
                         </MenuItem>
                     </Menu>
@@ -59,7 +59,7 @@
                             <Menu :theme="theme2">
                                 <Submenu name="1">
                                     <template slot="title">
-                                        <Icon type="ios-paper"></Icon>
+                                        <Icon type="ios-paper" />
                                         内容管理
                                     </template>
                                     <MenuItem name="1-1">文章管理</MenuItem>
@@ -68,7 +68,7 @@
                                 </Submenu>
                                 <Submenu name="2">
                                     <template slot="title">
-                                        <Icon type="ios-people"></Icon>
+                                        <Icon type="ios-people" />
                                         用户管理
                                     </template>
                                     <MenuItem name="2-1">新增用户</MenuItem>
@@ -76,7 +76,7 @@
                                 </Submenu>
                                 <Submenu name="3">
                                     <template slot="title">
-                                        <Icon type="stats-bars"></Icon>
+                                        <Icon type="ios-stats" />
                                         统计分析
                                     </template>
                                     <MenuGroup title="使用">
@@ -95,7 +95,7 @@
                             <Menu :theme="theme2" active-name="1-2" :open-names="['1']">
                                 <Submenu name="1">
                                     <template slot="title">
-                                        <Icon type="ios-paper"></Icon>
+                                        <Icon type="ios-paper" />
                                         内容管理
                                     </template>
                                     <MenuItem name="1-1">文章管理</MenuItem>
@@ -104,7 +104,7 @@
                                 </Submenu>
                                 <Submenu name="2">
                                     <template slot="title">
-                                        <Icon type="ios-people"></Icon>
+                                        <Icon type="ios-people" />
                                         用户管理
                                     </template>
                                     <MenuItem name="2-1">新增用户</MenuItem>
@@ -112,7 +112,7 @@
                                 </Submenu>
                                 <Submenu name="3">
                                     <template slot="title">
-                                        <Icon type="stats-bars"></Icon>
+                                        <Icon type="ios-stats" />
                                         统计分析
                                     </template>
                                     <MenuGroup title="使用">
@@ -131,7 +131,7 @@
                             <Menu :theme="theme2" :open-names="['1']" accordion>
                                 <Submenu name="1">
                                     <template slot="title">
-                                        <Icon type="ios-paper"></Icon>
+                                        <Icon type="ios-paper" />
                                         内容管理
                                     </template>
                                     <MenuItem name="1-1">文章管理</MenuItem>
@@ -140,7 +140,7 @@
                                 </Submenu>
                                 <Submenu name="2">
                                     <template slot="title">
-                                        <Icon type="ios-people"></Icon>
+                                        <Icon type="ios-people" />
                                         用户管理
                                     </template>
                                     <MenuItem name="2-1">新增用户</MenuItem>
@@ -148,7 +148,7 @@
                                 </Submenu>
                                 <Submenu name="3">
                                     <template slot="title">
-                                        <Icon type="stats-bars"></Icon>
+                                        <Icon type="ios-stats" />
                                         统计分析
                                     </template>
                                     <MenuGroup title="使用">
@@ -184,7 +184,7 @@
                     <Menu active-name="1-2" :open-names="['1']">
                         <Submenu name="1">
                             <template slot="title">
-                                <Icon type="ios-analytics"></Icon>
+                                <Icon type="ios-analytics" />
                                 Navigation One
                             </template>
                             <MenuGroup title="Item 1">
@@ -198,7 +198,7 @@
                         </Submenu>
                         <Submenu name="2">
                             <template slot="title">
-                                <Icon type="ios-filing"></Icon>
+                                <Icon type="ios-filing" />
                                 Navigation Two
                             </template>
                             <MenuItem name="2-1">Option 5</MenuItem>
@@ -211,7 +211,7 @@
                         </Submenu>
                         <Submenu name="4">
                             <template slot="title">
-                                <Icon type="ios-gear"></Icon>
+                                <Icon type="ios-cog" />
                                 Navigation Three
                             </template>
                             <MenuItem name="4-1">Option 9</MenuItem>
@@ -231,21 +231,21 @@
                     <Menu :theme="theme3" active-name="1">
                         <MenuGroup title="内容管理">
                             <MenuItem name="1">
-                                <Icon type="document-text"></Icon>
+                                <Icon type="md-document" />
                                 文章管理
                             </MenuItem>
                             <MenuItem name="2">
-                                <Icon type="chatbubbles"></Icon>
+                                <Icon type="md-chatbubbles" />
                                 评论管理
                             </MenuItem>
                         </MenuGroup>
                         <MenuGroup title="统计分析">
                             <MenuItem name="3">
-                                <Icon type="heart"></Icon>
+                                <Icon type="md-heart" />
                                 用户留存
                             </MenuItem>
                             <MenuItem name="4">
-                                <Icon type="heart-broken"></Icon>
+                                <Icon type="md-leaf" />
                                 流失用户
                             </MenuItem>
                         </MenuGroup>

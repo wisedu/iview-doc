@@ -71,7 +71,7 @@ code.trigger = `
         </a>
         <DropdownMenu slot="list">
             <DropdownItem>返回</DropdownItem>
-            <DropdownItem style="color: #ed3f14">删除</DropdownItem>
+            <DropdownItem style="color: #ed4014">删除</DropdownItem>
         </DropdownMenu>
     </Dropdown>
     <Dropdown trigger="custom" :visible="visible" style="margin-left: 20px">

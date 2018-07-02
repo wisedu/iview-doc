@@ -1,7 +1,7 @@
 <style>
     .demo-split{
         height: 200px;
-        border: 1px solid #dddee1;
+        border: 1px solid #dcdee2;
     }
     .demo-split-pane{
         padding: 10px;

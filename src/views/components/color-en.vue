@@ -65,9 +65,9 @@
                     </Card>
                 </i-col>
                 <i-col span="6">
-                    <Card :bordered="false" style="background:#ed3f14">
+                    <Card :bordered="false" style="background:#ed4014">
                         <div class="demo-color-name">Error</div>
-                        <div class="demo-color-desc">#ed3f14</div>
+                        <div class="demo-color-desc">#ed4014</div>
                     </Card>
                 </i-col>
             </Row>
@@ -76,42 +76,42 @@
             <p>Neutral colors are usually used for text, background, border, shadow, etc, showing the hierachical structure of the page.</p>
             <Row :gutter="16">
                 <i-col span="6">
-                    <Card :bordered="false" style="background:#1c2438">
+                    <Card :bordered="false" style="background:#17233d">
                         <div class="demo-color-name">Title</div>
-                        <div class="demo-color-desc">#1c2438</div>
+                        <div class="demo-color-desc">#17233d</div>
                     </Card>
                 </i-col>
                 <i-col span="6">
-                    <Card :bordered="false" style="background:#495060">
+                    <Card :bordered="false" style="background:#515a6e">
                         <div class="demo-color-name">Content</div>
-                        <div class="demo-color-desc">#495060</div>
+                        <div class="demo-color-desc">#515a6e</div>
                     </Card>
                 </i-col>
                 <i-col span="6">
-                    <Card :bordered="false" style="background:#80848f">
+                    <Card :bordered="false" style="background:#808695">
                         <div class="demo-color-name">Sub Color</div>
-                        <div class="demo-color-desc">#80848f</div>
+                        <div class="demo-color-desc">#808695</div>
                     </Card>
                 </i-col>
                 <i-col span="6">
-                    <Card :bordered="false" style="background:#bbbec4">
+                    <Card :bordered="false" style="background:#c5c8ce">
                         <div class="demo-color-name">Disabled</div>
-                        <div class="demo-color-desc">#bbbec4</div>
+                        <div class="demo-color-desc">#c5c8ce</div>
                     </Card>
                 </i-col>
             </Row>
             <br>
             <Row :gutter="16">
                 <i-col span="6">
-                    <Card :bordered="false" style="background:#dddee1">
+                    <Card :bordered="false" style="background:#dcdee2">
                         <div class="demo-color-name dark">Border</div>
-                        <div class="demo-color-desc dark">#dddee1</div>
+                        <div class="demo-color-desc dark">#dcdee2</div>
                     </Card>
                 </i-col>
                 <i-col span="6">
-                    <Card :bordered="false" style="background:#e9eaec">
+                    <Card :bordered="false" style="background:#e8eaec">
                         <div class="demo-color-name dark">Divider</div>
-                        <div class="demo-color-desc dark">#e9eaec</div>
+                        <div class="demo-color-desc dark">#e8eaec</div>
                     </Card>
                 </i-col>
                 <i-col span="6">

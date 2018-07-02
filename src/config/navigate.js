@@ -445,11 +445,11 @@ const list = {
             titleEn: 'Practical Cases',
             path: '/docs/practice/case'
         },
-        {
-            title: 'iView Logo 设计思路',
-            titleEn: 'iView Logo Design',
-            path: '/docs/practice/logo'
-        }
+        // {
+        //     title: 'iView Logo 设计思路',
+        //     titleEn: 'iView Logo Design',
+        //     path: '/docs/practice/logo'
+        // }
     ],
     live: [
         {
