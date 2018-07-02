@@ -68,6 +68,7 @@
                 <li>Select: <code>i-select</code></li>
                 <li>Option: <code>i-option</code></li>
                 <li>Progress: <code>i-progress</code></li>
+                <li>Time: <code>i-time</code></li>
             </ul>
             <p>以下组件，在所有模式下，必须加前缀 <code>i-</code>，除非使用 <router-link to="/docs/guide/iview-loader">iview-loader</router-link>：</p>
             <ul>

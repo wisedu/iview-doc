@@ -67,10 +67,11 @@
                         iView Area
                     </Menu-item>
                 </Submenu>
-                <!--<Select size="small" value="2" style="width: 60px;margin: 0 10px;" @on-change="handleVersion">-->
-                    <!--<Option value="2">2.x</Option>-->
-                    <!--<Option value="1">1.x</Option>-->
-                <!--</Select>-->
+                <Select size="small" value="3" style="width: 60px;margin: 0 10px;" @on-change="handleVersion">
+                    <Option value="3">3.x</Option>
+                    <Option value="2">2.x</Option>
+                    <Option value="1">1.x</Option>
+                </Select>
                 <ButtonGroup>
                     <Button size="small" icon="logo-github" @click="handleGoToGitHub"></Button>
                     <Button size="small" icon="logo-twitter" @click="handleGoToTwitter"></Button>
@@ -182,6 +183,9 @@
             handleVersion (v) {
                 if (v == 1) {
                     window.location.href = 'http://v1.iviewui.com';
+                }
+                if (v == 1) {
+                    window.location.href = 'http://v2.iviewui.com';
                 }
             },
             handleGoToGitHub () {
