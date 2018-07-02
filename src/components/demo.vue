@@ -2,7 +2,7 @@
     @import '../styles/demo.less';
 </style>
 <template>
-    <Row class="example" :class="{'example-vertical': isVertical}" :id="title">
+    <Row class="example" :class="{'example-vertical': isVertical}" :id="title_link">
         <i-col class="example-demo" :span="isVertical ? 24 : 12">
             <div class="example-case">
                 <slot name="demo"></slot>
@@ -10,7 +10,7 @@
             <header class="example-header">
                 <span>
                     {{ title }}
-                    <a :href="`#${title}`">#</a>
+                    <a :href="`#${title_link}`" :data-title="title">#</a>
                 </span>
             </header>
             <div class="example-desc">
@@ -32,6 +32,7 @@
     </Row>
 </template>
 <script>
+    import pinyinUtil from '../libs/pinyin/pinyinUtil';
 
     export default {
         name: 'Demo',
@@ -99,6 +100,10 @@
                     style.opacity = 0;
                 }
                 return style;
+            },
+            title_link () {
+                const title = pinyinUtil.getFirstLetter(this.title);
+                return title.replace(/\s/g, '_');
             }
         },
         mounted () {

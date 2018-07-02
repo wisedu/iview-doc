@@ -2,7 +2,7 @@ let code = {};
 
 code.base = `
 <template>
-    <Anchor show-ink-in-fixed>
+    <Anchor show-ink>
         <AnchorLink href="#basic_usage" title="Basic Usage" />
         <AnchorLink href="#static_position" title="Static Position" />
         <AnchorLink href="#API" title="API">
@@ -21,7 +21,7 @@ code.base = `
 
 code.affix = `
 <template>
-    <Anchor :affix="false" show-ink-in-fixed>
+    <Anchor :affix="false" show-ink>
         <AnchorLink href="#basic_usage" title="Basic Usage" />
         <AnchorLink href="#static_position" title="Static Position" />
         <AnchorLink href="#API" title="API">

@@ -20,22 +20,26 @@
                     <i-col span="3">
                         <Affix :offset-top="75">
                             <div class="catalogue" v-show="list.length">
-                                <card dis-hover>
-                                    <div class="catalogue-title">
-                                        <template v-if="lang === 'zh-CN'">目录</template>
-                                        <template v-else>Catalogue</template>
-                                    </div>
-                                    <div class="catalogue-content">
-                                        <ul>
-                                            <li v-for="item in list">
-                                                <a :href="'#' + item.path" @click.stop.prevent="handleClickLink(item.path)">{{ item.title }}</a>
-                                            </li>
-                                            <li v-if="need_api">
-                                                <a href="#API" @click.stop.prevent="handleClickLink('API')">API</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </card>
+                                <!--<card dis-hover>-->
+                                    <!--<div class="catalogue-title">-->
+                                        <!--<template v-if="lang === 'zh-CN'">目录</template>-->
+                                        <!--<template v-else>Catalogue</template>-->
+                                    <!--</div>-->
+                                    <!--<div class="catalogue-content">-->
+                                        <!--<ul>-->
+                                            <!--<li v-for="item in list">-->
+                                                <!--<a :href="'#' + item.path" @click.stop.prevent="handleClickLink(item.path)">{{ item.title }}</a>-->
+                                            <!--</li>-->
+                                            <!--<li v-if="need_api">-->
+                                                <!--<a href="#API" @click.stop.prevent="handleClickLink('API')">API</a>-->
+                                            <!--</li>-->
+                                        <!--</ul>-->
+                                    <!--</div>-->
+                                <!--</card>-->
+                                <Anchor show-ink>
+                                    <AnchorLink v-for="item in list" :key="item.path" :href="'#' + item.path" :title="item.title" />
+                                    <AnchorLink href="#API" title="API" v-if="need_api" />
+                                </Anchor>
                             </div>
 
                             <template v-if="lang === 'zh-CN'">
@@ -336,10 +340,11 @@
             if (examples.length) {
                 this.need_api = true;
                 for (let i = 0; i < examples.length; i++) {
-                    const title = examples[i].querySelectorAll('header span a')[0].getAttribute('href').replace('#', '');
+                    const path = examples[i].querySelectorAll('header span a')[0].getAttribute('href').replace('#', '');
+                    const title = examples[i].querySelectorAll('header span a')[0].getAttribute('data-title').replace('#', '');
                     this.list.push({
                         title: title,
-                        path: title
+                        path: path
                     });
                 }
             } else {

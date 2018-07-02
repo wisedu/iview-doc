@@ -13,7 +13,7 @@
             <div id="basic_usage">
                 <Demo title="Basic Usage">
                     <div slot="demo">
-                        <Anchor show-ink-in-fixed class="demo-anchor">
+                        <Anchor show-ink class="demo-anchor">
                             <AnchorLink href="#basic_usage" title="Basic Usage" />
                             <AnchorLink href="#static_position" title="Static Position" />
                             <AnchorLink href="#API" title="API">
@@ -85,9 +85,15 @@
                     </tr>
                     <tr>
                         <td>bounds</td>
-                        <td>ounding distance of anchor area, unit: px.</td>
+                        <td>Bounding distance of anchor area, unit: px.</td>
                         <td>Number</td>
                         <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>scroll-offset</td>
+                        <td>Click to scroll extra distance.</td>
+                        <td>Number</td>
+                        <td>0</td>
                     </tr>
                     <tr>
                         <td>container</td>
@@ -96,8 +102,8 @@
                         <td>-</td>
                     </tr>
                     <tr>
-                        <td>show-ink-in-fixed</td>
-                        <td>Whether show ink-balls in Fixed mode.</td>
+                        <td>show-ink</td>
+                        <td>Whether show ink-balls.</td>
                         <td>Boolean</td>
                         <td>false</td>
                     </tr>
@@ -147,6 +153,12 @@
                         <td>content of hyperlink</td>
                         <td>String</td>
                         <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>scroll-offset</td>
+                        <td>Click to scroll extra distance.</td>
+                        <td>Number</td>
+                        <td>0</td>
                     </tr>
                     </tbody>
                 </table>

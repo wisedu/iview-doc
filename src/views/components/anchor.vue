@@ -13,7 +13,7 @@
             <div id="basic_usage">
                 <Demo title="基础用法">
                     <div slot="demo">
-                        <Anchor show-ink-in-fixed class="demo-anchor">
+                        <Anchor show-ink class="demo-anchor">
                             <AnchorLink href="#basic_usage" title="基础用法" />
                             <AnchorLink href="#static_position" title="静态位置" />
                             <AnchorLink href="#API" title="API">
@@ -90,14 +90,20 @@
                             <td>5</td>
                         </tr>
                         <tr>
+                            <td>scroll-offset</td>
+                            <td>点击滚动的额外距离</td>
+                            <td>Number</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
                             <td>container</td>
                             <td>指定滚动的容器</td>
                             <td>String | HTMLElement</td>
                             <td>-</td>
                         </tr>
                         <tr>
-                            <td>show-ink-in-fixed</td>
-                            <td>固定模式是否显示小圆点</td>
+                            <td>show-ink</td>
+                            <td>是否显示小圆点</td>
                             <td>Boolean</td>
                             <td>false</td>
                         </tr>
@@ -147,6 +153,12 @@
                             <td>文字内容</td>
                             <td>String</td>
                             <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>scroll-offset</td>
+                            <td>点击滚动的额外距离</td>
+                            <td>Number</td>
+                            <td>0</td>
                         </tr>
                     </tbody>
                 </table>

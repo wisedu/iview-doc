@@ -122,14 +122,14 @@ const routers = [
         component: (resolve) => require(['./views/guide/standard-en.vue'], resolve)
     },
     {
-        path: '/docs/practice/case',
+        path: '/docs/guide/case',
         meta: {
             title: '实践案例'
         },
         component: (resolve) => require(['./views/practice/case.vue'], resolve)
     },
     {
-        path: '/docs/practice/case-en',
+        path: '/docs/guide/case-en',
         meta: {
             title: 'Practical Cases'
         },

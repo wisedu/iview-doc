@@ -10,7 +10,7 @@ const list = {
         {
             title: '实践',
             titleEn: 'Practice',
-            path: '/docs/practice/case'
+            path: '/docs/guide/case'
         },
         {
             title: '设计原则',
