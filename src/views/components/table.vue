@@ -869,7 +869,7 @@
                         key: 'status',
                         render: (h, params) => {
                             const row = params.row;
-                            const color = row.status === 1 ? 'primary' : row.status === 2 ? 'success' : 'red';
+                            const color = row.status === 1 ? 'primary' : row.status === 2 ? 'success' : 'error';
                             const text = row.status === 1 ? 'Working' : row.status === 2 ? 'Success' : 'Fail';
 
                             return h('Tag', {

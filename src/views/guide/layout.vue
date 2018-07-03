@@ -431,18 +431,18 @@
                                         <span>Option 1</span>
                                     </MenuItem>
                                     <MenuItem name="1-2">
-                                        <Icon type="search"></Icon>
+                                        <Icon type="ios-search"></Icon>
                                         <span>Option 2</span>
                                     </MenuItem>
                                     <MenuItem name="1-3">
-                                        <Icon type="settings"></Icon>
+                                        <Icon type="ios-settings"></Icon>
                                         <span>Option 3</span>
                                     </MenuItem>
                                 </Menu>
                             </Sider>
                             <Layout>
                                 <Header :style="{padding: 0}" class="layout-header-bar">
-                                    <Icon @click.native="collapsedSider" :class="rotateIcon" :style="{margin: '20px 20px 0'}" type="navicon-round" size="24"></Icon>
+                                    <Icon @click.native="collapsedSider" :class="rotateIcon" :style="{margin: '0 20px'}" type="md-menu" size="24"></Icon>
                                 </Header>
                                 <Content :style="{margin: '20px', background: '#fff', minHeight: '260px'}">
                                     Content
@@ -467,11 +467,11 @@
                                         <span>Option 1</span>
                                     </MenuItem>
                                     <MenuItem name="1-2">
-                                        <Icon type="search"></Icon>
+                                        <Icon type="ios-search"></Icon>
                                         <span>Option 2</span>
                                     </MenuItem>
                                     <MenuItem name="1-3">
-                                        <Icon type="settings"></Icon>
+                                        <Icon type="ios-settings"></Icon>
                                         <span>Option 3</span>
                                     </MenuItem>
                                 </Menu>

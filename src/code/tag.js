@@ -91,7 +91,7 @@ code.checkable = `
 code.add = `
 <template>
     <Tag v-for="item in count" :key="item" :name="item" closable @on-close="handleClose2">标签{{ item + 1 }}</Tag>
-    <Button icon="ios-plus-empty" type="dashed" size="small" @click="handleAdd">添加标签</Button>
+    <Button icon="ios-add" type="dashed" size="small" @click="handleAdd">添加标签</Button>
 </template>
 <script>
     export default {

@@ -53,7 +53,6 @@
                     </div>
                     <div slot="desc">
                         <p>开启属性 <code>split-panels</code> 后，左右两面板在切换年、月时不联动。</p>
-                        <blockquote><code>2.10.0</code> 版本开始支持。</blockquote>
                     </div>
                     <i-code lang="html" slot="code">{{ code.split_panels }}</i-code>
                 </Demo>

@@ -63,7 +63,6 @@
                     </div>
                     <div slot="desc">
                         <p>Open property <code>multiple</code>, you can select multiple.</p>
-                        <blockquote>Support after <code>2.10.0</code></blockquote>
                     </div>
                     <i-code lang="html" slot="code">{{ code.multiple }}</i-code>
                 </Demo>

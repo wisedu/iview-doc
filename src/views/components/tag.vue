@@ -80,7 +80,7 @@
             <Demo title="动态添加和删除">
                 <div slot="demo">
                     <Tag v-for="item in count" :key="item" :name="item" closable @on-close="handleClose2">标签{{ item + 1 }}</Tag>
-                    <Button icon="ios-plus-empty" type="dashed" size="small" @click="handleAdd">添加标签</Button>
+                    <Button icon="ios-add" type="dashed" size="small" @click="handleAdd">添加标签</Button>
                 </div>
                 <div slot="desc">
                     <p>用数组生成一组标签，可以动态添加和删除。</p>

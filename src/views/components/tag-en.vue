@@ -80,7 +80,7 @@
             <Demo title="Add & Remove Dynamically">
                 <div slot="demo">
                     <Tag v-for="item in count" :key="item" :name="item" closable @on-close="handleClose2">标签{{ item + 1 }}</Tag>
-                    <Button icon="ios-plus-empty" type="dashed" size="small" @click="handleAdd">添加标签</Button>
+                    <Button icon="ios-add" type="dashed" size="small" @click="handleAdd">添加标签</Button>
                 </div>
                 <div slot="desc">
                     <p>Generating a set of Tags by array, you can add and remove dynamically.</p>

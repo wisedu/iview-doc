@@ -37,8 +37,8 @@
                         <span slot="close">关</span>
                     </Switch>
                     <Switch>
-                        <Icon type="android-done" slot="open"></Icon>
-                        <Icon type="android-close" slot="close"></Icon>
+                        <Icon type="md-checkmark" slot="open"></Icon>
+                        <Icon type="md-close" slot="close"></Icon>
                     </Switch>
                     <br><br>
                     <Switch size="large">
