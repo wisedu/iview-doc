@@ -52,10 +52,10 @@
                 <div slot="demo">
                     <div class="demo-avatar-badge">
                         <Badge :count="1">
-                            <Avatar shape="square" icon="person" />
+                            <Avatar shape="square" icon="ios-person" />
                         </Badge>
                         <Badge dot>
-                            <Avatar shape="square" icon="person" />
+                            <Avatar shape="square" icon="ios-person" />
                         </Badge>
                     </div>
                 </div>
@@ -113,6 +113,12 @@
                         <tr>
                             <td>icon</td>
                             <td>设置头像的图标类型，参考 <code>Icon</code> 组件</td>
+                            <td>String</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>custom-icon</td>
+                            <td>自定义图标</td>
                             <td>String</td>
                             <td>-</td>
                         </tr>

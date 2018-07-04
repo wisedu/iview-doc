@@ -52,10 +52,10 @@
                 <div slot="demo">
                     <div class="demo-avatar-badge">
                         <Badge :count="1">
-                            <Avatar shape="square" icon="person" />
+                            <Avatar shape="square" icon="ios-person" />
                         </Badge>
                         <Badge dot>
-                            <Avatar shape="square" icon="person" />
+                            <Avatar shape="square" icon="ios-person" />
                         </Badge>
                     </div>
                 </div>
@@ -113,6 +113,12 @@
                     <tr>
                         <td>icon</td>
                         <td>The icon type of a icon avatar, see <code>Icon</code> Component.</td>
+                        <td>String</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>custom-icon</td>
+                        <td>Custom the icon.</td>
                         <td>String</td>
                         <td>-</td>
                     </tr>

@@ -69,7 +69,7 @@
                     <tr>
                         <td>time</td>
                         <td>The time to compare, which can be a timestamp or Date type.</td>
-                        <td>Number | Date</td>
+                        <td>Number | Date | String</td>
                         <td>-</td>
                     </tr>
                     <tr>

@@ -41,7 +41,7 @@
                     <Tag color="volcano">volcano</Tag>
                     <Tag color="orange">orange</Tag>
                     <Tag color="gold">gold</Tag>
-                    <Tag color="gold">不错</Tag>
+                    <Tag color="yellow">yellow</Tag>
                     <Tag color="lime">lime</Tag>
                     <Tag color="green">green</Tag>
                     <Tag color="cyan">cyan</Tag>

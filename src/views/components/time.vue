@@ -69,7 +69,7 @@
                         <tr>
                             <td>time</td>
                             <td>需要对比的时间，可以是时间戳或 Date 类型</td>
-                            <td>Number | Date</td>
+                            <td>Number | Date | String</td>
                             <td>-</td>
                         </tr>
                         <tr>

@@ -1644,14 +1644,6 @@ export default[
         "tag": "heart,love"
     },
     {
-        "name": "ios-heart-outline",
-        "tag": "heart,outline"
-    },
-    {
-        "name": "ios-heart-outline",
-        "tag": "heart,outline"
-    },
-    {
         "name": "md-heart-outline",
         "tag": "heart,outline"
     },
