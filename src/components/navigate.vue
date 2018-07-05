@@ -3,12 +3,17 @@
 </style>
 <template>
     <div class="navigate">
-        <div class="asd" @click="handleAd" v-if="lang === 'zh-CN'">
+        <Divider class="asd-title">赞助商</Divider>
+        <div class="asd asd-mb" @click="handleAd" v-if="lang === 'zh-CN'">
             <div class="asd-main">
                 <img src="../images/ad-juejin.jpg" style="border-radius: 6px">
-                <ad-send></ad-send>
             </div>
         </div>
+        <!--<div class="asd asd-mb" @click="handleAdBmqb" v-if="lang === 'zh-CN'">-->
+            <!--<div class="asd-main">-->
+                <!--<img src="../images/ad-bmqb.png" style="border-radius: 6px">-->
+            <!--</div>-->
+        <!--</div>-->
         <Menu width="auto" :active-name="activeKey" @on-select="handleSelect" v-if="type === 'guide'">
             <Menu-item v-for="item in navigate.guide" :key="item.path" :name="item.path" :to="handleGoToMenu(item.path)">
                 <template v-if="lang === 'zh-CN'">{{ item.title }}</template>
@@ -129,6 +134,10 @@
 //                this.$router.push('/live');
 //                this.showAd = true;
                 window.open('https://juejin.im/welcome/frontend?utm_source=iview&utm_medium=banner&utm_content=huoyue&utm_campaign=q4_website');
+            },
+            handleAdBmqb () {
+                _hmt.push(['_trackEvent', 'vue-bmqb', 'click']);
+                window.open('https://www.bmqb.com/a/jobs?from=iview');
             },
             handleBuy (type) {
                 if (type === 'taobao') {

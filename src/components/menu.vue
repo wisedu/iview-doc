@@ -43,6 +43,10 @@
                         {{ $t('index.live') }}
                     </Badge>
                 </Menu-item>
+                <!--<Menu-item name="donate" :to="handleGoToMenu('/donate')">-->
+                    <!--<Icon type="ios-cash"></Icon>-->
+                    <!--{{ $t('index.donate') }}-->
+                <!--</Menu-item>-->
                 <!--<Menu-item name="practice" :to="handleGoToMenu('/docs/practice/case')">-->
                     <!--<Icon type="ios-analytics"></Icon>-->
                     <!--{{ $t('index.practice') }}-->

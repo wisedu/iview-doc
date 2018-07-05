@@ -77,11 +77,11 @@
                                 <a v-if="ad_index === 6" href="https://cn.udacity.com/fend/?utm_source=iviewui&utm_medium=banner&utm_campaign=fend" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">
                                     <img src="../images/aside-udacity-5.jpg">
                                 </a>
-                                <a href="https://segmentfault.com/ls/1650000011074057" target="_blank" @click="handleAsideAd('aside-iview-live')" class="wrapper-aside">
-                                    <img src="../images/aside-iview-live.png">
+                                <a href="https://www.bmqb.com/a/jobs?from=iview" target="_blank" @click="handleAsideAd('aside-bmqb')" class="wrapper-aside wrapper-aside-no-padding">
+                                    <img src="../images/ad-bmqb.png">
                                 </a>
-                                <!--<a href="https://www.mysubmail.com/sms?from=iview" target="_blank" @click="handleAsideAd('aside-submail')" class="wrapper-aside wrapper-aside-no-padding">-->
-                                    <!--<img src="../images/aside-submail3.jpg">-->
+                                <!--<a href="https://segmentfault.com/ls/1650000011074057" target="_blank" @click="handleAsideAd('aside-iview-live')" class="wrapper-aside">-->
+                                    <!--<img src="../images/aside-iview-live.png">-->
                                 <!--</a>-->
                                 <!--<div class="wrapper-aside" @click="handleAsideAd('aside-qqgroup', true)">-->
                                     <!--<img src="../images/aside-qqgroup.png">-->

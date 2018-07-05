@@ -59,6 +59,20 @@ const routers = [
         component: (resolve) => require(['./views/guide/overview.vue'], resolve)
     },
     {
+        path: '/donate',
+        meta: {
+            title: '捐赠'
+        },
+        component: (resolve) => require(['./views/guide/donate.vue'], resolve)
+    },
+    {
+        path: '/donate-en',
+        meta: {
+            title: 'Donate'
+        },
+        component: (resolve) => require(['./views/guide/donate-en.vue'], resolve)
+    },
+    {
         path: '/overview-en',
         meta: {
             title: 'Overview'
