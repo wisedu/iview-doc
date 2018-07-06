@@ -3,7 +3,7 @@
 </style>
 <template>
     <div class="navigate">
-        <Divider class="asd-title">赞助商</Divider>
+        <Divider class="asd-title" v-if="lang === 'zh-CN'">赞助商</Divider>
         <div class="asd asd-mb" @click="handleAd" v-if="lang === 'zh-CN'">
             <div class="asd-main">
                 <img src="../images/ad-juejin.jpg" style="border-radius: 6px">

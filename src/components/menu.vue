@@ -70,7 +70,15 @@
                     <Menu-item name="iview-area">
                         iView Area
                     </Menu-item>
+                    <Menu-item name="iview-editor">
+                        iView Editor
+                    </Menu-item>
                 </Submenu>
+                <Menu-item name="dev" to="//dev.iviewui.com" target="_blank" v-if="lang === 'zh-CN'">
+                    <Icon type="ios-construct" />
+                    开发者社区
+                    <Badge status="error" />
+                </Menu-item>
                 <Select size="small" value="3" style="width: 60px;margin: 0 10px;" @on-change="handleVersion">
                     <Option value="3">3.x</Option>
                     <Option value="2">2.x</Option>
@@ -132,6 +140,7 @@
                 });
             },
             handleSelect (type) {
+                if (type === 'dev') return;
                 const pathSuffix = this.lang === 'zh-CN' ? '' : '-en';
 
                 if (type === 'donate') {
@@ -154,6 +163,8 @@
                     window.open('https://github.com/iview/iview-admin');
                 } else if (type === 'iview-area') {
                     window.open('https://github.com/iview/iview-area');
+                } else if (type === 'iview-editor') {
+                    window.open('https://github.com/iview/iview-editor');
                 }
                 this.$nextTick(() => {
                     this.updateActiveNav();
