@@ -186,6 +186,12 @@
                             <td>false</td>
                         </tr>
                         <tr>
+                            <td>paste</td>
+                            <td>是否支持粘贴上传文件</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
                             <td>data</td>
                             <td>上传时附带的额外参数</td>
                             <td>Object</td>

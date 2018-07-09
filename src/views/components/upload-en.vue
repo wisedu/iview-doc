@@ -186,6 +186,12 @@
                             <td>false</td>
                         </tr>
                         <tr>
+                            <td>paste</td>
+                            <td>Whether to support pasting upload files.</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
                             <td>data</td>
                             <td>Extra data with upload request.</td>
                             <td>Object</td>
