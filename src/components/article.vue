@@ -19,7 +19,7 @@
                     </i-col>
                     <i-col span="3">
                         <Affix :offset-top="75">
-                            <div class="catalogue" v-show="list.length">
+                            <div class="catalogue" v-if="list.length">
                                 <!--<card dis-hover>-->
                                     <!--<div class="catalogue-title">-->
                                         <!--<template v-if="lang === 'zh-CN'">目录</template>-->
@@ -38,7 +38,7 @@
                                 <!--</card>-->
                                 <Anchor show-ink>
                                     <AnchorLink v-for="item in list" :key="item.path" :href="'#' + item.path" :title="item.title" />
-                                    <AnchorLink href="#API" title="API" v-if="need_api" />
+                                    <AnchorLink :scroll-offset="140" href="#API" title="API" v-if="need_api" />
                                 </Anchor>
                             </div>
 
