@@ -172,17 +172,17 @@
                 <div slot="demo">
                     <Button @click="modal12 = true">打开对话框1</Button>
                     <Button @click="modal13 = true">打开对话框2</Button>
-                    <Modal v-model="modal12" dragable scrollable title="对话框 1">
+                    <Modal v-model="modal12" draggable scrollable title="对话框 1">
                         <div>第一个对话框</div>
                     </Modal>
-                    <Modal v-model="modal13" dragable scrollable title="对话框 2">
+                    <Modal v-model="modal13" draggable scrollable title="对话框 2">
                         <div>第二个对话框</div>
                     </Modal>
                 </div>
                 <div slot="desc">
-                    <p>设置属性 <code>dragable</code>，对话框可以进行拖拽移动。</p>
+                    <p>设置属性 <code>draggable</code>，对话框可以进行拖拽移动。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.dragable }}</i-code>
+                <i-code lang="html" slot="code">{{ code.draggable }}</i-code>
             </Demo>
 
             <inAnchor title="实例化使用方法" h3></inAnchor>
@@ -286,14 +286,14 @@
                             <td>false</td>
                         </tr>
                         <tr>
-                            <td>dragable</td>
+                            <td>draggable</td>
                             <td>是否可以拖拽移动</td>
                             <td>Boolean</td>
                             <td>false</td>
                         </tr>
                         <tr>
                             <td>mask</td>
-                            <td>是否显示遮罩层，开启 dragable 时，强制不显示</td>
+                            <td>是否显示遮罩层，开启 draggable 时，强制不显示</td>
                             <td>Boolean</td>
                             <td>true</td>
                         </tr>

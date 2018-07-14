@@ -355,14 +355,14 @@ code.fullscreen = `
 </script>
 `;
 
-code.dragable = `
+code.draggable = `
 <template>
     <Button @click="modal12 = true">Open the first modal</Button>
     <Button @click="modal13 = true">Open the second modal</Button>
-    <Modal v-model="modal12" dragable scrollable title="Modal 1">
+    <Modal v-model="modal12" draggable scrollable title="Modal 1">
         <div>This is the first modal</div>
     </Modal>
-    <Modal v-model="modal13" dragable scrollable title="Modal 2">
+    <Modal v-model="modal13" draggable scrollable title="Modal 2">
         <div>This is the second modal</div>
     </Modal>
 </template>

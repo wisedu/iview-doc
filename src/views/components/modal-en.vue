@@ -168,21 +168,21 @@
                 <i-code lang="html" slot="code">{{ code.fullscreen }}</i-code>
             </Demo>
 
-            <Demo title="Dragable">
+            <Demo title="Draggable">
                 <div slot="demo">
                     <Button @click="modal12 = true">Open the first modal</Button>
                     <Button @click="modal13 = true">Open the second modal</Button>
-                    <Modal v-model="modal12" dragable scrollable title="Modal 1">
+                    <Modal v-model="modal12" draggable scrollable title="Modal 1">
                         <div>This is the first modal</div>
                     </Modal>
-                    <Modal v-model="modal13" dragable scrollable title="Modal 2">
+                    <Modal v-model="modal13" draggable scrollable title="Modal 2">
                         <div>This is the second modal</div>
                     </Modal>
                 </div>
                 <div slot="desc">
-                    <p>Set the property <code>dragable</code>, the dialog can be dragged and moved.</p>
+                    <p>Set the property <code>draggable</code>, the dialog can be dragged and moved.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.dragable }}</i-code>
+                <i-code lang="html" slot="code">{{ code.draggable }}</i-code>
             </Demo>
 
             <inAnchor title="Instantiation Usage" h3></inAnchor>
@@ -285,14 +285,14 @@
                             <td>false</td>
                         </tr>
                         <tr>
-                            <td>dragable</td>
+                            <td>draggable</td>
                             <td>Can it drag and move.</td>
                             <td>Boolean</td>
                             <td>false</td>
                         </tr>
                         <tr>
                             <td>mask</td>
-                            <td>Whether to display the mask layer, force to not display when dragable is enabled.</td>
+                            <td>Whether to display the mask layer, force to not display when draggable is enabled.</td>
                             <td>Boolean</td>
                             <td>true</td>
                         </tr>
