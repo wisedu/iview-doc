@@ -147,7 +147,7 @@
                         <p>通过给 <code>columns</code> 数据的项，设置 <code>sortable: true</code>，即可对该列数据进行排序。</p>
                         <p>排序默认使用升序和降序，也可以通过设置属性 <code>sortMethod</code> 指定一个自定义排序函数，接收三个参数 a 、 b 和 type。</p>
                         <p>通过给某一列设置 <code>sortType</code> 可以在初始化时使用排序。</p>
-                        <p>如果使用远程排序，可以设置 <code>sortable： 'custom'</code>，然后在触发排序事件 <code>@on-sort-change</code>后，进行远程排序，并手动设置新的 data，详见 API。</p>
+                        <p>如果使用远程排序，可以设置 <code>sortable: 'custom'</code>，然后在触发排序事件 <code>@on-sort-change</code>后，进行远程排序，并手动设置新的 data，详见 API。</p>
                         <p>注意，排序并不会影响到源数据 data。</p>
                     </div>
                     <i-code lang="html" slot="code">{{ code.sort }}</i-code>

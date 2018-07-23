@@ -19,7 +19,7 @@
                 </div>
                 <div slot="desc">
                     <p>Types of buttons: default, primary, dashed, text and 4 buttons of different colors.</p>
-                    <p>Set the <code>type</code> to<code>primary</code>, <code>ghost</code>, <code>dashed</code>, <code>text</code>, <code>info</code>, <code>success</code>, <code>warning</code>, <code>error</code>to choose different buttons, by default the default type is used.</p>
+                    <p>Set the <code>type</code> to<code>primary</code>, <code>dashed</code>, <code>text</code>, <code>info</code>, <code>success</code>, <code>warning</code>, <code>error</code>to choose different buttons, by default the default type is used.</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.type }}</i-code>
             </Demo>
