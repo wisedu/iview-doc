@@ -9,8 +9,8 @@
                 <img src="../images/ad-juejin2.png" style="border-radius: 6px">
             </div>
         </div>
-        <div v-else style="height: 140px;width: 100%">
-            <iframe src="http://file.iviewui.com/ad3.html" frameborder="0" width="100%" height="100%"></iframe>
+        <div class="asd-car" v-else>
+            <iframe src="http://file.iviewui.com/ad5.html" frameborder="0" width="100%" height="100%"></iframe>
         </div>
         <!--<div class="asd asd-mb" @click="handleAdBmqb" v-if="lang === 'zh-CN'">-->
             <!--<div class="asd-main">-->
