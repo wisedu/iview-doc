@@ -13,7 +13,7 @@ module.exports = {
     // 入口
     entry: {
         main: './src/main',
-        vendors: ['vue', 'vue-router', 'iview', 'highlightjs/highlight.pack.js', 'clipboard']
+        vendors: ['vue', 'vue-router', 'bh-iview', 'highlightjs/highlight.pack.js', 'clipboard']
     },
     // 输出
     output: {
@@ -52,7 +52,7 @@ module.exports = {
                 ]
             },
             {
-                test: /iview\/.*?js$/,
+                test: /bh-iview\/.*?js$/,
                 loader: 'babel-loader'
             },
             {
@@ -82,9 +82,9 @@ module.exports = {
                     'sass-loader?sourceMap'
                 ]
             },
-            {
+            { 
                 test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/,
-                loader: 'url-loader?limit=1024'
+                use: [{ loader: 'url-loader',options: { limit: 8192 } }] 
             },
             {
                 test: /\.(html|tpl)$/,

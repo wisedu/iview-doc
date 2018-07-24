@@ -13,7 +13,7 @@
                         <Navigate :type="activeKey"></Navigate>
                     </i-col>
                     <i-col span="17">
-                        <div class="wrapper-content ivu-article">
+                        <div class="wrapper-content ivu-article" :style="{overflow:'auto',height:bodyHeight}">
                             <slot></slot>
                         </div>
                     </i-col>
@@ -251,7 +251,8 @@
                 activeKey: '',
                 lang: this.$lang,
                 adCarousel: 0,
-                ad_index: this.app.ad_index
+                ad_index: this.app.ad_index,
+                bodyHeight:''
             }
         },
         methods: {
@@ -310,6 +311,7 @@
         },
         created () {
             this.lang = this.$lang;
+            this.bodyHeight = window.innerHeight + 'px';
         },
         mounted () {
             this.updateActiveNav();

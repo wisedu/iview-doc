@@ -2,13 +2,13 @@
     @import "../styles/navigate.less";
 </style>
 <template>
-    <div class="navigate">
-        <div class="asd" @click="handleAd" v-if="lang === 'zh-CN'">
+    <div class="navigate" :style="{overflow:'auto',height:bodyHeight}">
+        <!-- <div class="asd" @click="handleAd" v-if="lang === 'zh-CN'">
             <div class="asd-main">
                 <img src="../images/ad-juejin.jpg" style="border-radius: 6px">
                 <ad-send></ad-send>
             </div>
-        </div>
+        </div> -->
         <Menu width="auto" :active-name="activeKey" @on-select="handleSelect" v-if="type === 'guide'">
             <Menu-item v-for="item in navigate.guide" :key="item.path" :name="item.path">
                 <template v-if="lang === 'zh-CN'">{{ item.title }}</template>
@@ -111,7 +111,8 @@
                 showDot: false,
                 activeKey: this.$route.path,
                 lang: this.$lang,
-                showAd: false
+                showAd: false,
+                bodyHeight:''
             }
         },
         methods: {
@@ -146,6 +147,8 @@
             this.lang = this.$lang;
             const path = this.lang === 'zh-CN' ? this.$route.path : this.$route.path.split('-en')[0];
             this.activeKey = path;
+            //debugger
+            this.bodyHeight = window.innerHeight + 'px';
         },
         mounted () {
             // 判断是否已阅读更新日志
