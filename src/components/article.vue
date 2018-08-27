@@ -4,9 +4,6 @@
 <template>
     <div>
         <div class="wrapper">
-            <div class="wrapper-header">
-                <nav-menu :active-key="activeKey" @on-change="handleNavMenuChange"></nav-menu>
-            </div>
             <div class="wrapper-container">
                 <Row>
                     <i-col span="4" class="wrapper-navigate">
