@@ -36,14 +36,14 @@
     <i-article>
         <article>
             <h1>Circle 进度环</h1>
-            <Anchor title="概述" h2></Anchor>
+            <inAnchor title="概述" h2></inAnchor>
             <p>图表类组件。一般有两种用途：</p>
             <ul>
                 <li>显示某项任务进度的百分比；</li>
                 <li>统计某些指标的占比。</li>
             </ul>
             <Alert show-icon style="margin-top: 16px" type="warning">注意：没有使用 <router-link to="/docs/guide/iview-loader">iview-loader</router-link> 时，必须使用 <code>i-circle</code> 标签。</Alert>
-            <Anchor title="代码示例" h2></Anchor>
+            <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="基础用法">
                 <div slot="demo">
                     <Row>
@@ -54,13 +54,13 @@
                         </Col>
                         <Col span="8">
                             <Circle :percent="100" stroke-color="#5cb85c">
-                                <Icon type="ios-checkmark-empty" size="60" style="color:#5cb85c"></Icon>
+                                <Icon type="ios-checkmark" size="60" style="color:#5cb85c"></Icon>
                             </Circle>
                         </Col>
                         <Col span="8">
                             <Circle :percent="35" stroke-color="#ff5500">
                         <span class="demo-circle-inner">
-                            <Icon type="ios-close-empty" size="50" style="color:#ff5500"></Icon>
+                            <Icon type="ios-close" size="50" style="color:#ff5500"></Icon>
                         </span>
                             </Circle>
                         </Col>
@@ -74,12 +74,12 @@
             <Demo title="配合外部组件使用">
                 <div slot="demo">
                     <Circle :percent="percent" :stroke-color="color">
-                        <Icon v-if="percent == 100" type="ios-checkmark-empty" size="60" style="color:#5cb85c"></Icon>
+                        <Icon v-if="percent == 100" type="ios-checkmark" size="60" style="color:#5cb85c"></Icon>
                         <span v-else style="font-size:24px">{{ percent }}%</span>
                     </Circle>
                     <ButtonGroup size="large">
-                        <Button icon="ios-plus-empty" @click="add"></Button>
-                        <Button icon="ios-minus-empty" @click="minus"></Button>
+                        <Button icon="ios-add" @click="add"></Button>
+                        <Button icon="ios-remove" @click="minus"></Button>
                     </ButtonGroup>
                 </div>
                 <div slot="desc">
@@ -111,12 +111,23 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.custom }}</i-code>
             </Demo>
+            <Demo title="仪表盘">
+                <div slot="demo">
+                    <Circle :percent="80" dashboard>
+                        <span class="demo-circle-inner" style="font-size:24px">80%</span>
+                    </Circle>
+                </div>
+                <div slot="desc">
+                    <p>通过设置属性 <code>dashboard</code>，可以很方便地实现仪表盘样式的进度环。</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.dashboard }}</i-code>
+            </Demo>
 
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Circle props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Circle props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -169,9 +180,15 @@
                             <td>String</td>
                             <td>#eaeef2</td>
                         </tr>
+                        <tr>
+                            <td>dashboard</td>
+                            <td>是否显示为仪表盘</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
                     </tbody>
                 </table>
-                <Anchor title="Circle slot" h3></Anchor>
+                <inAnchor title="Circle slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -195,14 +212,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/circle';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

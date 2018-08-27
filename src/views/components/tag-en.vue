@@ -2,9 +2,9 @@
     <i-article>
         <article>
             <h1>Tag</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>Tag for categorizing or markuping.</p>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
                     <Tag>标签一</Tag>
@@ -31,36 +31,46 @@
             </Demo>
             <Demo title="Colors">
                 <div slot="demo">
-                    <Tag closable color="blue">标签一</Tag>
-                    <Tag closable color="green">标签二</Tag>
-                    <Tag closable color="red">标签三</Tag>
-                    <Tag closable color="yellow">标签四</Tag>
+                    <Tag color="default">default</Tag>
+                    <Tag color="primary">primary</Tag>
+                    <Tag color="success">success</Tag>
+                    <Tag color="error">error</Tag>
+                    <Tag color="warning">warning</Tag>
+                    <Tag color="magenta">magenta</Tag>
+                    <Tag color="red">red</Tag>
+                    <Tag color="volcano">volcano</Tag>
+                    <Tag color="orange">orange</Tag>
+                    <Tag color="gold">gold</Tag>
+                    <Tag color="yellow">yellow</Tag>
+                    <Tag color="lime">lime</Tag>
+                    <Tag color="green">green</Tag>
+                    <Tag color="cyan">cyan</Tag>
+                    <Tag color="blue">blue</Tag>
+                    <Tag color="geekblue">geekblue</Tag>
+                    <Tag color="purple">purple</Tag>
+                    <Tag color="#FFA2D3">Custom Color</Tag>
                     <br><br>
-                    <Tag type="border" closable color="blue">标签一</Tag>
-                    <Tag type="border" closable color="green">标签二</Tag>
-                    <Tag type="border" closable color="red">标签三</Tag>
-                    <Tag type="border" closable color="yellow">标签四</Tag>
+                    <Tag type="border" closable color="primary">标签一</Tag>
+                    <Tag type="border" closable color="success">标签二</Tag>
+                    <Tag type="border" closable color="error">标签三</Tag>
+                    <Tag type="border" closable color="warning">标签四</Tag>
                     <br><br>
-                    <Tag type="dot" closable color="blue">标签一</Tag>
-                    <Tag type="dot" closable color="green">标签二</Tag>
-                    <Tag type="dot" closable color="red">标签三</Tag>
-                    <Tag type="dot" closable color="yellow">标签四</Tag>
-                    <br><br>
-                    <Tag closable color="#FFA2D3">标签一</Tag>
-                    <Tag type="border" closable color="#FFA2D3">标签一</Tag>
-                    <Tag type="dot" closable color="#FFA2D3">标签一</Tag>
+                    <Tag type="dot" closable color="primary">标签一</Tag>
+                    <Tag type="dot" closable color="success">标签二</Tag>
+                    <Tag type="dot" closable color="error">标签三</Tag>
+                    <Tag type="dot" closable color="warning">标签四</Tag>
                 </div>
                 <div slot="desc">
-                    <p>Four default color, you can also use custom color.</p>
+                    <p>A variety of preset colors, you can also use custom color.</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.color }}</i-code>
             </Demo>
             <Demo title="Checkable">
                 <div slot="demo">
-                    <Tag checkable color="blue">标签一</Tag>
-                    <Tag checkable color="green">标签二</Tag>
-                    <Tag checkable color="red">标签三</Tag>
-                    <Tag checkable color="yellow">标签四</Tag>
+                    <Tag checkable color="primary">标签一</Tag>
+                    <Tag checkable color="success">标签二</Tag>
+                    <Tag checkable color="error">标签三</Tag>
+                    <Tag checkable color="warning">标签四</Tag>
                 </div>
                 <div slot="desc">
                     <p>Set the property <code>checkable</code> to select the tag, and the property <code>checked</code> to control the current selection state.</p>
@@ -70,7 +80,7 @@
             <Demo title="Add & Remove Dynamically">
                 <div slot="demo">
                     <Tag v-for="item in count" :key="item" :name="item" closable @on-close="handleClose2">标签{{ item + 1 }}</Tag>
-                    <Button icon="ios-plus-empty" type="dashed" size="small" @click="handleAdd">添加标签</Button>
+                    <Button icon="ios-add" type="dashed" size="small" @click="handleAdd">添加标签</Button>
                 </div>
                 <div slot="desc">
                     <p>Generating a set of Tags by array, you can add and remove dynamically.</p>
@@ -81,8 +91,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Tag props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Tag props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -119,7 +129,7 @@
                         </tr>
                         <tr>
                             <td>color</td>
-                            <td>Tag color, default values for <code>blue</code>, <code>green</code>, <code>red</code>, <code>yellow</code>, <code>default</code>, you can set custom color.</td>
+                            <td>Tag color, default values for <code>default</code>, <code>primary</code>, <code>success</code>, <code>warning</code>, <code>error</code>, <code>blue</code>, <code>green</code>, <code>red</code>, <code>yellow</code>, <code>pink</code>, <code >magenta</code>, <code>volcano</code>, <code>orange</code>, <code>gold</code>, <code>lime</code>, <code>cyan</code >, <code>geekblue</code>, <code>purple</code>, you can also customize color values.</td>
                             <td>String</td>
                             <td>-</td>
                         </tr>
@@ -137,7 +147,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Tag events" h3></Anchor>
+                <inAnchor title="Tag events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -163,14 +173,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/tag';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

@@ -2,7 +2,7 @@
     <i-article>
         <article>
             <h1>Form 表单</h1>
-            <Anchor title="概述" h2></Anchor>
+            <inAnchor title="概述" h2></inAnchor>
             <p>具有数据收集、校验和提交功能的表单，包含复选框、单选框、输入框、下拉选择框等元素。</p>
             <Alert show-icon style="margin-top: 16px">注意：非 template/render 模式下，需使用 <code>i-form</code>。</Alert>
             <Alert show-icon>
@@ -14,7 +14,7 @@
                     <p>即：当一个 form 元素中只有一个输入框时，在该输入框中按下回车应提交该表单。如果希望阻止这一默认行为，可以在 <code>&lt;Form&gt;</code> 标签上添加 <code>@submit.native.prevent</code>。</p>
                 </template>
             </Alert>
-            <Anchor title="代码示例" h2></Anchor>
+            <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="行内表单">
                 <div slot="demo">
                     <Form ref="formInline" :model="formInline" :rules="ruleInline" inline>
@@ -25,7 +25,7 @@
                         </FormItem>
                         <FormItem prop="password">
                             <Input type="password" v-model="formInline.password" placeholder="Password">
-                                <Icon type="ios-locked-outline" slot="prepend"></Icon>
+                                <Icon type="ios-lock-outline" slot="prepend"></Icon>
                             </Input>
                         </FormItem>
                         <FormItem>
@@ -90,7 +90,7 @@
                         </FormItem>
                         <FormItem>
                             <Button type="primary">Submit</Button>
-                            <Button type="ghost" style="margin-left: 8px">Cancel</Button>
+                            <Button style="margin-left: 8px">Cancel</Button>
                         </FormItem>
                     </Form>
                 </div>
@@ -192,12 +192,12 @@
                         </FormItem>
                         <FormItem>
                             <Button type="primary" @click="handleSubmit('formValidate')">Submit</Button>
-                            <Button type="ghost" @click="handleReset('formValidate')" style="margin-left: 8px">Reset</Button>
+                            <Button @click="handleReset('formValidate')" style="margin-left: 8px">Reset</Button>
                         </FormItem>
                     </Form>
                 </div>
                 <div slot="desc">
-                    <p>Form 组件基于 <a href="https://github.com/yiminghe/async-validator" target="_blank"><Icon type="social-github"></Icon> async-validator</a> 实现的数据验证，给 Form 设置属性 <code>rules</code>，同时给需要验证的 FormItem 设置属性 <code>prop</code> 指向对应字段即可。</p>
+                    <p>Form 组件基于 <a href="https://github.com/yiminghe/async-validator" target="_blank"><Icon type="logo-github"></Icon> async-validator</a> 实现的数据验证，给 Form 设置属性 <code>rules</code>，同时给需要验证的 FormItem 设置属性 <code>prop</code> 指向对应字段即可。</p>
                     <p>完整的验证规则请参照开源项目 async-validator。</p>
                     <p>验证方法也支持 Promise。</p>
                 </div>
@@ -217,7 +217,7 @@
                         </FormItem>
                         <FormItem>
                             <Button type="primary" @click="handleSubmit('formCustom')">Submit</Button>
-                            <Button type="ghost" @click="handleReset('formCustom')" style="margin-left: 8px">Reset</Button>
+                            <Button @click="handleReset('formCustom')" style="margin-left: 8px">Reset</Button>
                         </FormItem>
                     </Form>
                 </div>
@@ -241,20 +241,20 @@
                                 <Input type="text" v-model="item.value" placeholder="Enter something..."></Input>
                                 </Col>
                                 <Col span="4" offset="1">
-                                <Button type="ghost" @click="handleRemove(index)">Delete</Button>
+                                <Button @click="handleRemove(index)">Delete</Button>
                                 </Col>
                             </Row>
                         </FormItem>
                         <FormItem>
                             <Row>
                                 <Col span="12">
-                                <Button type="dashed" long @click="handleAdd" icon="plus-round">Add item</Button>
+                                <Button type="dashed" long @click="handleAdd" icon="md-add">Add item</Button>
                                 </Col>
                             </Row>
                         </FormItem>
                         <FormItem>
                             <Button type="primary" @click="handleSubmit('formDynamic')">Submit</Button>
-                            <Button type="ghost" @click="handleReset('formDynamic')" style="margin-left: 8px">Reset</Button>
+                            <Button @click="handleReset('formDynamic')" style="margin-left: 8px">Reset</Button>
                         </FormItem>
                     </Form>
                 </div>
@@ -269,8 +269,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Form props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Form props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -325,7 +325,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Form methods" h3></Anchor>
+                <inAnchor title="Form methods" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -352,7 +352,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="FormItem props" h3></Anchor>
+                <inAnchor title="FormItem props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -413,7 +413,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="FormItem slot" h3></Anchor>
+                <inAnchor title="FormItem slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -441,14 +441,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/form';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             const validatePass = (rule, value, callback) => {

@@ -2,6 +2,9 @@ export default {
     'zh-CN': {
         index: {
             title: '一套基于 Vue.js 的高质量 UI 组件库',
+            title1: '一套基于 Vue.js 的高质量',
+            title2: 'UI 组件库',
+            start: '开始使用',
             guide: '指南',
             component: '组件',
             practice: '实践',
@@ -11,7 +14,7 @@ export default {
             search: '搜索组件...',
             notFound: '没有找到相关组件',
             ask: '提问',
-            donate: '成为赞助商',
+            donate: '赞助',
             links: '相关站点',
             tc: '有逼格的程序员社区',
             td: '用数据的心智去超越',
@@ -34,6 +37,9 @@ export default {
     'en-US': {
         index: {
             title: 'A high quality UI Toolkit based on Vue.js',
+            title1: 'A high quality UI Toolkit',
+            title2: 'based on Vue.js',
+            start: 'Getting Started',
             guide: 'Guide',
             component: 'Components',
             practice: 'Practice',

@@ -3,7 +3,7 @@
         <article>
             <h1>Internationalization</h1>
             <p>The default language is Chinese. To use other languages, you need to do some customization.</p>
-            <Anchor title="Use in Webpack" h2></Anchor>
+            <inAnchor title="Use in Webpack" h2></inAnchor>
             <p>Import iView</p>
             <i-code lang="js" bg>{{ code.i18n.demo }}</i-code>
             <p>Import iView on demand</p>
@@ -13,11 +13,11 @@
             <p>Compatible with vue-i18n@5.x</p>
             <i-code lang="js" bg>{{ code.i18n.vuei18n5 }}</i-code>
             <Alert show-icon style="margin-top: 16px">When you use vue-i18n, you can also import iView components on demand, similar to the example above.</Alert>
-            <Anchor title="Use with CDN" h2></Anchor>
+            <inAnchor title="Use with CDN" h2></inAnchor>
             <i-code lang="html" bg>{{ code.i18n.cdn }}</i-code>
             <p>Combined with vue-i18n</p>
             <i-code lang="html" bg>{{ code.i18n.cdnvuei18n }}</i-code>
-            <Anchor title="Supported Languages" h2></Anchor>
+            <inAnchor title="Supported Languages" h2></inAnchor>
             <p>iView have beed translated from Chinese to the following languages:</p>
             <ul>
                 <li>Chinese Simplified(zh-CN)</li>
@@ -44,6 +44,7 @@
                 <li>Greek(el-GR)</li>
                 <li>Dutch(nl-NL)</li>
                 <li>Czech(cs-CZ)</li>
+                <li>Mongolian(mn-MN)</li>
             </ul>
             <p>If your target language is not included, you are more than welcome to contribute: just add another language config <a href="https://github.com/iview/iview/tree/2.0/src/locale/lang" target="_blank">here</a> and create a pull request.</p>
         </article>
@@ -53,13 +54,13 @@
     import iArticle from '../../components/article.vue';
     import iCode from 'iCode';
     import Code from '../../code/guide';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
-            Anchor
+            inAnchor
         },
         data () {
             return {

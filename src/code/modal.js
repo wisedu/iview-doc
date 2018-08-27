@@ -37,7 +37,7 @@ code.custom = `
     <Button @click="modal2 = true">Custom header and footer</Button>
     <Modal v-model="modal2" width="360">
         <p slot="header" style="color:#f60;text-align:center">
-            <Icon type="information-circled"></Icon>
+            <Icon type="ios-information-circle"></Icon>
             <span>Delete confirmation</span>
         </p>
         <div style="text-align:center">
@@ -331,6 +331,47 @@ code.render = `
                         })
                     }
                 })
+            }
+        }
+    }
+</script>
+`;
+
+code.fullscreen = `
+<template>
+    <Button @click="modal11 = true">Open a fullscreen modal</Button>
+    <Modal v-model="modal11" fullscreen title="Fullscreen Modal">
+        <div>This is a fullscreen modal</div>
+    </Modal>
+</template>
+<script>
+    export default {
+        data () {
+            return {
+                modal11: false
+            }
+        }
+    }
+</script>
+`;
+
+code.draggable = `
+<template>
+    <Button @click="modal12 = true">Open the first modal</Button>
+    <Button @click="modal13 = true">Open the second modal</Button>
+    <Modal v-model="modal12" draggable scrollable title="Modal 1">
+        <div>This is the first modal</div>
+    </Modal>
+    <Modal v-model="modal13" draggable scrollable title="Modal 2">
+        <div>This is the second modal</div>
+    </Modal>
+</template>
+<script>
+    export default {
+        data () {
+            return {
+                modal12: false,
+                modal13: false
             }
         }
     }

@@ -6,11 +6,11 @@ code.base = `
         <span class="demo-Circle-inner" style="font-size:24px">80%</span>
     </Circle>
     <Circle :percent="100" stroke-color="#5cb85c">
-        <Icon type="ios-checkmark-empty" size="60" style="color:#5cb85c"></Icon>
+        <Icon type="ios-checkmark" size="60" style="color:#5cb85c"></Icon>
     </Circle>
     <Circle :percent="35" stroke-color="#ff5500">
         <span class="demo-Circle-inner">
-            <Icon type="ios-close-empty" size="50" style="color:#ff5500"></Icon>
+            <Icon type="ios-close" size="50" style="color:#ff5500"></Icon>
         </span>
     </Circle>
 </template>
@@ -24,12 +24,12 @@ code.base = `
 code.percent = `
 <template>
     <Circle :percent="percent" :stroke-color="color">
-        <Icon v-if="percent == 100" type="ios-checkmark-empty" size="60" style="color:#5cb85c"></Icon>
+        <Icon v-if="percent == 100" type="ios-checkmark" size="60" style="color:#5cb85c"></Icon>
         <span v-else style="font-size:24px">{{ percent }}%</span>
     </Circle>
     <ButtonGroup size="large">
-        <Button icon="ios-plus-empty" @click="add"></Button>
-        <Button icon="ios-minus-empty" @click="minus"></Button>
+        <Button icon="ios-add" @click="add"></Button>
+        <Button icon="ios-remove" @click="minus"></Button>
     </ButtonGroup>
 </template>
 <script>
@@ -117,6 +117,19 @@ code.custom = `
                 <i>75%</i>
             </span>
         </div>
+    </Circle>
+</template>
+<script>
+    export default {
+        
+    }
+</script>
+`;
+
+code.dashboard = `
+<template>
+    <Circle :percent="80" dashboard>
+        <span class="demo-circle-inner" style="font-size:24px">80%</span>
     </Circle>
 </template>
 <script>

@@ -38,9 +38,9 @@
     <i-article>
         <article>
             <h1>Tabs 标签页</h1>
-            <Anchor title="概述" h2></Anchor>
+            <inAnchor title="概述" h2></inAnchor>
             <p>选项卡切换组件，常用于平级区域大块内容的的收纳和展现。</p>
-            <Anchor title="代码示例" h2></Anchor>
+            <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="基础用法">
                 <div slot="demo">
                     <Tabs value="name1">
@@ -70,9 +70,9 @@
             <Demo title="图标">
                 <div slot="demo">
                     <Tabs>
-                        <TabPane label="macOS" icon="social-apple">标签一的内容</TabPane>
-                        <TabPane label="Windows" icon="social-windows">标签二的内容</TabPane>
-                        <TabPane label="Linux" icon="social-tux">标签三的内容</TabPane>
+                        <TabPane label="macOS" icon="logo-apple">标签一的内容</TabPane>
+                        <TabPane label="Windows" icon="logo-windows">标签二的内容</TabPane>
+                        <TabPane label="Linux" icon="logo-tux">标签三的内容</TabPane>
                     </Tabs>
                 </div>
                 <div slot="desc">
@@ -156,7 +156,7 @@
                 <div slot="demo">
                     <Tabs type="card">
                         <TabPane v-for="tab in tabs" :key="tab" :label="'标签' + tab">标签{{ tab }}</TabPane>
-                        <Button type="ghost" @click="handleTabsAdd" size="small" slot="extra">增加</Button>
+                        <Button @click="handleTabsAdd" size="small" slot="extra">增加</Button>
                     </Tabs>
                 </div>
                 <div slot="desc">
@@ -205,8 +205,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Tabs props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Tabs props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -255,7 +255,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Tabs events" h3></Anchor>
+                <inAnchor title="Tabs events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -277,7 +277,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Tabs slot" h3></Anchor>
+                <inAnchor title="Tabs slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -292,7 +292,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="TabPane props" h3></Anchor>
+                <inAnchor title="TabPane props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -344,7 +344,7 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/tabs';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
     import studyRender from '../../components/study.vue';
 
     export default {
@@ -352,7 +352,7 @@
             iArticle,
             iCode,
             Demo,
-            Anchor,
+            inAnchor,
             studyRender
         },
         data () {

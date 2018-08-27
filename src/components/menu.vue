@@ -29,34 +29,38 @@
                 </i-select>
             </div>
             <div class="wrapper-header-nav-list">
-                <Menu-item name="guide">
+                <Menu-item name="guide" :to="handleGoToMenu('/docs/guide/introduce')">
                     <Icon type="ios-navigate"></Icon>
                     {{ $t('index.guide') }}
                 </Menu-item>
-                <Menu-item name="component">
+                <Menu-item name="component" :to="handleGoToMenu('/docs/guide/install')">
                     <Icon type="ios-keypad"></Icon>
                     {{ $t('index.component') }}
                 </Menu-item>
-                <Menu-item name="live" v-if="lang === 'zh-CN'">
+                <Menu-item name="live" v-if="lang === 'zh-CN'" :to="handleGoToMenu('/live')">
                     <Badge :dot="liveDot">
                         <Icon type="ios-videocam"></Icon>
                         {{ $t('index.live') }}
                     </Badge>
                 </Menu-item>
-                <Menu-item name="practice">
-                    <Icon type="ios-analytics"></Icon>
-                    {{ $t('index.practice') }}
-                </Menu-item>
+                <!--<Menu-item name="donate" :to="handleGoToMenu('/donate')">-->
+                    <!--<Icon type="ios-cash"></Icon>-->
+                    <!--{{ $t('index.donate') }}-->
+                <!--</Menu-item>-->
+                <!--<Menu-item name="practice" :to="handleGoToMenu('/docs/practice/case')">-->
+                    <!--<Icon type="ios-analytics"></Icon>-->
+                    <!--{{ $t('index.practice') }}-->
+                <!--</Menu-item>-->
                 <Submenu name="ecosystem">
                     <template slot="title">
                         <Icon type="ios-infinite"></Icon>
                         {{ $t('index.ecosystem') }}
                     </template>
-                    <Menu-item name="cli">
+                    <Menu-item name="cli" :to="handleGoToMenu('/cli')">
                         <!--<Icon type="settings"></Icon>-->
                         {{ $t('index.cli') }}
                     </Menu-item>
-                    <Menu-item name="iview-loader">
+                    <Menu-item name="iview-loader" :to="handleGoToMenu('/docs/guide/iview-loader')">
                         <!--<Icon type="settings"></Icon>-->
                         iView Loader
                     </Menu-item>
@@ -66,15 +70,25 @@
                     <Menu-item name="iview-area">
                         iView Area
                     </Menu-item>
+                    <Menu-item name="iview-editor">
+                        iView Editor
+                    </Menu-item>
                 </Submenu>
-                <!--<Select size="small" value="2" style="width: 60px;margin: 0 10px;" @on-change="handleVersion">-->
-                    <!--<Option value="2">2.x</Option>-->
-                    <!--<Option value="1">1.x</Option>-->
-                <!--</Select>-->
-                <ButtonGroup>
-                    <Button type="ghost" size="small" icon="social-github" @click="handleGoToGitHub"></Button>
-                    <Button type="ghost" size="small" icon="social-twitter" @click="handleGoToTwitter"></Button>
-                    <Button type="ghost" size="small" @click="handleChangeLang" >
+                <Menu-item name="dev" to="//dev.iviewui.com" target="_blank" v-if="lang === 'zh-CN'">
+                    <Icon type="ios-construct" />
+                    开发者社区
+                    <Badge status="error" />
+                </Menu-item>
+                <Select size="small" value="3" style="width: 60px;margin: 0 10px;" @on-change="handleVersion">
+                    <Option value="3">3.x</Option>
+                    <Option value="2">2.x</Option>
+                    <Option value="1">1.x</Option>
+                </Select>
+                <ButtonGroup size="small">
+                    <Button icon="logo-github" @click="handleGoToGitHub"></Button>
+                    <Button icon="logo-twitter" @click="handleGoToTwitter"></Button>
+                    <Button icon="ios-settings" @click="handleToggleSetting"></Button>
+                    <Button @click="handleChangeLang" >
                         <template v-if="lang === 'zh-CN'">EN</template>
                         <template v-else>中文</template>
                     </Button>
@@ -90,6 +104,7 @@
     import ApplicationMenu from './applications.vue';
 
     export default {
+        inject: ['app'],
         components: { ApplicationMenu },
         props: {
             activeKey: String
@@ -125,6 +140,7 @@
                 });
             },
             handleSelect (type) {
+                if (type === 'dev') return;
                 const pathSuffix = this.lang === 'zh-CN' ? '' : '-en';
 
                 if (type === 'donate') {
@@ -147,6 +163,8 @@
                     window.open('https://github.com/iview/iview-admin');
                 } else if (type === 'iview-area') {
                     window.open('https://github.com/iview/iview-area');
+                } else if (type === 'iview-editor') {
+                    window.open('https://github.com/iview/iview-editor');
                 }
                 this.$nextTick(() => {
                     this.updateActiveNav();
@@ -183,6 +201,9 @@
                 if (v == 1) {
                     window.location.href = 'http://v1.iviewui.com';
                 }
+                if (v == 2) {
+                    window.location.href = 'http://v2.iviewui.com';
+                }
             },
             handleGoToGitHub () {
                 _hmt.push(['_trackEvent', 'menu-go-github', 'click']);
@@ -191,6 +212,16 @@
             handleGoToTwitter () {
                 _hmt.push(['_trackEvent', 'menu-go-twitter', 'click']);
                 window.open('https://twitter.com/iViewUI');
+            },
+            handleGoToMenu (name) {
+                if (this.lang === 'zh-CN') {
+                    return name;
+                } else {
+                    return name + '-en';
+                }
+            },
+            handleToggleSetting () {
+                this.app.handleOpenSetting();
             }
         },
         created () {

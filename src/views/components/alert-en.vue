@@ -2,9 +2,9 @@
     <i-article>
         <article>
             <h1>Alert</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>Present some warning messages staticlly, can be closed manually.</p>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
                     <Alert>An info prompt</Alert>
@@ -73,7 +73,7 @@
                     </Alert>
                     <Alert show-icon>
                         Custom icon
-                        <Icon type="ios-lightbulb-outline" slot="icon"></Icon>
+                        <Icon type="ios-bulb-outline" slot="icon"></Icon>
                         <template slot="desc">Custom icon copywriting. Custom icon copywriting. Custom icon copywriting. </template>
                     </Alert>
                 </div>
@@ -113,8 +113,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Alert props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Alert props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -145,7 +145,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Alert events" h3></Anchor>
+                <inAnchor title="Alert events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -162,7 +162,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Alert slot" h3></Anchor>
+                <inAnchor title="Alert slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -198,14 +198,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/alert';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

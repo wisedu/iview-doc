@@ -18,10 +18,10 @@
     <i-article>
         <article>
             <h1>Poptip 气泡提示</h1>
-            <Anchor title="概述" h2></Anchor>
+            <inAnchor title="概述" h2></inAnchor>
             <p>Poptip 与 Tooltip 类似，具有很多相同配置，不同点是 Poptip 以卡片的形式承载了更多的内容，比如链接、表格、按钮等。</p>
             <p>Poptip 还 confirm 确认框，与 Modal 不同的是，它会出现在就近元素，相对轻量。</p>
-            <Anchor title="代码示例" h2></Anchor>
+            <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="基础用法">
                 <div slot="demo">
                     <Poptip trigger="hover" title="提示标题" content="提示内容">
@@ -115,7 +115,7 @@
             <Demo title="嵌套复杂内容">
                 <div slot="demo">
                     <Poptip placement="right" width="400">
-                        <Button type="ghost">click 激活</Button>
+                        <Button>click 激活</Button>
                         <div class="api" slot="content">
                             <table>
                                 <thead>
@@ -151,6 +151,17 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.slot }}</i-code>
             </Demo>
+            <Demo title="自动换行">
+                <div slot="demo">
+                    <Poptip word-wrap width="200" content="史蒂夫·乔布斯（Steve Jobs），1955年2月24日生于美国加利福尼亚州旧金山，美国发明家、企业家、美国苹果公司联合创办人。">
+                        <Button>长文本</Button>
+                    </Poptip>
+                </div>
+                <div slot="desc">
+                    <p>设置属性 <code>word-wrap</code>，当超出宽度后，文本将自动换行，并两端对齐。</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.width }}</i-code>
+            </Demo>
             <Demo title="确认框">
                 <div slot="demo">
                     <Poptip
@@ -179,8 +190,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Poptip props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Poptip props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -252,6 +263,24 @@
                             <td>-</td>
                         </tr>
                         <tr>
+                            <td>word-wrap</td>
+                            <td>开启后，超出指定宽度文本将自动换行，并两端对齐</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>padding</td>
+                            <td>自定义间距值</td>
+                            <td>String</td>
+                            <td>8px 16px</td>
+                        </tr>
+                        <tr>
+                            <td>offset</td>
+                            <td>出现位置的偏移量</td>
+                            <td>Number</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
                             <td>options</td>
                             <td>自定义 popper.js 的配置项，具体配置见 <a href="https://popper.js.org/popper-documentation.html" target="_blank">popper.js 文档</a></td>
                             <td>Object</td>
@@ -261,7 +290,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Poptip events" h3></Anchor>
+                <inAnchor title="Poptip events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -293,7 +322,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Poptip slot" h3></Anchor>
+                <inAnchor title="Poptip slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -325,14 +354,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/poptip';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

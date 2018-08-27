@@ -5,6 +5,7 @@ let standard = {};
 let i18n = {};
 let theme = {};
 let loader = {};
+let global = {};
 
 introduce.install = `
 $ npm install bh-iview --save
@@ -309,6 +310,8 @@ loader.tags = `
 {
     'i-affix': 'Affix',
     'i-alert': 'Alert',
+    'i-anchor': 'Anchor',
+    'i-anchor-link': 'AnchorLink',
     'i-auto-complete': 'AutoComplete',
     'i-avatar': 'Avatar',
     'i-back-top': 'BackTop',
@@ -321,6 +324,8 @@ loader.tags = `
     'i-carousel': 'Carousel',
     'i-carousel-item': 'CarouselItem',
     'i-cascader': 'Cascader',
+    'i-cell': 'Cell',
+    'i-cell-group': 'CellGroup',
     'i-checkbox': 'Checkbox',
     'i-checkbox-group': 'CheckboxGroup',
     'i-circle': 'i-circle',
@@ -328,6 +333,7 @@ loader.tags = `
     'i-collapse': 'Collapse',
     'i-color-picker': 'ColorPicker',
     'i-content': 'Content',
+    'i-divider': 'Divider',
     'i-date-picker': 'DatePicker',
     'i-dropdown': 'Dropdown',
     'i-dropdown-item': 'DropdownItem',
@@ -359,6 +365,7 @@ loader.tags = `
     'i-select': 'Select',
     'i-slider': 'Slider',
     'i-spin': 'Spin',
+    'i-split': 'Split',
     'i-step': 'Step',
     'i-steps': 'Steps',
     'i-switch': 'i-switch',
@@ -366,6 +373,7 @@ loader.tags = `
     'i-tabs': 'Tabs',
     'i-tab-pane': 'TabPane',
     'i-tag': 'Tag',
+    'i-time': 'Time',
     'i-timeline': 'Timeline',
     'i-timeline-item': 'TimelineItem',
     'i-time-picker': 'TimePicker',
@@ -376,6 +384,13 @@ loader.tags = `
 }
 `;
 
+global.example = `
+Vue.use(iView, {
+    transfer: true,
+    size: 'large'
+});
+`;
+
 export default {
     introduce,
     install,
@@ -383,5 +398,6 @@ export default {
     standard,
     i18n,
     theme,
-    loader
+    loader,
+    global
 }

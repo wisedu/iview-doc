@@ -2,15 +2,15 @@
     <i-article>
         <article>
             <h1>Dropdown</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>Show a folded-styled dropdown menu.</p>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
                     <Dropdown>
                         <a href="javascript:void(0)">
                             下拉菜单
-                            <Icon type="arrow-down-b"></Icon>
+                            <Icon type="ios-arrow-down"></Icon>
                         </a>
                         <DropdownMenu slot="list">
                             <DropdownItem>驴打滚</DropdownItem>
@@ -23,7 +23,7 @@
                     <Dropdown style="margin-left: 20px">
                         <Button type="primary">
                             下拉菜单
-                            <Icon type="arrow-down-b"></Icon>
+                            <Icon type="ios-arrow-down"></Icon>
                         </Button>
                         <DropdownMenu slot="list">
                             <DropdownItem>驴打滚</DropdownItem>
@@ -46,7 +46,7 @@
                     <Dropdown>
                         <a href="javascript:void(0)">
                             hover 触发
-                            <Icon type="arrow-down-b"></Icon>
+                            <Icon type="ios-arrow-down"></Icon>
                         </a>
                         <DropdownMenu slot="list">
                             <DropdownItem>驴打滚</DropdownItem>
@@ -59,7 +59,7 @@
                     <Dropdown trigger="click" style="margin-left: 20px">
                         <a href="javascript:void(0)">
                             click 触发
-                            <Icon type="arrow-down-b"></Icon>
+                            <Icon type="ios-arrow-down"></Icon>
                         </a>
                         <DropdownMenu slot="list">
                             <DropdownItem>驴打滚</DropdownItem>
@@ -69,10 +69,20 @@
                             <DropdownItem>北京烤鸭</DropdownItem>
                         </DropdownMenu>
                     </Dropdown>
+                    <Dropdown trigger="contextMenu" style="margin-left: 20px">
+                        <a href="javascript:void(0)">
+                            right click
+                            <Icon type="ios-arrow-down"></Icon>
+                        </a>
+                        <DropdownMenu slot="list">
+                            <DropdownItem>返回</DropdownItem>
+                            <DropdownItem style="color: #ed4014">删除</DropdownItem>
+                        </DropdownMenu>
+                    </Dropdown>
                     <Dropdown trigger="custom" :visible="visible" style="margin-left: 20px">
                         <a href="javascript:void(0)" @click="handleOpen">
                             custom 触发
-                            <Icon type="arrow-down-b"></Icon>
+                            <Icon type="ios-arrow-down"></Icon>
                         </a>
                         <DropdownMenu slot="list">
                             <p>常用于各种自定义下拉内容的场景。</p>
@@ -93,7 +103,7 @@
                     <Dropdown placement="bottom-start">
                         <a href="javascript:void(0)">
                             菜单(左)
-                            <Icon type="arrow-down-b"></Icon>
+                            <Icon type="ios-arrow-down"></Icon>
                         </a>
                         <DropdownMenu slot="list">
                             <DropdownItem>驴打滚</DropdownItem>
@@ -106,7 +116,7 @@
                     <Dropdown style="margin-left: 20px">
                         <a href="javascript:void(0)">
                             菜单(居中)
-                            <Icon type="arrow-down-b"></Icon>
+                            <Icon type="ios-arrow-down"></Icon>
                         </a>
                         <DropdownMenu slot="list">
                             <DropdownItem>驴打滚</DropdownItem>
@@ -119,7 +129,7 @@
                     <Dropdown style="margin-left: 20px" placement="bottom-end">
                         <a href="javascript:void(0)">
                             菜单(右)
-                            <Icon type="arrow-down-b"></Icon>
+                            <Icon type="ios-arrow-down"></Icon>
                         </a>
                         <DropdownMenu slot="list">
                             <DropdownItem>驴打滚</DropdownItem>
@@ -140,7 +150,7 @@
                     <Dropdown>
                         <a href="javascript:void(0)">
                             北京小吃
-                            <Icon type="arrow-down-b"></Icon>
+                            <Icon type="ios-arrow-down"></Icon>
                         </a>
                         <DropdownMenu slot="list">
                             <DropdownItem>驴打滚</DropdownItem>
@@ -149,7 +159,7 @@
                             <Dropdown placement="right-start">
                                 <DropdownItem>
                                     北京烤鸭
-                                    <Icon type="ios-arrow-right"></Icon>
+                                    <Icon type="ios-arrow-forward"></Icon>
                                 </DropdownItem>
                                 <DropdownMenu slot="list">
                                     <DropdownItem>挂炉烤鸭</DropdownItem>
@@ -169,8 +179,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Dropdown props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Dropdown props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -183,7 +193,7 @@
                     <tbody>
                         <tr>
                             <td>trigger</td>
-                            <td>Way to activate. Optional Value: <code>hover</code>, <code>click</code>, <code>custom</code>. visible prop is needed when set to custom.</td>
+                            <td>Way to activate. Optional Value: <code>hover</code>, <code>click</code>, <code>contextMenu</code>, <code>custom</code>. visible prop is needed when set to custom.</td>
                             <td>String</td>
                             <td>hover</td>
                         </tr>
@@ -207,7 +217,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Dropdown events" h3></Anchor>
+                <inAnchor title="Dropdown events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -234,7 +244,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Dropdown slot" h3></Anchor>
+                <inAnchor title="Dropdown slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -253,7 +263,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="DropdownItem props" h3></Anchor>
+                <inAnchor title="DropdownItem props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -299,14 +309,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/dropdown';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

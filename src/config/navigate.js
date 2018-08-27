@@ -8,6 +8,11 @@ const list = {
             path: '/docs/guide/introduce'
         },
         {
+            title: '实践',
+            titleEn: 'Practice',
+            path: '/docs/guide/case'
+        },
+        {
             title: '设计原则',
             titleEn: 'Design Principles',
             path: '/docs/guide/design'
@@ -35,6 +40,11 @@ const list = {
             path: '/docs/guide/start'
         },
         {
+            title: '全局配置',
+            titleEn: 'Global Options',
+            path: '/docs/guide/global'
+        },
+        {
             title: '国际化',
             titleEn: 'Internationalization',
             path: '/docs/guide/i18n'
@@ -49,11 +59,11 @@ const list = {
             titleEn: 'iView Loader',
             path: '/docs/guide/iview-loader'
         },
-        {
-            title: '概览',
-            titleEn: 'Overview',
-            path: '/overview'
-        },
+        // {
+        //     title: '概览',
+        //     titleEn: 'Overview',
+        //     path: '/overview'
+        // },
         {
             title: '更新日志',
             titleEn: 'Change Log',
@@ -66,10 +76,40 @@ const list = {
             title: '基础',
             list: [
                 {
+                    title: 'Color 色彩',
+                    path: '/components/color',
+                    img: 'color.png',
+                    icon: 'ios-color-fill-outline'
+                },
+                {
+                    title: 'Font 字体',
+                    path: '/components/font',
+                    img: 'font.png',
+                    icon: 'ios-at-outline'
+                },
+                {
+                    title: 'Button 按钮',
+                    path: '/components/button',
+                    img: 'button.png',
+                    icon: 'logo-youtube'
+                },
+                {
+                    title: 'Icon 图标',
+                    path: '/components/icon',
+                    img: 'icon.png',
+                    icon: 'ios-heart-outline'
+                }
+            ]
+        },
+        {
+            type: 'Layout',
+            title: '布局',
+            list: [
+                {
                     title: 'Grid 栅格',
                     path: '/components/grid',
                     img: 'grid.png',
-                    icon: 'ios-grid-view-outline'
+                    icon: 'ios-grid-outline'
                 },
                 {
                     title: 'Layout 布局',
@@ -78,28 +118,94 @@ const list = {
                     icon: 'ios-browsers-outline'
                 },
                 {
-                    title: 'Color 色彩',
-                    path: '/components/color',
-                    img: 'color.png',
-                    icon: 'android-color-palette'
+                    title: 'Card 卡片',
+                    path: '/components/card',
+                    img: 'card.png',
+                    icon: 'ios-card-outline'
                 },
                 {
-                    title: 'Font 字体',
-                    path: '/components/font',
-                    img: 'font.png',
-                    icon: 'at'
+                    title: 'Collapse 折叠面板',
+                    path: '/components/collapse',
+                    img: 'collapse.png',
+                    icon: 'ios-albums-outline'
                 },
                 {
-                    title: 'Button 按钮',
-                    path: '/components/button',
-                    img: 'button.png',
-                    icon: 'social-youtube-outline'
+                    title: 'Split 面板分割',
+                    path: '/components/split',
+                    img: 'split.png',
+                    icon: 'ios-square-outline'
                 },
                 {
-                    title: 'Icon 图标',
-                    path: '/components/icon',
-                    img: 'icon.png',
-                    icon: 'ios-heart-outline'
+                    title: 'Divider 分割线',
+                    path: '/components/divider',
+                    img: 'divider.png',
+                    icon: 'ios-remove'
+                },
+                {
+                    title: 'Cell 单元格',
+                    path: '/components/cell',
+                    img: 'cell.png',
+                    icon: 'ios-list-box-outline'
+                },
+            ]
+        },
+        {
+            type: 'Navigation',
+            title: '导航',
+            list: [
+                {
+                    title: 'Menu 导航菜单',
+                    path: '/components/menu',
+                    img: 'menu.png',
+                    icon: 'ios-menu'
+                },
+                {
+                    title: 'Tabs 标签页',
+                    path: '/components/tabs',
+                    img: 'tabs.png',
+                    icon: 'ios-more-outline'
+                },
+                {
+                    title: 'Dropdown 下拉菜单',
+                    path: '/components/dropdown',
+                    img: 'dropdown.png',
+                    icon: 'md-arrow-dropdown'
+                },
+                {
+                    title: 'Page 分页',
+                    path: '/components/page',
+                    img: 'page.png',
+                    icon: 'ios-book-outline'
+                },
+                {
+                    title: 'Breadcrumb 面包屑',
+                    path: '/components/breadcrumb',
+                    img: 'breadcrumb.png',
+                    icon: 'ios-arrow-forward'
+                },
+                {
+                    title: 'Badge 徽标数',
+                    path: '/components/badge',
+                    img: 'badge.png',
+                    icon: 'md-square'
+                },
+                {
+                    title: 'Anchor 锚点',
+                    path: '/components/anchor',
+                    img: 'anchor.png',
+                    icon: 'md-link'
+                },
+                {
+                    title: 'Steps 步骤条',
+                    path: '/components/steps',
+                    img: 'steps.png',
+                    icon: 'ios-checkmark-circle-outline'
+                },
+                {
+                    title: 'LoadingBar 加载进度条',
+                    path: '/components/loading-bar',
+                    img: 'loading-bar.png',
+                    icon: 'ios-remove'
                 }
             ]
         },
@@ -111,31 +217,31 @@ const list = {
                     title: 'Input 输入框',
                     path: '/components/input',
                     img: 'input.png',
-                    icon: 'ios-compose-outline'
+                    icon: 'ios-create-outline'
                 },
                 {
                     title: 'Radio 单选框',
                     path: '/components/radio',
                     img: 'radio.png',
-                    icon: 'ios-circle-filled'
+                    icon: 'ios-radio-button-on'
                 },
                 {
                     title: 'Checkbox 多选框',
                     path: '/components/checkbox',
                     img: 'checkbox.png',
-                    icon: 'android-checkbox-outline'
+                    icon: 'ios-checkbox-outline'
                 },
                 {
                     title: 'Switch 开关',
                     path: '/components/switch',
                     img: 'switch.png',
-                    icon: 'toggle'
+                    icon: 'ios-switch'
                 },
                 {
                     title: 'Table 表格',
                     path: '/components/table',
                     img: 'table.png',
-                    icon: 'ios-grid-view'
+                    icon: 'ios-grid'
                 },
                 {
                     title: 'Select 选择器',
@@ -147,13 +253,13 @@ const list = {
                     title: 'AutoComplete 自动完成',
                     path: '/components/auto-complete',
                     img: 'auto-complete.png',
-                    icon: 'ios-list-outline'
+                    icon: 'md-list'
                 },
                 {
                     title: 'Slider 滑块',
                     path: '/components/slider',
                     img: 'slider.png',
-                    icon: 'minus-round'
+                    icon: 'md-remove'
                 },
                 {
                     title: 'DatePicker 日期选择器',
@@ -165,7 +271,7 @@ const list = {
                     title: 'TimePicker 时间选择器',
                     path: '/components/time-picker',
                     img: 'time-picker.png',
-                    icon: 'ios-clock-outline'
+                    icon: 'ios-time-outline'
                 },
                 {
                     title: 'Cascader 级联选择',
@@ -177,7 +283,7 @@ const list = {
                     title: 'Transfer 穿梭框',
                     path: '/components/transfer',
                     img: 'transfer.png',
-                    icon: 'ios-pause-outline'
+                    icon: 'ios-swap'
                 },
                 {
                     title: 'InputNumber 数字输入框',
@@ -201,13 +307,13 @@ const list = {
                     title: 'ColorPicker 颜色选择器',
                     path: '/components/color-picker',
                     img: 'color-picker.png',
-                    icon: 'android-color-palette'
+                    icon: 'ios-color-palette-outline'
                 },
                 {
                     title: 'Form 表单',
                     path: '/components/form',
                     img: 'form.png',
-                    icon: 'ios-list-outline'
+                    icon: 'ios-list-box-outline'
                 }
             ]
         },
@@ -219,79 +325,61 @@ const list = {
                     title: 'Alert 警告提示',
                     path: '/components/alert',
                     img: 'alert.png',
-                    icon: 'alert'
-                },
-                {
-                    title: 'Card 卡片',
-                    path: '/components/card',
-                    img: 'card.png',
-                    icon: 'ios-browsers-outline'
+                    icon: 'ios-information-circle-outline'
                 },
                 {
                     title: 'Message 全局提示',
                     path: '/components/message',
                     img: 'message.png',
-                    icon: 'ios-information-outline'
+                    icon: 'ios-alert-outline'
                 },
                 {
                     title: 'Notice 通知提醒',
                     path: '/components/notice',
                     img: 'notice.png',
-                    icon: 'ios-bell-outline'
+                    icon: 'ios-notifications-outline'
                 },
                 {
                     title: 'Modal 对话框',
                     path: '/components/modal',
                     img: 'modal.png',
-                    icon: 'ios-chatbubble-outline'
+                    icon: 'ios-text-outline'
                 },
                 {
-                    title: 'Progress 进度条',
-                    path: '/components/progress',
-                    img: 'progress.png',
-                    icon: 'android-remove'
-                },
-                {
-                    title: 'Avatar 头像',
-                    path: '/components/avatar',
-                    img: 'avatar.png',
-                    icon: 'person'
-                },
-                {
-                    title: 'Badge 徽标数',
-                    path: '/components/badge',
-                    img: 'badge.png',
-                    icon: 'email-unread'
-                },
-                {
-                    title: 'Collapse 折叠面板',
-                    path: '/components/collapse',
-                    img: 'collapse.png',
-                    icon: 'ios-albums-outline'
-                },
-                {
-                    title: 'Timeline 时间轴',
-                    path: '/components/timeline',
-                    img: 'timeline.png',
-                    icon: 'android-more-vertical'
-                },
-                {
-                    title: 'Tag 标签',
-                    path: '/components/tag',
-                    img: 'tag.png',
-                    icon: 'ios-pricetags-outline'
+                    title: 'Tree 树形控件',
+                    path: '/components/tree',
+                    img: 'tree.png',
+                    icon: 'ios-git-network'
                 },
                 {
                     title: 'Tooltip 文字提示',
                     path: '/components/tooltip',
                     img: 'tooltip.png',
-                    icon: 'chatbox-working'
+                    icon: 'md-text'
                 },
                 {
                     title: 'Poptip 气泡提示',
                     path: '/components/poptip',
                     img: 'poptip.png',
-                    icon: 'chatbubble-working'
+                    icon: 'ios-chatboxes-outline'
+                },
+                {
+                    title: 'Progress 进度条',
+                    path: '/components/progress',
+                    img: 'progress.png',
+                    icon: 'ios-remove'
+                },
+                {
+                    title: 'Avatar 头像',
+                    path: '/components/avatar',
+                    img: 'avatar.png',
+                    icon: 'ios-contact-outline'
+                },
+                {
+                    title: 'Tag 标签',
+                    path: '/components/tag',
+                    img: 'tag.png',
+                    icon: 'md-pricetag'
                 },
                 {
                     title: 'Carousel 走马灯',
@@ -300,59 +388,17 @@ const list = {
                     icon: 'ios-film-outline'
                 },
                 {
-                    title: 'Tree 树形控件',
-                    path: '/components/tree',
-                    img: 'tree.png',
-                    icon: 'network'
-                }
-            ]
-        },
-        {
-            type: 'Navigation',
-            title: '导航',
-            list: [
-                {
-                    title: 'Menu 导航菜单',
-                    path: '/components/menu',
-                    img: 'menu.png',
-                    icon: 'navicon-round'
+                    title: 'Timeline 时间轴',
+                    path: '/components/timeline',
+                    img: 'timeline.png',
+                    icon: 'md-more'
                 },
                 {
-                    title: 'Tabs 标签页',
-                    path: '/components/tabs',
-                    img: 'tabs.png',
-                    icon: 'social-windows-outline'
+                    title: 'Time 相对时间',
+                    path: '/components/time',
+                    img: 'time.png',
+                    icon: 'ios-clock-outline'
                 },
-                {
-                    title: 'Dropdown 下拉菜单',
-                    path: '/components/dropdown',
-                    img: 'dropdown.png',
-                    icon: 'arrow-down-b'
-                },
-                {
-                    title: 'Page 分页',
-                    path: '/components/page',
-                    img: 'page.png',
-                    icon: 'ios-book-outline'
-                },
-                {
-                    title: 'Breadcrumb 面包屑',
-                    path: '/components/breadcrumb',
-                    img: 'breadcrumb.png',
-                    icon: 'ios-arrow-right'
-                },
-                {
-                    title: 'Steps 步骤条',
-                    path: '/components/steps',
-                    img: 'steps.png',
-                    icon: 'ios-checkmark-outline'
-                },
-                {
-                    title: 'LoadingBar 加载进度条',
-                    path: '/components/loading-bar',
-                    img: 'loading-bar.png',
-                    icon: 'ios-minus-empty'
-                }
             ]
         },
         {
@@ -363,7 +409,7 @@ const list = {
                     title: 'Circle 进度环',
                     path: '/components/circle',
                     img: 'circle.png',
-                    icon: 'ios-circle-outline'
+                    icon: 'ios-radio-button-off'
                 }
             ]
         },
@@ -375,7 +421,7 @@ const list = {
                     title: 'Affix 图钉',
                     path: '/components/affix',
                     img: 'affix.png',
-                    icon: 'pin'
+                    icon: 'logo-pinterest'
                 },
                 {
                     title: 'BackTop 返回顶部',
@@ -387,7 +433,7 @@ const list = {
                     title: 'Spin 加载中',
                     path: '/components/spin',
                     img: 'spin.png',
-                    icon: 'load-d'
+                    icon: 'ios-loading'
                 },
                 {
                     title: 'Scroll 无限滚动',
@@ -404,11 +450,11 @@ const list = {
             titleEn: 'Practical Cases',
             path: '/docs/practice/case'
         },
-        {
-            title: 'iView Logo 设计思路',
-            titleEn: 'iView Logo Design',
-            path: '/docs/practice/logo'
-        }
+        // {
+        //     title: 'iView Logo 设计思路',
+        //     titleEn: 'iView Logo Design',
+        //     path: '/docs/practice/logo'
+        // }
     ],
     live: [
         {

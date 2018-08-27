@@ -2,24 +2,24 @@
     <i-article>
         <article>
             <h1>Menu 导航菜单</h1>
-            <Anchor title="概述" h2></Anchor>
+            <inAnchor title="概述" h2></inAnchor>
             <p>为页面和功能提供导航的菜单列表，常用于网站顶部和左侧。</p>
             <Alert show-icon style="margin-top: 16px">注意：非 template/render 模式下，需使用 <code>i-menu</code>。</Alert>
-            <Anchor title="代码示例" h2></Anchor>
+            <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="顶部导航" vertical hide-code>
                 <div slot="demo">
                     <Menu mode="horizontal" :theme="theme1" active-name="1">
                         <MenuItem name="1">
-                            <Icon type="ios-paper"></Icon>
+                            <Icon type="ios-paper" />
                             内容管理
                         </MenuItem>
                         <MenuItem name="2">
-                            <Icon type="ios-people"></Icon>
+                            <Icon type="ios-people" />
                             用户管理
                         </MenuItem>
                         <Submenu name="3">
                             <template slot="title">
-                                <Icon type="stats-bars"></Icon>
+                                <Icon type="ios-stats" />
                                 统计分析
                             </template>
                             <MenuGroup title="使用">
@@ -33,7 +33,7 @@
                             </MenuGroup>
                         </Submenu>
                         <MenuItem name="4">
-                            <Icon type="settings"></Icon>
+                            <Icon type="ios-construct" />
                             综合设置
                         </MenuItem>
                     </Menu>
@@ -59,7 +59,7 @@
                             <Menu :theme="theme2">
                                 <Submenu name="1">
                                     <template slot="title">
-                                        <Icon type="ios-paper"></Icon>
+                                        <Icon type="ios-paper" />
                                         内容管理
                                     </template>
                                     <MenuItem name="1-1">文章管理</MenuItem>
@@ -68,7 +68,7 @@
                                 </Submenu>
                                 <Submenu name="2">
                                     <template slot="title">
-                                        <Icon type="ios-people"></Icon>
+                                        <Icon type="ios-people" />
                                         用户管理
                                     </template>
                                     <MenuItem name="2-1">新增用户</MenuItem>
@@ -76,7 +76,7 @@
                                 </Submenu>
                                 <Submenu name="3">
                                     <template slot="title">
-                                        <Icon type="stats-bars"></Icon>
+                                        <Icon type="ios-stats" />
                                         统计分析
                                     </template>
                                     <MenuGroup title="使用">
@@ -95,7 +95,7 @@
                             <Menu :theme="theme2" active-name="1-2" :open-names="['1']">
                                 <Submenu name="1">
                                     <template slot="title">
-                                        <Icon type="ios-paper"></Icon>
+                                        <Icon type="ios-paper" />
                                         内容管理
                                     </template>
                                     <MenuItem name="1-1">文章管理</MenuItem>
@@ -104,7 +104,7 @@
                                 </Submenu>
                                 <Submenu name="2">
                                     <template slot="title">
-                                        <Icon type="ios-people"></Icon>
+                                        <Icon type="ios-people" />
                                         用户管理
                                     </template>
                                     <MenuItem name="2-1">新增用户</MenuItem>
@@ -112,7 +112,7 @@
                                 </Submenu>
                                 <Submenu name="3">
                                     <template slot="title">
-                                        <Icon type="stats-bars"></Icon>
+                                        <Icon type="ios-stats" />
                                         统计分析
                                     </template>
                                     <MenuGroup title="使用">
@@ -131,7 +131,7 @@
                             <Menu :theme="theme2" :open-names="['1']" accordion>
                                 <Submenu name="1">
                                     <template slot="title">
-                                        <Icon type="ios-paper"></Icon>
+                                        <Icon type="ios-paper" />
                                         内容管理
                                     </template>
                                     <MenuItem name="1-1">文章管理</MenuItem>
@@ -140,7 +140,7 @@
                                 </Submenu>
                                 <Submenu name="2">
                                     <template slot="title">
-                                        <Icon type="ios-people"></Icon>
+                                        <Icon type="ios-people" />
                                         用户管理
                                     </template>
                                     <MenuItem name="2-1">新增用户</MenuItem>
@@ -148,7 +148,7 @@
                                 </Submenu>
                                 <Submenu name="3">
                                     <template slot="title">
-                                        <Icon type="stats-bars"></Icon>
+                                        <Icon type="ios-stats" />
                                         统计分析
                                     </template>
                                     <MenuGroup title="使用">
@@ -184,7 +184,7 @@
                     <Menu active-name="1-2" :open-names="['1']">
                         <Submenu name="1">
                             <template slot="title">
-                                <Icon type="ios-analytics"></Icon>
+                                <Icon type="ios-analytics" />
                                 Navigation One
                             </template>
                             <MenuGroup title="Item 1">
@@ -198,7 +198,7 @@
                         </Submenu>
                         <Submenu name="2">
                             <template slot="title">
-                                <Icon type="ios-filing"></Icon>
+                                <Icon type="ios-filing" />
                                 Navigation Two
                             </template>
                             <MenuItem name="2-1">Option 5</MenuItem>
@@ -211,7 +211,7 @@
                         </Submenu>
                         <Submenu name="4">
                             <template slot="title">
-                                <Icon type="ios-gear"></Icon>
+                                <Icon type="ios-cog" />
                                 Navigation Three
                             </template>
                             <MenuItem name="4-1">Option 9</MenuItem>
@@ -231,21 +231,21 @@
                     <Menu :theme="theme3" active-name="1">
                         <MenuGroup title="内容管理">
                             <MenuItem name="1">
-                                <Icon type="document-text"></Icon>
+                                <Icon type="md-document" />
                                 文章管理
                             </MenuItem>
                             <MenuItem name="2">
-                                <Icon type="chatbubbles"></Icon>
+                                <Icon type="md-chatbubbles" />
                                 评论管理
                             </MenuItem>
                         </MenuGroup>
                         <MenuGroup title="统计分析">
                             <MenuItem name="3">
-                                <Icon type="heart"></Icon>
+                                <Icon type="md-heart" />
                                 用户留存
                             </MenuItem>
                             <MenuItem name="4">
-                                <Icon type="heart-broken"></Icon>
+                                <Icon type="md-leaf" />
                                 流失用户
                             </MenuItem>
                         </MenuGroup>
@@ -266,8 +266,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Menu props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Menu props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -316,7 +316,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Menu events" h3></Anchor>
+                <inAnchor title="Menu events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -338,7 +338,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Menu methods" h3></Anchor>
+                <inAnchor title="Menu methods" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -360,7 +360,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="MenuItem props" h3></Anchor>
+                <inAnchor title="MenuItem props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -377,9 +377,27 @@
                             <td>String | Number</td>
                             <td>-</td>
                         </tr>
+                        <tr>
+                            <td>to</td>
+                            <td>跳转的链接，支持 vue-router 对象</td>
+                            <td>String | Object</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>replace</td>
+                            <td>路由跳转时，开启 replace 将不会向 history 添加新记录</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>target</td>
+                            <td>相当于 a 链接的 target 属性</td>
+                            <td>String</td>
+                            <td>_self</td>
+                        </tr>
                     </tbody>
                 </table>
-                <Anchor title="Submenu props" h3></Anchor>
+                <inAnchor title="Submenu props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -398,7 +416,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Submenu slot" h3></Anchor>
+                <inAnchor title="Submenu slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -417,7 +435,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="MenuGroup props" h3></Anchor>
+                <inAnchor title="MenuGroup props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -445,14 +463,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/menu';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

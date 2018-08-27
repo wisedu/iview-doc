@@ -18,11 +18,11 @@
     <i-article>
         <article>
             <h1>Tooltip</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>A simple text popup tip.</p>
             <p>The tip shows while mouse enter, and hides while mouse leave. The Tooltip doesn't support complex text and operation.</p>
             <p>It can provide an explanation of button/text/operation that can cover the usage of the default system <code>title</code>.</p>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
                     <Tooltip content="Here is the prompt text">
@@ -126,12 +126,37 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.delay }}</i-code>
             </Demo>
+            <Demo title="Theme">
+                <div slot="demo">
+                    <Tooltip content="content of tooltip">
+                        <Button>Dark(default)</Button>
+                    </Tooltip>
+                    <Tooltip content="content of tooltip" theme="light">
+                        <Button>Light</Button>
+                    </Tooltip>
+                </div>
+                <div slot="desc">
+                    <p>Setting the property <code>theme</code> can display different colors.</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.theme }}</i-code>
+            </Demo>
+            <Demo title="Automatic Wrap">
+                <div slot="demo">
+                    <Tooltip max-width="200" content="Steven Paul Jobs was an American entrepreneur and business magnate. He was the chairman, chief executive officer, and a co-founder of Apple Inc.">
+                        <Button>Long Content</Button>
+                    </Tooltip>
+                </div>
+                <div slot="desc">
+                    <p>Set the property <code>max-width</code>, when the maximum value is exceeded, the text will automatically wrap and be aligned.</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.width }}</i-code>
+            </Demo>
 
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Tooltip props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Tooltip props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -173,6 +198,24 @@
                             <td>false</td>
                         </tr>
                         <tr>
+                            <td>theme</td>
+                            <td>Theme, optional dark or light.</td>
+                            <td>String</td>
+                            <td>dark</td>
+                        </tr>
+                        <tr>
+                            <td>max-width</td>
+                            <td>Maximum width, after the maximum value is exceeded, the text will automatically wrap and be aligned.</td>
+                            <td>String | Number</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>offset</td>
+                            <td>Popover offset.</td>
+                            <td>Number</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
                             <td>transfer</td>
                             <td>Whether to append the layer in body. When used in Tabs or a fixed Table column, suggests adding this property, it will not be affected by the parent style, resulting in better results.</td>
                             <td>Boolean</td>
@@ -188,7 +231,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Tooltip events" h3></Anchor>
+                <inAnchor title="Tooltip events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -210,7 +253,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Tooltip slot" h3></Anchor>
+                <inAnchor title="Tooltip slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -238,14 +281,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/tooltip';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

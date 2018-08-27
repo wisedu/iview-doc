@@ -26,6 +26,8 @@
     </div>
 </template>
 <script>
+    import pinyinUtil from '../libs/pinyin/pinyinUtil';
+
     export default {
         props: {
             title: String,
@@ -38,7 +40,9 @@
         },
         computed: {
             title_link () {
-                return this.title.replace(/\s/g, '_');
+                const title = pinyinUtil.getFirstLetter(this.title);
+                return title.replace(/\s/g, '_');
+
             }
         }
     }

@@ -11,11 +11,11 @@
     <i-article>
         <article>
             <h1>Select</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>A dropdown select , alternative to the native select component.</p>
             <p>Select supports single, multiple, search and keyboard.</p>
             <Alert show-icon style="margin-top: 16px">Notice: If not template/render mode, you need to use<code>i-select</code>, <code>i-option</code>.</Alert>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
                     <Select v-model="model1" style="width:200px">
@@ -189,8 +189,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Select props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Select props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -305,7 +305,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Select events" h3></Anchor>
+                <inAnchor title="Select events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -337,7 +337,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Select methods" h3></Anchor>
+                <inAnchor title="Select methods" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -359,7 +359,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Option props" h3></Anchor>
+                <inAnchor title="Option props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -390,7 +390,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="OptionGroup props" h3></Anchor>
+                <inAnchor title="OptionGroup props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -418,14 +418,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/select';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

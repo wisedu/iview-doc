@@ -60,6 +60,20 @@ const routers = [
         component: (resolve) => require(['./views/guide/overview.vue'], resolve)
     },
     {
+        path: '/donate',
+        meta: {
+            title: '捐赠'
+        },
+        component: (resolve) => require(['./views/guide/donate.vue'], resolve)
+    },
+    {
+        path: '/donate-en',
+        meta: {
+            title: 'Donate'
+        },
+        component: (resolve) => require(['./views/guide/donate-en.vue'], resolve)
+    },
+    {
         path: '/overview-en',
         meta: {
             title: 'Overview'
@@ -123,14 +137,14 @@ const routers = [
         component: (resolve) => require(['./views/guide/standard-en.vue'], resolve)
     },
     {
-        path: '/docs/practice/case',
+        path: '/docs/guide/case',
         meta: {
             title: '实践案例'
         },
         component: (resolve) => require(['./views/practice/case.vue'], resolve)
     },
     {
-        path: '/docs/practice/case-en',
+        path: '/docs/guide/case-en',
         meta: {
             title: 'Practical Cases'
         },
@@ -177,6 +191,20 @@ const routers = [
             title: 'Quick Start'
         },
         component: (resolve) => require(['./views/guide/start-en.vue'], resolve)
+    },
+    {
+        path: '/docs/guide/global',
+        meta: {
+            title: '全局配置'
+        },
+        component: (resolve) => require(['./views/guide/global.vue'], resolve)
+    },
+    {
+        path: '/docs/guide/global-en',
+        meta: {
+            title: 'Global Options'
+        },
+        component: (resolve) => require(['./views/guide/global-en.vue'], resolve)
     },
     {
         path: '/docs/guide/i18n',
@@ -881,7 +909,7 @@ const routers = [
     {
         path: '/components/avatar',
         meta: {
-            title: 'Avatar 头像'
+            title: '头像 Avatar'
         },
         component: (resolve) => require(['./views/components/avatar.vue'], resolve)
     },
@@ -895,7 +923,7 @@ const routers = [
     {
         path: '/components/color-picker',
         meta: {
-            title: 'ColorPicker 颜色选择器'
+            title: '颜色选择器 ColorPicker'
         },
         component: (resolve) => require(['./views/components/color-picker.vue'], resolve)
     },
@@ -909,7 +937,7 @@ const routers = [
     {
         path: '/components/auto-complete',
         meta: {
-            title: 'AutoComplete 自动完成'
+            title: '自动完成 AutoComplete'
         },
         component: (resolve) => require(['./views/components/auto-complete.vue'], resolve)
     },
@@ -923,7 +951,7 @@ const routers = [
     {
         path: '/components/scroll',
         meta: {
-            title: 'Scroll 无限滚动'
+            title: '无限滚动 Scroll'
         },
         component: (resolve) => require(['./views/components/scroll.vue'], resolve)
     },
@@ -933,6 +961,76 @@ const routers = [
             title: 'Scroll'
         },
         component: (resolve) => require(['./views/components/scroll-en.vue'], resolve)
+    },
+    {
+        path: '/components/time',
+        meta: {
+            title: '相对时间 Time'
+        },
+        component: (resolve) => require(['./views/components/time.vue'], resolve)
+    },
+    {
+        path: '/components/time-en',
+        meta: {
+            title: 'Time'
+        },
+        component: (resolve) => require(['./views/components/time-en.vue'], resolve)
+    },
+    {
+        path: '/components/anchor',
+        meta: {
+            title: '锚点 Anchor'
+        },
+        component: (resolve) => require(['./views/components/anchor.vue'], resolve)
+    },
+    {
+        path: '/components/anchor-en',
+        meta: {
+            title: 'Anchor'
+        },
+        component: (resolve) => require(['./views/components/anchor-en.vue'], resolve)
+    },
+    {
+        path: '/components/cell',
+        meta: {
+            title: '单元格 Cell'
+        },
+        component: (resolve) => require(['./views/components/cell.vue'], resolve)
+    },
+    {
+        path: '/components/cell-en',
+        meta: {
+            title: 'Cell'
+        },
+        component: (resolve) => require(['./views/components/cell-en.vue'], resolve)
+    },
+    {
+        path: '/components/split',
+        meta: {
+            title: '面板分割 Split'
+        },
+        component: (resolve) => require(['./views/components/split.vue'], resolve)
+    },
+    {
+        path: '/components/split-en',
+        meta: {
+            title: 'Split'
+        },
+        component: (resolve) => require(['./views/components/split-en.vue'], resolve)
+    },
+    {
+        path: '/components/divider',
+        meta: {
+            title: '分割线 Divider'
+        },
+        component: (resolve) => require(['./views/components/divider.vue'], resolve)
+    },
+    {
+        path: '/components/divider-en',
+        meta: {
+            title: 'Divider'
+        },
+        component: (resolve) => require(['./views/components/divider-en.vue'], resolve)
     },
     {
         path: '*',

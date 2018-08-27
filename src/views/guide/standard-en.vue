@@ -3,9 +3,9 @@
         <article>
             <h1>Contributing Guide</h1>
             <p>We welcome any contribution to iView. But before submitting your contribution though, please take a moment and read through the guidelines.</p>
-            <Anchor title="PR Guidelines" h2></Anchor>
+            <inAnchor title="PR Guidelines" h2></inAnchor>
             <p>Make sure you have got in touch with the author before writing any code, we want to avoid wasteful duplication of effort. You can contact by email <a href="mailto:admin@aresn.com">admin@aresn.com</a>.</p>
-            <Anchor title="Syntax" h3></Anchor>
+            <inAnchor title="Syntax" h3></inAnchor>
             <ul>
                 <li>Use ES2015 syntax as the followings:</li>
                 <ul>
@@ -17,7 +17,7 @@
                 <li>Add utilities to<code>src/utils/assist</code></li>
                 <li>Test your component in<code>examples/routers</code></li>
             </ul>
-            <Anchor title="Components" h3></Anchor>
+            <inAnchor title="Components" h3></inAnchor>
             <p>Nomenclature</p>
             <ul>
                 <li>Be simple and significant</li>
@@ -35,7 +35,7 @@
                 <li>Function<code>oneOf</code>in<code>src/utils/assist</code>would be useful</li>
                 <li>The property<code>size</code>can only be<code>small</code>,<code>default</code>or<code>large</code></li>
             </ul>
-            <Anchor title="Events" h3></Anchor>
+            <inAnchor title="Events" h3></inAnchor>
             <p>Nomenclature</p>
             <ul>
                 <li>Use prefix<code>on-</code>for an event, such as<code>on-change</code></li>
@@ -45,7 +45,7 @@
                 <li>Review the code in<code>src/mixins/emitter.js</code> if you want to use<code>$dispatch</code>and<code>$broadcast</code>in Vue 2</li>
                 <li>You can use<code>$parent</code>and<code>$children</code>if need to pass value between nested components. We've provided three functions<code>findComponentUpward</code>、<code>findComponentDownward</code>、<code>findComponentsDownward</code>in<code>src/utils/assist.js</code>to find elements in parents or children. We encourage you to use them. Review code of Radio、Checkbox、Menu for reference.</li>
             </ul>
-            <Anchor title="Other" h3></Anchor>
+            <inAnchor title="Other" h3></inAnchor>
             <ul>
                 <li>CSS prefix is<code>ivu-</code></li>
             </ul>
@@ -56,13 +56,13 @@
     import iArticle from '../../components/article.vue';
     import iCode from 'iCode';
     import Code from '../../code/guide';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
-            Anchor
+            inAnchor
         },
         data () {
             return {

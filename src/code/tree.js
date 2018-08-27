@@ -220,11 +220,11 @@ code.render = `
                                 }, [
                                     h('Button', {
                                         props: Object.assign({}, this.buttonProps, {
-                                            icon: 'ios-plus-empty',
+                                            icon: 'ios-add',
                                             type: 'primary'
                                         }),
                                         style: {
-                                            width: '52px'
+                                            width: '64px'
                                         },
                                         on: {
                                             click: () => { this.append(data) }
@@ -266,7 +266,7 @@ code.render = `
                     }
                 ],
                 buttonProps: {
-                    type: 'ghost',
+                    type: 'default',
                     size: 'small',
                 }
             }
@@ -299,7 +299,7 @@ code.render = `
                     }, [
                         h('Button', {
                             props: Object.assign({}, this.buttonProps, {
-                                icon: 'ios-plus-empty'
+                                icon: 'ios-add'
                             }),
                             style: {
                                 marginRight: '8px'
@@ -310,7 +310,7 @@ code.render = `
                         }),
                         h('Button', {
                             props: Object.assign({}, this.buttonProps, {
-                                icon: 'ios-minus-empty'
+                                icon: 'ios-remove'
                             }),
                             on: {
                                 click: () => { this.remove(root, node, data) }

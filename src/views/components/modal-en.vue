@@ -13,11 +13,11 @@
     <i-article>
         <article>
             <h1>Modal</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>Modal dialog. It's shown in the floating layer. It's used to guide user do certain operations.</p>
             <p><code>Modal</code> provides two usages: normal component using & encapsulated instance calling.</p>
-            <Anchor title="Examples" h2></Anchor>
-            <Anchor title="Normal Component Usage" h3></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
+            <inAnchor title="Normal Component Usage" h3></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
                     <Button type="primary" @click="modal1 = true">Display dialog box</Button>
@@ -43,7 +43,7 @@
                     <Button @click="modal2 = true">Custom header and footer</Button>
                     <Modal v-model="modal2" width="360">
                         <p slot="header" style="color:#f60;text-align:center">
-                            <Icon type="information-circled"></Icon>
+                            <Icon type="ios-information-circle"></Icon>
                             <span>Delete confirmation</span>
                         </p>
                         <div style="text-align:center">
@@ -153,7 +153,39 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.position }}</i-code>
             </Demo>
-            <Anchor title="Instantiation Usage" h3></Anchor>
+
+            <Demo title="Fullscreen">
+                <div slot="demo">
+                    <Button @click="modal11 = true">Open a fullscreen modal</Button>
+                    <Modal v-model="modal11" fullscreen title="Fullscreen Modal">
+                        <div>This is a fullscreen modal</div>
+                    </Modal>
+                </div>
+                <div slot="desc">
+                    <p>Setting the property <code>fullscreen</code> to display a full screen modal.</p>
+                    <p>Setting the property <code>footer-hide</code> hides the bottom content.</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.fullscreen }}</i-code>
+            </Demo>
+
+            <Demo title="Draggable">
+                <div slot="demo">
+                    <Button @click="modal12 = true">Open the first modal</Button>
+                    <Button @click="modal13 = true">Open the second modal</Button>
+                    <Modal v-model="modal12" draggable scrollable title="Modal 1">
+                        <div>This is the first modal</div>
+                    </Modal>
+                    <Modal v-model="modal13" draggable scrollable title="Modal 2">
+                        <div>This is the second modal</div>
+                    </Modal>
+                </div>
+                <div slot="desc">
+                    <p>Set the property <code>draggable</code>, the dialog can be dragged and moved.</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.draggable }}</i-code>
+            </Demo>
+
+            <inAnchor title="Instantiation Usage" h3></inAnchor>
             <p>Besides normal component usages mentioned above, iView has encapsulated some instance methods elaborately to create one-off light Modal.</p>
             <p>The instance create a Modal globally by creating a Vue component implicitly. It will be destroyed after disappeared. So you can only operate one insatnce at the same time.</p>
             <Demo title="Basic Usage">
@@ -198,8 +230,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Modal props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Modal props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -247,6 +279,24 @@
                             <td>false</td>
                         </tr>
                         <tr>
+                            <td>fullscreen</td>
+                            <td>Whether full screen display.</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>draggable</td>
+                            <td>Can it drag and move.</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>mask</td>
+                            <td>Whether to display the mask layer, force to not display when draggable is enabled.</td>
+                            <td>Boolean</td>
+                            <td>true</td>
+                        </tr>
+                        <tr>
                             <td>ok-text</td>
                             <td>OK button's text.</td>
                             <td>String</td>
@@ -263,6 +313,12 @@
                             <td>The width of Modal. The width is responsive: It'll change to <code>auto</code> when the size of the screen is smaller than 768px. It will be displayed as a percentage when the value less than 100, otherwise it is a pixel.</td>
                             <td>Number | String</td>
                             <td>520</td>
+                        </tr>
+                        <tr>
+                            <td>footer-hide</td>
+                            <td>Hide the footer.</td>
+                            <td>Boolean</td>
+                            <td>false</td>
                         </tr>
                         <tr>
                             <td>styles</td>
@@ -290,7 +346,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Modal events" h3></Anchor>
+                <inAnchor title="Modal events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -317,7 +373,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Modal slot" h3></Anchor>
+                <inAnchor title="Modal slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -344,7 +400,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Modal instance" h3></Anchor>
+                <inAnchor title="Modal instance" h3></inAnchor>
                 <p>Use insatnce by directly calling methods below:</p>
                 <ul>
                     <li>
@@ -457,7 +513,7 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/modal';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
     import studyRender from '../../components/study.vue';
 
     export default {
@@ -465,7 +521,7 @@
             iArticle,
             iCode,
             Demo,
-            Anchor,
+            inAnchor,
             studyRender
         },
         data () {
@@ -483,6 +539,9 @@
                 modal8: false,
                 modal9: false,
                 modal10: false,
+                modal11: false,
+                modal12: false,
+                modal13: false,
                 value: ''
             }
         },

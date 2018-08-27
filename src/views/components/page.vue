@@ -2,12 +2,12 @@
     <i-article>
         <article>
             <h1>Page 分页</h1>
-            <Anchor title="概述" h2></Anchor>
+            <inAnchor title="概述" h2></inAnchor>
             <p>当数据量较多时，使用分页可以快速进行数据切换。</p>
-            <Anchor title="代码示例" h2></Anchor>
+            <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="基本">
                 <div slot="demo">
-                    <Page :total="100"></Page>
+                    <Page :total="100" />
                 </div>
                 <div slot="desc">
                     <p>基本的分页，页数过多时会自动折叠。</p>
@@ -16,7 +16,7 @@
             </Demo>
             <Demo title="每页数量">
                 <div slot="demo">
-                    <Page :total="100" show-sizer></Page>
+                    <Page :total="100" show-sizer />
                 </div>
                 <div slot="desc">
                     <p>可以切换每页显示的数量。</p>
@@ -25,7 +25,7 @@
             </Demo>
             <Demo title="电梯">
                 <div slot="demo">
-                    <Page :total="100" show-elevator></Page>
+                    <Page :total="100" show-elevator />
                 </div>
                 <div slot="desc">
                     <p>快速跳转到某一页。</p>
@@ -34,7 +34,7 @@
             </Demo>
             <Demo title="总数">
                 <div slot="demo">
-                    <Page :total="100" show-total></Page>
+                    <Page :total="100" show-total />
                 </div>
                 <div slot="desc">
                     <p>显示总共多少条数据，接受 slot 来自定义内容，默认显示<code v-pre>共{{ total }}条</code></p>
@@ -43,11 +43,11 @@
             </Demo>
             <Demo title="迷你型">
                 <div slot="demo">
-                    <Page :total="40" size="small"></Page>
+                    <Page :total="40" size="small" />
                     <br>
-                    <Page :total="40" size="small" show-elevator show-sizer></Page>
+                    <Page :total="40" size="small" show-elevator show-sizer />
                     <br>
-                    <Page :total="40" size="small" show-total></Page>
+                    <Page :total="40" size="small" show-total />
                 </div>
                 <div slot="desc">
                     <p>设置<code>size</code>为<code>small</code>使用迷你型，迷你型拥有普通的所有功能。</p>
@@ -56,7 +56,7 @@
             </Demo>
             <Demo title="简洁">
                 <div slot="demo">
-                    <Page :current="2" :total="50" simple></Page>
+                    <Page :current="2" :total="50" simple />
                 </div>
                 <div slot="desc">
                     <p>设置<code>simple</code>属性即可使用简洁版的分页，通过输入页码回车切换，或使用鼠标点击切换页码，或使用键盘的上下键来切换。简洁分页不能使用总数、电梯和切换数量。</p>
@@ -64,11 +64,21 @@
                 <i-code lang="html" slot="code">{{ code.simple }}</i-code>
             </Demo>
 
+            <Demo title="上一页和下一页">
+                <div slot="demo">
+                    <Page :total="100" prev-text="Previous" next-text="Next" />
+                </div>
+                <div slot="desc">
+                    <p>使用属性 <code>prev-text</code> 和 <code>next-text</code>，替代图标显示为文字。</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.text }}</i-code>
+            </Demo>
+
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Page props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Page props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -157,9 +167,21 @@
                             <td>Boolean</td>
                             <td>false</td>
                         </tr>
+                        <tr>
+                            <td>prev-text</td>
+                            <td>替代图标显示的上一页文字</td>
+                            <td>String</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>next-text</td>
+                            <td>替代图标显示的下一页文字</td>
+                            <td>String</td>
+                            <td>-</td>
+                        </tr>
                     </tbody>
                 </table>
-                <Anchor title="Page events" h3></Anchor>
+                <inAnchor title="Page events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -181,7 +203,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Page slot" h3></Anchor>
+                <inAnchor title="Page slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -205,14 +227,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/page';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

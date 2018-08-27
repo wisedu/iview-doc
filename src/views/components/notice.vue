@@ -2,13 +2,13 @@
     <i-article>
         <article>
             <h1>Notice 通知提醒</h1>
-            <Anchor title="概述" h2></Anchor>
+            <inAnchor title="概述" h2></inAnchor>
             <p>在界面右上角显示可关闭的全局通知，常用于以下场景：</p>
             <ul>
                 <li>通知内容带有描述信息</li>
                 <li>系统主动推送</li>
             </ul>
-            <Anchor title="代码示例" h2></Anchor>
+            <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="基础用法">
                 <div slot="demo">
                     <Button type="primary" @click="open(false)">打开提醒</Button>
@@ -60,8 +60,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Notice instance" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Notice instance" h3></inAnchor>
                 <p>通过直接调用以下方法来使用组件：</p>
                 <ul>
                     <li>
@@ -177,14 +177,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/notice';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

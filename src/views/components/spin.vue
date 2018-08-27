@@ -43,9 +43,9 @@
     <i-article>
         <article>
             <h1>Spin 加载中</h1>
-            <Anchor title="概述" h2></Anchor>
+            <inAnchor title="概述" h2></inAnchor>
             <p>当区块正在获取数据中时可使用，适当的等待动画可以提升用户体验。</p>
-            <Anchor title="代码示例" h2></Anchor>
+            <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="基础用法">
                 <div slot="demo">
                     <Spin></Spin>
@@ -93,7 +93,7 @@
                         </Col>
                         <Col class="demo-spin-col" span="8">
                             <Spin fix>
-                                <Icon type="load-c" size=18 class="demo-spin-icon-load"></Icon>
+                                <Icon type="ios-loading" size=18 class="demo-spin-icon-load"></Icon>
                                 <div>Loading</div>
                             </Spin>
                         </Col>
@@ -149,8 +149,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Spin props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Spin props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -175,7 +175,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Spin slot" h3></Anchor>
+                <inAnchor title="Spin slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -199,7 +199,7 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/spin';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
     import studyRender from '../../components/study.vue';
 
     export default {
@@ -207,7 +207,7 @@
             iArticle,
             iCode,
             Demo,
-            Anchor,
+            inAnchor,
             studyRender
         },
         data () {
@@ -230,7 +230,7 @@
                             h('Icon', {
                                 'class': 'demo-spin-icon-load',
                                 props: {
-                                    type: 'load-c',
+                                    type: 'ios-loading',
                                     size: 18
                                 }
                             }),

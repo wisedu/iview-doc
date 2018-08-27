@@ -2,15 +2,15 @@
     <i-article>
         <article>
             <h1>LoadingBar</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>Create a global loading bar to display page loading, asynchronous request, file uploading etc.</p>
-            <Anchor title="Explanation" h2></Anchor>
+            <inAnchor title="Explanation" h2></inAnchor>
             <p>LoadingBar will be created only once globally, so you'll control the same component no matter where you call the methods. It is mainly used on route changing or Ajax. In those two situations, operation cannot get the accurate progress rate, so LoadingBar will simulate the progress rate. You can also use <code>update()</code> to pass an accurate progress rate. Details on API Doc.</p>
-            <Anchor title="Using in Router" h4></Anchor>
+            <inAnchor title="Using in Router" h4></inAnchor>
             <i-code bg>{{ code.router }}</i-code>
-            <Anchor title="Using in Asynchronous Request" h4></Anchor>
+            <inAnchor title="Using in Asynchronous Request" h4></inAnchor>
             <i-code bg lang="html">{{ code.ajax }}</i-code>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
                     <Button @click="start">Start</Button>
@@ -26,8 +26,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="LoadingBar instance" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="LoadingBar instance" h3></inAnchor>
                 <p>Use the component by calling method below directly.</p>
                 <ul>
                     <li>
@@ -126,14 +126,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/loading-bar';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

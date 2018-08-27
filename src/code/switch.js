@@ -2,7 +2,7 @@ let code = {};
 
 code.base = `
 <template>
-    <Switch v-model="switch1" @on-change="change"></Switch>
+    <Switch v-model="switch1" @on-change="change" />
 </template>
 <script>
     export default {
@@ -22,9 +22,9 @@ code.base = `
 
 code.size = `
 <template>
-    <Switch size="large"></Switch>
-    <Switch></Switch>
-    <Switch size="small"></Switch>
+    <Switch size="large" />
+    <Switch />
+    <Switch size="small" />
 </template>
 <script>
     export default {
@@ -40,8 +40,8 @@ code.custom = `
         <span slot="close">关</span>
     </Switch>
     <Switch>
-        <Icon type="android-done" slot="open"></Icon>
-        <Icon type="android-close" slot="close"></Icon>
+        <Icon type="md-checkmark" slot="open"></Icon>
+        <Icon type="md-close" slot="close"></Icon>
     </Switch>
     <br><br>
     <Switch size="large">
@@ -62,7 +62,7 @@ code.custom = `
 
 code.disabled = `
 <template>
-    <Switch :disabled="disabled"></Switch>
+    <Switch :disabled="disabled" />
     <Button type="primary" @click="disabled = !disabled">Toggle Disabled</Button>
 </template>
 <script>
@@ -72,6 +72,18 @@ code.disabled = `
                 disabled: true
             }
         },
+    }
+</script>
+`;
+
+code.loading = `
+<template>
+    <Switch loading :value="true" />
+    <Switch loading :value="false" size="small" />
+</template>
+<script>
+    export default {
+        
     }
 </script>
 `;

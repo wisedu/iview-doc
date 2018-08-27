@@ -123,7 +123,7 @@ code.visible = `
 code.slot = `
 <template>
     <Poptip placement="right" width="400">
-        <Button type="ghost">Click</Button>
+        <Button>Click</Button>
         <div class="api" slot="content">
             <table>
                 <thead>
@@ -205,5 +205,18 @@ code.options = `
         }
     }
 }
+`;
+
+code.width = `
+<template>
+    <Poptip word-wrap width="200" content="Steven Paul Jobs was an American entrepreneur and business magnate. He was the chairman, chief executive officer, and a co-founder of Apple Inc.">
+        <Button>Long Content</Button>
+    </Poptip>
+</template>
+<script>
+    export default {
+        
+    }
+</script>
 `;
 export default code;

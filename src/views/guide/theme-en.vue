@@ -11,7 +11,7 @@
             <p>iView provides a default theme, and allows to customize some basic aspects in order to meet the needs of UI diversity from business and brand.</p>
             <p>iView uses <a href="http://lesscss.org/" target="_blank">Less</a> as developing language of styles. We use <code>.ivu-</code> as prefix, and have defined a set of variables which can be customized.</p>
             <img src="../../images/theme-demo.png" class="demo-theme-img">
-            <Anchor title="By overriding variables (Recommend)" h2></Anchor>
+            <inAnchor title="By overriding variables (Recommend)" h2></inAnchor>
             <p>If you are using webpack in your project, we recommend you to override default values of the variables for customization.</p>
             <p>In order to do this, you need to create a dictionary first. For example, create a dictionary <code>my-theme</code> and add a less file <code>index.less</code> in it.</p>
             <i-code lang="auto" bg>{{ code.theme.less }}</i-code>
@@ -20,7 +20,7 @@
             </blockquote>
             <p>After you creating the file which contains the variable you need to override, import it in your entry file <code>main.js</code>:</p>
             <i-code lang="auto" bg>{{ code.theme.lessImport }}</i-code>
-            <Anchor title="By tool" h2></Anchor>
+            <inAnchor title="By tool" h2></inAnchor>
             <p>If you did not use webpack, it can be helpful to compile theme file by our tool <a href="https://github.com/iview/iview-theme" target="_blank">iview-theme</a></p>
             <p>Install the tool globally by npm first.</p>
             <i-code lang="auto" bg>{{ code.theme.install }}</i-code>
@@ -38,13 +38,13 @@
     import iArticle from '../../components/article.vue';
     import iCode from 'iCode';
     import Code from '../../code/guide';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
-            Anchor
+            inAnchor
         },
         data () {
             return {

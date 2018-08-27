@@ -40,14 +40,14 @@
     <i-article>
         <article>
             <h1>Upload</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>File select upload and drag upload component.</p>
             <Alert show-icon style="margin-top: 16px">IE 9 is not supported.</Alert>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Click to Upload">
                 <div slot="demo">
                     <Upload action="//jsonplaceholder.typicode.com/posts/">
-                        <Button type="ghost" icon="ios-cloud-upload-outline">Upload files</Button>
+                        <Button icon="ios-cloud-upload-outline">Upload files</Button>
                     </Upload>
                 </div>
                 <div slot="desc">
@@ -60,7 +60,7 @@
                     <Upload
                         multiple
                         action="//jsonplaceholder.typicode.com/posts/">
-                        <Button type="ghost" icon="ios-cloud-upload-outline">Upload files</Button>
+                        <Button icon="ios-cloud-upload-outline">Upload files</Button>
                     </Upload>
                 </div>
                 <div slot="desc">
@@ -73,7 +73,7 @@
                     <Upload
                         :before-upload="handleUpload"
                         action="//jsonplaceholder.typicode.com/posts/">
-                        <Button type="ghost" icon="ios-cloud-upload-outline">Select the file to upload</Button>
+                        <Button icon="ios-cloud-upload-outline">Select the file to upload</Button>
                     </Upload>
                     <div v-if="file !== null">Upload file: {{ file.name }} <Button type="text" @click="upload" :loading="loadingStatus">{{ loadingStatus ? '上传中' : '点击上传' }}</Button></div>
                 </div>
@@ -128,7 +128,7 @@
                         action="//jsonplaceholder.typicode.com/posts/"
                         style="display: inline-block;width:58px;">
                         <div style="width: 58px;height:58px;line-height: 58px;">
-                            <Icon type="camera" size="20"></Icon>
+                            <Icon type="ios-camera" size="20"></Icon>
                         </div>
                     </Upload>
                     <Modal title="View Image" v-model="visible">
@@ -155,8 +155,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Upload props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Upload props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -182,6 +182,12 @@
                         <tr>
                             <td>multiple</td>
                             <td>Enable multi choices or not.</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>paste</td>
+                            <td>Whether to support pasting upload files.</td>
                             <td>Boolean</td>
                             <td>false</td>
                         </tr>
@@ -305,7 +311,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Upload methods" h3></Anchor>
+                <inAnchor title="Upload methods" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -322,7 +328,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Upload slot" h3></Anchor>
+                <inAnchor title="Upload slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -350,14 +356,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/upload';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

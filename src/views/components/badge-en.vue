@@ -16,12 +16,12 @@
     <i-article>
         <article>
             <h1>Badge</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>Mainly used to set a corner mark to notice the count of unread messages, remind user to read.</p>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
-                    <Badge count="3">
+                    <Badge :count="3">
                         <a href="#" class="demo-badge"></a>
                     </Badge>
                 </div>
@@ -40,7 +40,7 @@
                         </Col>
                         <Col span="6">
                             <Badge dot>
-                                <Icon type="ios-bell-outline" size="26"></Icon>
+                                <Icon type="ios-notifications-outline" size="26"></Icon>
                             </Badge>
                         </Col>
                         <Col span="6">
@@ -59,12 +59,12 @@
                 <div slot="demo">
                     <Row>
                         <Col span="6">
-                            <Badge count="100">
+                            <Badge :count="100">
                                 <a href="#" class="demo-badge"></a>
                             </Badge>
                         </Col>
                         <Col span="6">
-                            <Badge count="1000" overflow-count="999">
+                            <Badge :count="1000" overflow-count="999">
                                 <a href="#" class="demo-badge"></a>
                             </Badge>
                         </Col>
@@ -77,20 +77,90 @@
             </Demo>
             <Demo title="Standalone Usage and Customized Style">
                 <div slot="demo">
-                    <Badge count="10"></Badge>
-                    <Badge count="20" class-name="demo-badge-alone"></Badge>
+                    <Badge :count="10"></Badge>
+                    <Badge :count="20" class-name="demo-badge-alone"></Badge>
                 </div>
                 <div slot="desc">
                     <p>Display without slot.</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.alone }}</i-code>
             </Demo>
+            <Demo title="Custom Text">
+                <div slot="demo">
+                    <Row>
+                        <Col span="6">
+                            <Badge text="new">
+                                <a href="#" class="demo-badge"></a>
+                            </Badge>
+                        </Col>
+                        <Col span="6">
+                            <Badge text="hot">
+                                <a href="#" class="demo-badge"></a>
+                            </Badge>
+                        </Col>
+                    </Row>
+                </div>
+                <div slot="desc">
+                    <p>Set the <code>text</code> property to customize the display.</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.text }}</i-code>
+            </Demo>
+            <Demo title="Status">
+                <div slot="demo">
+                    <Badge status="success" />
+                    <Badge status="error" />
+                    <Badge status="default" />
+                    <Badge status="processing" />
+                    <Badge status="warning" />
+                    <br />
+                    <Badge status="success" text="Success" />
+                    <br />
+                    <Badge status="error" text="Error" />
+                    <br />
+                    <Badge status="default" text="Default" />
+                    <br />
+                    <Badge status="processing" text="Processing" />
+                    <br />
+                    <Badge status="warning" text="Warning" />
+                </div>
+                <div slot="desc">
+                    <p>Standalone badge with status.</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.status }}</i-code>
+            </Demo>
+
+            <Demo title="Types">
+                <div slot="demo">
+                    <Badge :count="5" type="primary">
+                        <a href="#" class="demo-badge"></a>
+                    </Badge>
+                    <Badge :count="5" type="success">
+                        <a href="#" class="demo-badge"></a>
+                    </Badge>
+                    <Badge :count="5" type="normal">
+                        <a href="#" class="demo-badge"></a>
+                    </Badge>
+                    <Badge :count="5" type="info">
+                        <a href="#" class="demo-badge"></a>
+                    </Badge>
+                    <Badge :count="5" type="error">
+                        <a href="#" class="demo-badge"></a>
+                    </Badge>
+                    <Badge :count="5" type="warning">
+                        <a href="#" class="demo-badge"></a>
+                    </Badge>
+                </div>
+                <div slot="desc">
+                    <p>Different colors can be set using the <code>type</code> property.</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.type }}</i-code>
+            </Demo>
 
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Badge props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Badge props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -104,7 +174,7 @@
                         <tr>
                             <td>count</td>
                             <td>Count to be shown. Show <code>${overflowCount}+</code> if bigger than <code>overflowCount</code>. Hide if 0.</td>
-                            <td>Number | String</td>
+                            <td>Number</td>
                             <td>-</td>
                         </tr>
                         <tr>
@@ -125,6 +195,36 @@
                             <td>String</td>
                             <td>-</td>
                         </tr>
+                        <tr>
+                            <td>type</td>
+                            <td>Use the default color, the choices are success, primary, normal, error, warning, info.</td>
+                            <td>String</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>show-zero</td>
+                            <td>Whether the Badge is displayed when the value is 0.</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>status</td>
+                            <td>Set Badge to status point. The optional values are success, processing, default, error, warning.</td>
+                            <td>String</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>text</td>
+                            <td>Custom content, if status is set, the text of the status point.</td>
+                            <td>String</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>offset</td>
+                            <td>Set the position offset of the Badge, the format is [x, y]</td>
+                            <td>Array</td>
+                            <td>-</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -136,14 +236,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/badge';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

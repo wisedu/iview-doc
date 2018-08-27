@@ -19,19 +19,19 @@ code.group = `
 <template>
     <CheckboxGroup v-model="social">
         <Checkbox label="twitter">
-            <Icon type="social-twitter"></Icon>
+            <Icon type="logo-twitter"></Icon>
             <span>Twitter</span>
         </Checkbox>
         <Checkbox label="facebook">
-            <Icon type="social-facebook"></Icon>
+            <Icon type="logo-facebook"></Icon>
             <span>Facebook</span>
         </Checkbox>
         <Checkbox label="github">
-            <Icon type="social-github"></Icon>
+            <Icon type="logo-github"></Icon>
             <span>Github</span>
         </Checkbox>
         <Checkbox label="snapchat">
-            <Icon type="social-snapchat"></Icon>
+            <Icon type="logo-snapchat"></Icon>
             <span>Snapchat</span>
         </Checkbox>
     </CheckboxGroup>

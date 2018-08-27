@@ -7,10 +7,10 @@
     <i-article>
         <article>
             <h1>Cascader 级联选择</h1>
-            <Anchor title="概述" h2></Anchor>
+            <inAnchor title="概述" h2></inAnchor>
             <p>从一组相关联的数据集合中进行选择，常用于省市区、公司级层、事务分类等。</p>
             <p>相比 Select 组件，可以一次性完成选择，体验更好。</p>
-            <Anchor title="代码示例" h2></Anchor>
+            <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="基础用法">
                 <div slot="demo">
                     <Cascader :data="data" v-model="value1"></Cascader>
@@ -124,8 +124,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Cascader props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Cascader props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -223,7 +223,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Cascader events" h3></Anchor>
+                <inAnchor title="Cascader events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -254,14 +254,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/cascader';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

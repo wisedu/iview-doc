@@ -36,14 +36,14 @@
     <i-article>
         <article>
             <h1>Circle</h1>
-            <Anchor title="Overview" h2></Anchor>
+            <inAnchor title="Overview" h2></inAnchor>
             <p>Circular progress bar. When to use:</p>
             <ul>
                 <li>To display the current progress of an operation flow.</li>
                 <li>To display the percentage of some indexes.</li>
             </ul>
             <Alert show-icon style="margin-top: 16px" type="warning">Warning: If you don't use <router-link to="/docs/guide/iview-loader-en">iview-loader</router-link>, you have to use <code>i-circle</code> tag.</Alert>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
                     <Row>
@@ -54,13 +54,13 @@
                         </Col>
                         <Col span="8">
                             <Circle :percent="100" stroke-color="#5cb85c">
-                                <Icon type="ios-checkmark-empty" size="60" style="color:#5cb85c"></Icon>
+                                <Icon type="ios-checkmark" size="60" style="color:#5cb85c"></Icon>
                             </Circle>
                         </Col>
                         <Col span="8">
                             <Circle :percent="35" stroke-color="#ff5500">
                         <span class="demo-circle-inner">
-                            <Icon type="ios-close-empty" size="50" style="color:#ff5500"></Icon>
+                            <Icon type="ios-close" size="50" style="color:#ff5500"></Icon>
                         </span>
                             </Circle>
                         </Col>
@@ -74,12 +74,12 @@
             <Demo title="With Other Components">
                 <div slot="demo">
                     <Circle :percent="percent" :stroke-color="color">
-                        <Icon v-if="percent == 100" type="ios-checkmark-empty" size="60" style="color:#5cb85c"></Icon>
+                        <Icon v-if="percent == 100" type="ios-checkmark" size="60" style="color:#5cb85c"></Icon>
                         <span v-else style="font-size:24px">{{ percent }}%</span>
                     </Circle>
                     <ButtonGroup size="large">
-                        <Button icon="ios-plus-empty" @click="add"></Button>
-                        <Button icon="ios-minus-empty" @click="minus"></Button>
+                        <Button icon="ios-add" @click="add"></Button>
+                        <Button icon="ios-remove" @click="minus"></Button>
                     </ButtonGroup>
                 </div>
                 <div slot="desc">
@@ -111,12 +111,23 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.custom }}</i-code>
             </Demo>
+            <Demo title="Dashboard">
+                <div slot="demo">
+                    <Circle :percent="80" dashboard>
+                        <span class="demo-circle-inner" style="font-size:24px">80%</span>
+                    </Circle>
+                </div>
+                <div slot="desc">
+                    <p>By setting the property <code>dashboard</code>, dashboard-style circle can be easily implemented.</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.dashboard }}</i-code>
+            </Demo>
 
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Circle props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Circle props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -169,9 +180,15 @@
                             <td>String</td>
                             <td>#eaeef2</td>
                         </tr>
+                        <tr>
+                            <td>dashboard</td>
+                            <td>Whether to display as a dashboard.</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
                     </tbody>
                 </table>
-                <Anchor title="Circle slot" h3></Anchor>
+                <inAnchor title="Circle slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -195,14 +212,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/circle';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

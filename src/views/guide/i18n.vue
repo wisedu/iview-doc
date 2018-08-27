@@ -3,7 +3,7 @@
         <article>
             <h1>国际化</h1>
             <p>iView 的所有组件文案默认使用的是中文，通过设置可以使用其它语言。</p>
-            <Anchor title="在 Webpack 中使用" h2></Anchor>
+            <inAnchor title="在 Webpack 中使用" h2></inAnchor>
             <p>完整引入 iView</p>
             <i-code lang="js" bg>{{ code.i18n.demo }}</i-code>
             <p>按需引入 iView</p>
@@ -13,11 +13,11 @@
             <p>兼容 vue-i18n@5.x</p>
             <i-code lang="js" bg>{{ code.i18n.vuei18n5 }}</i-code>
             <Alert show-icon style="margin-top: 16px">使用 vue-i18n 时，也可以按需引入 iView 组件，用法与上面的示例类似。</Alert>
-            <Anchor title="通过 RES 使用" h2></Anchor>
+            <inAnchor title="通过 CDN 使用" h2></inAnchor>
             <i-code lang="html" bg>{{ code.i18n.cdn }}</i-code>
             <p>结合 vue-i18n 使用</p>
             <i-code lang="html" bg>{{ code.i18n.cdnvuei18n }}</i-code>
-            <Anchor title="支持的语言" h2></Anchor>
+            <inAnchor title="支持的语言" h2></inAnchor>
             <p>iView 目前已支持以下语言：</p>
             <ul>
                 <li>简体中文（zh-CN）</li>
@@ -44,6 +44,7 @@
                 <li>希腊语（el-GR）</li>
                 <li>荷兰语（nl-NL）</li>
                 <li>捷克语（cs-CZ）</li>
+                <li>蒙古语（mn-MN）</li>
             </ul>
             <p>欢迎贡献代码，以支持更多语言。只需在<a href="https://github.com/iview/iview/tree/2.0/src/locale/lang" target="_blank">这里</a>添加一个语言配置文件即可。</p>
         </article>
@@ -53,13 +54,13 @@
     import iArticle from '../../components/article.vue';
     import iCode from 'iCode';
     import Code from '../../code/guide';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
-            Anchor
+            inAnchor
         },
         data () {
             return {

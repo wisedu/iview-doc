@@ -2,13 +2,13 @@
     <i-article>
         <article>
             <h1>Input</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>Basic form component. It supports input and textarea, and expands some functions on native DOM components. It can combine with native component.</p>
             <Alert show-icon style="margin-top: 16px">Attention: <code>i-input</code> is needed if not under template/render mode.</Alert>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
-                    <Input v-model="value" placeholder="Enter something..." style="width: 300px"></Input>
+                    <Input v-model="value" placeholder="Enter something..." style="width: 300px" />
                 </div>
                 <div slot="desc">
                     <p>Basic usage. You can use <code>v-model</code> to enable a two-way bingding on data.</p>
@@ -20,13 +20,13 @@
                 <div slot="demo">
                     <Row :gutter="8">
                         <Col span="8">
-                            <Input v-model="value1" size="large" placeholder="large size"></Input>
+                            <Input v-model="value1" size="large" placeholder="large size" />
                         </Col>
                         <Col span="8">
-                            <Input v-model="value2" placeholder="default size"></Input>
+                            <Input v-model="value2" placeholder="default size" />
                         </Col>
                         <Col span="8">
-                            <Input v-model="value3" size="small" placeholder="small size"></Input>
+                            <Input v-model="value3" size="small" placeholder="small size" />
                         </Col>
                     </Row>
                 </div>
@@ -38,7 +38,7 @@
             </Demo>
             <Demo title="Clearable">
                 <div slot="demo">
-                    <Input v-model="value14" placeholder="Enter something..." clearable style="width: 200px"></Input>
+                    <Input v-model="value14" placeholder="Enter something..." clearable style="width: 200px" />
                 </div>
                 <div slot="desc">
                     <p>Set property <code>clearable</code> to display clear button.</p>
@@ -47,7 +47,7 @@
             </Demo>
             <Demo title="Input with Icon">
                 <div slot="demo">
-                    <Input v-model="value4" icon="ios-clock-outline" placeholder="Enter something..." style="width: 200px"></Input>
+                    <Input v-model="value4" icon="ios-clock-outline" placeholder="Enter something..." style="width: 200px" />
                 </div>
                 <div slot="desc">
                     <p>Add an icon at the left of the input box by setting <code>icon</code> prop.</p>
@@ -55,14 +55,47 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.icon }}</i-code>
             </Demo>
+            <Demo title="Prefix And Suffix Icon">
+                <div slot="demo">
+                    <div>
+                        Props：
+                        <Input prefix="ios-contact" placeholder="Enter name" style="width: auto" />
+                        <Input suffix="ios-search" placeholder="Enter text" style="width: auto" />
+                    </div>
+                    <div style="margin-top: 6px">
+                        Slots：
+                        <Input placeholder="Enter name" style="width: auto">
+                            <Icon type="ios-contact" slot="prefix" />
+                        </Input>
+                        <Input placeholder="Enter text" style="width: auto">
+                            <Icon type="ios-search" slot="suffix" />
+                        </Input>
+                    </div>
+                </div>
+                <div slot="desc">
+                    <p>In addition to setting the icon, you can also set the prefix and suffix icons by setting <code>prefix</code> and <code>suffix</code> and the same named slot.</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.prefix }}</i-code>
+            </Demo>
+            <Demo title="Search">
+                <div slot="demo">
+                    <Input search placeholder="Enter something..." />
+                    <Input search enter-button placeholder="Enter something..." style="margin-top: 6px" />
+                    <Input search enter-button="Search" placeholder="Enter something..." style="margin-top: 6px" />
+                </div>
+                <div slot="desc">
+                    <p>Open the <code>search</code> property, which can be set to the search input box. </p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.search }}</i-code>
+            </Demo>
             <Demo title="Textarea">
                 <div slot="demo">
                     <Row :gutter="8">
                         <Col span="12">
-                            <Input v-model="value5" type="textarea" placeholder="Enter something..."></Input>
+                            <Input v-model="value5" type="textarea" placeholder="Enter something..." />
                         </Col>
                         <Col span="12">
-                            <Input v-model="value6" type="textarea" :rows="4" placeholder="Enter something..."></Input>
+                            <Input v-model="value6" type="textarea" :rows="4" placeholder="Enter something..." />
                         </Col>
                     </Row>
                 </div>
@@ -76,10 +109,10 @@
                 <div slot="demo">
                     <Row :gutter="8">
                         <Col span="12">
-                            <Input v-model="value7" type="textarea" :autosize="true" placeholder="Enter something..."></Input>
+                            <Input v-model="value7" type="textarea" :autosize="true" placeholder="Enter something..." />
                         </Col>
                         <Col span="12">
-                            <Input v-model="value8" type="textarea" :autosize="{minRows: 2,maxRows: 5}" placeholder="Enter something..."></Input>
+                            <Input v-model="value8" type="textarea" :autosize="{minRows: 2,maxRows: 5}" placeholder="Enter something..." />
                         </Col>
                     </Row>
                 </div>
@@ -93,10 +126,10 @@
                 <div slot="demo">
                     <Row :gutter="8">
                         <Col span="12">
-                            <Input v-model="value9" disabled placeholder="Enter something..."></Input>
+                            <Input v-model="value9" disabled placeholder="Enter something..." />
                         </Col>
                         <Col span="12">
-                            <Input v-model="value10" disabled type="textarea" placeholder="Enter something..."></Input>
+                            <Input v-model="value10" disabled type="textarea" placeholder="Enter something..." />
                         </Col>
                     </Row>
                 </div>
@@ -138,11 +171,24 @@
                 <i-code lang="html" slot="code">{{ code.addon }}</i-code>
             </Demo>
 
+            <Demo title="Format Popltip Input">
+                <div slot="demo">
+                    <Poptip trigger="focus">
+                        <Input v-model="value15" prefix="logo-usd" placeholder="Enter number" style="width: 120px" />
+                        <div slot="content">{{ formatNumber }}</div>
+                    </Poptip>
+                </div>
+                <div slot="desc">
+                    <p>You can use the Input in conjunction with Poptip component to create a Numeric Input, which can provide a good experience for extra-long content display.</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.format }}</i-code>
+            </Demo>
+
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Input props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Input props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -208,6 +254,30 @@
                             <td>-</td>
                         </tr>
                         <tr>
+                            <td>prefix</td>
+                            <td>Prefix icon.</td>
+                            <td>String</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>suffix</td>
+                            <td>Suffix icon.</td>
+                            <td>String</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>search</td>
+                            <td>Whether to display as a search input box.</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>enter-button</td>
+                            <td>Available when search is enabled, it will show a confirmation button, or you can set custom text.</td>
+                            <td>Boolean | String</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
                             <td>rows</td>
                             <td>Default row number of textarea. Only works in textarea type.</td>
                             <td>Number</td>
@@ -257,7 +327,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Input events" h3></Anchor>
+                <inAnchor title="Input events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -307,9 +377,14 @@
                             <td>Native keypress event.</td>
                             <td>event</td>
                         </tr>
+                        <tr>
+                            <td>on-search</td>
+                            <td>Available when search is turned on, triggered when hitting search or pressing enter.</td>
+                            <td>value</td>
+                        </tr>
                     </tbody>
                 </table>
-                <Anchor title="Input slot" h3></Anchor>
+                <inAnchor title="Input slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -326,9 +401,17 @@
                             <td>append</td>
                             <td>Postposed content. Only works in text type.</td>
                         </tr>
+                        <tr>
+                            <td>prefix</td>
+                            <td>Prefix icon</td>
+                        </tr>
+                        <tr>
+                            <td>suffix</td>
+                            <td>Suffix icon</td>
+                        </tr>
                     </tbody>
                 </table>
-                <Anchor title="Input methods" h3></Anchor>
+                <inAnchor title="Input methods" h3></inAnchor>
                 <table>
                     <thead>
                     <tr>
@@ -354,14 +437,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/input';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {
@@ -381,9 +464,20 @@
                 value12: '',
                 value13: '',
                 value14: 'Hello World',
+                value15: '',
                 select1: 'http',
                 select2: 'com',
                 select3: 'day'
+            }
+        },
+        computed: {
+            formatNumber () {
+                if (this.value15 === '') return 'Enter number';
+                function parseNumber(str) {
+                    const re = /(?=(?!\b)(\d{3})+$)/g;
+                    return str.replace(re, ',');
+                }
+                return parseNumber(this.value15);
             }
         },
         methods: {

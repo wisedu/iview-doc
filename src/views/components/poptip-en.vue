@@ -18,10 +18,10 @@
     <i-article>
         <article>
             <h1>Poptip</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>Poptip is simlar to Tooltip. It has many common configurations. The difference is Poptip contains more content in a card style, such as link, table and button.</p>
             <p>Poptip can also contain a confirm dialog. Different to Modal. It'll be shown beside the nearest element, so it's relatively lighter.</p>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
                     <Poptip trigger="hover" title="Title" content="content">
@@ -115,7 +115,7 @@
             <Demo title="Nest Complex Content">
                 <div slot="demo">
                     <Poptip placement="right" width="400">
-                        <Button type="ghost">Click</Button>
+                        <Button>Click</Button>
                         <div class="api" slot="content">
                             <table>
                                 <thead>
@@ -151,6 +151,17 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.slot }}</i-code>
             </Demo>
+            <Demo title="Automatic Wrap">
+                <div slot="demo">
+                    <Poptip word-wrap width="200" content="Steven Paul Jobs was an American entrepreneur and business magnate. He was the chairman, chief executive officer, and a co-founder of Apple Inc.">
+                        <Button>Long Content</Button>
+                    </Poptip>
+                </div>
+                <div slot="desc">
+                    <p>Set the property <code>word-wrap</code>, when the max value is exceeded, the text will automatically wrap and be aligned.</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.width }}</i-code>
+            </Demo>
             <Demo title="Confirm Dialog">
                 <div slot="demo">
                     <Poptip
@@ -179,8 +190,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Poptip props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Poptip props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -252,6 +263,24 @@
                             <td>-</td>
                         </tr>
                         <tr>
+                            <td>word-wrap</td>
+                            <td>When set to true, text beyond the specified width will wrap and align.</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>padding</td>
+                            <td>Custom the padding.</td>
+                            <td>String</td>
+                            <td>8px 16px</td>
+                        </tr>
+                        <tr>
+                            <td>offset</td>
+                            <td>Popover offset.</td>
+                            <td>Number</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
                             <td>options</td>
                             <td>Customize popper.js configuration items. For details, see <a href="https://popper.js.org/popper-documentation.html" target="_blank">popper.js document</a>.</td>
                             <td>Object</td>
@@ -261,7 +290,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Poptip events" h3></Anchor>
+                <inAnchor title="Poptip events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -293,7 +322,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Poptip slot" h3></Anchor>
+                <inAnchor title="Poptip slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -325,14 +354,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/poptip';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

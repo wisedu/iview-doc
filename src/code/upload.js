@@ -3,7 +3,7 @@ let code = {};
 code.select = `
 <template>
     <Upload action="//jsonplaceholder.typicode.com/posts/">
-        <Button type="ghost" icon="ios-cloud-upload-outline">Upload files</Button>
+        <Button icon="ios-cloud-upload-outline">Upload files</Button>
     </Upload>
 </template>
 <script>
@@ -18,7 +18,7 @@ code.multiple = `
     <Upload
         multiple
         action="//jsonplaceholder.typicode.com/posts/">
-        <Button type="ghost" icon="ios-cloud-upload-outline">Upload files</Button>
+        <Button icon="ios-cloud-upload-outline">Upload files</Button>
     </Upload>
 </template>
 <script>
@@ -34,7 +34,7 @@ code.manual = `
         <Upload
             :before-upload="handleUpload"
             action="//jsonplaceholder.typicode.com/posts/">
-            <Button type="ghost" icon="ios-cloud-upload-outline">Select the file to upload</Button>
+            <Button icon="ios-cloud-upload-outline">Select the file to upload</Button>
         </Upload>
         <div v-if="file !== null">Upload file: {{ file.name }} <Button type="text" @click="upload" :loading="loadingStatus">{{ loadingStatus ? 'Uploading' : 'Click to upload' }}</Button></div>
     </div>
@@ -113,7 +113,7 @@ code.list = `
         action="//jsonplaceholder.typicode.com/posts/"
         style="display: inline-block;width:58px;">
         <div style="width: 58px;height:58px;line-height: 58px;">
-            <Icon type="camera" size="20"></Icon>
+            <Icon type="ios-camera" size="20"></Icon>
         </div>
     </Upload>
     <Modal title="View Image" v-model="visible">

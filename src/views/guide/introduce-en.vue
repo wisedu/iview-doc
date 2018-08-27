@@ -3,18 +3,20 @@
         <article>
             <h1>Introduction</h1>
             <p>iView is a set of UI components and widgets built on Vue.js.</p>
-            <Anchor title="Features" h2></Anchor>
+            <inAnchor title="Features" h2></inAnchor>
             <ul>
                 <li>Dozens of useful and beautiful components.</li>
                 <li>Friendly API. It's made for people with all skill levels.</li>
                 <li>Extensive documentation.</li>
                 <li>Customized theme.</li>
             </ul>
-            <Anchor title="Who's using iView" h2></Anchor>
+            <inAnchor title="Who's using iView" h2></inAnchor>
             <ul>
                 <li><a href="http://www.talkingdata.com/" target="_blank">TalkingData</a></li>
                 <li><a href="http://www.alibaba.com/" target="_blank">Alibaba</a></li>
+                <li><a href="https://www.baidu.com/" target="_blank">Baidu</a></li>
                 <li><a href="https://www.tencent.com/" target="_blank">Tencent</a></li>
+                <li><a href="https://www.toutiao.com/" target="_blank">Toutiao</a></li>
                 <li><a href="http://www.jd.com/" target="_blank">JD</a></li>
                 <li><a href="http://www.didichuxing.com/" target="_blank">DiDi</a></li>
                 <li><a href="http://www.meituan.com/" target="_blank">MeiTuan</a></li>
@@ -24,17 +26,17 @@
             <blockquote>
                 If your company or products use iView, welcome to click <a href="https://github.com/iview/iview/issues/2143" target="_blank">here</a> to leave a message.
             </blockquote>
-            <Anchor title="Example" h2></Anchor>
+            <inAnchor title="Example" h2></inAnchor>
             <i-code lang="html" bg>{{ code.introduce.demo }}</i-code>
             <p>Result</p>
             <Slider v-model="value" range></Slider>
-            <Anchor title="Version" h2></Anchor>
+            <inAnchor title="Version" h2></inAnchor>
             <p>
                 <a href="https://www.npmjs.com/package/iview" target="_blank">
                     <img src="https://img.shields.io/npm/v/iview.svg?style=flat-square">
                 </a>
             </p>
-            <Anchor title="Compatibility" h2></Anchor>
+            <inAnchor title="Compatibility" h2></inAnchor>
             <ul>
                 <li>Support Vue.js 2.x</li>
                 <li>Support Vue.js 1.x <a href="http://v1.iviewui.com">Visit 1.0 doc</a></li>
@@ -43,7 +45,7 @@
                 <li><a href="http://electron.atom.io/" target="_blank">Electron</a></li>
                 <li>iView does not support IE8 or below since <a href="https://vuejs.org/v2/guide/reactivity.html" target="_blank">Vue.js</a> is using Object.defineProperty which do not be supported by these browsers to track changes.</li>
             </ul>
-            <Anchor title="Related Links" h2></Anchor>
+            <inAnchor title="Related Links" h2></inAnchor>
             <ul>
                 <li>
                     <a href="https://vuejs.org/" target="_blank">Vue.js</a>
@@ -58,7 +60,7 @@
                     <a href="https://git.oschina.net/icarusion/iview" target="_blank">码云</a>
                 </li>
             </ul>
-            <Anchor title="License" h2></Anchor>
+            <inAnchor title="License" h2></inAnchor>
             <p>iView is released under <a href="https://github.com/iview/iview/blob/2.0/LICENSE" target="_blank">MIT license</a></p>
         </article>
     </i-article>
@@ -67,13 +69,13 @@
     import iArticle from '../../components/article.vue';
     import iCode from 'iCode';
     import Code from '../../code/guide';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
-            Anchor
+            inAnchor
         },
         data () {
             return {

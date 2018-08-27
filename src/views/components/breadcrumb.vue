@@ -8,9 +8,9 @@
     <i-article>
         <article>
             <h1>Breadcrumb 面包屑</h1>
-            <Anchor title="概述" h2></Anchor>
+            <inAnchor title="概述" h2></inAnchor>
             <p>显示网站的层级结构，告知用户当前所在位置，以及在需要向上级导航时使用。</p>
-            <Anchor title="代码示例" h2></Anchor>
+            <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="基础用法">
                 <div slot="demo">
                     <Breadcrumb>
@@ -31,10 +31,10 @@
                             <Icon type="ios-home-outline"></Icon> Home
                         </BreadcrumbItem>
                         <BreadcrumbItem to="/components/breadcrumb">
-                            <Icon type="social-buffer-outline"></Icon> Components
+                            <Icon type="logo-buffer"></Icon> Components
                         </BreadcrumbItem>
                         <BreadcrumbItem>
-                            <Icon type="pound"></Icon> Breadcrumb
+                            <Icon type="ios-cafe"></Icon> Breadcrumb
                         </BreadcrumbItem>
                     </Breadcrumb>
                 </div>
@@ -65,8 +65,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Breadcrumb props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Breadcrumb props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -85,7 +85,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="BreadcrumbItem props" h3></Anchor>
+                <inAnchor title="BreadcrumbItem props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -98,13 +98,7 @@
                     <tbody>
                         <tr>
                             <td>to</td>
-                            <td>链接，不传则没有链接</td>
-                            <td>String | Object</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>href</td>
-                            <td>同 to，未来将废弃</td>
+                            <td>链接，不传则没有链接，支持 vue-router 对象</td>
                             <td>String | Object</td>
                             <td>-</td>
                         </tr>
@@ -113,6 +107,12 @@
                             <td>路由跳转时，开启 replace 将不会向 history 添加新记录</td>
                             <td>Boolean</td>
                             <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>target</td>
+                            <td>相当于 a 链接的 target 属性</td>
+                            <td>String</td>
+                            <td>_self</td>
                         </tr>
                     </tbody>
                 </table>
@@ -125,14 +125,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/breadcrumb';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

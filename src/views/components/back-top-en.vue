@@ -11,9 +11,9 @@
     <i-article>
         <article>
             <h1>BackTop</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>Backtop can be used when page content is very long and a shortcut is needed to go back to the top fluently. Usually placed at the right bottom of the page.</p>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
                     <p>Scroll down. The gray button shows the default BackTop style.</p>
@@ -39,8 +39,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="BackTop props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="BackTop props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -77,7 +77,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="BackTop events" h3></Anchor>
+                <inAnchor title="BackTop events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -103,14 +103,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/back-top';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

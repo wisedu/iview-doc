@@ -2,9 +2,9 @@
     <i-article>
         <article>
             <h1>Transfer 穿梭框</h1>
-            <Anchor title="概述" h2></Anchor>
+            <inAnchor title="概述" h2></inAnchor>
             <p>双栏穿梭选择框，常用于将多个项目从一边移动到另一边。</p>
-            <Anchor title="说明" h2></Anchor>
+            <inAnchor title="说明" h2></inAnchor>
             <p>Transfer 组件主要基于以下四个 API 来使用：</p>
             <ul>
                 <li>
@@ -22,7 +22,7 @@
                 <p>示例：</p>
                 <i-code bg>{{ code.demo }}</i-code>
             </ul>
-            <Anchor title="代码示例" h2></Anchor>
+            <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="基础用法">
                 <div slot="demo">
                     <Transfer
@@ -60,7 +60,7 @@
                         filterable
                         @on-change="handleChange3">
                         <div :style="{float: 'right', margin: '5px'}">
-                            <Button type="ghost" size="small" @click="reloadMockData">Refresh</Button>
+                            <Button size="small" @click="reloadMockData">Refresh</Button>
                         </div>
                     </Transfer>
                 </div>
@@ -86,8 +86,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Transfer props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Transfer props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -166,7 +166,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Transfer events" h3></Anchor>
+                <inAnchor title="Transfer events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -188,7 +188,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Transfer slot" h3></Anchor>
+                <inAnchor title="Transfer slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -212,14 +212,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/transfer';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

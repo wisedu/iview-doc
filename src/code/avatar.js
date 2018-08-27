@@ -4,14 +4,14 @@ code.base = `
 <template>
     <div>
         <div class="demo-avatar">
-            <Avatar icon="person" size="large" />
-            <Avatar icon="person" />
-            <Avatar icon="person" size="small" />
+            <Avatar icon="ios-person" size="large" />
+            <Avatar icon="ios-person" />
+            <Avatar icon="ios-person" size="small" />
         </div>
         <div class="demo-avatar">
-            <Avatar shape="square" icon="person" size="large" />
-            <Avatar shape="square" icon="person" />
-            <Avatar shape="square" icon="person" size="small" />
+            <Avatar shape="square" icon="ios-person" size="large" />
+            <Avatar shape="square" icon="ios-person" />
+            <Avatar shape="square" icon="ios-person" size="small" />
         </div>
     </div>
 </template>
@@ -25,12 +25,12 @@ code.base = `
 code.type = `
 <template>
     <div class="demo-avatar">
-        <Avatar icon="person" />
+        <Avatar icon="ios-person" />
         <Avatar>U</Avatar>
         <Avatar>USER</Avatar>
         <Avatar src="https://i.loli.net/2017/08/21/599a521472424.jpg" />
         <Avatar style="color: #f56a00;background-color: #fde3cf">U</Avatar>
-        <Avatar style="background-color: #87d068" icon="person" />
+        <Avatar style="background-color: #87d068" icon="ios-person" />
     </div>
 </template>
 <script>
@@ -43,11 +43,11 @@ code.type = `
 code.badge = `
 <template>
     <div class="demo-avatar-badge">
-        <Badge count="1">
-            <Avatar shape="square" icon="person" />
+        <Badge :count="1">
+            <Avatar shape="square" icon="ios-person" />
         </Badge>
         <Badge dot>
-            <Avatar shape="square" icon="person" />
+            <Avatar shape="square" icon="ios-person" />
         </Badge>
     </div>
 </template>

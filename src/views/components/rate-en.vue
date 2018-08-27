@@ -2,12 +2,12 @@
     <i-article>
         <article>
             <h1>Rate</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>A quick rating operation on something or show evaluation.</p>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
-                    <Rate v-model="value"></Rate>
+                    <Rate v-model="value" />
                 </div>
                 <div slot="desc">
                     <p>The simplest usage.</p>
@@ -16,7 +16,7 @@
             </Demo>
             <Demo title="Half star">
                 <div slot="demo">
-                    <Rate allow-half v-model="valueHalf"></Rate>
+                    <Rate allow-half v-model="valueHalf" />
                 </div>
                 <div slot="desc">
                     <p>Set the attribute <code>allow-half</code> to select the half star.</p>
@@ -27,7 +27,7 @@
                 <div slot="demo">
                     <Row>
                         <Col span="12">
-                            <Rate show-text v-model="valueText"></Rate>
+                            <Rate show-text v-model="valueText" />
                         </Col>
                         <Col span="12">
                             <Rate show-text allow-half v-model="valueCustomText">
@@ -44,19 +44,42 @@
             </Demo>
             <Demo title="Read only">
                 <div slot="demo">
-                    <Rate disabled v-model="valueDisabled"></Rate>
+                    <Rate disabled v-model="valueDisabled" />
                 </div>
                 <div slot="desc">
                     <p>Set the property <code>disabled</code> to open read-only mode, unable to interact.</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
             </Demo>
+            <Demo title="Clearable">
+                <div slot="demo">
+                    <Rate clearable v-model="value1" /> clearable: true
+                    <br>
+                    <Rate v-model="value2" /> clearable: false
+                </div>
+                <div slot="desc">
+                    <p>Support set allow to clear star when click again.</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.clearable }}</i-code>
+            </Demo>
+            <Demo title="Character and Icon">
+                <div slot="demo">
+                    <Rate v-model="value3" character="A" />
+                    <Rate v-model="value4" character="好" />
+                    <Rate v-model="value5" icon="ios-heart" />
+                </div>
+                <div slot="desc">
+                    <p>Set the <code>character</code> property to customize the character.</p>
+                    <p>You can customize the icon by setting the <code>icon</code> or <code>custom-icon</code> property.</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+            </Demo>
 
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Rate props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Rate props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -103,9 +126,27 @@
                             <td>Boolean</td>
                             <td>false</td>
                         </tr>
+                        <tr>
+                            <td>character</td>
+                            <td>Custom character.</td>
+                            <td>String</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>icon</td>
+                            <td>Use icon.</td>
+                            <td>String</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>custom-icon</td>
+                            <td>Use custom icon.</td>
+                            <td>String</td>
+                            <td>-</td>
+                        </tr>
                     </tbody>
                 </table>
-                <Anchor title="Rate events" h3></Anchor>
+                <inAnchor title="Rate events" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -131,14 +172,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/rate';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {
@@ -147,7 +188,12 @@
                 valueHalf: 2.5,
                 valueText: 3,
                 valueCustomText: 3.8,
-                valueDisabled: 2
+                valueDisabled: 2,
+                value1: 3,
+                value2: 3,
+                value3: 3,
+                value4: 3,
+                value5: 3,
             }
         },
         methods: {

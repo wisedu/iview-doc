@@ -2,7 +2,7 @@ let code = {};
 
 code.base = `
 <template>
-    <Input v-model="value" placeholder="Enter something..." style="width: 300px"></Input>
+    <Input v-model="value" placeholder="Enter something..." style="width: 300px" />
 </template>
 <script>
     export default {
@@ -17,11 +17,11 @@ code.base = `
 
 code.size = `
 <template>
-    <Input v-model="value1" size="large" placeholder="large size"></Input>
+    <Input v-model="value1" size="large" placeholder="large size" />
     <br>
-    <Input v-model="value2" placeholder="default size"></Input>
+    <Input v-model="value2" placeholder="default size" />
     <br>
-    <Input v-model="value3" size="small" placeholder="small size"></Input>
+    <Input v-model="value3" size="small" placeholder="small size" />
 </template>
 <script>
     export default {
@@ -38,7 +38,7 @@ code.size = `
 
 code.clearable = `
 <template>
-    <Input v-model="value14" placeholder="Enter something..." clearable style="width: 200px"></Input>
+    <Input v-model="value14" placeholder="Enter something..." clearable style="width: 200px" />
 </template>
 <script>
     export default {
@@ -53,7 +53,7 @@ code.clearable = `
 
 code.icon = `
 <template>
-    <Input v-model="value4" icon="ios-clock-outline" placeholder="Enter something..." style="width: 200px"></Input>
+    <Input v-model="value4" icon="ios-clock-outline" placeholder="Enter something..." style="width: 200px" />
 </template>
 <script>
     export default {
@@ -68,8 +68,8 @@ code.icon = `
 
 code.textarea = `
 <template>
-    <Input v-model="value5" type="textarea" placeholder="Enter something..."></Input>
-    <Input v-model="value6" type="textarea" :rows="4" placeholder="Enter something..."></Input>
+    <Input v-model="value5" type="textarea" placeholder="Enter something..." />
+    <Input v-model="value6" type="textarea" :rows="4" placeholder="Enter something..." />
 </template>
 <script>
     export default {
@@ -85,8 +85,8 @@ code.textarea = `
 
 code.autosize = `
 <template>
-    <Input v-model="value7" type="textarea" :autosize="true" placeholder="Enter something..."></Input>
-    <Input v-model="value8" type="textarea" :autosize="{minRows: 2,maxRows: 5}" placeholder="Enter something..."></Input>
+    <Input v-model="value7" type="textarea" :autosize="true" placeholder="Enter something..." />
+    <Input v-model="value8" type="textarea" :autosize="{minRows: 2,maxRows: 5}" placeholder="Enter something..." />
 </template>
 <script>
     export default {
@@ -102,8 +102,8 @@ code.autosize = `
 
 code.disabled = `
 <template>
-    <Input v-model="value9" disabled placeholder="Enter something..."></Input>
-    <Input v-model="value10" disabled type="textarea" placeholder="Enter something..."></Input>
+    <Input v-model="value9" disabled placeholder="Enter something..." />
+    <Input v-model="value10" disabled type="textarea" placeholder="Enter something..." />
 </template>
 <script>
     export default {
@@ -154,6 +154,73 @@ code.addon = `
                 select1: 'http',
                 select2: 'com',
                 select3: 'day'
+            }
+        }
+    }
+</script>
+`;
+
+code.prefix = `
+<template>
+    <div>
+        Props：
+        <Input prefix="ios-contact" placeholder="Enter name" style="width: auto" />
+        <Input suffix="ios-search" placeholder="Enter text" style="width: auto" />
+    </div>
+    <div style="margin-top: 6px">
+        Slots：
+        <Input placeholder="Enter name" style="width: auto">
+            <Icon type="ios-contact" slot="prefix" />
+        </Input>
+        <Input placeholder="Enter text" style="width: auto">
+            <Icon type="ios-search" slot="suffix" />
+        </Input>
+    </div>
+</template>
+<script>
+    export default {
+        
+    }
+</script>
+`;
+
+code.search = `
+<template>
+    <div>
+        <Input search placeholder="Enter something..." />
+        <Input search enter-button placeholder="Enter something..." />
+        <Input search enter-button="Search" placeholder="Enter something..." />
+    </div>
+</template>
+<script>
+    export default {
+        
+    }
+</script>
+`;
+
+code.format = `
+<template>
+    <Poptip trigger="focus">
+        <Input v-model="value15" prefix="logo-usd" placeholder="Enter number" style="width: 120px" />
+        <div slot="content">{{ formatNumber }}</div>
+    </Poptip>
+</template>
+<script>
+    export default {
+        data () {
+            return {
+                value15: ''
+            }
+        },
+        computed: {
+            formatNumber () {
+                if (this.value15 === '') return 'Enter number';
+                function parseNumber(str) {
+                    const re = /(?=(?!\b)(\d{3})+$)/g;
+                    return str.replace(re, ',');
+                }
+                return parseNumber(this.value15);
             }
         }
     }

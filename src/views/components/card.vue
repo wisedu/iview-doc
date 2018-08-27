@@ -26,9 +26,9 @@
     <i-article>
         <article>
             <h1>Card 卡片</h1>
-            <Anchor title="概述" h2></Anchor>
+            <inAnchor title="概述" h2></inAnchor>
             <p>基础容器，用来显示文字、列表、图文等内容，也可以配合其它组件一起使用。</p>
-            <Anchor title="代码示例" h2></Anchor>
+            <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="基本用法">
                 <div slot="demo">
                     <Card style="width:350px">
@@ -142,8 +142,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Card props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Card props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -192,7 +192,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Card slot" h3></Anchor>
+                <inAnchor title="Card slot" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -224,14 +224,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/card';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

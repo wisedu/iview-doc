@@ -52,7 +52,7 @@
                     <i-col span="4">
                         <div class="live-link">
                             <i-button type="primary" @click="handleClick(index)">
-                                <div><Icon type="android-arrow-dropright-circle" size="20"></Icon></div>
+                                <div><Icon type="md-arrow-dropright-circle" size="20"></Icon></div>
                                 <div v-if="item.time === 'finish'">查看教程</div>
                                 <div v-else>报名参加</div>
                             </i-button>
@@ -65,13 +65,13 @@
 </template>
 <script>
     import iArticle from '../components/article.vue';
-    import Anchor from '../components/anchor.vue';
+    import inAnchor from '../components/anchor.vue';
     import Config from '../config/config';
 
     export default {
         components: {
             iArticle,
-            Anchor
+            inAnchor
         },
         data () {
             return {

@@ -19,13 +19,13 @@
 <script>
     import iArticle from '../../components/article.vue';
     import iCode from 'iCode';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
-            Anchor
+            inAnchor
         },
         data () {
             return {

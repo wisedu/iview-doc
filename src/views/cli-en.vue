@@ -18,14 +18,14 @@
                         <div class="cli-download">
                             <Row :gutter="16">
                                 <Col span="12">
-                                    <Button type="ghost" size="large" long icon="social-apple" @click="handleClick('mac')">Download for Mac</Button>
+                                    <Button size="large" long icon="logo-apple" @click="handleClick('mac')">Download for Mac</Button>
                                 </Col>
                                 <Col span="12">
                                     <Poptip trigger="hover" title="Select bit">
-                                        <Button type="ghost" size="large" long icon="social-windows">Download for Windows</Button>
+                                        <Button size="large" long icon="logo-windows">Download for Windows</Button>
                                         <div slot="content">
-                                            <Button type="ghost" icon="social-windows" @click="handleClick('windows', 64)">64 bit</Button>
-                                            <Button type="ghost" icon="social-windows" @click="handleClick('windows', 32)">32 bit</Button>
+                                            <Button icon="logo-windows" @click="handleClick('windows', 64)">64 bit</Button>
+                                            <Button icon="logo-windows" @click="handleClick('windows', 32)">32 bit</Button>
                                         </div>
                                     </Poptip>
                                 </Col>
@@ -33,15 +33,15 @@
                             <Row :gutter="16" style="margin-top: 16px;">
                                 <Col span="12">
                                     <Poptip trigger="hover" title="Select bit">
-                                        <Button type="ghost" size="large" long icon="social-tux">Download for Linux</Button>
+                                        <Button size="large" long icon="logo-tux">Download for Linux</Button>
                                         <div slot="content">
-                                            <Button type="ghost" icon="social-tux" @click="handleClick('linux', 64)">64 bit</Button>
-                                            <Button type="ghost" icon="social-tux" @click="handleClick('linux', 32)">32 bit</Button>
+                                            <Button icon="logo-tux" @click="handleClick('linux', 64)">64 bit</Button>
+                                            <Button icon="logo-tux" @click="handleClick('linux', 32)">32 bit</Button>
                                         </div>
                                     </Poptip>
                                 </Col>
                                 <Col span="12">
-                                    <Button type="ghost" size="large" long icon="social-github" @click="handleClick('github')">GitHub</Button>
+                                    <Button size="large" long icon="logo-github" @click="handleClick('github')">GitHub</Button>
                                 </Col>
                             </Row>
                         </div>

@@ -8,9 +8,9 @@
     <i-article>
         <article>
             <h1>Breadcrumb</h1>
-            <Anchor title="Brief Introduction" h2></Anchor>
+            <inAnchor title="Brief Introduction" h2></inAnchor>
             <p>Show the hierarchical structure of the website, inform the user of current location, and provide a navigation to upper nodes.</p>
-            <Anchor title="Examples" h2></Anchor>
+            <inAnchor title="Examples" h2></inAnchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
                     <Breadcrumb>
@@ -31,10 +31,10 @@
                             <Icon type="ios-home-outline"></Icon> Home
                         </BreadcrumbItem>
                         <BreadcrumbItem to="/components/breadcrumb">
-                            <Icon type="social-buffer-outline"></Icon> Components
+                            <Icon type="logo-buffer"></Icon> Components
                         </BreadcrumbItem>
                         <BreadcrumbItem>
-                            <Icon type="pound"></Icon> Breadcrumb
+                            <Icon type="ios-cafe"></Icon> Breadcrumb
                         </BreadcrumbItem>
                     </Breadcrumb>
                 </div>
@@ -65,8 +65,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Breadcrumb props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Breadcrumb props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -85,7 +85,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="BreadcrumbItem props" h3></Anchor>
+                <inAnchor title="BreadcrumbItem props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -103,16 +103,16 @@
                             <td>-</td>
                         </tr>
                         <tr>
-                            <td>href</td>
-                            <td>Same as to, and will be abandoned.</td>
-                            <td>String | Object</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
                             <td>replace</td>
                             <td>set <code>true</code>, the navigation will not leave a history record</td>
                             <td>Boolean</td>
                             <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>target</td>
+                            <td>Equivalent to the a target of the link.</td>
+                            <td>String</td>
+                            <td>_self</td>
                         </tr>
                     </tbody>
                 </table>
@@ -125,14 +125,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/breadcrumb';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

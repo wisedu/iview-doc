@@ -2,9 +2,9 @@
     <i-article>
         <article>
             <h1>Steps 步骤条</h1>
-            <Anchor title="概述" h2></Anchor>
+            <inAnchor title="概述" h2></inAnchor>
             <p>拆分某项流程的步骤，引导用户按流程完成任务。</p>
-            <Anchor title="代码示例" h2></Anchor>
+            <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="基础用法" vertical>
                 <div slot="demo">
                     <Steps :current="1">
@@ -36,9 +36,9 @@
             <Demo title="带图标的步骤条" vertical>
                 <div slot="demo">
                     <Steps :current="1">
-                        <Step title="注册" icon="person-add"></Step>
-                        <Step title="上传头像" icon="camera"></Step>
-                        <Step title="验证邮箱" icon="email"></Step>
+                        <Step title="注册" icon="ios-person-add"></Step>
+                        <Step title="上传头像" icon="ios-camera"></Step>
+                        <Step title="验证邮箱" icon="ios-mail"></Step>
                     </Steps>
                 </div>
                 <div slot="desc">
@@ -96,8 +96,8 @@
             <ad></ad>
 
             <div class="api">
-                <Anchor title="API" h2></Anchor>
-                <Anchor title="Steps props" h3></Anchor>
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="Steps props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -134,7 +134,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Step props" h3></Anchor>
+                <inAnchor title="Step props" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -180,14 +180,14 @@
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/steps';
-    import Anchor from '../../components/anchor.vue';
+    import inAnchor from '../../components/anchor.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            Anchor
+            inAnchor
         },
         data () {
             return {

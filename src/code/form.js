@@ -10,7 +10,7 @@ code.inline = `
         </FormItem>
         <FormItem prop="password">
             <Input type="password" v-model="formInline.password" placeholder="Password">
-                <Icon type="ios-locked-outline" slot="prepend"></Icon>
+                <Icon type="ios-lock-outline" slot="prepend"></Icon>
             </Input>
         </FormItem>
         <FormItem>
@@ -104,7 +104,7 @@ code.item = `
         </FormItem>
         <FormItem>
             <Button type="primary">Submit</Button>
-            <Button type="ghost" style="margin-left: 8px">Cancel</Button>
+            <Button style="margin-left: 8px">Cancel</Button>
         </FormItem>
     </Form>
 </template>
@@ -240,7 +240,7 @@ code.validate = `
         </FormItem>
         <FormItem>
             <Button type="primary" @click="handleSubmit('formValidate')">Submit</Button>
-            <Button type="ghost" @click="handleReset('formValidate')" style="margin-left: 8px">Reset</Button>
+            <Button @click="handleReset('formValidate')" style="margin-left: 8px">Reset</Button>
         </FormItem>
     </Form>
 </template>
@@ -321,7 +321,7 @@ code.custom = `
         </FormItem>
         <FormItem>
             <Button type="primary" @click="handleSubmit('formCustom')">Submit</Button>
-            <Button type="ghost" @click="handleReset('formCustom')" style="margin-left: 8px">Reset</Button>
+            <Button @click="handleReset('formCustom')" style="margin-left: 8px">Reset</Button>
         </FormItem>
     </Form>
 </template>
@@ -418,20 +418,20 @@ code.dynamic = `
                     <Input type="text" v-model="item.value" placeholder="Enter something..."></Input>
                 </Col>
                 <Col span="4" offset="1">
-                    <Button type="ghost" @click="handleRemove(index)">Delete</Button>
+                    <Button @click="handleRemove(index)">Delete</Button>
                 </Col>
             </Row>
         </FormItem>
         <FormItem>
             <Row>
                 <Col span="12">
-                    <Button type="dashed" long @click="handleAdd" icon="plus-round">Add item</Button>
+                    <Button type="dashed" long @click="handleAdd" icon="md-add">Add item</Button>
                 </Col>
             </Row>
         </FormItem>
         <FormItem>
             <Button type="primary" @click="handleSubmit('formDynamic')">Submit</Button>
-            <Button type="ghost" @click="handleReset('formDynamic')" style="margin-left: 8px">Reset</Button>
+            <Button @click="handleReset('formDynamic')" style="margin-left: 8px">Reset</Button>
         </FormItem>
     </Form>
 </template>
