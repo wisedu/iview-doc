@@ -247,13 +247,19 @@
     height: 40px;
     cursor: pointer;
     text-align: center;
-    background: #fff;
-    color: rgba(0,0,0,.6);
+    background: #f50;
+    color: #fff;
     border-radius: 2px;
     box-shadow: 0 1px 3px rgba(0,0,0,.2);
     position: fixed;
     bottom: 30px;
-    right: 80px;
+    right: 85px;
+    transition: opacity .2s ease-in-out;
+
+    &:hover{
+        color: #fff;
+        opacity: 0.8;
+    }
 }
 
 // 太小时，隐藏搜索

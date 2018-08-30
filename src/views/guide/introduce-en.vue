@@ -22,6 +22,8 @@
                 <li><a href="http://www.meituan.com/" target="_blank">MeiTuan</a></li>
                 <li><a href="http://www.sina.com.cn/" target="_blank">Sina</a></li>
                 <li><a href="https://www.lenovo.com.cn/" target="_blank">Lenovo</a></li>
+                <li><a href="http://www.iflytek.com/" target="_blank">iFLYTEK</a></li>
+                <li><a href="https://www.ly.com/" target="_blank">LY</a></li>
             </ul>
             <blockquote>
                 If your company or products use iView, welcome to click <a href="https://github.com/iview/iview/issues/2143" target="_blank">here</a> to leave a message.

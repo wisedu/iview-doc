@@ -23,6 +23,8 @@
                 <li><a href="http://www.meituan.com/" target="_blank">美团</a></li>
                 <li><a href="http://www.sina.com.cn/" target="_blank">新浪</a></li>
                 <li><a href="https://www.lenovo.com.cn/" target="_blank">联想</a></li>
+                <li><a href="http://www.iflytek.com/" target="_blank">科大讯飞</a></li>
+                <li><a href="https://www.ly.com/" target="_blank">同程艺龙</a></li>
             </ul>
             <blockquote>
                 如果你的公司和产品使用了iView，欢迎到 <a href="https://github.com/iview/iview/issues/2143" target="_blank">这里</a> 留言。

@@ -44,48 +44,9 @@
 
                             <template v-if="lang === 'zh-CN'">
                                 <div style="margin-top: 20px"></div>
-                                <!--<a v-if="ad_index === 1" href="https://cn.udacity.com/course/intro-to-python-nanodegree-foundation&#45;&#45;nd000-cn-python/?utm_source=iviewui&utm_medium=banner&utm_campaign=python" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">-->
-                                    <!--<img src="../images/aside-udacity-1.jpg">-->
-                                <!--</a>-->
-                                <!--<a v-if="ad_index === 2" href="https://cn.udacity.com/course/react-nanodegree&#45;&#45;nd019-cn/?utm_source=iviewui&utm_medium=banner&utm_campaign=react" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">-->
-                                    <!--<img src="../images/aside-udacity-2.jpg">-->
-                                <!--</a>-->
-                                <!--<a v-if="ad_index === 3" href="https://cn.udacity.com/fend/?utm_source=iviewui&utm_medium=banner&utm_campaign=fend" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">-->
-                                    <!--<img src="../images/aside-udacity-3.jpg">-->
-                                <!--</a>-->
-                                <!--<a v-if="ad_index === 1" href="https://cn.udacity.com/course/wechat-mini-program&#45;&#45;nd666-cn-1/?utm_source=iviewui&utm_medium=banner&utm_campaign=wmpnd" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">-->
-                                    <!--<img src="../images/aside-udacity-6.jpg">-->
-                                <!--</a>-->
-                                <!--<a v-if="ad_index === 2" href="https://cn.udacity.com/fend/?utm_source=iviewui&utm_medium=banner&utm_campaign=fend" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">-->
-                                    <!--<img src="../images/aside-udacity-5.jpg">-->
-                                <!--</a>-->
-                                <a v-if="ad_index === 1" href="http://t.cn/R3dhfIj" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">
-                                    <img src="../images/aside-u-1.png">
+                                <a v-for="item in app.adList2" :href="item.link" :key="item.id" @click="handleAsideAd(item.id)" target="_blank" class="wrapper-aside wrapper-aside-no-padding">
+                                    <img :src="item.img">
                                 </a>
-                                <a v-if="ad_index === 2" href="http://t.cn/R3dhfIj" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">
-                                    <img src="../images/aside-u-2.png">
-                                </a>
-                                <a v-if="ad_index === 3" href="http://t.cn/R3dhfIj" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">
-                                    <img src="../images/aside-u-3.png">
-                                </a>
-                                <a v-if="ad_index === 4" href="http://t.cn/R3dhfIj" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">
-                                    <img src="../images/aside-u-4.png">
-                                </a>
-                                <a v-if="ad_index === 5" href="http://t.cn/R3dhfIj" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">
-                                    <img src="../images/aside-u-5.png">
-                                </a>
-                                <a v-if="ad_index === 6" href="https://cn.udacity.com/fend/?utm_source=iviewui&utm_medium=banner&utm_campaign=fend" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">
-                                    <img src="../images/aside-udacity-5.jpg">
-                                </a>
-                                <a href="https://www.bmqb.com/a/jobs?from=iview" target="_blank" @click="handleAsideAd('aside-bmqb')" class="wrapper-aside wrapper-aside-no-padding">
-                                    <img src="../images/ad-bmqb.png">
-                                </a>
-                                <!--<a href="https://segmentfault.com/ls/1650000011074057" target="_blank" @click="handleAsideAd('aside-iview-live')" class="wrapper-aside">-->
-                                    <!--<img src="../images/aside-iview-live.png">-->
-                                <!--</a>-->
-                                <!--<div class="wrapper-aside" @click="handleAsideAd('aside-qqgroup', true)">-->
-                                    <!--<img src="../images/aside-qqgroup.png">-->
-                                <!--</div>-->
                             </template>
                         </Affix>
                     </i-col>
@@ -242,10 +203,10 @@
             </div>
         </Modal>
         <!-- todo 提问 -->
-        <!--<div class="ask-question" @click="ask = true" v-if="lang === 'zh-CN'">-->
-            <!--<Icon type="ios-people" size="20"></Icon>-->
-            <!--<p>QQ群</p>-->
-        <!--</div>-->
+        <a href="https://dev.iviewui.com/issues" target="_blank" class="ask-question" v-if="lang === 'zh-CN'">
+            <Icon type="ios-help-circle" size="14" />
+            <p>提问</p>
+        </a>
     </div>
 </template>
 <script>

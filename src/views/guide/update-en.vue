@@ -24,6 +24,29 @@
         <h1>Change Log</h1>
         <article class="doc-update">
             <Timeline pending>
+                <TimelineItem>
+                    <inAnchor title="3.0.1" h2></inAnchor>
+                    <p>
+                        <code>2018-08-22</code>
+                    </p>
+                    <ul>
+                        <li>Select add new placement: <code>top-start</code>, <code>bottom-start</code>, <code>top-end</code>, <code>bottom-end</code>, and change the default value to <code>bottom-start</code>.</li>
+                        <li>Fixed bug when importing iView on demand in 3.0 version. <issue id="4165"></issue></li>
+                        <li>Fixed bug that DatePicker selected on a partial time zone. <issue id="4250"></issue></li>
+                        <li>Fixed bug that the shortcuts of DatePicker format error. <issue id="4127"></issue></li>
+                        <li>Fixed bug that DatePicker with multiple mode, cross-month selection will relocate to the first date location. <issue id="4249"></issue></li>
+                        <li>Fixed bug when Select Option is too long, the style is wrong. <issue id="4194"></issue></li>
+                        <li>Fixed bug that Select can use <code>clearable</code> in disabled mode. <issue id="3924"></issue></li>
+                        <li>Fixed bug that FormItem dynamic setting <code>rules</code> sometimes does not work. <issue id="4214"></issue></li>
+                        <li>Fixed bug that FormItem could not set <code>label-width</code> to 0.</li>
+                        <li>Fixed bug that RadioGroup can't manually set data sometimes. <issue id="4114"></issue></li>
+                        <li>Fixed bug that Input with number mode, when delete the value, it will be set to 0. <issue id="4048"></issue></li>
+                        <li>Fixed bug when Tabs remove a tab, it will not display the correct label content sometimes. <issue id="4052"></issue></li>
+                        <li>Optimize Transfer that you can only select all search result items. <issue id="4151"></issue></li>
+                        <li>Optimize the style of the Tree. <issue id="4162"></issue></li>
+                        <li>Progress add component name. <issue id="4036"></issue></li>
+                    </ul>
+                </TimelineItem>
                 <Timeline-item color="green">
                     <Icon type="ios-trophy" size="18" slot="dot"></Icon>
                     <inAnchor title="3.0.0 Battleheart" h2></inAnchor>

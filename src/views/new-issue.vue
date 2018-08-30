@@ -57,7 +57,7 @@
             <div class="issue-menu-main">
                 <Avatar :src="iViewLogo" size="large" shape="square"/>
                 <h1>Issue Helper</h1>
-                <Button type="ghost" size="small" @click="handleChangeLang">
+                <Button size="small" @click="handleChangeLang">
                     <template v-if="lang === 'zh-CN'">EN</template>
                     <template v-else>中文</template>
                 </Button>
@@ -78,6 +78,7 @@
                         对于使用中遇到的问题，请使用以下资源：
                     </p>
                     <ul>
+                        <li>到 <a href="https://dev.iviewui.com/" target="_blank">iView Developer 开发者社区</a> 直接向作者提问</li>
                         <li>仔细阅读 <a href="https://www.iviewui.com/docs/guide/install" target="_blank">文档</a></li>
                         <li>在 <a href="https://stackoverflow.com/" target="_blank">StackOverflow</a> (英文) 或是 <a href="https://segmentfault.com/t/iview" target="_blank">SegmentFault</a>（中文）搜索和提问</li>
                     </ul>
@@ -135,7 +136,7 @@
                             </FormItem>
                             <div class="ivu-article" style="margin-bottom: 20px">
                                 <p>
-                                    请提供一个尽可能精简的 <a href="https://jsfiddle.net/yyrzhm46/" target="_blank">JSFiddle</a> 链接或是 GitHub 仓库的链接。
+                                    请提供一个尽可能精简的 <a href="https://run.iviewui.com/" target="_blank">iView Run</a> 或 <a href="https://jsfiddle.net/yyrzhm46/" target="_blank">JSFiddle</a> 链接。
                             </p>
                                 <p>
                                     <a @click="handleOpenMin">什么是最小化重现，为什么这是必需的？</a>

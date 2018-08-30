@@ -286,9 +286,9 @@
                         </tr>
                         <tr>
                             <td>placement</td>
-                            <td>弹窗的展开方向，可选值为 <code>bottom</code> 和 <code>top</code>，2.12.0 版本开始支持自动识别</td>
+                            <td>弹窗的展开方向，可选值为 <code>top</code>、<code>bottom</code>、<code>top-start</code>、<code>bottom-start</code>、<code>top-end</code>、<code>bottom-end</code></td>
                             <td>String</td>
-                            <td>bottom</td>
+                            <td>bottom-start</td>
                         </tr>
                         <tr>
                             <td>transfer</td>

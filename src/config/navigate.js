@@ -65,6 +65,12 @@ const list = {
         //     path: '/overview'
         // },
         {
+            title: '在 Nuxt.js 中使用',
+            titleEn: 'Using in Nuxt.js',
+            path: 'https://dev.iviewui.com/articles/1024499044308881408',
+            target: '_blank'
+        },
+        {
             title: '更新日志',
             titleEn: 'Change Log',
             path: '/docs/guide/update'
