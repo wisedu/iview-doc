@@ -50,8 +50,9 @@
                 <li>支持 Vue.js 1.x <a href="http://v1.iviewui.com">查看 1.0 文档</a></li>
                 <li>支持服务端渲染</li>
                 <li>支持 Nuxt.js</li>
-                <li><a href="http://electron.atom.io/" target="_blank">Electron</a></li>
-                <li>由于 <a href="https://cn.vuejs.org/v2/guide/reactivity.html" target="_blank">Vue.js</a> 是基于Object.defineProperty实现数据追踪，故不支持IE8及更低版本的浏览器。</li>
+                <li>支持 TypeScript</li>
+                <li>支持 <a href="http://electron.atom.io/" target="_blank">Electron</a></li>
+                <li>大部分组件和功能支持 IE9 及以上浏览器，部分组件和功能不支持 IE</li>
             </ul>
             <inAnchor title="相关链接" h2></inAnchor>
             <ul>
@@ -59,10 +60,7 @@
                     <a href="http://cn.vuejs.org/" target="_blank">Vue官方文档</a>
                 </li>
                 <li>
-                    <a href="http://webpack.github.io/" target="_blank">webpack</a>
-                </li>
-                <li>
-                    <a href="https://github.com/ant-design/ant-design/" target="_blank">Ant Design</a>
+                    <a href="http://webpack.github.io/" target="_blank">Webpack</a>
                 </li>
                 <li>
                     <a href="https://git.oschina.net/icarusion/iview" target="_blank">码云</a>

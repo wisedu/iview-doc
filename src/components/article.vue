@@ -77,6 +77,9 @@
                             <li>
                                 <a href="https://github.com/iview/iview-project" target="_blank">iView Project</a>
                             </li>
+                            <li>
+                                <a href="https://github.com/iview/vue-cli-plugin-iview" target="_blank">iView Plugin</a>
+                            </li>
                         </ul>
                     </i-col>
                     <i-col span="5">
@@ -130,11 +133,11 @@
                             <div class="footer-logo">
                                 <img src="../images/logo.png">
                             </div>
-                            <div class="footer-author">
-                                <a href="https://www.talkingdata.com/">
-                                    <img src="../images/logo-td.png">
-                                </a>
-                            </div>
+                            <!--<div class="footer-author">-->
+                                <!--<a href="https://www.talkingdata.com/">-->
+                                    <!--<img src="../images/logo-td.png">-->
+                                <!--</a>-->
+                            <!--</div>-->
                             <!--<div class="footer-version">-->
                                 <!--<p>{{ $t('index.current_version') }}</p>-->
                                 <!--<p>Vue.js 2.5.13, iView 2.9.0</p>-->

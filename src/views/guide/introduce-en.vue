@@ -44,8 +44,9 @@
                 <li>Support Vue.js 1.x <a href="http://v1.iviewui.com">Visit 1.0 doc</a></li>
                 <li>Support SSR</li>
                 <li>Support Nuxt.js</li>
-                <li><a href="http://electron.atom.io/" target="_blank">Electron</a></li>
-                <li>iView does not support IE8 or below since <a href="https://vuejs.org/v2/guide/reactivity.html" target="_blank">Vue.js</a> is using Object.defineProperty which do not be supported by these browsers to track changes.</li>
+                <li>Support TypeScript</li>
+                <li>Support <a href="http://electron.atom.io/" target="_blank">Electron</a></li>
+                <li>Most components and features support IE9 and above browsers, some components and features do not support IE</li>
             </ul>
             <inAnchor title="Related Links" h2></inAnchor>
             <ul>
@@ -53,10 +54,7 @@
                     <a href="https://vuejs.org/" target="_blank">Vue.js</a>
                 </li>
                 <li>
-                    <a href="http://webpack.github.io/" target="_blank">webpack</a>
-                </li>
-                <li>
-                    <a href="https://github.com/ant-design/ant-design/" target="_blank">Ant Design</a>
+                    <a href="http://webpack.github.io/" target="_blank">Webpack</a>
                 </li>
                 <li>
                     <a href="https://git.oschina.net/icarusion/iview" target="_blank">码云</a>
