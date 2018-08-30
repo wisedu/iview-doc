@@ -24,13 +24,17 @@
                     <code>events</code> <code>$emit</code> <code>@click</code> Event
                 </li>
             </ul>
-            <inAnchor title="iView CLI (Recommend)" h2></inAnchor>
-            <p>iView provide an <router-link to="/cli">CLI</router-link> for quickly construct a project with iView.</p>
+            <!--<inAnchor title="iView CLI (Recommend)" h2></inAnchor>-->
+            <!--<p>iView provide an <router-link to="/cli">CLI</router-link> for quickly construct a project with iView.</p>-->
+
+            <inAnchor title="Use Vue CLI 3" h2></inAnchor>
+            <p>We provide an <a href="https://github.com/iview/vue-cli-plugin-iview"target="_blank">iView plugin</a> for Vue CLI 3, which you can use to quickly build an iView-based project.</p>
+
             <inAnchor title="Starter Kit" h2></inAnchor>
             <p>We provide a starter kit <a href="https://github.com/iview/iview-project" target="_blank">iview-project</a> for you.</p>
             <p>If you are using it, you are ready for developing and can skip the following part. We recommend it to you since it can save your time.</p>
             <br/>
-            <p>If you prefer not to use them or use other utilities like <a href="https://github.com/vuejs/vue-cli" target="_blank">vue-cli</a>, please keep reading.</p>
+            <p>If you prefer not to use them or use other utilities, please keep reading.</p>
             <inAnchor title="Import iView" h2></inAnchor>
             <p>Import iView in the entry file (<code>main.js</code> as usual) of webpack:</p>
             <i-code lang="js" bg>{{ code.install.import }}</i-code>
