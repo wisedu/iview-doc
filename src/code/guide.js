@@ -335,6 +335,7 @@ loader.tags = `
     'i-content': 'Content',
     'i-divider': 'Divider',
     'i-date-picker': 'DatePicker',
+    'i-drawer': 'Drawer',
     'i-dropdown': 'Dropdown',
     'i-dropdown-item': 'DropdownItem',
     'i-dropdown-menu': 'DropdownMenu',

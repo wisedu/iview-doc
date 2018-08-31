@@ -1032,6 +1032,20 @@ const routers = [
         component: (resolve) => require(['./views/components/divider-en.vue'], resolve)
     },
     {
+        path: '/components/drawer',
+        meta: {
+            title: '抽屉 Drawer'
+        },
+        component: (resolve) => require(['./views/components/drawer.vue'], resolve)
+    },
+    {
+        path: '/components/drawer-en',
+        meta: {
+            title: 'Drawer'
+        },
+        component: (resolve) => require(['./views/components/drawer-en.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }

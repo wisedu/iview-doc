@@ -352,6 +352,12 @@ const list = {
                     icon: 'ios-text-outline'
                 },
                 {
+                    title: 'Drawer 抽屉',
+                    path: '/components/drawer',
+                    img: 'modal.png',
+                    icon: 'md-list'
+                },
+                {
                     title: 'Tree 树形控件',
                     path: '/components/tree',
                     img: 'tree.png',

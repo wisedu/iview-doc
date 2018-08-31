@@ -250,7 +250,7 @@
                         </tr>
                         <tr>
                             <td>title</td>
-                            <td>The title of Modal. It is invalid if footer slot is set.</td>
+                            <td>The title of Modal. It is invalid if header slot is set.</td>
                             <td>String</td>
                             <td>-</td>
                         </tr>
