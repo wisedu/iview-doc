@@ -105,6 +105,12 @@
                             <td>false</td>
                         </tr>
                         <tr>
+                            <td>editable</td>
+                            <td>Whether to input the value.</td>
+                            <td>Boolean</td>
+                            <td>true</td>
+                        </tr>
+                        <tr>
                             <td>alpha</td>
                             <td>Whether to display the alpha slider.</td>
                             <td>Boolean</td>
