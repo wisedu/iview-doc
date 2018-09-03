@@ -62,7 +62,7 @@
                 <div slot="demo">
                     <Button @click="value3 = true" type="primary">Create</Button>
                     <Drawer
-                        title="Basic Drawer"
+                        title="Create"
                         v-model="value3"
                         width="720"
                         :mask-closable="false"
