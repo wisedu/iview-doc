@@ -174,6 +174,12 @@
                             <td>String</td>
                             <td>-</td>
                         </tr>
+                        <tr>
+                            <td>active-change</td>
+                            <td>Whether to respond data in real time, when set to false, the data will only be changed when blur.</td>
+                            <td>Boolean</td>
+                            <td>true</td>
+                        </tr>
                     </tbody>
                 </table>
                 <inAnchor title="InputNumber events" h3></inAnchor>
