@@ -25,6 +25,29 @@
         <article class="doc-update">
             <Timeline pending>
                 <TimelineItem>
+                    <inAnchor title="3.1.0 INSIDE" h2></inAnchor>
+                    <p>
+                        <code>2018-09-03</code>
+                    </p>
+                    <ul>
+                        <li>Supports TypeScript. <issue id="4406"></issue></li>
+                        <li>Add Vue CLI 3 plugin. <a href="https://github.com/iview/vue-cli-plugin-iview" target="_blank">vue-cli-plugin-iview</a></li>
+                        <li>The documentation adds Nuxt.js usage. <a href="https://dev.iviewui.com/articles/1024499044308881408" target="_blank">View</a></li>
+                        <li>The document update <strong>Quick Start</strong> section. <router-link to="/docs/guide/start-en">View</router-link></li>
+                        <li>Add new component Drawer. <router-link to="/components/drawer-en">View</router-link> <issue id="4352"></issue></li>
+                        <li>ColorPicker add new property <code>editable</code>, support for input color values. <issue id="4353"></issue></li>
+                        <li>Tabs add new property <code>beforeRemove</code>, return Promise to interrupt close.</li>
+                        <li>InputNumber add new property <code>active-change</code>, when set to false, the data will only be changed when blur. <issue id="4315"></issue></li>
+                        <li>Modal add new property <code>z-index</code>.</li>
+                        <li>Modal's ESC button will now only close the topmost modal box, and when clicked on a Modal area, it will be placed at the top level.</li>
+                        <li>Fixed bug that DatePicker's pane is wrong sometimes. <issue id="3773"></issue></li>
+                        <li>Fixed bug that DatePicker can not use <code>disabled</code>. <issue id="4351"></issue></li>
+                        <li>Fixed bug that Select's style is wrong under version 3.0.1 <issue id="4329"></issue></li>
+                        <li>When MenuItem sets <code>target="_blank"</code>, clicking the menu no longer highlights the current item.</li>
+                        <blockquote>Special thanks to <a href="https://github.com/yangdan8" target="_blank">@yangdan8</a></blockquote>
+                    </ul>
+                </TimelineItem>
+                <TimelineItem>
                     <inAnchor title="3.0.1" h2></inAnchor>
                     <p>
                         <code>2018-08-22</code>
