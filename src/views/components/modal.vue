@@ -334,6 +334,12 @@
                             <td>-</td>
                         </tr>
                         <tr>
+                            <td>z-index</td>
+                            <td>层级</td>
+                            <td>Number</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
                             <td>transition-names</td>
                             <td>自定义显示动画，第一项是模态框，第二项是背景</td>
                             <td>Array</td>

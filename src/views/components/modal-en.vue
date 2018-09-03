@@ -333,6 +333,12 @@
                             <td>-</td>
                         </tr>
                         <tr>
+                            <td>z-index</td>
+                            <td>Level</td>
+                            <td>Number</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
                             <td>transition-names</td>
                             <td>Custom transition. The first transition is Modal itself, the second is the background.</td>
                             <td>Array</td>
