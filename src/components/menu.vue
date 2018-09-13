@@ -38,7 +38,7 @@
                     {{ $t('index.component') }}
                 </Menu-item>
                 <Menu-item name="live" v-if="lang === 'zh-CN'" :to="handleGoToMenu('/live')">
-                    <Badge :dot="liveDot">
+                    <Badge :dot="liveDot" :offset="[20,0]">
                         <Icon type="ios-videocam"></Icon>
                         {{ $t('index.live') }}
                     </Badge>
