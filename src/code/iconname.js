@@ -725,19 +725,11 @@ export default[
     },
     {
         "name": "ios-checkbox-outline",
-        "tag": "checkbox"
+        "tag": "checkbox,outline"
     },
     {
         "name": "md-checkbox",
         "tag": "checkbox"
-    },
-    {
-        "name": "ios-checkbox-outline",
-        "tag": "checkbox,outline"
-    },
-    {
-        "name": "ios-checkbox-outline",
-        "tag": "checkbox,outline"
     },
     {
         "name": "md-checkbox-outline",
@@ -757,19 +749,11 @@ export default[
     },
     {
         "name": "ios-checkmark-circle-outline",
-        "tag": "checkmark,circle,success,ok"
+        "tag": "checkmark,circle,outline,success,ok"
     },
     {
         "name": "md-checkmark-circle",
         "tag": "checkmark,circle,success,ok"
-    },
-    {
-        "name": "ios-checkmark-circle-outline",
-        "tag": "checkmark,circle,outline,success,ok"
-    },
-    {
-        "name": "ios-checkmark-circle-outline",
-        "tag": "checkmark,circle,outline,success,ok"
     },
     {
         "name": "md-checkmark-circle-outline",
@@ -882,14 +866,6 @@ export default[
     {
         "name": "md-cloud-download",
         "tag": "cloud,download,storage"
-    },
-    {
-        "name": "ios-cloud-outline",
-        "tag": "cloud,outline"
-    },
-    {
-        "name": "ios-cloud-outline",
-        "tag": "cloud,outline"
     },
     {
         "name": "md-cloud-outline",
