@@ -654,7 +654,7 @@
                         <tr>
                             <td>sortable</td>
                             <td>对应列是否可以排序，如果设置为 <code>custom</code>，则代表用户希望远程排序，需要监听 Table 的 on-sort-change 事件</td>
-                            <td>Boolean</td>
+                            <td>Boolean | 'custom'</td>
                             <td>false</td>
                         </tr>
                         <tr>

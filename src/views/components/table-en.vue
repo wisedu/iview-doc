@@ -650,7 +650,7 @@
                         <tr>
                             <td>sortable</td>
                             <td>The column is sortable or not. If set to <code>custom</code>, it means user wants a remote sorting. So you shall listen on-sort-change event on Table.</td>
-                            <td>Boolean</td>
+                            <td>Boolean | 'custom'</td>
                             <td>false</td>
                         </tr>
                         <tr>
