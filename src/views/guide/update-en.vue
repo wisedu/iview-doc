@@ -25,6 +25,22 @@
         <article class="doc-update">
             <Timeline pending>
                 <TimelineItem>
+                    <inAnchor title="3.1.1" h2></inAnchor>
+                    <p>
+                        <code>2018-09-18</code>
+                    </p>
+                    <ul>
+                        <li>Fixed some issues on supporting TypeScript. <issue id="4447"></issue> <issue id="4449"></issue> <issue id="4490"></issue></li>
+                        <li>Fixed the problem that TimePicker throw error under version 3.1.0. <issue id="4473"></issue></li>
+                        <li>Fixed the problem that Modal's mask has now z-index. <issue id="4439"></issue></li>
+                        <li>Fixed the problem that using some components with transfer property in Modal, the layer is wrong. <a
+                                href="https://github.com/iview/iview/commit/7bafe9d94c839ab811be044b4295ebb0661ab4ea" target="_blank">7bafe9d</a></li>
+                        <li>Fixed the problem that ColorPicker not import Button component. <issue id="4483"></issue></li>
+                        <li>Fixed the problem that InputNumber not emit event to Form when blur. <issue id="4536"></issue></li>
+                        <li>Add Traditional Mongolian. <mention id="XuYS"></mention></li>
+                    </ul>
+                </TimelineItem>
+                <TimelineItem>
                     <inAnchor title="3.1.0 INSIDE" h2></inAnchor>
                     <p>
                         <code>2018-09-03</code>
