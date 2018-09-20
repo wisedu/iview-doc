@@ -265,6 +265,10 @@ theme.init = `
 iview-theme init my-theme
 `;
 
+theme.initWithVers = `
+iview-theme init my-theme xxx
+`;
+
 theme.build = `
 cd my-theme
 iview-theme build -o dist/
