@@ -26,6 +26,8 @@
             <i-code lang="auto" bg>{{ code.theme.install }}</i-code>
             <p>Then create a dictionary for the theme file and initialize the theme project. The tool will automatically pull up-to-date source code from iView repository.</p>
             <i-code lang="auto" bg>{{ code.theme.init }}</i-code>
+            <p>If you need to assign the iView version, please use below command. (Example：use "v2.14.3" replace with "xxx" according to the iView version in your project)</p>
+            <i-code lang="auto" bg>{{ code.theme.initWithVers }}</i-code>
             <p>Edit <code>my-theme/custom.less</code>, override the variables and compile it by this command:</p>
             <i-code lang="auto" bg>{{ code.theme.build }}</i-code>
             <p>The tool will generate the style code <code>iview.css</code> in this dictionary. The only thing you need to do is import it in your entry file <code>main.js</code>:</p>
