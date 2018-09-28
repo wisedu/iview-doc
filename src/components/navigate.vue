@@ -3,28 +3,24 @@
 </style>
 <template>
     <div class="navigate">
-        <Divider class="asd-title" v-if="lang === 'zh-CN'">赞助商</Divider>
-        <div class="asd asd-mb" @click="handleAd" v-if="lang === 'zh-CN'">
-            <div class="asd-main">
-                <img src="../images/ad-juejin2.png" style="border-radius: 6px">
-            </div>
-        </div>
+        <template v-if="lang === 'zh-CN'">
+            <a v-for="item in app.adList1" :href="item.link" target="_blank" class="asd asd-mb" :key="item.id" @click="handleAsideAd(item.id)">
+                <div class="asd-main">
+                    <img :src="item.img">
+                </div>
+            </a>
+        </template>
         <div class="asd-car" v-else>
-            <iframe src="http://file.iviewui.com/ad5.html" frameborder="0" width="100%" height="100%"></iframe>
+            <iframe src="https://file.iviewui.com/ad6.html" frameborder="0" width="100%" height="100%"></iframe>
         </div>
-        <!--<div class="asd asd-mb" @click="handleAdBmqb" v-if="lang === 'zh-CN'">-->
-            <!--<div class="asd-main">-->
-                <!--<img src="../images/ad-bmqb.png" style="border-radius: 6px">-->
-            <!--</div>-->
-        <!--</div>-->
-        <Menu width="auto" :active-name="activeKey" @on-select="handleSelect" v-if="type === 'guide'">
+        <Menu width="auto" :active-name="activeKey" v-if="type === 'guide'">
             <Menu-item v-for="item in navigate.guide" :key="item.path" :name="item.path" :to="handleGoToMenu(item.path)">
                 <template v-if="lang === 'zh-CN'">{{ item.title }}</template>
                 <template v-else>{{ item.titleEn }}</template>
             </Menu-item>
         </Menu>
-        <Menu width="auto" :active-name="activeKey" @on-select="handleSelect" v-if="type === 'component'">
-            <Menu-item v-for="item in navigate.beforeComponents" :key="item.path" :name="item.path" :to="handleGoToMenu(item.path)">
+        <Menu width="auto" :active-name="activeKey" v-if="type === 'component'">
+            <Menu-item v-for="item in navigate.beforeComponents" :key="item.path" :name="item.path" :to="handleGoToMenu(item.path)" :target="item.target">
                 <template v-if="item.title !== '更新日志'">
                     <template v-if="lang === 'zh-CN'">{{ item.title }}</template>
                     <template v-else>{{ item.titleEn }}</template>
@@ -49,13 +45,13 @@
                 </Menu-item>
             </Menu-group>
         </Menu>
-        <Menu width="auto" :active-name="activeKey" @on-select="handleSelect" v-if="type === 'practice'">
+        <Menu width="auto" :active-name="activeKey" v-if="type === 'practice'">
             <Menu-item v-for="item in navigate.practice" :key="item.path" :name="item.path" :to="handleGoToMenu(item.path)">
                 <template v-if="lang === 'zh-CN'">{{ item.title }}</template>
                 <template v-else>{{ item.titleEn }}</template>
             </Menu-item>
         </Menu>
-        <Menu width="auto" :active-name="activeKey" @on-select="handleSelect" v-if="type === 'live'">
+        <Menu width="auto" :active-name="activeKey" v-if="type === 'live'">
             <Menu-item v-for="item in navigate.live" :key="item.path" :name="item.path" :to="handleGoToMenu(item.path)">
                 <template v-if="lang === 'zh-CN'">{{ item.title }}</template>
                 <template v-else>{{ item.titleEn }}</template>
@@ -107,6 +103,7 @@
     import adSend from './ad-send.vue';
 
     export default {
+        inject: ['app'],
         components: { adSend },
         props: {
             type: {
@@ -159,6 +156,9 @@
                 } else {
                     return name + '-en';
                 }
+            },
+            handleAsideAd (name) {
+                _hmt.push(['_trackEvent', name, 'click']);
             }
         },
         created () {

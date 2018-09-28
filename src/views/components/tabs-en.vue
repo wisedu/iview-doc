@@ -234,6 +234,12 @@
                             <td>Boolean</td>
                             <td>false</td>
                         </tr>
+                        <tr>
+                            <td>before-remove</td>
+                            <td>Close the previous function, return Promise to interrupt close.</td>
+                            <td>Function</td>
+                            <td>-</td>
+                        </tr>
                     </tbody>
                 </table>
                 <inAnchor title="Tabs events" h3></inAnchor>

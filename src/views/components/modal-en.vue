@@ -14,7 +14,7 @@
         <article>
             <h1>Modal</h1>
             <inAnchor title="Brief Introduction" h2></inAnchor>
-            <p>Modal dialog. It's shown in the floating layer. It's used to guide user do certain operations.</p>
+            <p>Modal dialog. It's shown in the floating layer. It's used to guide user to do certain operations.</p>
             <p><code>Modal</code> provides two usages: normal component using & encapsulated instance calling.</p>
             <inAnchor title="Examples" h2></inAnchor>
             <inAnchor title="Normal Component Usage" h3></inAnchor>
@@ -32,7 +32,7 @@
                     </Modal>
                 </div>
                 <div slot="desc">
-                    <p>The easiest way to display / hide Modal is to control <code>visible</code> prop.</p>
+                    <p>The easiest way to display / hide Modal is to control <code>value</code> prop.</p>
                     <p>Use v-model to enable two-way binding.</p>
                     <p>Tap <code>ESC</code> button can close it too.</p>
                 </div>
@@ -250,7 +250,7 @@
                         </tr>
                         <tr>
                             <td>title</td>
-                            <td>The title of Modal. It is invalid if footer slot is set.</td>
+                            <td>The title of Modal. It is invalid if header slot is set.</td>
                             <td>String</td>
                             <td>-</td>
                         </tr>
@@ -268,7 +268,7 @@
                         </tr>
                         <tr>
                             <td>loading</td>
-                            <td>Show loading status or not when clicking confirm button. If it is set to true, Modal has to be close manually by setting <code>visible</code> to false.</td>
+                            <td>Show loading status or not when clicking confirm button. If it is set to true, Modal has to be close manually by setting <code>value</code> to false.</td>
                             <td>Boolean</td>
                             <td>false</td>
                         </tr>
@@ -331,6 +331,12 @@
                             <td>Set Modal's wrapper - <code>.ivu-modal-wrap</code>'s class name. It can be used to assist to realise custom styles like vertical center.</td>
                             <td>String</td>
                             <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>z-index</td>
+                            <td>Level</td>
+                            <td>Number</td>
+                            <td>1000</td>
                         </tr>
                         <tr>
                             <td>transition-names</td>

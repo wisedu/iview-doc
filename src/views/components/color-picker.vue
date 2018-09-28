@@ -105,6 +105,12 @@
                             <td>false</td>
                         </tr>
                         <tr>
+                            <td>editable</td>
+                            <td>是否可以输入色值</td>
+                            <td>Boolean</td>
+                            <td>true</td>
+                        </tr>
+                        <tr>
                             <td>alpha</td>
                             <td>是否支持透明度选择</td>
                             <td>Boolean</td>

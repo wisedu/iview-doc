@@ -38,7 +38,7 @@
                     {{ $t('index.component') }}
                 </Menu-item>
                 <Menu-item name="live" v-if="lang === 'zh-CN'" :to="handleGoToMenu('/live')">
-                    <Badge :dot="liveDot">
+                    <Badge :dot="liveDot" :offset="[20,0]">
                         <Icon type="ios-videocam"></Icon>
                         {{ $t('index.live') }}
                     </Badge>
@@ -86,7 +86,7 @@
                 </Select>
                 <ButtonGroup size="small">
                     <Button icon="logo-github" @click="handleGoToGitHub"></Button>
-                    <Button icon="logo-twitter" @click="handleGoToTwitter"></Button>
+                    <Button icon="logo-twitter" @click="handleGoToTwitter" v-if="lang !== 'zh-CN'"></Button>
                     <Button icon="ios-settings" @click="handleToggleSetting"></Button>
                     <Button @click="handleChangeLang" >
                         <template v-if="lang === 'zh-CN'">EN</template>

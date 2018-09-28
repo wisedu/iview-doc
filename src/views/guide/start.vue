@@ -27,18 +27,23 @@
             <Alert show-icon>
                 你也可以通过 <Study type="component"></Study> 来快速入门。
             </Alert>
-            <inAnchor title="使用脚手架 iView Cli（推荐）" h2></inAnchor>
-            <p>使用 <router-link to="/cli">iView Cli</router-link> 可以通过可视化的方式快速构建 iView 工程，并且可以根据业务进行丰富的配置。</p>
-            <Alert show-icon>
-                如果你未接触过 webpack，建议 <Study type="webpack"></Study>。
-            </Alert>
+            <!--<inAnchor title="使用脚手架 iView Cli（推荐）" h2></inAnchor>-->
+            <!--<p>使用 <router-link to="/cli">iView Cli</router-link> 可以通过可视化的方式快速构建 iView 工程，并且可以根据业务进行丰富的配置。</p>-->
+
+            <inAnchor title="使用 Vue CLI 3" h2></inAnchor>
+            <p>我们为最新的 Vue CLI 3 提供了相应的 <a href="https://github.com/iview/vue-cli-plugin-iview"target="_blank">iView 插件</a>，如果你正在用 Vue CLI 3，可以直接在插件中搜索 iview，安装插件来使用。</p>
+
             <inAnchor title="使用推荐工程" h2></inAnchor>
             <p>我们也为您准备好了基础工程，以此为基础开发，可以为您省去大量配置和调试环境的时间。</p>
             <p>
                 推荐工程：<a href="https://github.com/iview/iview-project" target="_blank">iview-project</a>
             </p>
             <p>如果您使用了我们推荐的工程，可以略过下面的内容直接进入开发阶段，我们也推荐使用这套工程来构建您的项目。</p>
-            <p>如果您希望自己配置或使用其它工程，比如 <a href="https://github.com/vuejs/vue-cli" target="_blank">vue-cli</a>，请继续往下阅读。</p>
+            <p>如果您希望自己配置或使用其它工程，请继续往下阅读。</p>
+            <Alert show-icon>
+                如果你未接触过 webpack，建议 <Study type="webpack"></Study>。
+            </Alert>
+
             <inAnchor title="引入 iView" h2></inAnchor>
             <p>一般在 webpack 入口页面 <code>main.js</code> 中如下配置：</p>
             <i-code lang="js" bg>{{ code.install.import }}</i-code>

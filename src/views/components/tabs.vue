@@ -253,6 +253,12 @@
                             <td>Boolean</td>
                             <td>false</td>
                         </tr>
+                        <tr>
+                            <td>before-remove</td>
+                            <td>关闭前的函数，返回 Promise 可阻止标签关闭</td>
+                            <td>Function</td>
+                            <td>-</td>
+                        </tr>
                     </tbody>
                 </table>
                 <inAnchor title="Tabs events" h3></inAnchor>

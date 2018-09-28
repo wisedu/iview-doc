@@ -26,11 +26,13 @@
             <i-code lang="auto" bg>{{ code.theme.install }}</i-code>
             <p>然后在业务工程里新建一个目录，用来存放主题文件，使用下面的命令初始化主题，这时会从 iView 仓库拉取最新的样式文件：</p>
             <i-code lang="auto" bg>{{ code.theme.init }}</i-code>
+            <p>如需拉取指定版本号的 iView，使用下面的命令。（实际运行下面命令时，需将 xxx 替换成项目所使用的 iView 版本，如 “ v2.14.3 ”） </p>
+            <i-code lang="auto" bg>{{ code.theme.initWithVers }}</i-code>
             <p>最后编辑 <code>my-theme/custom.less</code> 文件，用命令编译即可：</p>
             <i-code lang="auto" bg>{{ code.theme.build }}</i-code>
             <p>最终会在指定的目录下编译为 <code>iview.css</code> 的文件，只需在入口处引用它就可以了，比如在 main.js 文件：</p>
             <i-code lang="js" bg>{{ code.theme.import }}</i-code>
-            <Alert show-icon style="margin-top: 16px">注意：这种方法是从 GitHub 拉取最新的样式变量，并不是你当前的 iView 版本，另外在更新 iView 后，应该重新拉取。</Alert>
+            <Alert show-icon style="margin-top: 16px">注意：在更新 iView 后，应该重新拉取。</Alert>
         </article>
     </i-article>
 </template>

@@ -6,8 +6,8 @@ import Env from './env';
 let config = {
     env: Env,
     filePath: 'https://file.iviewui.com/file/',
-    version: 50,
-    liveVersion: 1
+    version: 53,
+    liveVersion: 2
 };
 
 if (config.env === 'development') {

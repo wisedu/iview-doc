@@ -1,6 +1,8 @@
 /**
  * Created by aresn on 16/7/18.
  */
+import axios from 'axios';
+
 let util = {
 
 };
@@ -66,5 +68,12 @@ export function scrollTop(el, from = 0, to, duration = 500) {
     }
     scroll(from, to, step);
 }
+
+const ajaxUrl = 'https://api.iviewui.com';
+
+util.ajax = axios.create({
+    baseURL: ajaxUrl,
+    timeout: 30000
+});
 
 export default util;

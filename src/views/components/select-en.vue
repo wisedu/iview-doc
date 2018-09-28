@@ -287,9 +287,9 @@
                         </tr>
                         <tr>
                             <td>placement</td>
-                            <td>The direction of pop-ups. The value could be <code>bottom</code> or <code>top</code>, supports automatic recognition after 2.12.0</td>
+                            <td>The direction of pop-ups. The value could be <code>top</code>, <code>bottom</code>, <code>top-start</code>, <code>bottom-start</code>, <code>top-end</code>, <code>bottom-end</code></td>
                             <td>String</td>
-                            <td>bottom</td>
+                            <td>bottom-start</td>
                         </tr>
                         <tr>
                             <td>transfer</td>

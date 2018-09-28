@@ -24,6 +24,68 @@
         <h1>Change Log</h1>
         <article class="doc-update">
             <Timeline pending>
+                <TimelineItem>
+                    <inAnchor title="3.1.1" h2></inAnchor>
+                    <p>
+                        <code>2018-09-18</code>
+                    </p>
+                    <ul>
+                        <li>Fixed some issues on supporting TypeScript. <issue id="4447"></issue> <issue id="4449"></issue> <issue id="4490"></issue></li>
+                        <li>Fixed the problem that TimePicker throw error under version 3.1.0. <issue id="4473"></issue></li>
+                        <li>Fixed the problem that Modal's mask has now z-index. <issue id="4439"></issue></li>
+                        <li>Fixed the problem that using some components with transfer property in Modal, the layer is wrong. <a
+                                href="https://github.com/iview/iview/commit/7bafe9d94c839ab811be044b4295ebb0661ab4ea" target="_blank">7bafe9d</a></li>
+                        <li>Fixed the problem that ColorPicker not import Button component. <issue id="4483"></issue></li>
+                        <li>Fixed the problem that InputNumber not emit event to Form when blur. <issue id="4536"></issue></li>
+                        <li>Add Traditional Mongolian. <mention id="XuYS"></mention></li>
+                    </ul>
+                </TimelineItem>
+                <TimelineItem>
+                    <inAnchor title="3.1.0 INSIDE" h2></inAnchor>
+                    <p>
+                        <code>2018-09-03</code>
+                    </p>
+                    <ul>
+                        <li>Supports TypeScript. <issue id="4406"></issue></li>
+                        <li>Add Vue CLI 3 plugin. <a href="https://github.com/iview/vue-cli-plugin-iview" target="_blank">vue-cli-plugin-iview</a></li>
+                        <li>The documentation adds Nuxt.js usage. <a href="https://dev.iviewui.com/articles/1024499044308881408" target="_blank">View</a></li>
+                        <li>The document update <strong>Quick Start</strong> section. <router-link to="/docs/guide/start-en">View</router-link></li>
+                        <li>Add new component Drawer. <router-link to="/components/drawer-en">View</router-link> <issue id="4352"></issue></li>
+                        <li>ColorPicker add new property <code>editable</code>, support for input color values. <issue id="4353"></issue></li>
+                        <li>Tabs add new property <code>beforeRemove</code>, return Promise to interrupt close.</li>
+                        <li>InputNumber add new property <code>active-change</code>, when set to false, the data will only be changed when blur. <issue id="4315"></issue></li>
+                        <li>Modal add new property <code>z-index</code>.</li>
+                        <li>Modal's ESC button will now only close the topmost modal box, and when clicked on a Modal area, it will be placed at the top level.</li>
+                        <li>Fixed bug that DatePicker's pane is wrong sometimes. <issue id="3773"></issue></li>
+                        <li>Fixed bug that DatePicker can not use <code>disabled</code>. <issue id="4351"></issue></li>
+                        <li>Fixed bug that Select's style is wrong under version 3.0.1 <issue id="4329"></issue></li>
+                        <li>When MenuItem sets <code>target="_blank"</code>, clicking the menu no longer highlights the current item.</li>
+                        <blockquote>Special thanks to <a href="https://github.com/yangdan8" target="_blank">@yangdan8</a></blockquote>
+                    </ul>
+                </TimelineItem>
+                <TimelineItem>
+                    <inAnchor title="3.0.1" h2></inAnchor>
+                    <p>
+                        <code>2018-08-22</code>
+                    </p>
+                    <ul>
+                        <li>Select add new placement: <code>top-start</code>, <code>bottom-start</code>, <code>top-end</code>, <code>bottom-end</code>, and change the default value to <code>bottom-start</code>.</li>
+                        <li>Fixed bug when importing iView on demand in 3.0 version. <issue id="4165"></issue></li>
+                        <li>Fixed bug that DatePicker selected on a partial time zone. <issue id="4250"></issue></li>
+                        <li>Fixed bug that the shortcuts of DatePicker format error. <issue id="4127"></issue></li>
+                        <li>Fixed bug that DatePicker with multiple mode, cross-month selection will relocate to the first date location. <issue id="4249"></issue></li>
+                        <li>Fixed bug when Select Option is too long, the style is wrong. <issue id="4194"></issue></li>
+                        <li>Fixed bug that Select can use <code>clearable</code> in disabled mode. <issue id="3924"></issue></li>
+                        <li>Fixed bug that FormItem dynamic setting <code>rules</code> sometimes does not work. <issue id="4214"></issue></li>
+                        <li>Fixed bug that FormItem could not set <code>label-width</code> to 0.</li>
+                        <li>Fixed bug that RadioGroup can't manually set data sometimes. <issue id="4114"></issue></li>
+                        <li>Fixed bug that Input with number mode, when delete the value, it will be set to 0. <issue id="4048"></issue></li>
+                        <li>Fixed bug when Tabs remove a tab, it will not display the correct label content sometimes. <issue id="4052"></issue></li>
+                        <li>Optimize Transfer that you can only select all search result items. <issue id="4151"></issue></li>
+                        <li>Optimize the style of the Tree. <issue id="4162"></issue></li>
+                        <li>Progress add component name. <issue id="4036"></issue></li>
+                    </ul>
+                </TimelineItem>
                 <Timeline-item color="green">
                     <Icon type="ios-trophy" size="18" slot="dot"></Icon>
                     <inAnchor title="3.0.0 Battleheart" h2></inAnchor>

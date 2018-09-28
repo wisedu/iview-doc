@@ -67,6 +67,7 @@
 </template>
 <script>
     import bus from './bus';
+    import $ from '../libs/util';
 
     export default {
         provide () {
@@ -85,6 +86,9 @@
                 settingData: {
                     code: '1',  // 1, 2
                 },
+                adList1: [],
+                adList2: [],
+                adList3: []
             }
         },
         computed: {
@@ -187,10 +191,30 @@
             },
             handleSettingChangeCode (val) {
                 window.localStorage.setItem('settings-code', val);
+            },
+            getAdList (name) {
+                $.ajax({
+                    method: 'get',
+                    url: '/v1/asd/list',
+                    params: {
+                        name: name
+                    }
+                }).then(res => {
+                    const data = res.data;
+
+                    if (data.code !== 200) {
+
+                    } else {
+                        this[`adList${name}`] = data.data;
+                    }
+                })
             }
         },
         mounted () {
             this.handleUpdateSettings();
+            this.getAdList(1);
+            this.getAdList(2);
+            this.getAdList(3);
         }
     }
 </script>

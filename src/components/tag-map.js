@@ -25,6 +25,7 @@ export default {
     'ColorPicker': 'color-picker',
     'DatePicker': 'date-picker',
     'Divider': 'divider',
+    'Drawer': 'drawer',
     'Dropdown': 'dropdown',
     'DropdownItem': 'dropdown-item',
     'DropdownMenu': 'dropdown-menu',

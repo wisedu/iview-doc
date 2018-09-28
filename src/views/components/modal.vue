@@ -32,7 +32,7 @@
                     </Modal>
                 </div>
                 <div slot="desc">
-                    <p>最简单的使用方法，通过控制属性<code>visible</code>来显示 / 隐藏对话框。</p>
+                    <p>最简单的使用方法，通过控制属性<code>value</code>来显示 / 隐藏对话框。</p>
                     <p>可以使用 v-model 实现双向绑定。</p>
                     <p>默认按键盘<code>ESC</code>键也可以关闭。</p>
                 </div>
@@ -269,7 +269,7 @@
                         </tr>
                         <tr>
                             <td>loading</td>
-                            <td>点击确定按钮时，确定按钮是否显示 loading 状态，开启则需手动设置<code>visible</code>来关闭对话框</td>
+                            <td>点击确定按钮时，确定按钮是否显示 loading 状态，开启则需手动设置<code>value</code>来关闭对话框</td>
                             <td>Boolean</td>
                             <td>false</td>
                         </tr>
@@ -332,6 +332,12 @@
                             <td>设置对话框容器<code>.ivu-modal-wrap</code>的类名，可辅助实现垂直居中等自定义效果</td>
                             <td>String</td>
                             <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>z-index</td>
+                            <td>层级</td>
+                            <td>Number</td>
+                            <td>1000</td>
                         </tr>
                         <tr>
                             <td>transition-names</td>
