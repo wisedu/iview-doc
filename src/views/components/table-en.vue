@@ -388,6 +388,16 @@
                         </tr>
                         <tr>
                             <td>on-select-cancel</td>
+                            <td>It works in multi-choices mode. Emitted when a certain row is unselected.</td>
+                            <td>
+                                <ul>
+                                    <li><code>selection</code>: Selected rows' data array</li>
+                                    <li><code>row</code>: Latest selected row's data.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>on-select-cancel</td>
                             <td>It works in multi-choices mode. Emitted when a certain row is deselected.</td>
                             <td>
                                 <ul>

@@ -395,6 +395,16 @@
                             <td>
                                 <ul>
                                     <li><code>selection</code>：已选项数据</li>
+                                    <li><code>row</code>：刚选择的项数据</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>on-select-cancel</td>
+                            <td>在多选模式下有效，取消选中某一项时触发</td>
+                            <td>
+                                <ul>
+                                    <li><code>selection</code>：已选项数据</li>
                                     <li><code>row</code>：取消选择的项数据</li>
                                 </ul>
                             </td>
