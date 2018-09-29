@@ -10,9 +10,9 @@
                 </div>
             </a>
         </template>
-        <div class="asd-car" v-else>
-            <iframe src="https://file.iviewui.com/ad6.html" frameborder="0" width="100%" height="100%"></iframe>
-        </div>
+        <!--<div class="asd-car" v-else>-->
+            <!--<iframe src="https://file.iviewui.com/ad6.html" frameborder="0" width="100%" height="100%"></iframe>-->
+        <!--</div>-->
         <Menu width="auto" :active-name="activeKey" v-if="type === 'guide'">
             <Menu-item v-for="item in navigate.guide" :key="item.path" :name="item.path" :to="handleGoToMenu(item.path)">
                 <template v-if="lang === 'zh-CN'">{{ item.title }}</template>

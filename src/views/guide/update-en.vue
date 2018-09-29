@@ -25,6 +25,18 @@
         <article class="doc-update">
             <Timeline pending>
                 <TimelineItem>
+                    <inAnchor title="3.1.2" h2></inAnchor>
+                    <p>
+                        <code>2018-09-25</code>
+                    </p>
+                    <ul>
+                        <li>Fixed the problem that DatePicker will throw error in split-panels mode. <issue id="4524"></issue></li>
+                        <li>Fixed the problem that DatePicker's panel will open when click the clear icon.</li>
+                        <li>Fixed the problem that DatePicker change the month, the left month was larger than the right. <issue id="3973"></issue></li>
+                        <li>Fixed the problem that FormItem could not be verified when using the required property. <issue id="4537"></issue></li>
+                    </ul>
+                </TimelineItem>
+                <TimelineItem>
                     <inAnchor title="3.1.1" h2></inAnchor>
                     <p>
                         <code>2018-09-18</code>
