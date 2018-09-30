@@ -25,6 +25,23 @@
         <article class="doc-update">
             <Timeline pending>
                 <TimelineItem>
+                    <inAnchor title="3.1.3" h2></inAnchor>
+                    <p>
+                        <code>2018-09-30</code>
+                    </p>
+                    <ul>
+                        <li>The Time component supports internationalization. <issue id="4317"></issue></li>
+                        <li>Table add new event <code>@on-select-all-cancel</code>. <issue id="2586"></issue></li>
+                        <li>Optimize the performance of Cascader at <code>trigger="hover"</code>. <issue id="4472"></issue></li>
+                        <li>When the total property of the Page component is modified to 0, the current page is set to 1. <issue id="4460"></issue></li>
+                        <li>Fixed the Select problem in filterable mode, it will display a complete list when matching a search item. <issue id="4273"></issue></li>
+                        <li>Fixed the Select problem in filterable and multiple mode when set data dynamically. <issue id="4575"></issue></li>
+                        <li>Fixed the Select problem in filterable mode with OptionGroup components. <issue id="4371"></issue></li>
+                        <li>Fixed the Table problem when set height property, when open the expanded column, the scrollbar is wrong. <issue id="4219"></issue></li>
+                        <li>Fixed the Carousel problem that dynamically setting height. <issue id="4324"></issue></li>
+                    </ul>
+                </TimelineItem>
+                <TimelineItem>
                     <inAnchor title="3.1.2" h2></inAnchor>
                     <p>
                         <code>2018-09-25</code>
