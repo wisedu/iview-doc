@@ -276,7 +276,7 @@
                         <li>Icon 的图标升级至 <code>ionicons</code> 3.0 图标，图标名称有改变。</li>
                         <li>Breadcrumb 废弃 <code>href</code> 属性。</li>
                         <li>Badge 的 count 属性只支持 Number 类型。</li>
-                        <li>Tag 的 color 属性将原先的 <code>blur</code>、<code>green</code>、<code>yellow</code>、<code>red</code> 更名为了 <code>primary</code>、<code>success</code>、<code>warning</code>、<code>error</code>。</li>
+                        <li>Tag 的 color 属性将原先的 <code>blue</code>、<code>green</code>、<code>yellow</code>、<code>red</code> 更名为了 <code>primary</code>、<code>success</code>、<code>warning</code>、<code>error</code>。</li>
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
