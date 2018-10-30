@@ -25,6 +25,17 @@
         <article class="doc-update">
             <Timeline pending>
                 <TimelineItem>
+                    <inAnchor title="3.1.4" h2></inAnchor>
+                    <p>
+                        <code>2018-10-30</code>
+                    </p>
+                    <ul>
+                        <li>Tree add new method <code>getCheckedAndIndeterminateNodes</code> to get the selected and half-selected nodes. <issue id="4664"></issue></li>
+                        <li>Fixed the Time problem that the calculation time is not accurate sometimes. <issue id="4651"></issue></li>
+                        <li>Add Finnish. <mention id="lahdekorpi"></mention></li>
+                    </ul>
+                </TimelineItem>
+                <TimelineItem>
                     <inAnchor title="3.1.3" h2></inAnchor>
                     <p>
                         <code>2018-09-30</code>

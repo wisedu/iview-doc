@@ -169,6 +169,11 @@
                         <td>Gets the selected node.</td>
                         <td>None</td>
                     </tr>
+                    <tr>
+                        <td>getCheckedAndIndeterminateNodes</td>
+                        <td>Gets the selected and half-selected nodes.</td>
+                        <td>None</td>
+                    </tr>
                     </tbody>
                 </table>
                 <inAnchor title="children" h3></inAnchor>

@@ -46,6 +46,7 @@
                 <li>捷克语（cs-CZ）</li>
                 <li>蒙古语（mn-MN）</li>
                 <li>传统蒙古语（mn-TR）</li>
+                <li>芬兰语（fi-FI）</li>
             </ul>
             <p>欢迎贡献代码，以支持更多语言。只需在<a href="https://github.com/iview/iview/tree/2.0/src/locale/lang" target="_blank">这里</a>添加一个语言配置文件即可。</p>
         </article>
