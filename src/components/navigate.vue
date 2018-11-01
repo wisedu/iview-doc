@@ -1,6 +1,9 @@
 <style lang="less" scoped>
     @import "../styles/navigate.less";
 </style>
+<style lang="less">
+    @import "../styles/asd.less";
+</style>
 <template>
     <div class="navigate">
         <template v-if="lang === 'zh-CN'">
@@ -9,6 +12,17 @@
                     <img :src="item.img">
                 </div>
             </a>
+            <Affix :offset-top="64" class="asd-affix" @on-change="handleChangeAdAffix">
+                <Carousel v-model="adCarousel" autoplay :autoplay-speed="5000" radius-dot v-if="app.adList4.length && adCarouselShow" arrow="never">
+                    <CarouselItem v-for="item in app.adList4" :key="item.id">
+                        <a :href="item.link" target="_blank" class="asd asd-mb" @click="handleAsideAd(item.id)">
+                            <div class="asd-main asd-main-no-opacity">
+                                <img :src="item.img">
+                            </div>
+                        </a>
+                    </CarouselItem>
+                </Carousel>
+            </Affix>
         </template>
         <!--<div class="asd-car" v-else>-->
             <!--<iframe src="https://file.iviewui.com/ad6.html" frameborder="0" width="100%" height="100%"></iframe>-->
@@ -116,7 +130,9 @@
                 showDot: false,
                 activeKey: this.$route.path,
                 lang: this.$lang,
-                showAd: false
+                showAd: false,
+                adCarousel: 0,
+                adCarouselShow: false
             }
         },
         methods: {
@@ -159,6 +175,10 @@
             },
             handleAsideAd (name) {
                 _hmt.push(['_trackEvent', name, 'click']);
+            },
+            handleChangeAdAffix (status) {
+                this.adCarousel = 0;
+                this.adCarouselShow = status;
             }
         },
         created () {

@@ -30,16 +30,16 @@
             </div>
             <div class="wrapper-header-nav-list">
                 <Menu-item name="guide" :to="handleGoToMenu('/docs/guide/introduce')">
-                    <Icon type="ios-navigate"></Icon>
+                    <!--<Icon type="ios-navigate"></Icon>-->
                     {{ $t('index.guide') }}
                 </Menu-item>
                 <Menu-item name="component" :to="handleGoToMenu('/docs/guide/install')">
-                    <Icon type="ios-keypad"></Icon>
+                    <!--<Icon type="ios-keypad"></Icon>-->
                     {{ $t('index.component') }}
                 </Menu-item>
                 <Menu-item name="live" v-if="lang === 'zh-CN'" :to="handleGoToMenu('/live')">
                     <Badge :dot="liveDot" :offset="[20,0]">
-                        <Icon type="ios-videocam"></Icon>
+                        <!--<Icon type="ios-videocam"></Icon>-->
                         {{ $t('index.live') }}
                     </Badge>
                 </Menu-item>
@@ -51,9 +51,14 @@
                     <!--<Icon type="ios-analytics"></Icon>-->
                     <!--{{ $t('index.practice') }}-->
                 <!--</Menu-item>-->
+                <Menu-item name="dev" to="//dev.iviewui.com" target="_blank" v-if="lang === 'zh-CN'">
+                    <!--<Icon type="ios-construct" />-->
+                    社区
+                    <!--<Badge status="error" />-->
+                </Menu-item>
                 <Submenu name="ecosystem">
                     <template slot="title">
-                        <Icon type="ios-infinite"></Icon>
+                        <!--<Icon type="ios-infinite"></Icon>-->
                         {{ $t('index.ecosystem') }}
                     </template>
                     <Menu-item name="cli" :to="handleGoToMenu('/cli')">
@@ -74,11 +79,6 @@
                         iView Editor
                     </Menu-item>
                 </Submenu>
-                <Menu-item name="dev" to="//dev.iviewui.com" target="_blank" v-if="lang === 'zh-CN'">
-                    <Icon type="ios-construct" />
-                    开发者社区
-                    <Badge status="error" />
-                </Menu-item>
                 <Select size="small" value="3" style="width: 60px;margin: 0 10px;" @on-change="handleVersion">
                     <Option value="3">3.x</Option>
                     <Option value="2">2.x</Option>
