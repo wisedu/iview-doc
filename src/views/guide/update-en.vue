@@ -25,6 +25,19 @@
         <article class="doc-update">
             <Timeline pending>
                 <TimelineItem>
+                    <inAnchor title="3.1.5" h2></inAnchor>
+                    <p>
+                        <code>2018-11-09</code>
+                    </p>
+                    <ul>
+                        <li>Fixed the ColorPicker problem that input could not focus under transfer mode. <issue id="4718"></issue></li>
+                        <li>Fixed the Slider problem with InputNumber, it will throw error when clear the value. <issue id="4746"></issue></li>
+                        <li>Fixed the AutoComplete problem that can not be selected or disappeared when select an item sometimes. <issue id="4750"></issue></li>
+                        <li>Fixed the Table problem that can not use Cell component in Render function. <issue id="4258"></issue></li>
+                        <li>Optimize the Switch style. <issue id="4762"></issue></li>
+                    </ul>
+                </TimelineItem>
+                <TimelineItem>
                     <inAnchor title="3.1.4" h2></inAnchor>
                     <p>
                         <code>2018-10-30</code>
