@@ -25,6 +25,59 @@
         <article class="doc-update">
             <Timeline pending>
                 <TimelineItem>
+                    <inAnchor title="3.1.5" h2></inAnchor>
+                    <p>
+                        <code>2018-11-09</code>
+                    </p>
+                    <ul>
+                        <li>Fixed the ColorPicker problem that input could not focus under transfer mode. <issue id="4718"></issue></li>
+                        <li>Fixed the Slider problem with InputNumber, it will throw error when clear the value. <issue id="4746"></issue></li>
+                        <li>Fixed the AutoComplete problem that can not be selected or disappeared when select an item sometimes. <issue id="4750"></issue></li>
+                        <li>Fixed the Table problem that can not use Cell component in Render function. <issue id="4258"></issue></li>
+                        <li>Optimize the Switch style. <issue id="4762"></issue></li>
+                    </ul>
+                </TimelineItem>
+                <TimelineItem>
+                    <inAnchor title="3.1.4" h2></inAnchor>
+                    <p>
+                        <code>2018-10-30</code>
+                    </p>
+                    <ul>
+                        <li>Tree add new method <code>getCheckedAndIndeterminateNodes</code> to get the selected and half-selected nodes. <issue id="4664"></issue></li>
+                        <li>Fixed the Time problem that the calculation time is not accurate sometimes. <issue id="4651"></issue></li>
+                        <li>Add Finnish. <mention id="lahdekorpi"></mention></li>
+                    </ul>
+                </TimelineItem>
+                <TimelineItem>
+                    <inAnchor title="3.1.3" h2></inAnchor>
+                    <p>
+                        <code>2018-09-30</code>
+                    </p>
+                    <ul>
+                        <li>The Time component supports internationalization. <issue id="4317"></issue></li>
+                        <li>Table add new event <code>@on-select-all-cancel</code>. <issue id="2586"></issue></li>
+                        <li>Optimize the performance of Cascader at <code>trigger="hover"</code>. <issue id="4472"></issue></li>
+                        <li>When the total property of the Page component is modified to 0, the current page is set to 1. <issue id="4460"></issue></li>
+                        <li>Fixed the Select problem in filterable mode, it will display a complete list when matching a search item. <issue id="4273"></issue></li>
+                        <li>Fixed the Select problem in filterable and multiple mode when set data dynamically. <issue id="4575"></issue></li>
+                        <li>Fixed the Select problem in filterable mode with OptionGroup components. <issue id="4371"></issue></li>
+                        <li>Fixed the Table problem when set height property, when open the expanded column, the scrollbar is wrong. <issue id="4219"></issue></li>
+                        <li>Fixed the Carousel problem that dynamically setting height. <issue id="4324"></issue></li>
+                    </ul>
+                </TimelineItem>
+                <TimelineItem>
+                    <inAnchor title="3.1.2" h2></inAnchor>
+                    <p>
+                        <code>2018-09-25</code>
+                    </p>
+                    <ul>
+                        <li>Fixed the problem that DatePicker will throw error in split-panels mode. <issue id="4524"></issue></li>
+                        <li>Fixed the problem that DatePicker's panel will open when click the clear icon.</li>
+                        <li>Fixed the problem that DatePicker change the month, the left month was larger than the right. <issue id="3973"></issue></li>
+                        <li>Fixed the problem that FormItem could not be verified when using the required property. <issue id="4537"></issue></li>
+                    </ul>
+                </TimelineItem>
+                <TimelineItem>
                     <inAnchor title="3.1.1" h2></inAnchor>
                     <p>
                         <code>2018-09-18</code>

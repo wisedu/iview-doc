@@ -169,6 +169,11 @@
                             <td>获取被选中的节点</td>
                             <td>无</td>
                         </tr>
+                        <tr>
+                            <td>getCheckedAndIndeterminateNodes</td>
+                            <td>获取选中及半选节点</td>
+                            <td>无</td>
+                        </tr>
                     </tbody>
                 </table>
                 <inAnchor title="children" h3></inAnchor>

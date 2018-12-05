@@ -203,7 +203,7 @@
             </div>
         </Modal>
         <!-- todo 提问 -->
-        <a href="https://dev.iviewui.com/issues" target="_blank" class="ask-question" v-if="lang === 'zh-CN'">
+        <a href="https://dev.iviewui.com/issues" target="_blank" class="ask-question" v-if="lang === 'zh-CN'" @click="handleClickAsk">
             <Icon type="ios-help-circle" size="14" />
             <p>提问</p>
         </a>
@@ -287,6 +287,9 @@
                 if (isQQGroup) {
                     this.ask = true;
                 }
+            },
+            handleClickAsk () {
+                _hmt.push(['_trackEvent', 'ask_issue_dev', 'click']);
             }
         },
         created () {

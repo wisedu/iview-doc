@@ -35,7 +35,7 @@
     <i-article>
         <article style="min-height: 500px">
             <h1>iView 讲堂</h1>
-            <Card v-for="(item, index) in list" :key="item.title" style="margin-bottom: 10px;">
+            <Card v-for="(item, index) in list" :key="item.title" style="margin-bottom: 10px;cursor: pointer;" @click.native="handleClick(index)">
                 <Row>
                     <i-col span="6">
                         <div class="live-cover" :style="{'backgroundImage': 'url(' + item.cover + ')'}"></div>
@@ -50,7 +50,7 @@
                     </i-col>
                     <i-col span="4">
                         <div class="live-link">
-                            <i-button type="primary" @click="handleClick(index)">
+                            <i-button type="primary">
                                 <div><Icon type="md-arrow-dropright-circle" size="20"></Icon></div>
                                 <div v-if="item.time === 'finish'">查看教程</div>
                                 <div v-else>报名参加</div>

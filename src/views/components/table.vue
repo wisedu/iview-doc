@@ -423,6 +423,15 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>on-select-all-cancel</td>
+                            <td>在多选模式下有效，点击取消全选时触发</td>
+                            <td>
+                                <ul>
+                                    <li><code>selection</code>：已选项数据</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
                             <td>on-selection-change</td>
                             <td>在多选模式下有效，只要选中项发生变化时就会触发</td>
                             <td>

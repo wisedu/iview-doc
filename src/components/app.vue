@@ -88,7 +88,8 @@
                 },
                 adList1: [],
                 adList2: [],
-                adList3: []
+                adList3: [],
+                adList4: []
             }
         },
         computed: {
@@ -195,7 +196,7 @@
             getAdList (name) {
                 $.ajax({
                     method: 'get',
-                    url: '/v1/asd/list',
+                    url: '/v1/infop/list',
                     params: {
                         name: name
                     }
@@ -215,6 +216,7 @@
             this.getAdList(1);
             this.getAdList(2);
             this.getAdList(3);
+            this.getAdList(4);
         }
     }
 </script>

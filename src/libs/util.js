@@ -70,6 +70,7 @@ export function scrollTop(el, from = 0, to, duration = 500) {
 }
 
 const ajaxUrl = 'https://api.iviewui.com';
+// const ajaxUrl = 'http://127.0.0.1:9890';
 
 util.ajax = axios.create({
     baseURL: ajaxUrl,

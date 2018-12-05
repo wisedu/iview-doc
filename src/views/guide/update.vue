@@ -24,6 +24,97 @@
         <h1>更新日志</h1>
         <article class="doc-update">
             <Timeline pending>
+                <TimelineItem>
+                    <inAnchor title="3.1.3" h2></inAnchor>
+                    <p>
+                        <code>2018-09-30</code>
+                    </p>
+                    <ul>
+                        <li>Time 组件支持国际化。<issue id="4317"></issue></li>
+                        <li>Table 新增取消全选事件 <code>@on-select-all-cancel</code>。<issue id="2586"></issue></li>
+                        <li>优化 Cascader 在 <code>trigger="hover"</code> 时的表现。<issue id="4472"></issue></li>
+                        <li>Page 组件的 total 动态修改为 0 时，当前页置为 1。<issue id="4460"></issue></li>
+                        <li>修复 Select 在 filterable 模式下，完整匹配搜索词时显示完整列表的问题。<issue id="4273"></issue></li>
+                        <li>修复 Select 在 filterable 且 multiple 模式下，动态设置数据出错的问题。<issue id="4575"></issue></li>
+                        <li>修复 Select 在 filterable 模式下，使用 OptionGroup 搜索出错的问题。<issue id="4371"></issue></li>
+                        <li>修复 Table 在固定高度时，配置可展开列无法动态计算滚动条的问题。<issue id="4219"></issue></li>
+                        <li>修复 Carousel 动态设置 height 出错的问题。<issue id="4324"></issue></li>
+                    </ul>
+                </TimelineItem>
+                <TimelineItem>
+                    <inAnchor title="3.1.2" h2></inAnchor>
+                    <p>
+                        <code>2018-09-25</code>
+                    </p>
+                    <ul>
+                        <li>修复 DatePicker 在 split-panels 模式下，有时报错的问题。<issue id="4524"></issue></li>
+                        <li>修复 DatePicker 点击清空图标时，弹出选择器的问题。</li>
+                        <li>修复 DatePicker 切换月份时，左边月份比右边大的问题。<issue id="3973"></issue></li>
+                        <li>修复 FormItem 使用 required 属性时，无法校验的问题。<issue id="4537"></issue></li>
+                    </ul>
+                </TimelineItem>
+                <TimelineItem>
+                    <inAnchor title="3.1.1" h2></inAnchor>
+                    <p>
+                        <code>2018-09-18</code>
+                    </p>
+                    <ul>
+                        <li>修复支持 TypeScript 的一些问题。<issue id="4447"></issue> <issue id="4449"></issue> <issue id="4490"></issue></li>
+                        <li>修复 3.1.0 版本下，TimePicker 报错的问题。<issue id="4473"></issue></li>
+                        <li>修复 3.1.0 版本下，Modal 的遮罩层没有 z-index 的问题。<issue id="4439"></issue></li>
+                        <li>修复 3.1.0 版本下，Modal 内使用其它开启 transfer 属性的组件后，层级错乱的问题。<a
+                                href="https://github.com/iview/iview/commit/7bafe9d94c839ab811be044b4295ebb0661ab4ea" target="_blank">7bafe9d</a></li>
+                        <li>修复 ColorPicker 未导入 Button 的问题。<issue id="4483"></issue></li>
+                        <li>修复 InputNumber 失焦时没有触发 Form 校验的问题。<issue id="4536"></issue></li>
+                        <li>新增传统蒙古语。<mention id="XuYS"></mention></li>
+                    </ul>
+                </TimelineItem>
+                <TimelineItem>
+                    <inAnchor title="3.1.0 INSIDE" h2></inAnchor>
+                    <p>
+                        <code>2018-09-03</code>
+                    </p>
+                    <ul>
+                        <li>支持 TypeScript。<issue id="4406"></issue></li>
+                        <li>增加 Vue CLI 3 插件。<a href="https://github.com/iview/vue-cli-plugin-iview" target="_blank">vue-cli-plugin-iview</a></li>
+                        <li>文档增加 Nuxt.js 用法。<a href="https://dev.iviewui.com/articles/1024499044308881408" target="_blank">查看</a></li>
+                        <li>文档更新<strong>快速上手</strong>章节。<router-link to="/docs/guide/start">查看</router-link></li>
+                        <li>新增抽屉组件 Drawer。<router-link to="/components/drawer">查看</router-link> <issue id="4352"></issue></li>
+                        <li>ColorPicker 新增属性 <code>editable</code>，支持输入色值。<issue id="4353"></issue></li>
+                        <li>Tabs 新增属性 <code>beforeRemove</code>，返回 Promise 可中断关闭。</li>
+                        <li>InputNumber 新增属性 <code>active-change</code>，设置为 false 时，只会在失焦时更改数据。<issue id="4315"></issue></li>
+                        <li>Modal 新增属性 <code>z-index</code>。</li>
+                        <li>Modal 的 ESC 按键，现在只会关闭最顶层的模态框，当点击某个 Modal 区域时，它将置为最顶层。</li>
+                        <li>修复 DatePicker 在某些日期下，面板联动错误的 bug。<issue id="3773"></issue></li>
+                        <li>修复 DatePicker 无法使用 <code>disabled</code> 属性的 bug。<issue id="4351"></issue></li>
+                        <li>修复 Select 开启 <code>transfer</code> 属性后，在 3.0.1 版本下有时样式错误的 bug。<issue id="4329"></issue></li>
+                        <li>MenuItem 设置 <code>target="_blank"</code> 时，点击菜单不再高亮当前项。</li>
+                        <blockquote>特别感谢 <a href="https://github.com/yangdan8" target="_blank">@yangdan8</a></blockquote>
+                    </ul>
+                </TimelineItem>
+                <TimelineItem>
+                    <inAnchor title="3.0.1" h2></inAnchor>
+                    <p>
+                        <code>2018-08-22</code>
+                    </p>
+                    <ul>
+                        <li>Select 的 placement 属性，新增值 <code>top-start</code>, <code>bottom-start</code>, <code>top-end</code>, <code>bottom-end</code>，并将默认值修改为 <code>bottom-start</code>。</li>
+                        <li>修复 3.0 按需使用时，报错的 bug。<issue id="4165"></issue></li>
+                        <li>修复 DatePicker 在部分时区下选择后错误的 bug。<issue id="4250"></issue></li>
+                        <li>修复 DatePicker 的 shortcuts 功能自定义格式出错的 bug。<issue id="4127"></issue></li>
+                        <li>修复 DatePicker 在 multiple 模式下，跨月选择会重新定位到第一个日期位置的 bug。<issue id="4249"></issue></li>
+                        <li>修复 Select 的 Option 过长，样式错误的 bug。<issue id="4194"></issue></li>
+                        <li>修复 Select 在 disabled 模式下，clearable 仍然能使用的 bug。<issue id="3924"></issue></li>
+                        <li>修复 FormItem 动态设置 <code>rules</code> 有时不生效的 bug。<issue id="4214"></issue></li>
+                        <li>修复 FormItem 无法给 <code>label-width</code> 设置为 0 的 bug。</li>
+                        <li>修复 RadioGroup 有时无法手动设置数据的 bug。<issue id="4114"></issue></li>
+                        <li>修复 Input 在 number 模式下，删除清空后，值会置为 0 的 bug。<issue id="4048"></issue></li>
+                        <li>修复 Tabs 移除标签页时，有时无法显示正确的标签内容的 bug。<issue id="4052"></issue></li>
+                        <li>优化 Transfer 在搜索时，只能全选搜索结果项。<issue id="4151"></issue></li>
+                        <li>优化 Tree 的样式。<issue id="4162"></issue></li>
+                        <li>Progress 增加 name。<issue id="4036"></issue></li>
+                    </ul>
+                </TimelineItem>
                 <Timeline-item color="green">
                     <Icon type="ios-trophy" size="18" slot="dot"></Icon>
                     <inAnchor title="3.0.0 Battleheart" h2></inAnchor>
@@ -185,7 +276,7 @@
                         <li>Icon 的图标升级至 <code>ionicons</code> 3.0 图标，图标名称有改变。</li>
                         <li>Breadcrumb 废弃 <code>href</code> 属性。</li>
                         <li>Badge 的 count 属性只支持 Number 类型。</li>
-                        <li>Tag 的 color 属性将原先的 <code>blur</code>、<code>green</code>、<code>yellow</code>、<code>red</code> 更名为了 <code>primary</code>、<code>success</code>、<code>warning</code>、<code>error</code>。</li>
+                        <li>Tag 的 color 属性将原先的 <code>blue</code>、<code>green</code>、<code>yellow</code>、<code>red</code> 更名为了 <code>primary</code>、<code>success</code>、<code>warning</code>、<code>error</code>。</li>
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
@@ -224,7 +315,8 @@
         methods: {
             handleBefore () {
                 window.open('http://v2.iviewui.com/docs/guide/update');
-            }
+            },
+
         }
     }
 </script>
